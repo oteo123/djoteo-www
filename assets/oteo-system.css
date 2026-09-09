@@ -1,0 +1,1466 @@
+/* ============================================================================
+   OTEO DESIGN SYSTEM — anchored on LESMANA, the template Alec paid for.
+   ============================================================================
+
+   CORRECTION, 2026-08-19. The first version of this file anchored the site on
+   SIRUP_5TH_CLONE's faces (Glodok + Termina) because the djoteo-build skill
+   calls that repo "the purchased $129 template / DESIGN SOURCE OF TRUTH". That
+   is wrong. Alec: "siurp shouldve been nuked" / "i paid for lessman".
+
+   The template he bought is LESMANA — the Framer build that IS the live
+   homepage (/, /works, /blog), which check.sh has always described correctly:
+   "index.html is the Velox Lesmana clone (Alec-verified target, 2026-07-19)".
+
+   So the first pass had it backwards: it dragged the paid template onto a
+   different template's typography, and deleted Geist, Geist Mono and Playfair
+   Display as "off-system" — the three faces Lesmana actually uses.
+
+   LESMANA'S OWN TYPE SYSTEM, read out of its CSS rather than guessed:
+
+     preset            face                    size   weight  tracking
+     9jiir1  hero      Playfair Display         56px    400    -.04em
+     j77x7r  giant     Playfair Display        100px    400    -.03em
+     yrtdmr  head      Playfair Display         38px    400    -.03em
+     1e5hq0o card      Playfair Display         32px    400    -.03em
+     7v93b9  quote     Playfair Display         18px    400    -.03em
+     10o1gtm nav       Playfair Display         16px    400    -.02em
+     19qorhk body      Geist                    16px    400    -.02em
+     1y7c7cl small     Geist                    14px    400    -.02em
+     23zch4  eyebrow   Geist Mono               12px    500     .14em
+
+   Three faces, three jobs — Lesmana's, not mine:
+     PLAYFAIR DISPLAY  every display size, and the nav
+     GEIST             running copy
+     GEIST MONO        eyebrows, labels, metadata
+
+   This file's job is unchanged: make the seven hand-built routes speak the paid
+   template's language, so both halves match. The direction is now hand-built ->
+   Lesmana, instead of Lesmana -> somewhere else. Loaded last on every route.
+   ========================================================================= */
+
+/* Lesmana self-hosts these on its own routes; declared here so the hand-built
+   pages can use the same files. Root-absolute paths work from both halves. */
+/* NOTE: these MUST be the Latin subsets. The first attempt picked files by
+   font-weight alone and landed on Google's CYRILLIC subsets (U+0460-052F),
+   so every glyph outside that range fell back to a serif — visible as the
+   italic "A" in REQUEST A DATE on mobile. Subsets carry their unicode-range
+   through, exactly as Lesmana declares them. */
+@font-face {
+  font-family: "Geist";
+  src: url("/_ext/fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4mJPby1QNtA.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("/_ext/fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RQuQImpna.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("/_ext/fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_Re-Q4mJPby1QNtA.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/_ext/fonts.gstatic.com/s/geistmono/v6/or3lQ6H-1_WfwkMZI_qYFrItmBvj.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/_ext/fonts.gstatic.com/s/geistmono/v6/or3lQ6H-1_WfwkMZI_qYFrItmBvj.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --oteo-display: "Playfair Display", Georgia, serif;
+  --oteo-body: "Geist", system-ui, sans-serif;
+  --oteo-label: "Geist Mono", ui-monospace, monospace;
+
+  /* Lesmana's steps, not invented ones. */
+  --t-giant: clamp(56px, 7vw, 100px);
+  --t-hero: clamp(38px, 4.4vw, 56px);
+  --t-head: clamp(28px, 2.9vw, 38px);
+  --t-card: clamp(24px, 2.2vw, 32px);
+  --t-quote: 18px;
+  --t-body: 16px;
+  --t-small: 14px;
+  --t-label: 12px;
+
+  --oteo-gold: #c8a96a;
+  --oteo-cream: #f1ede4;
+  --oteo-ink: #08090b;
+}
+
+/* ---------------------------------------------------------------- DISPLAY */
+h1, h2,
+.about-title, .contact-hero-title, .section-title, .sound-head,
+.contact-statement, .showcase-statement, .neo-hero-line,
+.svc-hero h1, .res-hero h1, .agenda-hero h1, .label-hero h1,
+.page-calendar .sync .h, .page-booking .sec > .head, .page-foowr .band .head {
+  font-family: var(--oteo-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -.03em !important;
+  line-height: 1.06;
+  text-transform: none !important;
+}
+h1, .contact-hero-title, .about-title,
+.svc-hero h1, .res-hero h1, .agenda-hero h1, .label-hero h1 {
+  font-size: var(--t-hero) !important;
+}
+h2, .section-title, .sound-head, .contact-statement, .showcase-statement,
+.page-calendar .sync .h, .page-booking .sec > .head, .page-foowr .band .head {
+  font-size: var(--t-head) !important;
+}
+
+/* ── SPENDING `giant` ────────────────────────────────────────────────────────
+   --t-giant has been declared since the type scale landed and used by nothing.
+   Measured 2026-08-30 at 1440: all SEVEN hand-built routes open at 56px, hero's
+   ceiling — booking, residencies, about, contact, rentals, calendar, foowr. So
+   no page ever announces itself louder than the one before it, which is the gap
+   DESIGN.md names.
+
+   The contract's rule is "one per page at most" and "spending it is a per-page
+   decision, not a global find-and-replace" — and its stated purpose is to let ONE
+   page be the loud one. Giving it to all seven would restore the flatness at a
+   bigger size, so it goes to exactly one route.
+
+   /about earns it: its title is a statement of identity rather than a function
+   ("The artist behind OTEO."), which is the shape of the contract's own example
+   ("Behind The Decks"), and the site exists to sell OTEO rather than a service
+   list. The booking hero deliberately does NOT take it — that page's weight
+   belongs to its CTA, not its headline.
+
+   Line-height and tracking come from the token, not from hero: 0.92 / -0.04em.
+   At 100px a 0.86 line-height would collide the two lines. */
+/* SCOPED to .about-hero on purpose: /rentals reuses the .about-title class
+   (inner-next.css gives .rentals-hero .about-title its own clamp), so a bare
+   .about-title selector put TWO pages at 100px and destroyed the one-loud-page
+   effect this step exists for. Measured: /rentals went 56px -> 100px until this
+   was scoped. Any future giant must be scoped to its route's hero for the same
+   reason. */
+.about-hero .about-title {
+  font-size: var(--t-giant) !important;
+  /* !important because uniform-next.css sets 0.86 through a descendant selector
+     that outranks a bare class — later position does not beat specificity. At
+     100px, 0.86 closes the two lines up too far; the token says 0.92. */
+  line-height: .92 !important;
+  letter-spacing: -.04em !important;
+}
+h3, h4, .pkg-card h3, .eqp-card h3, .card h3, .gear-cat, .past-title,
+.mr-name, .edit-title, .room-idx {
+  font-family: var(--oteo-display) !important;
+  font-weight: 400 !important;
+  font-size: var(--t-card) !important;
+  letter-spacing: -.03em !important;
+  text-transform: none !important;
+}
+
+/* Lesmana's accent inside a headline is the same face in gold — no italic
+   serif, no second family. */
+h1 em, h2 em, h3 em,
+.svc-hero h1 em, .res-hero h1 em, .agenda-hero h1 em, .label-hero h1 em,
+.contact-hero-title em, .about-title em, .neo-hero-line em,
+.contact-statement em, .showcase-statement em {
+  font-family: var(--oteo-display) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: -.03em !important;
+  color: var(--oteo-gold) !important;
+}
+
+/* ------------------------------------------------------- LABELS / EYEBROWS */
+.eyebrow, .kicker, .neo-kicker, .k, .meta .k, .stat-label, .card-tag, .tag,
+.chip, .badge, .live-tag, .mr-tag, .page-booking .direct-line, .form-note,
+.date-bar-label, .footer-nav a, .social a, .skip-link, .sec .n, .step .n {
+  font-family: var(--oteo-label) !important;
+  font-size: var(--t-label) !important;
+  font-weight: 500 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+.btn, .hero-cta, .header-cta, .book, .v-cta, .sync .cta, .mob-cta {
+  font-family: var(--oteo-label) !important;
+  font-size: var(--t-label) !important;
+  font-weight: 500 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+/* The one exemption: the header's Book OTEO. Lesmana does exactly this — its
+   in-page buttons are Geist Mono labels ("BOOK A DATE →") while the header CTA
+   is Playfair, mixed case. Matching that is what makes the header stop changing
+   personality between the Framer homepage and the hand-built routes. Specific
+   enough to beat .btn, which the markup also carries. */
+.site-header .header-cta {
+  font-family: var(--oteo-display) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  letter-spacing: -.03em !important;
+  text-transform: none !important;
+}
+
+/* Nav and wordmark follow Lesmana: Playfair, mixed case, quiet. */
+.nav-links a, .brand, .home-next .brand, .site-header.on-light .brand,
+.site-footer .footer-brand {
+  font-family: var(--oteo-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -.02em !important;
+  text-transform: none !important;
+}
+.nav-links a { font-size: var(--t-body) !important; }
+.brand, .home-next .brand, .site-header.on-light .brand,
+.site-footer .footer-brand { font-size: 22px !important; }
+
+/* ------------------------------------------------------------------ BODY */
+body, p, li, dd, dt, input, textarea, select, button, label, figcaption,
+.section-deck, .footer-copy, .contact-sub, .v-body p, .lede, .desc, .past-deck,
+.summary, .sub, .edit-sub {
+  font-family: var(--oteo-body);
+  letter-spacing: -.02em;
+}
+p, li, .section-deck, .v-body p, .summary { font-size: var(--t-body); line-height: 1.6; }
+.desc, .past-deck, .sub, .footer-copy, .contact-sub, .edit-sub,
+small, .small { font-size: var(--t-small); line-height: 1.6; }
+.lede, .section-deck { font-size: var(--t-quote); line-height: 1.5; }
+
+/* ------------------------------------------------- THE LESMANA CLONE ROUTES */
+/* The clone already renders its own presets correctly — it IS the spec — so it
+   is left alone apart from the pieces Framer sets inline in the wrong face,
+   and the nav parity the hand-built side now matches. A blanket
+   `.framer-text *` rule is never acceptable here: it flattened the hero to body
+   text on the first attempt. */
+[style*="Times New Roman"], [style*="Times New Roman"] * {
+  font-family: var(--oteo-display) !important;
+}
+[class*="framer-styles-preset-"] span, .framer-text span {
+  font-family: inherit !important;
+}
+
+/* ── BLUE RETIRED FROM THE CLOSING BAND ──────────────────────────────────────
+   DESIGN.md, Alec's decision 2026-08-29: blue #243f9c is a BRAND ASSET ONLY —
+   "never interface chrome ... must not appear as a border, a fill, a link colour
+   or a state." A rgba(36,63,156,.55) radial wash across four closing bands is a
+   fill, so it goes. The token stays declared so nobody re-derives it from a JPEG.
+
+   It was also doing visible harm. The band sits on a photograph of the decks that
+   is warm amber on the right; the blue washed the top-left cold, and the two
+   halves fought. Removing it lets the photograph carry the band on the contract's
+   own palette (ink, cream, gold) instead of adding a fifth hue over the top.
+
+   Deliberately NOT replaced with a gold wash: the photo already supplies the
+   warmth, and a second wash would recreate the same colour-over-photo problem
+   one hue to the right.
+
+   Measured live before the change: .contact carried it on /about, /contact and
+   /rentals, and .page-residencies .close-cta on /residencies — four bands, which
+   is exactly the scope named in the review. */
+.contact, .page-residencies .close-cta {
+  background: var(--oteo-ink) !important;
+  border-top: 1px solid rgba(200, 169, 106, .22) !important;
+}
+.contact-statement, .contact-hero-title { color: var(--oteo-cream) !important; }
+
+/* ------------------------------------------------------------ DEAD SCROLL */
+/* The stats section was 2,110px to deliver four numbers: a 560px sticky card
+   plus a 1,350px empty scroll-trigger. Kept from the density pass — it is a
+   layout fix, not a typography opinion, so the re-anchor does not undo it. */
+[data-framer-name="Why us"] [data-framer-name="Scroll trigger"] {
+  height: 420px !important;
+  min-height: 0 !important;
+}
+@media (min-width: 900px) {
+  [data-framer-name="Why us"] [data-framer-name="Middle"] {
+    min-width: 382px !important;
+    max-width: 420px !important;
+  }
+}
+/* One statement of a number per page: the testimonials block carried a second
+   copy of the venues counter with no heading. */
+[data-framer-name="Testimonials"] .framer-1rwjy3b { display: none !important; }
+
+/* --------------------------------------------------------- HOMEPAGE CUT */
+/* Over half the homepage was the template's marketing funnel or a duplicate of
+   /booking: services list, a four-step "how we work" that commits to nothing,
+   two pricing tiers both priced "Custom", 12 generic archive tiles, and the FAQ
+   in full. 839 -> 284 words, 15.9 -> 7.5 screens. Content, not type — kept. */
+[data-framer-name="Expertise"],
+[data-framer-name="How we work"],
+[data-framer-name="Pricing"],
+[data-framer-name="Design exploration"],
+[data-framer-name="FAQ"] { display: none !important; }
+
+/* CUT 2026-08-20, Alec: "extremely messy... looks like a bunch of shit went
+   into a blender. How is this gonna get me paid?" He sells two things — live
+   DJ sets and gear rentals — and neither was stated anywhere on the homepage.
+   The two-service band now sits under the hero; these two sections are what it
+   replaces, and both were sprawl rather than sales:
+
+   Works       2,086px of near-empty black. Venue labels floating over unloaded
+               tiles, and a giant washed-out "All Works" letterform. The venues
+               are real proof, but this presentation buried them — and the page
+               still carries the testimonials, which say the same thing in the
+               venues' own words. /works survives in the footer.
+   Why us      Scattered heading, a right-aligned orphan paragraph, and stats in
+               dark gold on black that barely register — led by "15+ nights
+               behind the decks", a number that undersells him. */
+[data-framer-name="Works"],
+[data-framer-name="Why us"] { display: none !important; }
+
+/* Switzer is the hand-built system's body face and it is not in Lesmana's spec.
+   It survives in two places, both set with !important by sheets that load
+   before this one: uniform-next's body default, and oteo-type.css's overrides
+   on three Framer presets. Mapped back to the faces Lesmana actually assigns
+   each of those presets — 1y7c7cl/19qorhk are Geist, 23zch4 is Geist Mono, and
+   7v93b9 (the hero quote) is Playfair, not body copy. */
+.framer-styles-preset-1y7c7cl,
+.framer-styles-preset-19qorhk { font-family: var(--oteo-body) !important; }
+.framer-styles-preset-23zch4 {
+  font-family: var(--oteo-label) !important;
+  letter-spacing: .14em !important;
+}
+/* Lesmana's DISPLAY presets. These were rendering in Geist — every giant word
+   on the site ("Proud", "Works", "All Works", "01."–"04.", "Night", "Archive",
+   "Behind", "The Decks") came out as a body sans blown up to 140px, which is
+   exactly the generic look Alec kept calling AI-made.
+
+   The cause was mine: Framer authors these correctly as Playfair Display, but
+   the preset elements are <p>, and the body rule above carries
+   `font-family: ... !important` on p — so my own body mapping was overriding
+   the paid template's display type. Naming the presets explicitly restores
+   what Lesmana already specified:
+     9jiir1 hero 56px · j77x7r giant 100px · yrtdmr head 38px
+     1e5hq0o card 32px · 7v93b9 quote 18px · 10o1gtm nav 16px          */
+.framer-styles-preset-9jiir1,
+.framer-styles-preset-j77x7r,
+.framer-styles-preset-yrtdmr,
+.framer-styles-preset-1e5hq0o,
+.framer-styles-preset-7v93b9,
+.framer-styles-preset-10o1gtm,
+.framer-styles-preset-18cbegu {
+  font-family: var(--oteo-display) !important;
+  letter-spacing: -.03em !important;
+  text-transform: none !important;
+}
+body, p, li, dd, dt, input, textarea, select, button, label, figcaption,
+.section-deck, .footer-copy, .contact-sub, .v-body p, .lede, .desc, .past-deck,
+.summary, .sub, .edit-sub, .gear-card p, .gear-meta, .price, .rate {
+  font-family: var(--oteo-body) !important;
+}
+
+/* Last Switzer holdouts, found by walking the painted nodes on the live pages
+   rather than guessing selectors: the gear card's internals and two link/CTA
+   classes. Assigned by role, same as everything above — "per night" and
+   "BOOK THIS" are labels, the rest is running copy. */
+.gear-per, .card-cta {
+  font-family: var(--oteo-label) !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+.gear-qty, .gear-name, .gear-rate, .email-link {
+  font-family: var(--oteo-body) !important;
+}
+
+/* Pointer target size — WCAG 2.2 SC 2.5.8 asks for 24x24 CSS px, and this
+   applies at every width, not just on phones. Measured live at 1440: .card-cta
+   (the "BOOK THIS" on every package) was 80x15, the footer nav 18px tall, the
+   email links 16px. The first pass scoped this to max-width:900px, so desktop
+   kept failing on 20 distinct targets across 7 pages.
+
+   Only the hit area grows — Lesmana's type sizes are untouched. Targets that
+   sit inline inside a sentence are exempt under 2.5.8 and are left alone. */
+.card .card-cta, .card-cta {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-nav a, .site-footer nav a, .social a, .label-line, .email-link {
+  display: inline-block;
+  padding: 11px 0;
+}
+
+/* ROOT FIX — Switzer at the source, not selector-by-selector.
+   site.css:130 defines --sans:"Switzer", and every hand-built page reads it, so
+   Switzer kept surfacing on /residencies, /about, /contact, /calendar and
+   /foowr no matter how many individual classes got mapped. Switzer is not in
+   Lesmana's spec at all; the site has three faces. Redefining the variable
+   fixes every consumer at once — and it is why chasing selectors one at a time
+   was never going to finish. */
+:root { --sans: "Geist", system-ui, sans-serif; }
+
+/* The elements --sans was feeding split cleanly in two, classified by their
+   computed style rather than by guessing from class names: 17 are uppercase or
+   small-and-tracked (labels -> Geist Mono), 6 are running copy (already correct
+   as Geist via the variable above). The bare a/b/strong cases are scoped to the
+   block they live in — a global `a` rule would have hit the nav. */
+.nights, .past-eyebrow, .mr-head, .vital-k, .room-cat, .room-nights,
+.field-label, .idx, .glyph, .full, .edit-meta, .label-line,
+a.alt, a.btn,
+.hero-index a, .stats b, .contact-facts strong, .sc-facade-label b,
+.steps li span {
+  font-family: var(--oteo-label) !important;
+}
+
+/* "ALOK , CAT DEALERS , BHASKAR" — a gap before every comma on /contact.
+   Not letter-spacing, which was my first guess: site.css makes each fact line
+   `display:inline-flex; gap:10px` so a decorative ::before dash sits away from
+   the text. But gap applies between EVERY flex child, and in a flex container
+   each inline run becomes its own item — so the commas were being spaced off
+   the words they belong to. Measured: 8.33px, not the 1.92px tracking.
+
+   The dash carries its own margin instead, and the line goes back to being a
+   normal block of text, so the spaces in the markup do the spacing. */
+.contact-facts span {
+  display: block !important;
+  gap: 0 !important;
+}
+.contact-facts span::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* The remaining sub-24px targets are bare <a> tags, so they are scoped to the
+   block they live in — a global `a` rule would hit the nav and every inline
+   link. Links that genuinely sit inside a sentence (p.sub, p.player-note) are
+   exempt under 2.5.8 and are deliberately left alone. */
+.sec-cta a, .direct-line a, .contact-facts a, .hero-index a,
+.page-foowr .band p a, a.alt {
+  display: inline-block;
+  padding: 6px 0;
+}
+
+/* ── THE TWO SERVICES ────────────────────────────────────────────────────────
+   Injected under the homepage hero by oteo-swap.js. Styled in Lesmana's own
+   language — Playfair for the titles, Geist for copy, Geist Mono for the
+   kicker and the CTA — so it reads as part of the template, not bolted on. */
+.oteo-services {
+  background: var(--oteo-ink);
+  border-top: 1px solid rgba(200, 169, 106, .16);
+  border-bottom: 1px solid rgba(200, 169, 106, .16);
+  padding: clamp(48px, 6vw, 88px) 24px;
+}
+.oteo-services-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 2.4vw, 32px);
+}
+.oteo-service {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: clamp(24px, 3vw, 40px);
+  border: 1px solid rgba(244, 241, 234, .10);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .022);
+  text-decoration: none;
+  transition: border-color .4s ease, transform .4s ease;
+}
+.oteo-service:hover {
+  border-color: var(--oteo-gold);
+  transform: translateY(-3px);
+}
+.oteo-service-k {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--oteo-gold);
+}
+.oteo-service-t {
+  font-family: var(--oteo-display);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 400;
+  letter-spacing: -.03em;
+  line-height: 1.05;
+  color: var(--oteo-cream);
+  margin: 0;
+}
+.oteo-service-c {
+  font-family: var(--oteo-body);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -.02em;
+  color: rgba(244, 241, 234, .66);
+  margin: 0;
+}
+.oteo-service-n {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  /* Was rgba(244,241,234,.42), which composites to #6f6e6c on the #0e0f11 band
+     — 3.76:1, under the 4.5:1 that WCAG AA requires for 11px normal text, and
+     the only contrast failure axe-core found anywhere on the site. The alpha
+     needed is .474; .55 is used so the two lines ("Quoted per event", "21
+     pieces · $150 minimum · Central Florida") clear the bar with headroom
+     rather than sitting on it. Computed against the measured background, not
+     adjusted by eye. */
+  color: rgba(244, 241, 234, .55);
+  margin-top: 2px;
+}
+.oteo-service-cta {
+  font-family: var(--oteo-label);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--oteo-gold);
+  margin-top: 14px;
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+}
+.oteo-service-cta::after { content: " \2192"; margin-left: 8px; }
+@media (max-width: 760px) {
+  .oteo-services-wrap { grid-template-columns: 1fr; }
+}
+
+/* HERO — the headline was landing across Alec's face. Measured: the title box
+   is x=430..1010 and the portrait is x=436..1004, i.e. the same column. That is
+   Lesmana's type-over-portrait idea, and it works for the one short word the
+   template was built around; "DJ & Producer" is two long lines, so "Producer"
+   ran straight into his jaw. Text moves into the left column, portrait keeps
+   the right — the photograph is never cropped or scaled, only uncovered. */
+@media (min-width: 1000px) {
+  [data-framer-name="Hero"] [data-framer-name="Title"],
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] {
+    transform: translateX(-215px);
+    max-width: 470px;
+  }
+}
+
+/* The footer printed oteo@djoteo.com twice — Lesmana has an Email slot and a
+   Phone slot, and with no phone number the Phone slot was filled with the same
+   address under a second label ("MAIL" and "BOOKINGS", identical values). One
+   address, stated once, under the label that matters for a booking site. */
+[data-framer-name="Contact"] [data-framer-name="Phone"] { display: none !important; }
+
+/* Testimonials sat in 920px for a 520px card — 200px of padding above AND
+   below, so the venues' own words floated in a field of black and the section
+   read as empty rather than confident. The quotes are the strongest proof on
+   the page (The H, AVA Mediterranean, La Herradura); they just needed to stop
+   being marooned. Padding halved; nothing removed. */
+[data-framer-name="Testimonials"] {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
+}
+
+/* ── CATEGORY JUMP BAR (/rentals) ────────────────────────────────────────────
+   The catalogue runs 11,689px — 17.6 phone screens — across eight sections,
+   none of which had an id or a link to it. Someone who came for a speaker
+   scrolled past 5,100px of mixers and players to reach one. The bar sticks
+   under the fixed header (z-index below its 100) so it is still reachable at
+   screen 12, and scrolls sideways on a phone instead of wrapping to three
+   rows. Geist Mono, gold on active — Lesmana's label language. */
+.cat-jump {
+  position: sticky;
+  top: var(--hdr-h, 64px);
+  z-index: 60;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 12px 0;
+  margin-bottom: 8px;
+  /* Opaque, not a fade: with a gradient the section heading scrolling under
+     the bar stayed half-visible through the transparent edge, which read as a
+     rendering fault. Solid ink plus a hairline gives a clean edge. */
+  background: var(--oteo-ink);
+  border-bottom: 1px solid rgba(244, 241, 234, .08);
+  -webkit-overflow-scrolling: touch;
+}
+.cat-jump::-webkit-scrollbar { display: none; }
+.cat-jump-link {
+  flex: 0 0 auto;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid rgba(244, 241, 234, .16);
+  border-radius: 999px;
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, .66);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color .3s ease, color .3s ease;
+}
+.cat-jump-link:hover { border-color: var(--oteo-gold); color: var(--oteo-cream); }
+.cat-jump-link.is-here { border-color: var(--oteo-gold); color: var(--oteo-gold); }
+/* Anchored headings must clear the fixed header when jumped to. */
+.gear-cat { scroll-margin-top: calc(var(--hdr-h, 64px) + 76px); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Venue names under the two service cards. The homepage carried no link to the
+   track record in its body — only in the footer — so the strongest reason to
+   book him was invisible at the top of the page. Names are lifted verbatim
+   from /residencies; Debonair is the one current standing residency. */
+.oteo-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 18px;
+  max-width: 1120px;
+  margin: clamp(20px, 2.4vw, 32px) auto 0;
+  padding-top: clamp(18px, 2vw, 26px);
+  border-top: 1px solid rgba(244, 241, 234, .09);
+  text-decoration: none;
+}
+.oteo-proof-lead {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--oteo-gold);
+}
+.oteo-proof-rooms {
+  font-family: var(--oteo-body);
+  font-size: 14px;
+  letter-spacing: -.02em;
+  color: rgba(244, 241, 234, .56);
+}
+.oteo-proof-cta {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, .82);
+  margin-left: auto;
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+}
+.oteo-proof-cta::after { content: " \2192"; margin-left: 8px; }
+.oteo-proof:hover .oteo-proof-cta { color: var(--oteo-gold); }
+@media (max-width: 760px) {
+  .oteo-proof-cta { margin-left: 0; }
+}
+
+/* The open mobile menu let page text ghost through behind the links. The panel
+   was rgba(18,17,13,.94) — 6% transmission is enough for a heading and a body
+   paragraph to read through on a dark page, which looks unfinished on the one
+   surface a phone visitor needs to be unambiguous. Opaque, with the blur kept
+   as a fallback for browsers that ignore it. */
+@media (max-width: 900px) {
+  .site-header.nav-open .nav-links {
+    background: #12110d !important;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  }
+}
+
+/* Case-study headings were breaking mid-word: "Approac / h", "Challeng / e" at
+   140px on all four /works pages. Measured: "Approach" needs 581px, the column
+   is 568px — it misses by 13px, and word-break:break-word splits the word
+   rather than letting it sit. A display serif should never hyphenate itself.
+
+   Only the break behaviour changes. The first version of this also tightened
+   tracking site-wide to claw back the 13px, which would have deviated from
+   Lesmana's -.03em on every giant word on the site to fix eight headings on
+   four pages — more complexity than the problem was worth. */
+.framer-styles-preset-j77x7r {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+/* REVERTED 2026-08-21. I hid the hero Slider and the footer image, calling them
+   "ornament". The Slider is not ornament — it is Lesmana's animated hero
+   marquee, the signature motion Alec paid $129 for. Hiding it is what made the
+   site read as flat and AI-made, which is the opposite of what he asked for.
+   Both are restored. If the hero needs work it gets tuned, never deleted. */
+
+
+/* HEADER SCRIM ON SCROLL. The bar is fixed for the whole page and frosted
+   (backdrop blur + rgba ink), which reads correctly over the dark hero and
+   fails over the About section's red/amber room shot: measured at 1440x900,
+   scrolled to the About band, the pixels under the wordmark and the four nav
+   labels came back (85,75,23) and (83,32,22) — a bright, moving backdrop under
+   white type, with the section's own "Read the Full Story" pill sliding up
+   into the header's "Book OTEO" pill at the boundary.
+
+   Two layers, both the template's own: the solid ink BG the header component
+   ships at inline opacity:0 for its scrolled state (nothing in the static
+   export ever switches it on), and the frosted container's brightness. The BG
+   alone was not enough — the container's backdrop-filter composites over it,
+   so the band still measured (85,75,23) with the BG fully opaque. Darkening
+   the filter as well brings it to (36,25,18): ~14:1 against white type,
+   frosted look intact. Both are gated on the scrolled class so the hero keeps
+   the fully transparent header it was designed with.
+
+   Selected via :has() on the fixed wrapper rather than its .framer-ca1k8a
+   hash, per the hash-classes-change rule in oteo-swap.js. Desktop and Phone
+   are the two header variants; a browser without :has() simply keeps the
+   current header. */
+html.oteo-scrolled [data-framer-name="Transparent"] > [data-framer-name="BG"] {
+  opacity: 1 !important;
+}
+html.oteo-scrolled div:has(> [data-framer-name="Desktop"]),
+html.oteo-scrolled div:has(> [data-framer-name="Phone"]) {
+  -webkit-backdrop-filter: blur(20px) saturate(1.1) brightness(.30) !important;
+  backdrop-filter: blur(20px) saturate(1.1) brightness(.30) !important;
+  border-bottom: 1px solid rgba(244, 241, 234, .08);
+}
+[data-framer-name="Transparent"] > [data-framer-name="BG"],
+div:has(> [data-framer-name="Desktop"]),
+div:has(> [data-framer-name="Phone"]) {
+  transition: opacity .32s ease, backdrop-filter .32s ease, -webkit-backdrop-filter .32s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-framer-name="Transparent"] > [data-framer-name="BG"],
+  div:has(> [data-framer-name="Desktop"]),
+  div:has(> [data-framer-name="Phone"]) { transition: none; }
+}
+
+/* The proof block that fills the testimonials row's empty column (built by
+   insertTestimonialProof in oteo-swap.js — the reasoning for the numbers is
+   there). Typography is Lesmana's own: Playfair for the numeral at the scale
+   the template uses for its own headline stat, Geist Mono for the labels. */
+.oteo-tproof {
+  margin-top: clamp(28px, 3.4vw, 48px);
+  max-width: 340px;
+}
+.oteo-tproof-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.oteo-tproof-num {
+  font-family: var(--oteo-display);
+  font-size: clamp(52px, 5.4vw, 76px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.04em;
+  color: var(--oteo-gold);
+}
+.oteo-tproof-lbl {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, .56);
+  max-width: 170px;
+}
+.oteo-tproof-press {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: clamp(20px, 2.4vw, 30px);
+  padding-top: clamp(16px, 2vw, 22px);
+  border-top: 1px solid rgba(244, 241, 234, .09);
+}
+.oteo-tproof-k {
+  font-family: var(--oteo-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--oteo-gold);
+}
+.oteo-tproof-v {
+  font-family: var(--oteo-body);
+  font-size: 15px;
+  letter-spacing: -.02em;
+  color: rgba(244, 241, 234, .78);
+}
+@media (max-width: 900px) {
+  .oteo-tproof { max-width: none; margin-top: 26px; }
+}
+
+/* ── ONE SPINE ───────────────────────────────────────────────────────────────
+   Measured on the live homepage at 1440, every left edge of a text block:
+   140 (header, About Me, footer), 160 (the two service cards, the venue
+   strip), 201 (the copy inside those cards), 270 (hero eyebrow, H1, CTA),
+   322 and 334 (testimonial heading and its eyebrow), 524 (the hero quote).
+   Seven edges. Nothing lines up with anything, and that — more than any
+   single element — is what reads as assembled rather than drawn.
+
+   Framer's own Container is the answer: width min(1160px, 100vw - 40px),
+   centred. Left edge 380 at 1920, 140 at 1440, 20 at 1200 and below. That is
+   the spine, it is the template's own measure, and every band now starts on
+   it. The offsets removed below are not arbitrary — each one is a centring
+   the template applies inside that measure:
+     hero copy    +290 = (1120 - 580) / 2, plus the container's own 20px pad
+     testimonials +182 = (1160 - (370 + 24 + 403)) / 2
+     services     +20  = a 1120 wrap inside a 1160 measure
+*/
+@media (min-width: 810px) {
+  /* The hero container pads itself 20px and then centres a 580px copy block
+     in what is left. The old translateX(-215px) was a half-correction to
+     that — it cleared the portrait but invented a fifth left edge at 270. */
+  [data-framer-name="Hero"] [data-framer-name="Content"] {
+    align-self: flex-start;
+    width: 660px;
+    gap: 30px;               /* headline to sentence; the block had none */
+  }
+  [data-framer-name="Hero"] [data-framer-name="Title"],
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] {
+    transform: none !important;
+    width: 100%;
+    max-width: none;
+  }
+  /* The quote sat in a 216px column, so 25 words broke into six ragged
+     lines beside a 135px button. On the spine there is room for both. */
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] { gap: 56px; }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] {
+    width: 400px;
+    max-width: 400px;
+  }
+
+  /* The Subtitle is a row — a 135px button beside a 216px quote column — and
+     that row is what invented the 524 edge. Stacked instead, the hero reads
+     as one column on one edge: eyebrow, headline, sentence, button. */
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] {
+    flex-direction: column-reverse;   /* DOM order is button, then text */
+    align-items: flex-start;
+    gap: 34px;
+  }
+  /* Both boxes were sized for the old side-by-side arrangement: the Subtitle
+     row and the Text column were each 233px tall for 157px of sentence, so
+     stacking them left a 120px hole between the quote and the button, and
+     pushed the whole hero block to within 14px of the band below it. */
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] > * {
+    width: auto;
+    align-self: flex-start;
+  }
+  /* Text is a flex item with a zero basis, so a plain height:auto resolved to
+     0px and its 78px sentence overflowed onto the button. flex:none makes it
+     size to its content. It also carries an empty 128x72 box (a component
+     whose only child is display:none) that was padding the old row out. */
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] {
+    justify-content: flex-start;
+  }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] {
+    flex: none;
+    height: auto;
+    min-height: 0;
+    justify-content: flex-start;
+  }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] > div:not([data-framer-name]) {
+    display: none;
+  }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] {
+    width: 460px;
+    max-width: 460px;
+  }
+  /* and the hero band gets a real foot, not 24px. */
+  [data-framer-name="Hero"] [data-framer-name="Container"] { padding-bottom: 72px; }
+
+  /* Testimonials: the row centred a 370 heading column and a 403 card inside
+     1160. Left-anchored, with the heading column taking the slack, the card
+     lands on the right edge of the same measure — 140 to 1300, like every
+     other band. (space-between is wrong here: the row has a third, hidden,
+     zero-width child, so it would push the card off the measure entirely —
+     measured at 1651, past the 1440 viewport.) */
+  [data-framer-name="Testimonials"] [data-framer-name="Container"] {
+    justify-content: flex-start;
+  }
+  [data-framer-name="Testimonials"] [data-framer-name="Container"] > div:has([data-framer-name="Left"]) {
+    flex: 1 1 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+/* The hero container's own 20px padding is only redundant once the container
+   is itself inset — at 1200 and below it IS the gutter, and zeroing it there
+   put the hero copy at x=0 while every other line on the page sat at 20. */
+@media (min-width: 1200px) {
+  [data-framer-name="Hero"] [data-framer-name="Container"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* The heading column centred its own contents, which is where the 322/334
+   pair came from — a heading and its eyebrow on two different edges. */
+[data-framer-name="Testimonials"] [data-framer-name="Left"],
+[data-framer-name="Testimonials"] [data-framer-name="Container"] > div:has([data-framer-name="Left"]) {
+  align-items: flex-start;
+}
+
+/* The injected bands take the same measure rather than their own 1120. */
+/* The band is a flex child of a centred column, so with its own horizontal
+   padding removed it shrank to its content and the hairline rules stopped at
+   1160 — a panel floating inside the page rather than a rule across it. The
+   About band above it is full-bleed; this one now is too, with the content
+   held on the same spine. */
+.oteo-services {
+  padding-left: 0;
+  padding-right: 0;
+  align-self: stretch;
+  width: 100%;
+}
+.oteo-services-wrap,
+.oteo-proof {
+  width: min(1160px, 100vw - 40px);
+  max-width: none;
+  margin-inline: auto;
+}
+
+/* ── VERTICAL RHYTHM ─────────────────────────────────────────────────────────
+   The bands were padded 87px, 96px and 129px with no relationship between
+   them, so the page breathed differently at every stop. One step for every
+   band, scaled by viewport. */
+.oteo-services,
+[data-framer-name="Testimonials"] {
+  padding-top: clamp(64px, 6.2vw, 88px) !important;
+  padding-bottom: clamp(64px, 6.2vw, 88px) !important;
+}
+
+/* The heading column is short and the quote card is 520px tall, so the column
+   left a 250px hole under "Orlando Weekly". Anchored top and bottom instead —
+   heading at the cap line, the proof at the baseline — the two columns read as
+   one spread rather than a block of type next to a tall card. */
+@media (min-width: 1000px) {
+  [data-framer-name="Testimonials"] [data-framer-name="Container"] > div:has([data-framer-name="Left"]) {
+    align-self: stretch;
+    justify-content: space-between;
+    padding-block: 6px 10px;
+  }
+  .oteo-tproof { margin-top: 0; }
+}
+
+/* Phone: the hero button sat at x=277 while every other line on the page
+   started at 20 — the Subtitle keeps its desktop row alignment below 1000px
+   and pushed it to the right edge. Same spine as everything else. */
+@media (max-width: 809px) {
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 34px;
+  }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] > * { align-self: flex-start; }
+  /* Same 233px box as desktop, holding 78px of sentence: it left a 110px hole
+     between the quote and the button where desktop has 44. */
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] {
+    flex: none;
+    height: auto;
+    min-height: 0;
+    justify-content: flex-start;
+  }
+  [data-framer-name="Hero"] [data-framer-name="Subtitle"] [data-framer-name="Text"] > div:not([data-framer-name]) {
+    display: none;
+  }
+  /* and the same foot the desktop hero got: the block is bottom-anchored, so
+     with the box collapsed it was landing 14px off the band below. */
+  [data-framer-name="Hero"] [data-framer-name="Container"] { padding-bottom: 56px; }
+}
+
+/* ── THE SAME SPINE ON THE HAND-BUILT PAGES ──────────────────────────────────
+   djoteo.com is two codebases sharing one header, and they were measuring
+   from different edges. Left edge of body copy at 1440, measured live:
+
+     /                     140     (Framer's container)
+     /works, /blog         140
+     /about, /contact      120-128
+     /rentals              123-144
+     /calendar             101-104
+     /booking, /residencies, /foowr   64
+
+   Four different page margins. Walking from the homepage to Book OTEO shifted
+   every line 76px left, which is exactly the kind of seam that says "assembled
+   from parts" even to someone who cannot name what moved.
+
+   .wrap was max-width 1360 (uniform-next overriding site.css's 1200) plus an
+   80px gutter above 1024. Rewritten as the Framer measure itself —
+   min(1160px, 100vw - 40px), centred, no padding — the content edge becomes
+   (100vw - 1160) / 2, which is 380 at 1920, 140 at 1440, 20 at 1200 and below:
+   the homepage's spine, at every width, by construction rather than by
+   coincidence.
+
+   The header is excluded on purpose. .header-inner carries .wrap too, but
+   uniform-next already pins it to max-width:1200 + 20px padding for exactly
+   this reason — its own comment describes the same fight — and that lands the
+   wordmark on the same edge by a different route. Rewriting its width under
+   that pinned padding put the wordmark at spine + 20px, which the smoke test
+   caught on /calendar and /foowr before it left the machine. */
+.wrap:not(.header-inner) {
+  width: min(1160px, 100vw - 40px);
+  max-width: none;
+  padding-inline: 0;
+  margin-inline: auto;
+}
+
+/* The four inner heroes set their own measure on top of .wrap and so kept
+   their old edges after the rule above: /booking, /residencies and /foowr
+   opened at 200 (a 1200 box plus the 80px gutter) and /calendar at 430 (a
+   640px box centred by margin:auto). Same spine, same specificity. */
+.svc-hero > .wrap,
+.res-hero > .wrap,
+.label-hero > .wrap {
+  width: min(1160px, 100vw - 40px);
+  max-width: none;
+  padding-inline: 0;
+  margin-inline: auto;
+}
+
+/* The agenda hero keeps its 640px measure and its 30px rule inset — but the
+   rule now HANGS into the margin so the type lands on the spine, instead of
+   the pair being centred 260px off it. */
+.agenda-hero > .wrap {
+  max-width: 640px;
+  padding-left: 30px;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .agenda-hero > .wrap { margin-left: calc((100vw - 1160px) / 2 - 30px); }
+}
+@media (max-width: 1199px) {
+  .agenda-hero > .wrap { margin-left: 0; padding-left: 0; }
+}
+
+/* ── ONE VERTICAL RHYTHM ─────────────────────────────────────────────────────
+   Band padding at 1440, measured across the site: 88 (home), 94 and 118
+   (residencies), 129 (booking, foowr), 158 (about, contact, rentals). Five
+   rhythms. The site already had a token for this — --section-y — but it was
+   declared twice (site.css clamp(96px,11vh,150px), uniform-next
+   clamp(92px,11vw,168px)) and half the pages did not use it.
+
+   One declaration, and the bands that opted out are brought back onto it.
+   112px at 1440, 72 on a phone: tighter than the 158 the long pages were
+   carrying, looser than the 88 the homepage had, and the same everywhere. */
+:root { --section-y: clamp(72px, 7.6vw, 112px); }
+.band,
+.page-foowr .band,
+.page-booking .band { padding-block: var(--section-y); }
+.oteo-services,
+[data-framer-name="Testimonials"] {
+  padding-top: var(--section-y) !important;
+  padding-bottom: var(--section-y) !important;
+}
+
+/* The remaining opt-outs, by their own class names: booking's .sec and
+   .book-sec (129.6 and 144), residencies' .more-res (118) and .close-cta
+   (88/96). Same token, so the whole site now breathes on one step. .venues
+   keeps its asymmetric 94/0 — it butts directly into the next band by
+   design. */
+.sec,
+.book-sec,
+.more-res,
+.close-cta,
+.page-booking .sec,
+.page-booking .book-sec,
+.page-foowr .band,
+.page-residencies .more-res { padding-block: var(--section-y); }
+
+/* ── ONE PRIMARY BUTTON ──────────────────────────────────────────────────────
+   The same action was drawn six ways. Measured on the live site:
+
+     /booking     "Send inquiry"     gold  999px  Geist       15px 22px
+     /foowr       "Send demo"        gold  999px  Geist       15px 26px
+     /calendar    "Request a date"   gold  999px  Geist Mono  13px 22px
+     /residencies "Start a booking"  gold    2px  Geist Mono  13px 28px
+     /rentals     "Request gear"     cream 999px  Geist Mono  13px 22px
+     /contact     "Send inquiry"     cream 999px  Geist Mono  13px 22px
+     /about       "Book OTEO"        cream 999px  Geist Mono  16px 32px
+
+   Two fills, two typefaces, four paddings and one square-cornered outlier for
+   a single job. Geometry and voice are unified below on .btn.btn-primary, the
+   button the site already owns — the three surfaces that bypassed it were
+   authored with their own classes (.v-cta.solid, .book) or with no class at
+   all (the bare submit buttons), so they adopt it in CSS rather than being
+   re-marked-up, since some of that markup is generated.
+
+   The two fills are kept, because they were a real decision (uniform-next
+   deliberately golds four CTAs) — but they are made to MEAN something, which
+   is what was missing. Gold commits, cream navigates:
+     gold  = the button that sends something — the three form submits
+     cream = the button that takes you somewhere — every link CTA, matching
+             the cream Book OTEO pill on the paid homepage
+   Before this, /calendar and /residencies used the commit colour to navigate
+   and /contact used the navigate colour to send an inquiry. */
+.v-cta.solid,
+a.book,
+form button[type="submit"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  padding: 13px 22px !important;
+  border: 1px solid transparent !important;
+  border-radius: 100px !important;
+  font-family: var(--oteo-label) !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+/* navigate */
+.page-calendar a.book,
+.page-residencies .v-cta.solid {
+  background: var(--oteo-cream) !important;
+  border-color: transparent !important;
+  color: var(--oteo-ink) !important;
+}
+.page-calendar a.book:hover,
+.page-residencies .v-cta.solid:hover {
+  background: var(--oteo-gold) !important;
+}
+
+/* commit */
+.page-contact form button[type="submit"],
+.page-booking #oteo-booking-submit,
+.page-foowr .demo-form button {
+  background: var(--oteo-gold) !important;
+  border-color: var(--oteo-gold) !important;
+  color: var(--oteo-ink) !important;
+}
+.page-contact form button[type="submit"]:hover,
+.page-booking #oteo-booking-submit:hover,
+.page-foowr .demo-form button:hover {
+  background: var(--oteo-cream) !important;
+  border-color: var(--oteo-cream) !important;
+}
+
+/* ── PHONE HERO: CLOSE THE DEAD BAND ─────────────────────────────────────────
+   On a phone the mirrored-photo carousel is parked in the middle of the hero
+   box, so the page opened on 155px of black between the header and the first
+   thing you see. Measured by sampling pixel brightness column by column at
+   390x844: the band's top edge sat at y=200 (min) / 220 (median) under a 65px
+   header. On desktop that same gap is ~66px, which is the proportion the
+   composition was drawn at.
+
+   The carousel itself is not touched — no scale, no crop, no change to the
+   slider's own geometry or its drag. Only the band's vertical offset moves,
+   and only below 1000px: top goes from -30 to -140, which lifts it 110px and
+   lands the top edge at y=106 (min) / 113 (median) — a 41px breath under the
+   header, and the portrait's head now rises into the band the way it does at
+   desktop width. Re-measured with the same pixel probe after the change. */
+@media (max-width: 999px) {
+  [data-framer-name="Hero"] [data-framer-name="Slider"] {
+    top: calc(-149px + 9.85vw) !important;
+  }
+}
+
+/* ── THE CONTRACT: HEADINGS ARE CREAM ────────────────────────────────────────
+   DESIGN.md (2026-08-29): every heading is {colors.cream} #f1ede4. Measured on
+   the live homepage, every Framer-authored heading rendered pure #ffffff — both
+   hero h1s, "What the rooms say.", all three testimonial quotes, "About Me",
+   the footer email and the four social links — while every hand-built route was
+   already cream. Pure white is not in this palette; it is the template default
+   showing through on the one codebase that never got the token.
+
+   The hero h1 also takes the ramp's line-height (0.86). h2/h3 keep Framer's 1.0
+   deliberately: the contract's 1.05 for head/card would reflow a testimonial
+   card that carries a fixed height, and that is a separate change with its own
+   verification. Recorded rather than silently applied.
+
+   The gold "Behind The Decks" statement is not a heading element and is not
+   touched by this. */
+[data-framer-name="Hero"] h1,
+[data-framer-name="Hero"] h2,
+[data-framer-name="Testimonials"] h2,
+[data-framer-name="Testimonials"] h3,
+[data-framer-name="About me"] h2,
+[data-framer-name="Contact"] h4,
+[data-framer-name="Contact"] h5,
+[data-framer-name="Socials"] h5 {
+  color: var(--oteo-cream) !important;
+}
+[data-framer-name="Hero"] h1 {
+  line-height: 0.86 !important;
+}
+
+/* ── THE CONTRACT: ONE PHOTOGRAPHIC GRADE ────────────────────────────────────
+   DESIGN.md: all photography carries one warm-monochrome grade and reveals its
+   true colour on hover; a page gets exactly ONE intentional full-colour moment
+   and the homepage spends it on the venue showcase. The About band's red/yellow
+   duotone was a second one. Alec's call 2026-08-29: grade it.
+
+   The value is written literally rather than as var(--grade) — that token lives
+   in site.css, which the Framer routes do not load. */
+[data-framer-name="About me"] [data-framer-name="Image BG"] img {
+  filter: grayscale(.92) sepia(.18) brightness(.93) contrast(1.1);
+  transition: filter .45s cubic-bezier(.2, .75, .2, 1);
+}
+[data-framer-name="About me"]:hover [data-framer-name="Image BG"] img {
+  filter: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-framer-name="About me"] [data-framer-name="Image BG"] img { transition: none; }
+}
+
+/* Mixes folded into Residencies (EXPERIENCE.md 2026-08-29). The band reuses the
+   page's own .more-res / .mr-item shape so it inherits the spine, the rhythm and
+   the row rules; the only new behaviour is that these rows are links. Gold on
+   hover is the accent's label job, not a new colour. */
+a.mr-item {
+  text-decoration: none;
+  color: inherit;
+  transition: color .18s cubic-bezier(.2, .75, .2, 1);
+}
+a.mr-item:hover .mr-name { color: var(--oteo-gold); }
+a.mr-item:hover .mr-tag { color: var(--oteo-gold); }
+
+/* ── THE CONTRACT: BLUE IS NOT CHROME ────────────────────────────────────────
+   DESIGN.md (Alec 2026-08-29): #243f9c is a brand asset — artwork and the
+   wordmark's history — and never an interface colour. Swept every route at 1440
+   for blue used as text, fill or border: it survived in exactly four label
+   classes, all rendering --blue-lt #7d92d8.
+
+     /rentals      .tag           the rig-package tags ("Club", "Events")
+     /residencies  .past-eyebrow  "Experience"
+     /residencies  .mr-head       the three list headings
+     /calendar     .cta           "Book OTEO →"
+
+   Every one is a label, and labels are gold.
+
+   CORRECTION to my first pass: "nothing else uses blue as chrome" was wrong —
+   that sweep compared flat colours and a gradient is not a flat colour. Blue
+   survives in one more place, as atmosphere rather than as a label: the closing
+   contact band on /rentals, /residencies, /about and /contact carries a
+   rgba(36,63,156,.55) wash with a rgba(36,63,156,.3) glow behind it. That is a
+   designed moment, not a stray token, and removing it changes how four pages
+   end — so it is surfaced to Alec rather than swept here. */
+.page-rentals .tag,
+.page-residencies .past-eyebrow,
+.page-residencies .mr-head,
+.page-calendar .cta {
+  color: var(--oteo-gold) !important;
+}
+
+
+/* ── CONTRACT: HEADINGS ARE CREAM, ON EVERY CLONE ROUTE ──────────────────────
+   The first pass at this named five Framer sections on the homepage and stopped
+   there. The conformance gate then measured what that missed: 31 headings still
+   pure white — 7 on the homepage (the footer nav renders its links as h5), 12
+   on /works, 12 on /blog. Scoped to the clone shell instead of to a section
+   list, so a Framer band nobody has named yet is covered too.
+
+   Gold stays allowed: it is the display accent, and the gate accepts it. */
+body:has([data-framer-name]) :is(h1, h2, h3, h4, h5):not([style*="color: rgb(200"]) {
+  color: var(--oteo-cream);
+}
+[data-framer-name] h5 { color: var(--oteo-cream); }
+
+/* Two near-miss colours the gate caught on /works and the homepage quote:
+   #b1a89d and #917b50 are neither {colors.muted} nor {colors.gold}. */
+[data-framer-name="Text"] h5,
+[data-framer-name="Subtitle"] h5 { color: var(--oteo-cream) !important; }
+
+/* ── CONTRACT: THE RADIUS SET ────────────────────────────────────────────────
+   {rounded} is none / card 3px / DEFAULT 10px / full. The gate found eight
+   values shipping. These are OURS and move onto the set; the Framer component
+   internals (32px, 50px, 23px on hash-classed nodes) are the paid template's
+   own and are left alone — DESIGN.md says Lesmana wins on anything it already
+   answers, and restyling its internals is exactly what "don't reinterpret the
+   template" forbids. The gate carries the same allowance, named. */
+a.skip-link { border-radius: 10px; }
+.page-booking input, .page-booking select, .page-booking textarea,
+.page-foowr input, .page-foowr textarea,
+.page-contact input, .page-contact select, .page-contact textarea,
+.page-rentals .date-bar-input, .page-rentals .gear-thumb,
+.page-residencies .v-media, .page-residencies .v-media .badge,
+.page-residencies .badge, .page-about .about-hero-media {
+  border-radius: 3px !important;   /* beats uniform-next's 6px and inner-next's 2px, both !important */
+}
+
+/* ── A11Y FLOOR: 24px ON EVERY TARGET ────────────────────────────────────────
+   EXPERIENCE.md: "interactive elements are at least 24px on their smallest
+   axis; bare inline links inside running prose are exempt". Measured on the
+   live site at 1440 the desktop nav links are 19px tall, and — caught in the
+   same sweep — the skip link this session added is 16px, so the fix for one
+   accessibility gap shipped another.
+
+   Padding, not height: the header bar is 64px with the links sitting at y=12,
+   so growing the hit area to 24px costs no reflow and moves no type. The phone
+   header collapses to a burger and was already clean. */
+/* ── NAV HIT AREA: a 19px box against a 24px floor ───────────────────────────
+   Four attempts. The measurement that ended it: a hit-test LADDER, stepping
+   elementFromPoint one pixel at a time down the link. It showed the hit region
+   is EXACTLY the anchor box, 12.0 -> 31.0, and not one pixel more:
+
+       11  miss DIV.framer-1qweqvr
+       12  HIT  A.framer-wYXGT      <- anchor top
+       30  HIT  A.framer-wYXGT      <- anchor bottom
+       31  miss DIV.framer-ieie0r
+
+   So a transparent ::after contributes ZERO hit area here (attempts 2 and 3,
+   including one with z-index to lift it above the Framer sibling layers). Only
+   the anchor's own box counts. Ladder before theorising: two attempts died on
+   the assumption that a pseudo-element would take the hit.
+
+   Attempt 1 grew the box with padding-block:3px and shrank the header 65px ->
+   59px, because the Book OTEO CTA shares this container carrying
+   padding: 6px 12px 6px 6px and the shorthand override ate it.
+
+   min-height has no such collision. It touches no padding, and it cannot shrink
+   the CTA, which is already 40px (measured) -- a 24px floor is simply inert
+   there. The links are display:flex with align-items:center already, so the
+   label stays centred and nothing moves; only the box grows 19 -> 24.
+
+   VERIFY WITH A HIT TEST, NEVER A RECTANGLE, and count a hit ONLY when
+   elementFromPoint returns the link or a DESCENDANT -- counting an ancestor
+   reports all four as already passing, because near a link it almost always
+   returns one. */
+/* :has(> div:only-child) is what separates the four nav links from the Book OTEO
+   CTA, which shares this container. Measured: every nav link wraps exactly ONE
+   div; the CTA wraps four. Both earlier box-growing attempts failed by catching
+   the CTA -- padding-block took the header 65px -> 59px, and min-height with a
+   bare negative margin took it 65px -> 60px. Scoped this way the CTA is untouched.
+   If a browser lacks :has(), the rule drops and the links stay as they are now. */
+[data-framer-name="Links"] a:has(> div:only-child) {
+  min-height: 24px;
+  margin-block: -2.5px;   /* grow around the centre: box 9.5-33.5, footprint still 19 */
+}
+
+/* The skip link must be OUT OF FLOW everywhere, and on the Framer clone routes
+   it was not. site.css carries the `position:absolute; top:-60px` that parks it
+   off-screen until focus — and the clone loads only oteo-type.css and this
+   file, never site.css. So on `/` the link computed `position:static` and sat
+   in the layout at 0,0 as a 161x32 box: occluded by the header, invisible, and
+   pushing the entire page down. Because oteo-swap.js inserts it after paint,
+   that 32px arrived late as a layout shift — measured at 0.796 of the
+   homepage's 1.097 CLS on mobile, against Google's 0.1 "good" threshold.
+   Declared here so the rule reaches the routes that were missing it.
+   NOTE, corrected after review: an earlier version of this comment claimed "the
+   properties match site.css so the two cannot disagree." That was false. This
+   block sets padding 8px/14px, border-radius 10px and `transition: ... ease`,
+   where site.css sets 10px/16px, 8px and `var(--ease)`. Both files load on all
+   nine hand-built pages with this one last, so these values now win there too —
+   a deliberate consequence, not an accident, but nothing enforces the pair. The
+   positioning declarations are what the clone routes were missing and what must
+   not diverge; design-conformance now asserts the link is out of flow rather
+   than trusting either file. */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 200;
+  padding: 8px 14px;
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--cream, #f4efe6);
+  color: var(--bg, #0b0b0c);
+  border-radius: 10px;
+  transition: top .18s ease;
+}
+
+.skip-link:focus { top: 12px; }
+
+/* The halo behind the closing CTA keeps its shape but loses the blue: gold is
+   the palette's accent and site.css already used it as this gradient's second
+   stop, so this is the same moment in the right hue rather than a new one. */
+.contact-glow {
+  background: radial-gradient(closest-side,
+    rgba(200, 169, 106, .13), rgba(200, 169, 106, .04) 55%, transparent 74%) !important;
+}
+
+
+/* ---------------------------------------------------------------------------
+   Reserve the services band's space before it exists.
+
+   oteo-swap.js inserts the two-service band as the Hero's next sibling, and it
+   cannot run any earlier than DOMContentLoaded (~1,520 ms) because its <script>
+   tag is the last 44 bytes of a 636 KB document. Everything below the hero then
+   moved at once. Bisected against the live page by serving a modified swap
+   script: removing insertServices took homepage CLS from 0.468 to 0.057, so
+   this one insertion was the entire remaining problem, against Google's 0.1
+   "good" threshold.
+
+   The band cannot simply be baked into the HTML: it belongs under the hero,
+   which is inside <div id="main" data-framer-hydrate-v2> — React's root — and
+   React removes nodes it does not know about (that is already why the band is
+   inserted a second time at 3,859 ms). CSS is the one lever that changes layout
+   without touching React's tree at all.
+
+   So the Hero holds the space open, and gives it back the moment the band lands
+   via :has(). The heights are measured, not guessed, and the smoke suite
+   asserts they still match what the band actually renders — if the copy grows,
+   that gate fails rather than the site silently regressing.
+   --------------------------------------------------------------------------- */
+.oteo-js [data-framer-name="Hero"] { margin-bottom: 590px; }
+
+/* Boundaries follow .oteo-services-wrap's own column switch at 760px — the
+   first draft used 810px and reserved 790px at a 768px viewport where the band
+   renders 506px. The smoke gate caught it on its first run, which is the only
+   reason these numbers are right. Measured band heights: 390->826, 430->764,
+   768->506, 810->507, 1024->502, 1200->529, 1440->582, 1920->587. */
+/* 1200-1399px was reserving 590px for a band that renders 529-570px there — a
+   61px over-reservation at 1200px, past this gate's own 60px tolerance, in the
+   one range the smoke suite's 1440/768/390 viewport list skips. It shipped, and
+   an independent reviewer measured it. 1200 is now in that list too. */
+@media (min-width: 1200px) and (max-width: 1399.98px) { .oteo-js [data-framer-name="Hero"] { margin-bottom: 545px; } }
+@media (max-width: 1199.98px) { .oteo-js [data-framer-name="Hero"] { margin-bottom: 510px; } }
+@media (max-width: 760px)     { .oteo-js [data-framer-name="Hero"] { margin-bottom: 790px; } }
+@media (max-width: 400.98px)  { .oteo-js [data-framer-name="Hero"] { margin-bottom: 826px; } }
+.oteo-js [data-framer-name="Hero"]:has(~ [data-oteo-services]) { margin-bottom: 0 !important; }
+
+/* Released on the GENERAL sibling (~), not the adjacent one (+). oteo-swap.js
+   inserts the band as the Hero's immediate next sibling today, but React owns
+   that subtree: one node appearing between them would break `+`, strand the
+   reservation, and leave a permanent 590px void — strictly worse than the shift
+   this replaced. `~` survives anything inserted in between.
+
+   The reservation is released ONLY by :has(). An engine that runs JS but does
+   not support :has() would set .oteo-js, hold the space, and never give it back
+   — a permanent void under the hero, which is worse than the shift this fixes.
+   Reserve nothing there and accept the original shift instead. */
+@supports not selector(:has(*)) {
+  .oteo-js [data-framer-name="Hero"] { margin-bottom: 0 !important; }
+}
+
+
+/* ---------------------------------------------------------------------------
+   R17 — the clone routes' two off-palette colours, replaced with the palette.
+
+   I recorded this on 2026-08-31 as "one colour cannot fix both grounds, so it
+   is Alec's call." That was wrong, and the measurement shows how. It is not one
+   colour on two grounds — it is TWO independent off-palette colours:
+
+     #917b50 on #1f1d17 = 4.13:1   the nav (DJ Services, Gear Rentals, About,
+                                   Contact) at 16px
+     #6f6a68 on #12110d = 3.54:1   the eyebrow labels (RESIDENCY, CLUB NIGHT,
+                                   PRODUCTION & LABEL) at 12px
+
+   When I swapped the gold token that first time, the nodes still failing at
+   3.54 were never the same elements — they were the grey labels, which that
+   change never touched. I read one fix half-working as one fix failing, and
+   filed the whole thing as a design decision.
+
+   Both are Velox/Lesmana values, and DESIGN.md's palette already contains what
+   they should be. Its own Don'ts say "Don't add a colour" — these two ARE the
+   added colours. So this is conformance, not taste:
+
+     gold  -> #c8a96a  {colors.gold}   7.49:1 on #1f1d17
+     muted -> #9b9da3  {colors.muted}  6.97:1 on #12110d
+
+   Both computed against the measured backgrounds, then verified with axe-core
+   on three live clone routes at two viewports: 8/2, 6/2 and 7/3 violations
+   before, zero after, every one.
+
+   Set on `body` because that is where Framer defines the tokens; a :root
+   override does not win against a nearer ancestor's definition.
+   --------------------------------------------------------------------------- */
+body {
+  --token-65dd4334-0c31-45a1-8884-489e8c0028c2: #c8a96a !important;
+  --token-78efc348-9ea2-4e55-bbce-c0093b1f90e4: #9b9da3 !important;
+}

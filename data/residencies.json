@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "source": "PAGES.md, user descriptions, MEDIA_POLICY (2026-07-13 correction)",
+    "page": "residencies.html + calendar per-venue copy/booking links",
+    "note": "Debonair = the one current residency (every Wednesday + select nights). The H = verified past residency proof with no confirmed current dates. Helena = modest past-room proof only, never a current residency. No invented schedules."
+  },
+  "residencies": [
+    {
+      "id": "debonair",
+      "title": "Debonair Supperclub",
+      "nights": "Every Wednesday · select nights",
+      "description": "OTEO's home room. Supperclub atmosphere meets late-night dancefloor. Start smooth and grown, then tip the whole room into House once the plates clear. Every Wednesday, and select nights beyond.",
+      "vibe": "Dinner into a proper House party by midnight.",
+      "media": {
+        "poster": "assets/screen-debonair.jpg",
+        "video_desktop": "assets/debonair-set.mp4",
+        "video_mobile": "assets/debonair-set-mobile.mp4",
+        "still": "assets/debonair.jpg"
+      },
+      "links": {
+        "book": "booking.html#book"
+      }
+    },
+    {
+      "id": "theh",
+      "title": "The H",
+      "nights": "Past residency · Orlando",
+      "description": "A distinct late-night room OTEO has held down — a space with a sound system that rewards the low end, hypnotic and looping.",
+      "vibe": "Hypnotic, looping Tech House that locks in late and doesn't let go till close.",
+      "media": {
+        "poster": "assets/screen-theh.jpg",
+        "video_desktop": "assets/theh-set.mp4",
+        "video_mobile": "assets/theh-set-mobile.mp4",
+        "still": "assets/the-h-booth.jpg"
+      },
+      "links": {
+        "book": "https://www.instagram.com/djoteo/"
+      }
+    }
+  ],
+  "note": "Add real performance video loops to assets/ (current shoots only per MEDIA_POLICY). Use screen-*.jpg as posters/fallbacks. Debonair recurring Wednesday shown; other dates via Instagram/Google Calendar when wired."
+}

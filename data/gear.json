@@ -1,0 +1,591 @@
+{
+  "_comment": "Source of truth for the rentals page. Rates are Alec's own figures, given 2026-08-14. Every item MUST carry a rate (or included:true). tools/verify-gear.mjs fails the build on any missing value, so an unpriced item can never ship.",
+  "currency": "USD",
+  "terms": {
+    "delivery_area": "Central Florida",
+    "deposit": "50% to book",
+    "rate_period": "per night",
+    "lead_time": "48 hours notice",
+    "delivery_free_radius_miles": 30,
+    "delivery_beyond_radius": "quoted per trip",
+    "security_hold": 500,
+    "damage_waiver": false,
+    "minimum_order": 150
+  },
+  "groups": [
+    {
+      "id": "mixers",
+      "eyebrow": "Club &middot; Battle &middot; Rotary",
+      "title": "Mixers",
+      "items": [
+        {
+          "image": "djm-a9.jpg",
+          "name": "Pioneer DJ DJM-A9",
+          "qty": 1,
+          "rate": 225,
+          "meta": "4-channel club mixer",
+          "angles": [
+            {
+              "image": "djm-a9-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "djm-a9-front.jpg",
+              "label": "Front panel"
+            },
+            {
+              "image": "djm-a9-rear.jpg",
+              "label": "Connections"
+            }
+          ]
+        },
+        {
+          "image": "djm-s11.jpg",
+          "name": "Pioneer DJ DJM-S11",
+          "qty": 1,
+          "rate": 175,
+          "meta": "Battle mixer",
+          "angles": [
+            {
+              "image": "djm-s11-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "djm-s11-front.jpg",
+              "label": "Front panel"
+            },
+            {
+              "image": "djm-s11-rear.jpg",
+              "label": "Connections"
+            }
+          ]
+        },
+        {
+          "image": "djm-s9.jpg",
+          "name": "Pioneer DJ DJM-S9",
+          "qty": 1,
+          "rate": 80,
+          "meta": "Battle mixer",
+          "angles": [
+            {
+              "image": "djm-s9-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "djm-s9-front.jpg",
+              "label": "Front panel"
+            },
+            {
+              "image": "djm-s9-rear.jpg",
+              "label": "Connections"
+            }
+          ]
+        },
+        {
+          "image": "euphonia.jpg",
+          "name": "AlphaTheta Euphonia",
+          "qty": 2,
+          "rate": 300,
+          "meta": "Rotary mixer",
+          "angles": [
+            {
+              "image": "euphonia-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "euphonia-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "euphonia-rear.jpg",
+              "label": "Connections"
+            }
+          ]
+        },
+        {
+          "image": "djm-v5.jpg",
+          "name": "AlphaTheta DJM-V5",
+          "qty": 1,
+          "rate": 250,
+          "meta": "3-channel club mixer",
+          "angles": [
+            {
+              "image": "djm-v5-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "djm-v5-angle2.jpg",
+              "label": "Angle 2"
+            },
+            {
+              "image": "djm-v5-rear.jpg",
+              "label": "Connections"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "players",
+      "eyebrow": "Media players &amp; all-in-ones",
+      "title": "Players",
+      "items": [
+        {
+          "image": "cdj-3000x.jpg",
+          "name": "CDJ-3000X",
+          "qty": 2,
+          "rate": 250,
+          "meta": "Flagship media player",
+          "angles": [
+            {
+              "image": "cdj-3000x-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "cdj-3000x-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "cdj-3000x-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "cdj-3000.jpg",
+          "name": "CDJ-3000",
+          "qty": 2,
+          "rate": 175,
+          "meta": "Flagship media player",
+          "angles": [
+            {
+              "image": "cdj-3000-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "cdj-3000-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "cdj-3000-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "xdj-az.jpg",
+          "name": "AlphaTheta XDJ-AZ",
+          "qty": 2,
+          "rate": 300,
+          "meta": "All-in-one system",
+          "angles": [
+            {
+              "image": "xdj-az-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "xdj-az-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "xdj-az-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "omnis-duo.jpg",
+          "name": "AlphaTheta OMNIS-DUO",
+          "qty": 1,
+          "rate": 150,
+          "meta": "Portable 2-ch system",
+          "angles": [
+            {
+              "image": "omnis-duo-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "omnis-duo-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "omnis-duo-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "plx-1000.jpg",
+          "name": "PLX-1000",
+          "qty": 2,
+          "rate": 150,
+          "meta": "Direct-drive turntable",
+          "angles": [
+            {
+              "image": "plx-1000-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "plx-1000-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "plx-1000-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "cdj-1500x.jpg",
+          "name": "CDJ-1500X",
+          "qty": 4,
+          "rate": 150,
+          "meta": "Touchscreen media player",
+          "angles": [
+            {
+              "image": "cdj-1500x-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "cdj-1500x-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "cdj-1500x-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "plx-crss12.jpg",
+          "name": "PLX-CRSS12",
+          "qty": 2,
+          "rate": 150,
+          "meta": "Hybrid DVS turntable",
+          "angles": [
+            {
+              "image": "plx-crss12-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "plx-crss12-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "plx-crss12-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "eyebrow": "Effects &amp; sampling",
+      "title": "FX &amp; Remix",
+      "items": [
+        {
+          "image": "rmx-ignite.jpg",
+          "name": "AlphaTheta RMX-IGNITE",
+          "qty": 2,
+          "rate": 130,
+          "meta": "3-band FX &amp; sampler",
+          "angles": [
+            {
+              "image": "rmx-ignite-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "rmx-ignite-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "rmx-ignite-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "rmx-1000.jpg",
+          "name": "Pioneer DJ RMX-1000",
+          "qty": 1,
+          "rate": 100,
+          "meta": "Remix station",
+          "angles": [
+            {
+              "image": "rmx-1000-top.jpg",
+              "label": "Top"
+            },
+            {
+              "image": "rmx-1000-angle.jpg",
+              "label": "Angle"
+            },
+            {
+              "image": "rmx-1000-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speakers",
+      "eyebrow": "PA &amp; low end",
+      "title": "Speakers &amp; Sub",
+      "items": [
+        {
+          "image": "wave-eight.jpg",
+          "name": "AlphaTheta WAVE-EIGHT",
+          "qty": 4,
+          "rate": 100,
+          "meta": "Portable pro speaker",
+          "angles": [
+            {
+              "image": "wave-eight-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "wave-eight-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "k12-2.jpg",
+          "name": "QSC K12.2",
+          "qty": 2,
+          "rate": 100,
+          "meta": "2000W powered speaker",
+          "angles": [
+            {
+              "image": "k12-2-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "k12-2-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "bose-f1-812.jpg",
+          "name": "Bose F1 Model 812",
+          "qty": 2,
+          "rate": 125,
+          "meta": "Flexible array speaker",
+          "angles": [
+            {
+              "image": "bose-f1-812-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "bose-f1-812-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "bose-f1-sub.jpg",
+          "name": "Bose F1 Subwoofer",
+          "qty": 2,
+          "rate": 125,
+          "meta": "Powered sub",
+          "angles": [
+            {
+              "image": "bose-f1-sub-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "bose-f1-sub-open.jpg",
+              "label": "Drivers"
+            },
+            {
+              "image": "bose-f1-sub-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "bose-l1-pro32.jpg",
+          "name": "Bose L1 Pro32",
+          "qty": 2,
+          "rate": 185,
+          "meta": "Line array + sub",
+          "angles": [
+            {
+              "image": "bose-l1-pro32-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "bose-l1-pro32-top.jpg",
+              "label": "Mixer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mics",
+      "eyebrow": "Wired &amp; wireless",
+      "title": "Microphones",
+      "items": [
+        {
+          "image": "blx88.jpg",
+          "name": "Shure BLX88",
+          "qty": 1,
+          "included_with": "sm58.jpg",
+          "meta": "Dual-channel wireless receiver",
+          "angles": [
+            {
+              "image": "blx88-front.jpg",
+              "label": "Front"
+            },
+            {
+              "image": "blx88-rear.jpg",
+              "label": "Rear"
+            }
+          ]
+        },
+        {
+          "image": "sm58.jpg",
+          "name": "Shure BLX2/SM58",
+          "qty": 3,
+          "rate": 75,
+          "meta": "Wireless handheld mic"
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "eyebrow": "Booth &amp; staging",
+      "title": "Table",
+      "items": [
+        {
+          "image": "prox-stageq.jpg",
+          "name": "ProX StageQ DJ Table",
+          "qty": 1,
+          "rate": 100,
+          "meta": "Height-adjustable deck table",
+          "angles": [
+            {
+              "image": "prox-stageq-low.jpg",
+              "label": "Low"
+            },
+            {
+              "image": "prox-stageq-high.jpg",
+              "label": "Raised"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "title": "What a night includes",
+      "body": "Delivery, setup, and collection anywhere in Central Florida, plus basic tech support to get you running. Gear is tested before it leaves and cleaned between rentals."
+    },
+    {
+      "title": "Rental period",
+      "body": "A rental night is a 24-hour period. Gear is delivered before your event and collected the following day. Returns more than an hour past the agreed collection time are charged an additional night."
+    },
+    {
+      "title": "Booking and deposit",
+      "body": "A 50% deposit confirms the date. Your card is saved at checkout but nothing is charged until OTEO confirms availability — if the date can't be covered, you are never charged. The balance is due on delivery. Minimum 48 hours notice."
+    },
+    {
+      "title": "Delivery",
+      "body": "Delivery, setup and collection are included within 30 miles of Orlando — most vendors in this market charge $40 and up for that. Beyond 30 miles we still deliver across Central Florida, quoted per trip. Minimum order $150. Someone over 18 must be present to receive and return the gear."
+    },
+    {
+      "title": "Security hold",
+      "body": "A $500 refundable hold is placed on the card on file for the rental period and released after the gear is returned and inspected. Larger riders may carry a higher hold, agreed in advance."
+    },
+    {
+      "title": "Damage, loss and liability",
+      "body": "The renter is responsible for the gear from delivery until collection, including loss, theft and damage beyond normal use, at full replacement cost. No damage waiver is offered on audio equipment. Please keep gear dry, powered from a grounded supply, and out of the rain."
+    },
+    {
+      "title": "Cancellation",
+      "body": "Cancel more than 7 days before the date and the deposit is refunded in full. Inside 7 days the deposit is retained, since the gear is held off the calendar for you."
+    },
+    {
+      "title": "Substitutions",
+      "body": "If a piece fails between bookings, OTEO will supply an equivalent or better replacement, or refund that item in full. You will be told before delivery, never on the night."
+    }
+  ],
+  "packages": [
+    {
+      "tag": "Club",
+      "name": "Club Standard",
+      "for": "The full pro booth — what the big rooms run.",
+      "items": [
+        {
+          "image": "cdj-3000x.jpg",
+          "qty": 2
+        },
+        {
+          "image": "djm-a9.jpg",
+          "qty": 1
+        },
+        {
+          "image": "k12-2.jpg",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "tag": "Vinyl / Battle",
+      "name": "Turntablist",
+      "for": "Real vinyl feel for open formats & scratch sets.",
+      "items": [
+        {
+          "image": "plx-1000.jpg",
+          "qty": 2
+        },
+        {
+          "image": "djm-s11.jpg",
+          "qty": 1
+        },
+        {
+          "image": "k12-2.jpg",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "tag": "Anywhere",
+      "name": "Portable Party",
+      "for": "Battery-powered & wireless — rooftops, pools, beaches.",
+      "items": [
+        {
+          "image": "omnis-duo.jpg",
+          "qty": 1
+        },
+        {
+          "image": "wave-eight.jpg",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "tag": "Events",
+      "name": "Event PA",
+      "for": "Clean full-room sound for ceremonies & corporate.",
+      "items": [
+        {
+          "image": "bose-f1-812.jpg",
+          "qty": 2
+        },
+        {
+          "image": "bose-f1-sub.jpg",
+          "qty": 2
+        },
+        {
+          "image": "sm58.jpg",
+          "qty": 2
+        }
+      ]
+    }
+  ]
+}

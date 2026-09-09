@@ -1,0 +1,983 @@
+/*
+ * OTEO unified production skin.
+ * One quiet, premium visual system across every public route. Content and
+ * interaction contracts stay in the page sources; this layer owns presentation.
+ */
+
+:root {
+  --bg: #08090b;
+  --cream: #f1ede4;
+  --ink: #f1ede4;
+  --text: #f1ede4;
+  --muted: #9b9da3;
+  --muted-cream: #5e5c58;
+  --gold: #c8a96a;
+  --gold-dark: #8f7137;
+  --blue: #243f9c;
+  --blue-lt: #7d92d8;
+  --surface: #0f1115;
+  --surface-2: #15181e;
+  --line: rgba(241, 237, 228, .13);
+  --hair: rgba(200, 170, 110, .28);
+  --radius: 10px;
+  --maxw: 1360px;
+  --section-y: clamp(92px, 11vw, 168px);
+  --display: clamp(54px, 8vw, 122px);
+  --ease: cubic-bezier(.2, .75, .2, 1);
+}
+
+html { background: var(--bg); }
+body {
+  background:
+    radial-gradient(75% 34% at 88% -8%, rgba(63, 95, 215, .18), transparent 68%),
+    var(--bg) !important;
+  color: var(--ink);
+}
+body::after { opacity: .025 !important; mix-blend-mode: soft-light; }
+
+/* One typographic voice: precise grotesk structure + one editorial italic. */
+h1, h2, h3, .serif,
+.about-title, .contact-hero-title, .section-title, .sound-head,
+.contact-statement, .showcase-statement {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -.055em;
+}
+h1 em, h2 em, .contact-statement em, .showcase-statement em,
+.about-title em, .contact-hero-title em {
+  font-family: var(--sans);
+  font-style: italic;
+  font-weight: 350;
+  color: var(--gold);
+  letter-spacing: -.035em;
+}
+.wrap { max-width: var(--maxw); }
+.section { padding-block: var(--section-y); }
+.eyebrow,
+.page-booking .svc-hero .eyebrow,
+.page-calendar .agenda-hero .eyebrow {
+  color: var(--gold) !important;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .24em;
+}
+.eyebrow::before { background: var(--gold) !important; }
+
+/* The shell never changes personality between routes.
+   That was the stated intent, but it only ever governed the hand-built pages —
+   the Framer homepage renders its own header, so the shell DID change on every
+   navigation. Measured live at 1440: home was a 1160px content box, 64px tall,
+   nav centred, CTA "Book OTEO" in Playfair 16px; these pages were 1416 wide,
+   75px tall, nav right-aligned, CTA "BOOK OTEO ↗" in Geist Mono 12px uppercase.
+   The numbers below are taken from the homepage, which is the design Alec paid
+   for, so the six hand-built routes move to it rather than the reverse — that
+   keeps the change in CSS we own and away from Framer's hydrated markup. */
+.site-header,
+.home-next .site-header {
+  height: 64px;
+  background: rgba(8, 9, 11, .82);
+  border-bottom: 1px solid rgba(241, 237, 228, .1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  backdrop-filter: blur(18px) saturate(1.15);
+}
+.site-header.scrolled,
+.site-header.on-light.scrolled,
+.home-next .site-header.scrolled {
+  background: rgba(8, 9, 11, .93);
+  border-bottom-color: rgba(241, 237, 228, .14);
+}
+/* Reproduces the homepage's header box at EVERY width, not just at 1440.
+   Home puts its wordmark at max((vw - 1160) / 2, 20). A 1200px box with 20px
+   padding gives max((vw - 1200) / 2, 0) + 20 — the same curve, including the
+   clamp. The first version used 1208/24px, which matched only while the box
+   was binding: measured live, home and these pages agreed at 1920/1600/1440/
+   1280 and then sat 4px apart at 1024 and below, because home clamps to 20 and
+   this clamped to 24.
+
+   Padding is pinned, not inherited. .header-inner also carries .wrap, and .wrap
+   is 24px on booking/residencies/calendar but 80px on rentals/contact/about —
+   invisible while max-width was 1480 and nothing bound, but the moment the box
+   narrowed it put the wordmark at 140 on three pages and 196 on the other
+   three. Same shell means the same numbers on all six. */
+.site-header .header-inner {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Scoped to the header and to widths where .nav-links IS the inline nav row.
+   Below 900px site.css repurposes the very same class as the absolutely
+   positioned mobile drop-panel, so unscoped flex rules landed on it too. They
+   are inert there today only because the panel is position:absolute with auto
+   height — give it a fixed height and justify-content:center would silently
+   centre the links. Correct by accident is not correct. */
+@media (min-width: 900px) {
+  .site-header .header-nav { flex: 1 1 auto; justify-content: flex-end; }
+  .site-header .nav-links { flex: 1 1 auto; justify-content: center; }
+}
+.brand,
+.home-next .brand,
+.site-header.on-light .brand {
+  position: relative;
+  color: var(--cream);
+  font-family: var(--sans) !important;
+  font-size: 21px !important;
+  font-weight: 850 !important;
+  letter-spacing: -.055em !important;
+}
+/* The gold "period" dot after the OTEO wordmark was a template brand device;
+   Alec asked why it exists (2026-08-19) — removed here and cropped out of the
+   homepage's logo PNG so the wordmark is clean everywhere. */
+.header-nav { gap: 22px; }
+.nav-links { gap: clamp(20px, 2.2vw, 34px); }
+.nav-links a,
+.home-next .nav-links a,
+.site-header.on-light .nav-links a {
+  color: rgba(241, 237, 228, .62);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .17em;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"],
+.site-header.on-light .nav-links a:hover { color: var(--cream); }
+.nav-links a::after,
+.home-next .nav-links a::after { background: var(--gold); }
+.btn,
+.hero-cta,
+.v-cta,
+.book,
+.sync .cta,
+.page-foowr .btn,
+.neo-button {
+  border-radius: 999px !important;
+  font-family: var(--sans) !important;
+  font-weight: 700;
+  letter-spacing: .11em;
+}
+/* Pill geometry only. The label's typeface lives in oteo-system.css next to the
+   button-type system it has to override — putting it here just lost to .btn. */
+.header-cta,
+.home-next .header-cta,
+.site-header.on-light .header-cta {
+  min-height: 40px;
+  padding: 8px 20px;
+  background: var(--cream);
+  color: var(--bg);
+  border: 1px solid var(--cream);
+}
+.header-cta:hover,
+.home-next .header-cta:hover,
+.site-header.on-light .header-cta:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--bg);
+}
+.nav-toggle,
+.site-header.on-light .nav-toggle {
+  border-color: rgba(241, 237, 228, .18);
+  border-radius: 999px;
+}
+.nav-toggle-bar,
+.site-header.on-light .nav-toggle-bar { background: var(--cream); }
+
+/* HOME — reduce template spectacle; make OTEO and real photography the event. */
+.home-next {
+  --neo-violet: #10141f;
+  --neo-cobalt: #243f9c;
+  --neo-orange: #c8a96a;
+  --neo-lime: #c8a96a;
+  --neo-bone: #f1ede4;
+  --neo-black: #08090b;
+  background: var(--bg);
+}
+.neo-hero {
+  min-height: 100svh;
+  background: #08090b;
+  border-bottom: 1px solid var(--line);
+}
+.neo-hero::after {
+  inset: 62% 0 0;
+  background: linear-gradient(180deg, transparent, var(--bg) 96%);
+}
+.neo-hero-media,
+.neo-hero-scrim {
+  position: absolute;
+  inset: 0;
+}
+.neo-hero-media { z-index: 0; overflow: hidden; background: #08090b url("./img/oteo-hero-poster-2560.jpg") center / cover no-repeat; }
+.neo-hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 46%;
+  transform: scale(1.035);
+  filter: saturate(.82) contrast(1.16) brightness(.72);
+}
+.neo-hero-scrim {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, .86) 0%, rgba(8, 9, 11, .42) 44%, rgba(8, 9, 11, .18) 72%, rgba(8, 9, 11, .52) 100%),
+    linear-gradient(180deg, rgba(8, 9, 11, .58) 0%, transparent 32%, rgba(8, 9, 11, .2) 60%, rgba(8, 9, 11, .9) 100%);
+}
+.neo-hero-grid {
+  z-index: 2;
+  opacity: .12;
+  background-size: 86px 86px;
+  -webkit-mask-image: linear-gradient(90deg, black, transparent 82%);
+  mask-image: linear-gradient(90deg, black, transparent 82%);
+}
+.neo-hero-name {
+  z-index: 3;
+  left: var(--gutter);
+  top: 33%;
+  color: rgba(241, 237, 228, .08);
+  -webkit-text-stroke: 1.5px rgba(241, 237, 228, .72);
+  font-size: clamp(150px, 23vw, 430px);
+  text-shadow: 0 24px 90px rgba(0, 0, 0, .52);
+}
+.neo-hero-copy { z-index: 6; max-width: 780px; }
+.neo-kicker span { color: var(--gold); }
+.neo-hero-line { max-width: 13ch; font-size: clamp(42px, 5.4vw, 88px); font-weight: 520; }
+.neo-hero-line em { color: var(--gold); }
+.neo-button-solid { background: var(--gold); border-color: var(--gold); }
+.neo-button-solid:hover { background: var(--cream); border-color: var(--cream); }
+.neo-button-clear { background: rgba(8, 9, 11, .34); }
+.neo-hero-index { z-index: 7; align-items: center; }
+.neo-media-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border: 0;
+  color: rgba(241, 237, 228, .82);
+  background: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.neo-media-toggle i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(200, 170, 110, .16);
+}
+.neo-media-toggle[aria-pressed="true"] i { background: rgba(241, 237, 228, .52); box-shadow: none; }
+.neo-media-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+
+.neo-proof {
+  grid-template-columns: 1fr auto;
+  align-items: stretch;
+  background: #0e1014;
+  color: var(--cream);
+  border-bottom-color: var(--line);
+}
+.neo-proof-summary {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 46px);
+  margin: 0;
+  padding: 24px var(--gutter);
+  color: var(--muted);
+  font: 600 clamp(12px, 1.1vw, 15px)/1.4 var(--sans);
+  letter-spacing: .015em;
+}
+.neo-proof-summary strong { color: var(--cream); font-weight: 750; }
+.neo-proof-summary span { position: relative; }
+.neo-proof-summary span::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: calc(clamp(8px, 1.5vw, 23px) * -1);
+  top: 50%;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.neo-proof-label, .neo-rooms-label, .neo-resume-tag { color: var(--muted); }
+.neo-proof-link { background: var(--blue); color: white; }
+.neo-proof-link:hover { background: var(--gold); color: var(--bg); }
+
+.neo-work {
+  background: var(--cream);
+  color: var(--bg);
+  border-bottom: 1px solid rgba(8, 9, 11, .16);
+}
+.neo-work .neo-section-id { color: var(--gold-dark); }
+.neo-work-intro h2 em { color: var(--blue); }
+.neo-work-deck { color: #5e5c58; }
+.neo-frame { border-radius: 4px; box-shadow: 0 30px 70px rgba(13, 18, 35, .2); }
+.neo-frame img { filter: saturate(.82) contrast(1.06); }
+.neo-collage-word { color: var(--blue); mix-blend-mode: normal; opacity: .92; }
+
+.neo-statement { background: #0b0d11; }
+.neo-statement-copy {
+  background: radial-gradient(circle at 100% 0, rgba(63, 95, 215, .24), transparent 52%);
+}
+.neo-statement-copy h2 em { color: var(--gold); }
+.neo-statement-image img { filter: grayscale(.2) saturate(.78) contrast(1.12); }
+
+.neo-resume { background: var(--cream); color: var(--bg); }
+.neo-resume .neo-section-id,
+.neo-resume-head h2 em,
+.neo-resume-num,
+.neo-rooms-track i { color: var(--blue); }
+.neo-resume-head > p:last-child,
+.neo-resume-current div > p:last-child { color: #5e5c58; }
+.neo-button-dark { background: var(--bg); border-color: var(--bg); }
+.neo-button-dark:hover { background: var(--blue); border-color: var(--blue); }
+
+.neo-quote { background: #18265a; color: var(--cream); }
+.neo-quote .neo-section-id { color: var(--gold); }
+.neo-quote figcaption { border-top-color: rgba(241, 237, 228, .28); }
+.neo-services { background: var(--bg); }
+.neo-services-head h2 em,
+.neo-service-num { color: var(--gold); }
+.neo-service:hover { color: var(--gold); }
+.neo-close { background: #0a0c11; }
+.neo-close::after { background: linear-gradient(90deg, rgba(8, 9, 11, .92), rgba(8, 9, 11, .18) 70%, rgba(8, 9, 11, .58)); }
+.neo-close-media img { mix-blend-mode: normal; filter: grayscale(.15) saturate(.74) contrast(1.14); opacity: .62; }
+.neo-close-name { color: rgba(241, 237, 228, .075); }
+
+/* Shared inner-route opening composition. */
+.page-booking > .svc-hero,
+.page-residencies > .res-hero,
+.page-calendar > .agenda-hero,
+.page-foowr > .label-hero,
+.page-about .about-hero,
+.page-rentals .rentals-hero,
+.page-contact .contact-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 74svh;
+  padding-top: clamp(142px, 17vh, 196px);
+  padding-bottom: clamp(70px, 9vw, 120px);
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, .98) 0%, rgba(8, 9, 11, .88) 48%, rgba(8, 9, 11, .34) 100%),
+    radial-gradient(70% 92% at 84% 48%, rgba(63, 95, 215, .32), transparent 68%),
+    #090a0d !important;
+  border-bottom: 1px solid var(--line) !important;
+  overflow: hidden;
+}
+.page-booking > .svc-hero h1,
+.page-residencies > .res-hero h1,
+.page-calendar > .agenda-hero h1,
+.page-foowr > .label-hero h1,
+.page-about .about-title,
+.page-rentals .about-title,
+.page-contact .contact-hero-title {
+  max-width: 9ch;
+  margin: .18em 0 .32em;
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: clamp(66px, 9.4vw, 148px);
+  font-weight: 680;
+  line-height: .86;
+  letter-spacing: -.075em;
+}
+.page-booking > .svc-hero h1 em,
+.page-residencies > .res-hero h1 em,
+.page-calendar > .agenda-hero h1 em,
+.page-foowr > .label-hero h1 em { color: var(--gold) !important; }
+.page-booking > .svc-hero .lead,
+.page-residencies > .res-hero .lead,
+.page-calendar > .agenda-hero .lead,
+.page-foowr > .label-hero .lead,
+.page-about .section-deck,
+.page-rentals .section-deck,
+.page-contact .section-deck {
+  max-width: 580px;
+  color: rgba(241, 237, 228, .68) !important;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Booking hero: a real portrait, not a synthetic gradient disc. */
+.page-booking > .svc-hero::before {
+  width: min(54vw, 780px);
+  right: -3vw;
+  top: 50%;
+  border: 1px solid rgba(200, 170, 110, .3);
+  background: radial-gradient(circle, rgba(63, 95, 215, .24), transparent 66%);
+  box-shadow: none;
+}
+.page-booking > .svc-hero::after {
+  /* `contain` letterboxed the photo inside the box, leaving a hard horizontal
+     seam where the image ended — the old rule hid it with a top fade starting
+     41% down, which also erased his hair, since his head sits at the very top
+     of the source frame. `cover` removes the seam entirely: the box is filled,
+     so the only edge left is the inner one, and that is what the left fade is
+     for. The negative right inset is gone too; it was slicing his shoulder off
+     at the viewport edge. */
+  inset: 0 0 0 44%;
+  /* booking-hero-alec-tall.jpg is the same photograph with 760px of its own
+     top rows extended above it. In the original his head touches the top of
+     the frame, so `cover` at any position clipped his hair — no crop fits, so
+     the file's aspect ratio changed rather than the CSS fighting it. */
+  background: url('./img/booking-hero-alec-tall.jpg') 47% 34% / cover no-repeat;
+  mix-blend-mode: normal;
+  filter: grayscale(.08) saturate(.88) contrast(1.08);
+  opacity: .86;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 34%);
+  mask-image: linear-gradient(90deg, transparent, black 34%);
+}
+.page-residencies > .res-hero::after {
+  inset: 0 0 0 48%;
+  opacity: .5;
+  filter: grayscale(.3) saturate(.7) contrast(1.12);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 32%);
+  mask-image: linear-gradient(90deg, transparent, black 32%);
+}
+.page-calendar > .agenda-hero::after,
+.page-foowr > .label-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(48vw, 680px);
+  aspect-ratio: 1;
+  right: -10vw;
+  top: 50%;
+  translate: 0 -50%;
+  border: 1px solid rgba(200, 170, 110, .24);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(63, 95, 215, .28), transparent 68%);
+}
+
+/* Shared content rhythm and surfaces. */
+.page-booking main,
+.page-residencies main,
+.page-calendar main,
+.page-foowr main { padding-top: 0; }
+.page-booking .sec,
+.page-foowr .band { padding-block: clamp(76px, 9vw, 132px); }
+.page-booking .sec + .sec,
+.page-foowr .band { border-top-color: var(--line); }
+.page-booking .sec > .head,
+.page-booking .eqp-console h2,
+.page-foowr .band .head,
+.page-calendar .sync .h,
+.page-residencies .past-title,
+.page-residencies .close-cta h3 {
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: clamp(38px, 5.4vw, 72px);
+  font-weight: 650;
+  line-height: .96;
+  letter-spacing: -.055em;
+}
+.page-booking .sec > .sub,
+.page-booking .card p,
+.page-booking .eqp-meta .spec,
+.page-foowr .band p,
+.page-residencies .v-body .desc,
+.page-residencies .past-deck,
+.page-calendar .slot .desc,
+.page-calendar .sync .txt p { color: var(--muted); }
+
+.page-booking .card,
+.page-booking .eqp-card,
+.page-booking .pkg-card,
+.page-rentals .gear-card,
+.page-residencies .venue,
+.page-calendar .slot,
+.page-foowr .demo,
+.contact-form {
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  background: linear-gradient(145deg, rgba(21, 24, 30, .92), rgba(12, 14, 18, .96)) !important;
+  box-shadow: none !important;
+}
+.page-booking .card:hover,
+.page-booking .eqp-card:hover,
+.page-booking .pkg-card:hover,
+.page-rentals .gear-card:hover,
+.page-calendar .slot:hover {
+  border-color: rgba(200, 170, 110, .56) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, .24) !important;
+}
+
+/* Inventory is proof, not decoration: never let delayed reveal timing hide it. */
+.page-booking .reveal-ready .eqp-card,
+.page-booking .reveal-ready .pkg-card {
+  opacity: 1 !important;
+  transform: none;
+}
+.page-booking .reveal-ready .eqp-card:hover,
+.page-booking .reveal-ready .pkg-card:hover { transform: translateY(-4px); }
+
+.page-booking .svc-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.page-booking .card { min-height: 290px; padding: 30px; }
+.page-booking .card .n,
+.page-booking .eqp-subhead span,
+.page-booking .pkg-card .tag,
+.page-residencies .v-body .kicker,
+.page-calendar .slot .idx,
+.page-foowr .band .kicker { color: var(--gold) !important; }
+.page-booking .card h3,
+.page-booking .eqp-meta h3,
+.page-booking .pkg-card h3,
+.page-rentals .gear-name,
+.page-calendar .slot .venue,
+.page-residencies .v-body h2 {
+  color: var(--cream);
+  font-family: var(--sans);
+  font-weight: 620;
+  letter-spacing: -.04em;
+}
+.page-booking .eqp-grid { gap: 16px; }
+/* Service index: editorial left-align + hero-style "— NN" eyebrow (was centered identical cards) */
+.page-booking .svc-grid .card { text-align: left; }
+.page-booking .svc-grid .card .n {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: .04em;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.page-booking .svc-grid .card .n::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 26px;
+  height: 1px;
+  background: var(--gold);
+  opacity: .55;
+}
+.page-booking .svc-grid .card-cta { justify-content: flex-start; }
+.page-booking .eqp-stage,
+.page-rentals .gear-img {
+  background:
+    radial-gradient(56% 60% at 50% 45%, #f7f9fc 0%, rgba(247, 249, 252, 0) 70%),
+    linear-gradient(152deg, #e6eaf2 4%, #c0c7d8 96%) !important;
+}
+/* Rig packages (relocated from Services to Rentals) */
+.page-rentals .gear-group + .gear-group .pkg-deck,
+.page-rentals .pkg-deck { color: var(--muted); font-size: 14px; line-height: 1.6; max-width: 620px; margin-top: 6px; }
+.page-rentals .pkg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 22px; }
+.page-rentals .pkg-card {
+  border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 20px;
+  background: linear-gradient(180deg, rgba(63, 95, 215, .07), rgba(255, 255, 255, .008));
+  display: flex; flex-direction: column; transition: border-color .3s ease, transform .3s ease;
+}
+.page-rentals .pkg-card:hover { border-color: rgba(200, 170, 110, .5); transform: translateY(-2px); }
+.page-rentals .pkg-card .tag { font-family: var(--sans); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--blue-lt); opacity: .85; }
+.page-rentals .pkg-card h3 { font-family: var(--sans); font-size: 22px; font-weight: 500; margin: 8px 0 6px; color: var(--cream); letter-spacing: -.01em; }
+.page-rentals .pkg-card .for { color: var(--muted); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+.page-rentals .pkg-card ul { list-style: none; margin: 0 0 16px; padding: 0; flex: 1; }
+.page-rentals .pkg-card li { color: var(--text); font-size: 13px; line-height: 1.8; }
+.page-rentals .pkg-card li::before { content: "—"; color: var(--gold); margin-right: 8px; }
+.page-rentals .pkg-req { display: inline-block; margin-top: auto; font-family: var(--sans); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
+.page-rentals .pkg-req:hover { text-decoration: underline; }
+@media (max-width: 960px) { .page-rentals .pkg-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .page-rentals .pkg-grid { grid-template-columns: 1fr; } }
+.page-booking .eqp-stage::before,
+.page-booking .eqp-stage::after { opacity: .035; }
+.page-booking .eqp-meta { padding: 22px 22px 24px; }
+.page-booking .eqp-meta .brand { color: var(--gold) !important; }
+.page-booking .eqp-trust { border-color: var(--line); color: var(--muted); }
+.page-booking .avail-bar,
+.page-calendar .sync {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(63, 95, 215, .09) !important;
+}
+.page-booking .avail-bar button,
+.page-booking #oteo-booking-submit,
+.page-foowr .demo-form button,
+.page-calendar .book,
+.page-residencies .v-cta.solid {
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--bg) !important;
+}
+.page-booking .pkg-grid { gap: 16px; }
+.page-booking .book-sec { padding-block: clamp(88px, 10vw, 144px); }
+.page-booking .book-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(63, 95, 215, .12), rgba(15, 17, 21, .98));
+  padding: clamp(28px, 5vw, 64px);
+}
+.page-booking .book-panel .intro h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -.055em; }
+.page-booking #oteo-booking-form input,
+.page-booking #oteo-booking-form select,
+.page-booking #oteo-booking-form textarea,
+.page-foowr .demo-form input,
+.page-foowr .demo-form textarea {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, .3);
+  border-color: var(--line);
+}
+
+/* Résumé: large real imagery, clear evidence hierarchy. */
+.page-residencies .venues { padding-top: clamp(50px, 7vw, 94px); }
+.page-residencies .venue {
+  gap: clamp(32px, 6vw, 88px);
+  margin-bottom: 24px;
+  padding: clamp(24px, 4vw, 46px);
+}
+.page-residencies .venue:first-child { padding-top: clamp(24px, 4vw, 46px); }
+.page-residencies .v-media { border-radius: 6px !important; box-shadow: none; }
+.page-residencies .v-media img { filter: grayscale(.1) saturate(.84) contrast(1.08); }
+.page-residencies .v-media .badge { background: var(--gold) !important; color: var(--bg) !important; }
+.page-residencies .v-body h2 { font-size: clamp(36px, 5vw, 68px); }
+.page-residencies .v-body .nights { color: var(--gold); }
+.page-residencies .more-res {
+  padding-block: clamp(72px, 9vw, 118px);
+  border-top: 1px solid var(--line);
+}
+.page-residencies .mr-item { border-bottom-color: var(--line); }
+.page-residencies .mr-name { color: var(--cream); }
+
+/* Agenda: one current truth, presented like a premium event card. */
+.page-calendar .roster { padding-block: clamp(58px, 8vw, 104px); }
+.page-calendar .slot { min-height: 320px; }
+.page-calendar .slot .ph { border-right-color: var(--line); filter: grayscale(.1) saturate(.82) contrast(1.1); }
+.page-calendar .slot .venue { font-size: clamp(30px, 4vw, 50px); }
+.page-calendar .slot .venue .tag { color: var(--gold); border-color: rgba(200, 170, 110, .4); }
+.page-calendar .sync { margin-bottom: clamp(72px, 9vw, 118px); }
+
+/* FOOWR belongs to the same universe; the embedded player is supporting proof. */
+.page-foowr .label-hero .wrap { gap: clamp(42px, 7vw, 96px); }
+.page-foowr .label-hero h1 { font-size: clamp(78px, 13vw, 190px); }
+.page-foowr .player-wrap { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.page-foowr .band-split { gap: clamp(40px, 7vw, 96px); }
+.page-foowr .band-photo img,
+.page-foowr .photo-strip img { border-radius: 6px; border-color: var(--line); filter: grayscale(.12) saturate(.82) contrast(1.08); }
+.page-foowr .demo { padding: clamp(26px, 4vw, 48px); }
+
+/* About, contact, rentals share the same editorial components. */
+.page-about .about-hero-media { border-radius: 6px; border-color: var(--line); }
+.page-about .about-hero-media img { filter: grayscale(.18) saturate(.76) contrast(1.1); }
+.page-about .principle { border-top-color: var(--hair); }
+.page-about .principle-num { color: var(--gold); }
+.page-about .principle-name,
+.page-about .room-name,
+.page-about .sound-head { font-family: var(--sans); font-weight: 620; letter-spacing: -.04em; }
+.page-contact .contact-hero-bg { opacity: .54; filter: grayscale(.25) saturate(.72) contrast(1.12) !important; }
+.page-contact .contact-hero-bg::after { background: linear-gradient(90deg, rgba(8, 9, 11, .94), rgba(8, 9, 11, .58) 64%, rgba(8, 9, 11, .3)) !important; }
+.page-contact .contact-form { padding: clamp(26px, 4vw, 46px); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.page-contact .faq-item,
+.page-contact .faq-list { border-color: var(--line); }
+.page-contact .faq-item summary { font-family: var(--sans); font-weight: 570; letter-spacing: -.025em; }
+.page-rentals .rentals-hero { display: flex; align-items: center; }
+.page-rentals .rentals-catalog { padding-top: 0; }
+.page-rentals .gear-grid { gap: 16px; }
+.page-rentals .gear-card { overflow: hidden; }
+.page-rentals .gear-card figcaption { padding: 18px 20px 22px; }
+.page-rentals .gear-cat { font-family: var(--sans); font-weight: 640; letter-spacing: -.045em; }
+
+/* Every closing CTA and footer lands the same way. */
+.contact,
+.page-residencies .close-cta {
+  background: #0b0d11;
+  border-top: 1px solid var(--line);
+}
+.contact-bg { filter: grayscale(.2) saturate(.68) contrast(1.12); opacity: .48; }
+.contact-glow { opacity: .28; }
+.contact-statement { font-size: clamp(54px, 8vw, 118px); line-height: .9; }
+.site-footer,
+.neo-footer {
+  margin-top: 0;
+  padding-block: 34px 42px;
+  background: #07080a;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+.site-footer .footer-row,
+.neo-footer .neo-footer-row { min-height: 76px; }
+.site-footer .footer-brand,
+.neo-footer .brand { font-family: var(--sans); font-weight: 800; letter-spacing: -.045em; }
+.site-footer a,
+.neo-footer a { color: var(--muted); }
+.site-footer a:hover,
+.neo-footer a:hover { color: var(--gold); }
+
+@media (max-width: 1100px) {
+  .page-booking .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 899px) {
+  .site-header,
+  .home-next .site-header { height: 68px; }
+  .nav-links,
+  .site-header.on-light .nav-links {
+    background: rgba(8, 9, 11, .98);
+    border-bottom-color: var(--line);
+  }
+  .nav-links a,
+  .site-header.on-light .nav-links a { color: var(--cream); }
+  .page-booking > .svc-hero,
+  .page-residencies > .res-hero,
+  .page-calendar > .agenda-hero,
+  .page-foowr > .label-hero,
+  .page-about .about-hero,
+  .page-rentals .rentals-hero,
+  .page-contact .contact-hero {
+    min-height: 70svh;
+    padding-top: 124px;
+    padding-bottom: 72px;
+  }
+  /* Mobile: the portrait gets its own band under the copy rather than sitting
+     behind it. Every behind-the-text placement (headline, lower-right) left a
+     ghosted half-face fighting the type. Given its own strip it can run at
+     full opacity and be seen properly. The tall variant is what makes this
+     work: the fade that blends the band's top edge lands on the padded black
+     above his head instead of erasing his hair. */
+  .page-booking > .svc-hero { padding-bottom: 340px; }
+  .page-booking > .svc-hero::after {
+    display: block;
+    inset: auto 0 0 0;
+    height: 310px;
+    /* `cover` here scaled to exactly the band width, so there was no
+       horizontal crop and background-position-x did nothing — he stayed
+       right-of-centre with dead space beside him. Sizing by height instead
+       gives the overflow needed to centre him and fills the band better. */
+    background: url('./img/booking-hero-alec-tall.jpg') 62% 16% / auto 148% no-repeat;
+    opacity: 1;
+    filter: none;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 30%);
+    mask-image: linear-gradient(180deg, transparent 0%, black 30%);
+  }
+
+  .page-residencies > .res-hero::after { inset: 0 -20% 0 20%; opacity: .32; }
+  .page-calendar > .agenda-hero::after,
+  .page-foowr > .label-hero::after { width: 82vw; right: -38vw; opacity: .7; }
+  .page-booking .book-panel { grid-template-columns: 1fr; }
+  .page-calendar .slot { grid-template-columns: 180px 1fr; }
+}
+
+@media (max-width: 719px) {
+  :root { --gutter: 20px; --section-y: 84px; }
+  .header-cta { min-height: 40px; padding: 10px 15px; font-size: 11px; }
+  .header-nav { gap: 7px; }
+  .neo-hero { min-height: 94svh; }
+  .neo-hero-grid { background-size: 72px 72px; }
+  .neo-hero-video { object-position: 50% 48%; transform: scale(1.12); }
+  .neo-hero-scrim {
+    background:
+      linear-gradient(90deg, rgba(8, 9, 11, .58), rgba(8, 9, 11, .18) 72%, rgba(8, 9, 11, .46)),
+      linear-gradient(180deg, rgba(8, 9, 11, .7), transparent 30%, rgba(8, 9, 11, .18) 54%, rgba(8, 9, 11, .94) 100%);
+  }
+  .neo-hero-name { left: 18px; top: 21%; font-size: 32vw; -webkit-text-stroke-width: 1px; }
+  .neo-hero-copy { left: 20px; right: 20px; bottom: 28px; }
+  .neo-hero-line { max-width: 12ch; font-size: clamp(36px, 10.6vw, 48px); }
+  .neo-hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .neo-button { width: 100%; }
+  .neo-media-toggle span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .neo-proof { grid-template-columns: 1fr; }
+  .neo-proof-summary { flex-wrap: wrap; gap: 8px 24px; padding: 22px 20px; }
+  .neo-proof-summary strong { width: 100%; }
+  .neo-proof-summary span::before { left: -13px; }
+  .neo-proof-link { grid-column: auto; }
+  .neo-work,
+  .neo-resume,
+  .neo-quote,
+  .neo-services { padding-inline: 20px; }
+  .neo-work-intro h2,
+  .neo-resume-head h2,
+  .neo-services-head h2 { font-size: 52px; }
+  .neo-quote-main blockquote { font-size: 40px; }
+  .neo-service { grid-template-columns: 28px 1fr auto; }
+
+  .page-booking > .svc-hero h1,
+  .page-residencies > .res-hero h1,
+  .page-calendar > .agenda-hero h1,
+  .page-foowr > .label-hero h1,
+  .page-about .about-title,
+  .page-rentals .about-title,
+  .page-contact .contact-hero-title { font-size: clamp(58px, 18vw, 82px); }
+  .page-booking .svc-grid { grid-template-columns: 1fr; }
+  .page-booking .card { min-height: auto; }
+  .page-booking .eqp-grid,
+  .page-booking .pkg-grid { grid-template-columns: 1fr !important; }
+  .page-booking .eqp-grid-sys > .eqp-card:last-child { grid-column: auto !important; }
+  .page-residencies .venue,
+  .page-residencies .venue.flip { grid-template-columns: 1fr; padding: 20px; }
+  .page-residencies .venue.flip .v-media { order: 0; }
+  .page-residencies .v-media { aspect-ratio: 4 / 3; }
+  .page-calendar .slot { grid-template-columns: 1fr; min-height: 0; }
+  .page-calendar .slot .ph { min-height: 280px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .page-calendar .slot .body,
+  .page-calendar .slot .meta { padding-inline: 22px; }
+  .page-calendar .slot .book { margin: 0 22px 24px; justify-self: start; }
+  .page-foowr .band-split,
+  .page-foowr .demo { grid-template-columns: 1fr; }
+  .page-rentals .gear-grid > .gear-card { flex-basis: 100%; }
+  .contact-form { border-radius: var(--radius) !important; }
+  .site-footer .footer-row,
+  .neo-footer .neo-footer-row { align-items: flex-start; flex-direction: column; gap: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neo-frame,
+  .page-booking .card,
+  .page-booking .eqp-card,
+  .page-booking .pkg-card,
+  .page-rentals .gear-card,
+  .page-calendar .slot { transition: none !important; }
+}
+
+/* ── One nav, both halves of the site ─────────────────────────────────────
+   The Framer clone (/, /works, /blog) and these hand-built pages used to carry
+   different navigation: the clone linked four pages, this header linked five,
+   and neither linked the other's — /booking, /residencies, /rentals, /calendar
+   and /foowr could not be reached from the homepage at all. The header now
+   carries the same seven items in the same order as dist/oteo-swap.js NAV, and
+   the footer carries every page. Change one list, change the other. */
+.site-footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+.site-footer .footer-nav a {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  transition: color .16s var(--ease);
+}
+.site-footer .footer-nav a:hover { color: var(--gold); }
+
+/* One wordmark. The homepage (Framer clone) signs off in Playfair with a gold
+   dot on the baseline; these pages were signing off in an 850-weight sans with
+   the dot floated above the E — same four letters, two different logos, one
+   click apart. --serif is the same face the clone uses. */
+.brand,
+.home-next .brand,
+.site-header.on-light .brand {
+  font-family: var(--serif) !important;
+  font-weight: 600 !important;
+  font-size: 23px !important;
+  letter-spacing: .01em !important;
+}
+.brand::after { top: auto; bottom: 4px; right: -9px; width: 5px; }
+.site-footer .footer-brand { font-family: var(--serif); font-weight: 600; letter-spacing: .01em; }
+
+/* ── Four measured layout defects, 2026-08-18 ────────────────────────────── */
+
+/* 1. /booking printed a ~650px empty dark panel in the middle of the page.
+   The one-line "DIRECT · oteo@djoteo.com" strip was marked class="contact",
+   which is the CLOSING CTA SECTION class — min-height:72svh, padding-block:120px,
+   display:flex, plus the #0b0d11 band background. One line of text inside a
+   full-screen section box. The strip is .direct-line now; this is what it
+   should have looked like all along. */
+.page-booking .direct-line {
+  margin-top: 26px;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.page-booking .direct-line a { color: var(--gold); }
+
+/* 2. /rentals: the availability bar is sticky over the gear grid, and its only
+   background was a 6%-gold gradient plus a blur. Over the dark page that reads;
+   over the near-white product photos scrolling underneath it, the bar dissolves
+   and "What night do you need it?" becomes unreadable. Give the blur something
+   to sit on. */
+.page-rentals .date-bar { background-color: rgba(11, 13, 17, .94); }
+
+/* (A fourth candidate — /calendar's closing heading appearing to overlap its
+   paragraph by 21px — was NOT a defect. That measurement was taken while the
+   .reveal scroll animation was still mid-transform. Measured again after the
+   animation settles: a clean 9px gap. No change shipped.) */
+
+/* 3. /contact on a phone: the hero copy and the form ran ~52px past the right
+   edge and were clipped (no page scrollbar — just cut off). The hero is a grid,
+   and a grid item's min-width defaults to auto, so the non-wrapping
+   "SHARED BILLS WITH · ALOK · CAT DEALERS · BHASKAR & KVSH" row set a
+   min-content width wider than the phone and dragged the whole column with it. */
+.contact-hero-inner > * { min-width: 0; }
+.contact-facts span { flex-wrap: wrap; }
+
+/* ============================================================================
+   HOME ALIGNMENT (2026-08-19) — djoteo.com and every inner route are ONE site.
+   The Framer homepage is the reference ground. Every value below is MEASURED
+   from the live homepage (computed styles, 1440px):
+     body background  rgb(18,17,13) = #12110d, flat — no gradient;
+     nav links        "Playfair Display" 16px / 400 / -0.02em, title-case, white.
+   The royal-blue radial that cooled every inner page was the single biggest
+   "different site" signal next to the warm flat home — it goes. Surfaces move
+   to warm equivalents of the same lightness so panels don't sit blue on brown.
+============================================================================ */
+:root {
+  --bg: #12110d;
+  --surface: #17150f;
+  --surface-2: #1d1a14;
+}
+html { background: var(--bg); }
+body { background: var(--bg) !important; }
+.site-header,
+.home-next .site-header { background: rgba(18, 17, 13, .82); }
+.site-header.scrolled,
+.site-header.on-light.scrolled,
+.home-next .site-header.scrolled { background: rgba(18, 17, 13, .93); }
+.nav-links a,
+.home-next .nav-links a,
+.site-header.on-light .nav-links a {
+  font-family: var(--serif);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -.02em;
+  color: rgba(241, 237, 228, .78);
+}
+@media (min-width: 900px) {
+  .nav-links a { font-size: 16px; }
+}
+@media (max-width: 899px) {
+  .nav-links { background: rgba(18, 17, 13, .94); }
+}
+.page-rentals .date-bar { background-color: rgba(18, 17, 13, .94); }
+
+/* The same alignment, applied to every large cool-tinted WASH. Royal blue
+   stays as a discrete accent (tags, links, buttons) — an accent doesn't set
+   page temperature. But the blue radial glows and blue-black section grounds
+   made every inner route sit cold next to the warm homepage, so each wash
+   moves to the same warm base (#12110d family) with the homepage's muted
+   gold (#917b50) carrying the glow duty. */
+.page-booking > .svc-hero,
+.page-residencies > .res-hero,
+.page-calendar > .agenda-hero,
+.page-foowr > .label-hero,
+.page-about .about-hero,
+.page-rentals .rentals-hero,
+.page-contact .contact-hero {
+  background:
+    linear-gradient(90deg, rgba(18, 17, 13, .98) 0%, rgba(18, 17, 13, .88) 48%, rgba(18, 17, 13, .34) 100%),
+    radial-gradient(70% 92% at 84% 48%, rgba(145, 123, 80, .22), transparent 68%),
+    #12110d !important;
+}
+.page-calendar > .agenda-hero::after,
+.page-foowr > .label-hero::after {
+  background: radial-gradient(circle, rgba(145, 123, 80, .22), transparent 68%);
+}
+.page-booking > .svc-hero::before {
+  background: radial-gradient(circle, rgba(145, 123, 80, .2), transparent 66%);
+}
+.gear-img { background: radial-gradient(circle at 50% 44%, rgba(145, 123, 80, .1), transparent 68%); }
+.page-rentals .pkg-card { background: linear-gradient(180deg, rgba(145, 123, 80, .07), rgba(255, 255, 255, .008)); }
+.page-booking .avail-bar,
+.page-calendar .sync { background: rgba(145, 123, 80, .1) !important; }
+.page-booking .book-panel { background: linear-gradient(145deg, rgba(145, 123, 80, .1), rgba(23, 21, 15, .98)); }
+.eqp-stage { background: radial-gradient(80% 90% at 50% 42%, rgba(145, 123, 80, .14), transparent 70%); }
+.contact,
+.page-residencies .close-cta { background: #14120e; }
+.site-footer,
+.neo-footer { background: #0c0b08; }
+.neo-statement, .neo-close { background: #14120e; }
+.page-calendar .agenda-hero .wrap::before {
+  background: linear-gradient(var(--gold) 0%, rgba(145, 123, 80, .1) 100%);
+}
+.contact-form {
+  background: linear-gradient(145deg, rgba(29, 26, 20, .92), rgba(18, 17, 13, .96)) !important;
+}

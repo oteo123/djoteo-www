@@ -1,0 +1,121 @@
+{
+ "_meta": {
+  "source": "SERVICES.md + user facts",
+  "page": "booking.html (Blue Marine journeys)",
+  "note": "Each service is a 'journey' or detailed chapter. Grouped into the 3 main currents for interactive selection. Full details in modals/spotlights. No prices. Inquiry at end. Gear for rentals as key statistics."
+ },
+ "services": [
+  {
+   "id": "music-production",
+   "title": "Music Production",
+   "short": "Music Production",
+   "description": "Full production for your tracks — from idea to final master. OTEO handles arrangement, sound design, mixing, and the details that make a record hit the floor right. Real club-focused work.",
+   "details": "From the booth to the studio. Complete production packages tailored to House and Tech House. Includes stems, revisions, and club-ready masters.",
+   "stats": [
+    "Arrangement & sound design",
+    "Mixing & mastering",
+    "Club-focused edits",
+    "Full track delivery"
+   ],
+   "fun_fact": "Every production is tested in real rooms before delivery.",
+   "media": "assets/booth.jpg"
+  },
+  {
+   "id": "ghost-production",
+   "title": "Ghost Production",
+   "short": "Ghost Production",
+   "description": "Anonymous or credited production support. OTEO builds the tracks you need under your name or as co-writer. Full or partial — you decide the credit.",
+   "details": "High-quality ghost production for labels, artists, and DJs. Original ideas or builds from your demos. Fast turnaround with revisions.",
+   "stats": [
+    "Original ideas or builds from stems",
+    "Label-ready masters",
+    "Co-write or full ghost options",
+    "Quick revisions"
+   ],
+   "fun_fact": "Many floor weapons started as ghosts.",
+   "media": "assets/founder.jpg"
+  },
+  {
+   "id": "audio-engineering",
+   "title": "Engineering / Audio Engineering",
+   "short": "Audio Engineering",
+   "description": "Mixing, mastering, and technical cleanup. Bring your roughs or live recordings — OTEO makes them translation-proof and dancefloor-ready.",
+   "details": "Professional engineering for club and streaming. Focus on low-end control, clarity, and energy. Includes stem mastering and format deliverables.",
+   "stats": [
+    "Mixing & mastering",
+    "Stem preparation",
+    "Live recording cleanup",
+    "Multiple format exports"
+   ],
+   "fun_fact": "The low end is where the room decides.",
+   "media": "assets/the-h-booth.jpg"
+  },
+  {
+   "id": "entertainment-coordinator",
+   "title": "Entertainment Coordinator",
+   "short": "Entertainment Coordinator",
+   "description": "Full night programming and artist coordination. OTEO curates lineups, timings, and flow so the room never drops.",
+   "details": "From openers to closers. Booking support, set time planning, and on-site coordination for residencies and special events.",
+   "stats": [
+    "Lineup curation",
+    "Set time architecture",
+    "Artist liaison",
+    "Room flow management"
+   ],
+   "fun_fact": "The best nights feel effortless.",
+   "media": "assets/debonair.jpg"
+  },
+  {
+   "id": "director",
+   "title": "Director",
+   "short": "Director",
+   "description": "Creative direction for events, visuals, and experiences. OTEO shapes the whole night — sound, light, energy, and story.",
+   "details": "Direction for club nights, parties, and branded events. Includes mood boards, cue lists, and real-time direction from the booth or floor.",
+   "stats": [
+    "Night concept & direction",
+    "Visual & lighting cues",
+    "Talent & production oversight",
+    "Post-event notes"
+   ],
+   "fun_fact": "Direction turns a good night into the one people talk about.",
+   "media": "assets/the-h-booth.jpg"
+  },
+  {
+   "id": "equipment-rentals",
+   "title": "Equipment Rentals",
+   "short": "Equipment Rentals",
+   "description": "Pro gear for your night. Full rider or single pieces. Delivered, set up, and collected. All maintained and rider-ready.",
+   "details": "Rentals for clubs, private events, and productions. Includes transport and basic tech support. List is current as of latest inventory.",
+   "stats": [
+    "Pioneer DJ DJM-S9, DJM-S11, DJM-A9",
+    "AlphaTheta Euphonia, XDJ-AZ, OMNIS-DUO",
+    "PLX-1000 ×2, CDJ-3000 ×2",
+    "AlphaTheta WAVE-EIGHT ×2",
+    "QSC K12.2 ×2, Bose F1 Model 812 ×2",
+    "Wireless mics ×2"
+   ],
+   "fun_fact": "The right tools make the room move.",
+   "media": "assets/booth.jpg"
+  },
+  {
+   "id": "demo-submissions",
+   "title": "Demo Submissions",
+   "short": "Demo Submissions (FOOWR)",
+   "description": "Send one private streamable link to Fish Out Of Water Records for consideration. A response is not guaranteed; FOOWR replies directly when a track fits the label.",
+   "details": "Email or form for demos. Include links (SoundCloud, private Drive, etc.). Focus on dancefloor functionality. Feedback when possible.",
+   "stats": [
+    "Direct to OTEO / FOOWR",
+    "No upload portal (email/form)",
+    "All submissions listened to",
+    "Label consideration"
+   ],
+   "fun_fact": "The best records often come from the inbox.",
+   "media": "assets/hero-oteo.jpg"
+  }
+ ],
+ "inquiry": {
+  "email": "oteo@djoteo.com",
+  "subject": "Services Inquiry",
+  "note": "Tell me the service(s) you're interested in and any details about the project or night."
+ }
+}

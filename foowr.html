@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FOOWR — Fish Out of Water Records | OTEO · Alec Pontes</title>
+<meta name="description" content="Fish Out of Water Records (FOOWR) — the label founded by OTEO (Alec Pontes) in Orlando. Hear the label and submit a demo for consideration.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://djoteo.com/foowr">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djoteo.com/foowr">
+<meta property="og:title" content="FOOWR — Fish Out of Water Records | OTEO">
+<meta property="og:description" content="The label founded by OTEO (Alec Pontes) in Orlando. Hear the label and submit a demo for consideration.">
+<meta property="og:site_name" content="OTEO">
+<meta property="og:image" content="https://djoteo.com/assets/og-foowr.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fish Out of Water Records — the Orlando label founded by OTEO.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@djoteo">
+<meta name="twitter:title" content="FOOWR — Fish Out of Water Records">
+<meta name="twitter:description" content="The label founded by OTEO (Alec Pontes) in Orlando. Submit your demo.">
+<meta name="twitter:image" content="https://djoteo.com/assets/og-foowr.jpg">
+<link href="assets/site.css" rel="stylesheet">
+<script defer src="assets/vendor/gsap.min.js"></script>
+<script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+<script defer src="assets/vendor/lenis.min.js"></script>
+<script src="assets/sc-facade.js" defer></script>
+<script src="assets/site.js" defer></script>
+<style>
+  :root{
+    --bg:#0a0a0b; --gold:#c8a96a; --blue:#c8a96a; --blue-lt:#dec48e;
+    --text:#f4f1ea; --muted:#a19b8e; --line:rgba(244,241,234,0.10);
+    --serif:'Playfair Display',Georgia,serif; --sans:"Switzer",system-ui,sans-serif; --mono:"Switzer",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(200,169,106,0.12), transparent 60%),
+      radial-gradient(90% 60% at 100% 110%, rgba(200,169,106,0.07), transparent 55%),
+      var(--bg);
+    color:var(--text); font-family:var(--sans); -webkit-font-smoothing:antialiased;
+    min-height:100vh; overflow-x:hidden;
+  }
+  a{color:inherit}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.32em; text-transform:uppercase;
+    color:var(--gold); display:flex; align-items:center; gap:12px; margin-bottom:20px;
+  }
+  .eyebrow::before{content:""; width:34px; height:1px; background:var(--gold); display:inline-block}
+
+  body > header.label-hero{display:block !important}
+  .label-hero{padding:160px 0 72px; position:relative}
+  .label-hero .wrap{
+    display:grid; grid-template-columns:1fr 1.05fr; gap:64px; align-items:center;
+  }
+  .hero-copy{position:relative; padding-left:30px}
+  .hero-copy::before{
+    content:""; position:absolute; left:0; top:8px; bottom:6px; width:3px;
+    background:linear-gradient(var(--gold) 0%, var(--blue) 100%); border-radius:3px;
+  }
+  .label-hero h1{
+    font-family:var(--sans); font-weight:400; font-size:clamp(64px,8.6vw,124px);
+    line-height:0.84; letter-spacing:-0.04em;
+  }
+  .label-hero .full{margin-top:16px; font-family:var(--mono); font-size:12px; letter-spacing:0.34em; text-transform:uppercase; color:var(--gold)}
+  .label-hero .lead{margin:24px 0 0; max-width:560px; color:var(--muted); font-size:clamp(15px,1.7vw,18px); line-height:1.6}
+  .label-hero .lead b{color:var(--text); font-weight:500}
+
+  /* real embedded player */
+  .player-wrap{position:relative; min-height:380px; border:1px solid var(--line); border-radius:18px; overflow:hidden; background:radial-gradient(circle at 70% 18%,rgba(200,169,106,.22),transparent 34%),linear-gradient(145deg,#15120c,#050505 68%); box-shadow:0 40px 90px -44px rgba(0,0,0,0.9), 0 0 0 1px rgba(200,169,106,0.06)}
+  .player-fallback{position:absolute; inset:0; display:grid; align-content:end; gap:9px; padding:clamp(28px,5vw,54px); pointer-events:none}
+  .player-fallback strong{font-family:var(--sans); font-size:clamp(54px,10vw,118px); font-weight:500; line-height:.8; letter-spacing:-.06em; color:rgba(237,238,239,.13)}
+  .player-fallback span{font-family:var(--mono); font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--gold)}
+  .player-wrap iframe{position:relative; z-index:1; display:block; width:100%; height:380px; border:0; background:transparent}
+  .player-note{margin-top:10px; font-family:var(--mono); font-size:11px; letter-spacing:0.1em; color:var(--muted)}
+
+  /* real working form */
+  .demo-form{display:grid; gap:14px}
+  .demo-form label{display:flex; flex-direction:column; gap:7px; font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted)}
+  .demo-form .lbl{display:block; white-space:nowrap}
+  .demo-form input, .demo-form textarea{
+    background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:10px;
+    color:var(--text); padding:12px 14px; font-family:var(--sans); font-size:15px; width:100%;
+  }
+  .demo-form input:focus, .demo-form textarea:focus{outline:none; border-color:var(--gold)}
+  .demo-form .req{color:var(--gold); opacity:0.75; white-space:nowrap; margin-left:2px}
+  .demo-form button{
+    margin-top:4px; background:var(--gold); color:#0a0a0a; border:1.5px solid var(--gold); border-radius:999px;
+    padding:15px 26px; font-family:var(--mono); font-size:12px; letter-spacing:0.16em; text-transform:uppercase;
+    cursor:pointer; transition:background .2s ease, color .2s ease;
+  }
+  .demo-form button:hover{background:transparent; color:var(--gold)}
+  .demo-form button[disabled]{opacity:0.55; cursor:default}
+  .form-status{font-family:var(--mono); font-size:12px; letter-spacing:0.04em; line-height:1.6; min-height:1em}
+
+  .band{padding:72px 0; border-top:1px solid var(--line)}
+  .band .head{font-family:var(--sans); font-size:clamp(34px,5.2vw,56px); font-weight:500; letter-spacing:-0.025em; margin-bottom:10px; line-height:1.0}
+  .band .kicker{display:flex; align-items:baseline; gap:12px; font-family:var(--mono); font-size:11px; letter-spacing:0.26em; text-transform:uppercase; color:var(--blue-lt); opacity:0.85; margin-bottom:16px}
+  .band .kicker::before{content:""; width:30px; height:1px; background:var(--gold); align-self:center}
+  .band p{color:var(--muted); font-size:16px; line-height:1.7; max-width:620px}
+  .band p b{color:var(--text); font-weight:500}
+
+  /* split band — editorial text + real photo */
+  .band-split{display:grid; grid-template-columns:1.08fr 0.92fr; gap:64px; align-items:center}
+  .band-photo{margin:0}
+  .band-photo img{
+    display:block; width:100%; aspect-ratio:4/5; object-fit:cover;
+    border-radius:18px; border:1px solid var(--line);
+    box-shadow:0 40px 90px -50px rgba(0,0,0,0.9);
+  }
+  .band-photo figcaption{
+    margin-top:12px; font-family:var(--mono); font-size:11px; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--muted); display:flex; align-items:center; gap:10px;
+  }
+  .band-photo figcaption::before{content:""; width:22px; height:1px; background:var(--gold)}
+
+  /* photo strip — real booth shots, equal crops */
+  .photo-strip{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px}
+  .photo-strip figure{margin:0}
+  .photo-strip img{
+    display:block; width:100%; aspect-ratio:4/5; object-fit:cover;
+    border-radius:14px; border:1px solid var(--line);
+  }
+
+  /* demo submissions */
+  .demo{
+    margin-top:30px; display:grid; grid-template-columns:1.05fr 1fr; gap:40px; align-items:start;
+    border:1px solid var(--line); border-radius:18px; padding:34px 36px;
+    background:linear-gradient(180deg, rgba(36,63,156,0.08), rgba(255,255,255,0.008));
+  }
+  .demo .steps{list-style:none; margin:16px 0 0}
+  .demo .steps li{color:var(--text); font-size:15px; line-height:1.9; display:flex; gap:12px}
+  .demo .steps li span{font-family:var(--mono); font-size:11px; color:var(--gold); padding-top:3px}
+  .demo .alt-note{
+    margin-top:24px; padding-top:18px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--muted); max-width:none;
+  }
+  .demo .alt-note a{color:var(--gold); text-decoration:none}
+  .demo .alt-note a:hover{text-decoration:underline}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:15px 26px; border-radius:999px;
+    font-family:var(--mono); font-size:12px; letter-spacing:0.16em; text-transform:uppercase; text-decoration:none;
+    transition:background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn.primary{background:var(--gold); color:#0a0a0a; border:1.5px solid var(--gold)}
+  .btn.primary:hover{background:transparent; color:var(--gold)}
+  .btn.ghost{background:transparent; color:var(--text); border:1.5px solid rgba(237,238,239,0.22)}
+  .btn.ghost:hover{border-color:var(--gold); color:var(--gold)}
+
+  .stats-row{display:flex; flex-wrap:wrap; gap:14px 48px; margin-top:28px}
+  .stat .k{font-family:var(--mono); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted)}
+  .stat .v{font-family:var(--sans); font-size:22px; font-weight:500; margin-top:5px}
+
+  .site-footer{border-top:1px solid var(--line); padding:38px 0 42px; text-align:center; margin-top:20px}
+  .site-footer nav{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; color:var(--muted)}
+  .site-footer nav a{text-decoration:none} .site-footer nav a:hover{color:var(--gold)}
+  .site-footer p{margin-top:14px; color:var(--muted); font-size:13px}
+  .site-footer a{color:var(--gold)}
+  .site-footer nav a{color:var(--muted)}
+
+  @media (max-width:980px){
+    .label-hero .wrap{grid-template-columns:1fr; gap:44px}
+    .band-split{grid-template-columns:1fr; gap:36px}
+    .band-photo img{aspect-ratio:4/3}
+  }
+  @media (max-width:760px){
+    .demo{grid-template-columns:1fr; gap:26px; padding:26px 24px}
+    .label-hero{padding:140px 0 52px}
+    .player-wrap iframe{height:340px}
+    .photo-strip{grid-template-columns:1fr; gap:14px}
+    .photo-strip img{aspect-ratio:4/3}
+  }
+  /* Page-local reduced-motion override for this route's interactions. */
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto !important}
+    *, *::before, *::after{
+      animation-duration:.01ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;
+      scroll-behavior:auto !important;
+    }
+  }
+  .edits{ list-style:none; margin:26px 0 22px; padding:0; border-top:1px solid var(--line); }
+  .edit{ display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:18px 0; border-bottom:1px solid var(--line); }
+  .edit-title{ font-family:var(--sans); font-weight:500; font-size:clamp(22px,2.6vw,32px); letter-spacing:-.02em; color:var(--text); }
+  .edit-meta{ font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+  a.edit-title{ text-decoration:none; transition:color .2s ease; }
+  a.edit-title:hover{ color:var(--gold); }
+</style>
+<link href="assets/inner-next.css" rel="stylesheet">
+<link href="assets/uniform-next.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/oteo-craft.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","@id":"https://djoteo.com/foowr#label","name":"Fish Out of Water Records","alternateName":"FOOWR","url":"https://djoteo.com/foowr","founder":{"@type":"Person","name":"Alec Pontes","alternateName":"DJ OTEO"},"sameAs":["https://soundcloud.com/fishoutofwaterrecords"]}</script>  <link rel="stylesheet" href="/assets/oteo-type.css">
+  <link rel="stylesheet" href="./assets/oteo-system.css">
+</head>
+<body class="page-foowr">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="OTEO — home">OTEO</a>
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+        <a class="btn btn-primary header-cta" href="/booking#book">
+          Book OTEO <span class="glyph" aria-hidden="true">&#8599;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="label-hero">
+    <div class="wrap">
+      <h1>FOOWR</h1>
+      <div class="full reveal">Fish Out of Water Records</div>
+      <p class="lead"><b>The label founded by OTEO — Alec Pontes.</b> Warm, hands-up house out of Orlando. The same sound that runs the residencies, pressed into records.</p>
+      <div class="player-wrap">
+        <div class="sc-facade" data-sc-url="https://soundcloud.com/fishoutofwaterrecords" data-sc-title="FOOWR on SoundCloud" data-sc-height="380"
+             role="button" tabindex="0" aria-label="Play the FOOWR label on SoundCloud" style="min-height:380px">
+          <span class="sc-facade-play" aria-hidden="true">&#9654;</span>
+          <span class="sc-facade-label"><b>FOOWR</b> &middot; play on SoundCloud</span>
+        </div>
+      </div>
+      <p class="player-note">Live from the label — <a href="https://soundcloud.com/fishoutofwaterrecords" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">open on SoundCloud &rarr;</a></p>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+
+    <section class="band">
+      <div class="kicker reveal">The Label</div>
+      <h2 class="head reveal">Fish Out of Water Records</h2>
+      <p>FOOWR is where OTEO releases his own productions and records by artists he plays with. Built in Orlando, aimed at the floor — the records carry the same warmth and low-end weight as the sets. Records made to move a room.</p>
+      <div class="stats-row">
+        <div class="stat reveal"><div class="k">Founder</div><div class="v">OTEO · Alec Pontes</div></div>
+        <div class="stat reveal"><div class="k">Base</div><div class="v">Orlando, FL</div></div>
+        <div class="stat reveal"><div class="k">Sound</div><div class="v">Warm, floor-first</div></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="kicker reveal">The Music</div>
+      <h2 class="head reveal">Edits, cut for the floor</h2>
+      <p>OTEO&rsquo;s edits rework familiar records for the room &mdash; the same open-house-format taste, sharpened for the dancefloor. <strong style="color:var(--text)">3310</strong> is out on Spotify; the rest live on SoundCloud.</p>
+      <ul class="edits reveal">
+        <li class="edit"><a class="edit-title" href="https://open.spotify.com/track/1ORLWBdhxEXp3hOrMYgl3N" target="_blank" rel="noopener noreferrer">3310 <span aria-hidden="true" style="font-family:var(--sans);font-size:.58em;vertical-align:middle">&#8599;</span></a><span class="edit-meta">Edit &middot; out on Spotify</span></li>
+        <li class="edit"><span class="edit-title">After Hours</span><span class="edit-meta">Edit &middot; SoundCloud</span></li>
+        <li class="edit"><span class="edit-title">Pa Que La Pasases Bien</span><span class="edit-meta">Edit &middot; SoundCloud</span></li>
+      </ul>
+      <p class="reveal"><a href="https://soundcloud.com/fishoutofwaterrecords" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">Hear the edits on SoundCloud &rarr;</a></p>
+    </section>
+
+    <section class="band">
+      <div class="kicker reveal">Submissions</div>
+      <h2 class="head reveal">Send Us Your Track</h2>
+      <p>FOOWR accepts demos for consideration. Send one private streamable link with clear artist and track details. A response is not guaranteed; if the track fits the label, you&rsquo;ll hear back directly.</p>
+      <div class="demo reveal">
+        <div>
+          <ul class="steps">
+            <li><span>01</span> One private, streamable link (SoundCloud / Dropbox) — finished or near-finished.</li>
+            <li><span>02</span> Artist name, track title, and a line on the vibe.</li>
+            <li><span>03</span> If the track fits FOOWR, you&rsquo;ll hear back directly.</li>
+          </ul>
+        </div>
+        <form class="demo-form" id="foowr-demo-form">
+          <label><span class="lbl">Artist name <span class="req">*</span></span>
+            <input type="text" name="artist" autocomplete="name" required>
+          </label>
+          <label><span class="lbl">Email <span class="req">*</span></span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label><span class="lbl">Track link (SoundCloud / Dropbox) <span class="req">*</span></span>
+            <input type="url" name="track_link" placeholder="https://" required>
+          </label>
+          <label><span class="lbl">Track title &amp; vibe</span>
+            <textarea name="details" rows="3" placeholder="Title — one line on the sound"></textarea>
+          </label>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <button type="submit" id="foowr-submit">Send demo to FOOWR &rarr;</button>
+          <p class="form-status" id="foowr-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="kicker reveal">The Sound</div>
+      <h2 class="head reveal">Same Floor, Pressed to Record</h2>
+      <p>FOOWR is the label side of OTEO&rsquo;s work: the same instinct that shapes the sets, put into original production. Follow the label on SoundCloud for new music.</p>
+      <div class="demo-actions" style="flex-direction:row; flex-wrap:wrap; margin-top:22px">
+        <a class="btn ghost" href="/residencies">See OTEO&rsquo;s track record &rarr;</a>
+        <a class="btn ghost" href="/booking#book">Book OTEO &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">OTEO</div><p class="footer-copy">&copy; <span data-year>2026</span> FOOWR · Fish Out of Water Records · OTEO / Alec Pontes</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="./works/">Works</a><a href="./blog/">Mixes</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
+
+  <script>
+  /* Real demo submission — posts to Web3Forms (same service as the booking form),
+     emails the demo to OTEO, with genuine success/error states. Not a mailto stub. */
+  (function () {
+    var form = document.getElementById('foowr-demo-form');
+    if (!form) return;
+    var status = document.getElementById('foowr-status');
+    var btn = document.getElementById('foowr-submit');
+    var ACCESS_KEY = '0ea77eca-edf8-4b40-912e-c36a3dac6de7';
+    function set(msg, color) { if (status) { status.textContent = msg; status.style.color = color; } }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.botcheck && form.botcheck.checked) return; /* honeypot */
+      var fd = new FormData(form);
+      /* FormData is Web3Forms' documented browser-side submission format. */
+      fd.set('access_key', ACCESS_KEY);
+      fd.set('subject', 'FOOWR Demo — ' + (fd.get('artist') || 'unknown artist'));
+      fd.set('from_name', 'FOOWR Demo Submission');
+      btn.disabled = true; set('Sending your demo…', '#8ed1fc');
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: fd
+      }).then(function (r) { return r.json(); }).then(function (data) {
+        if (data && data.success) {
+          form.reset();
+          set('Demo received for consideration. If it fits FOOWR, you will hear back directly.', '#9bf6c1');
+        } else {
+          btn.disabled = false;
+          set('That didn’t go through. Email your link to oteo@djoteo.com directly.', '#ff9f9f');
+        }
+      }).catch(function () {
+        btn.disabled = false;
+        set('Network error — email your link to oteo@djoteo.com directly.', '#ff9f9f');
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

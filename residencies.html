@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Residencies — OTEO | Alec Pontes · DJ + Producer · Orlando</title>
+<meta name="description" content="OTEO (Alec Pontes) — summer resident at Debonair Supperclub, plus years of Orlando residencies and a repeat client roster.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://djoteo.com/residencies">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djoteo.com/residencies">
+<meta property="og:title" content="Residencies — OTEO | Alec Pontes">
+<meta property="og:description" content="OTEO (Alec Pontes) — summer resident at Debonair Supperclub, plus years of Orlando residencies and a repeat client roster.">
+<meta property="og:site_name" content="OTEO">
+<meta property="og:image" content="https://djoteo.com/assets/og-residencies.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OTEO behind the decks — years of Orlando residencies and a repeat client roster.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@djoteo">
+<meta name="twitter:title" content="Residencies — OTEO">
+<meta name="twitter:description" content="OTEO (Alec Pontes) — summer resident at Debonair Supperclub, plus years of Orlando residencies and a repeat client roster.">
+<meta name="twitter:image" content="https://djoteo.com/assets/og-residencies.jpg">
+<link href="assets/site.css" rel="stylesheet">
+<script defer src="assets/vendor/gsap.min.js"></script>
+<script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+<script defer src="assets/vendor/lenis.min.js"></script>
+<script src="assets/site.js" defer></script>
+<style>
+  :root{
+    --bg:#0a0a0b; --gold:#c8a96a; --blue:#c8a96a; --blue-lt:#dec48e;
+    --text:#f4f1ea; --muted:#a19b8e; --line:rgba(244,241,234,0.10);
+    --serif:'Playfair Display',Georgia,serif; --sans:"Switzer",system-ui,sans-serif; --mono:"Switzer",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(200,169,106,0.12), transparent 60%),
+      radial-gradient(90% 60% at 0% 110%, rgba(200,169,106,0.07), transparent 55%),
+      var(--bg);
+    color:var(--text); font-family:var(--sans); -webkit-font-smoothing:antialiased;
+    min-height:100vh; overflow-x:hidden;
+  }
+  a{color:inherit}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.32em; text-transform:uppercase;
+    color:var(--gold); display:flex; align-items:center; gap:12px; margin-bottom:20px;
+  }
+  .eyebrow::before{content:""; width:34px; height:1px; background:var(--gold); display:inline-block}
+
+  /* Page-scoped: the floating HUD gadgets (audio deck, log console, coords ticker)
+     sit on top of this page's reading columns and CTAs — hide them here only. */
+  .hud-audio-deck, .hud-console, .hud-panel-coords{display:none !important}
+
+  /* Keep the editorial hero explicit alongside the fixed shared site header. */
+  body > header.res-hero{display:block !important}
+  .res-hero{padding:180px 0 56px}
+  /* hero shares the same 1120 grid as the venue bands — left edges align */
+  .res-hero .wrap{position:relative; padding-left:58px}
+  .res-hero .wrap::before{
+    content:""; position:absolute; left:24px; top:10px; bottom:8px; width:3px;
+    background:linear-gradient(var(--gold) 0%, var(--blue) 100%); border-radius:3px;
+  }
+  .res-hero h1{
+    font-family:var(--sans); font-weight:400; font-size:clamp(60px,10.5vw,128px);
+    line-height:0.86; letter-spacing:-0.032em;
+  }
+  .res-hero h1 em{font-style:italic; color:var(--gold)}
+  .res-hero .lead{margin-top:24px; max-width:560px; color:var(--muted); font-size:clamp(15px,1.6vw,17px); line-height:1.6}
+  .res-hero .lead b{color:var(--text); font-weight:500}
+  /* room index — the three real rooms, anchored to their bands */
+  .hero-index{
+    display:flex; flex-wrap:wrap; gap:10px 36px; margin-top:36px;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+  }
+  .hero-index a{
+    color:var(--muted); text-decoration:none; display:inline-flex; align-items:baseline; gap:9px;
+    padding-bottom:4px; border-bottom:1px solid transparent; transition:color .2s ease, border-color .2s ease;
+  }
+  .hero-index a .ix{color:var(--gold); font-size:10px}
+  .hero-index a:hover{color:var(--text); border-color:rgba(200,169,106,0.5)}
+
+  /* ---- VENUE BANDS ---- */
+  .venues{padding:28px 0 0}
+  .venue{
+    display:grid; grid-template-columns:1.25fr 1fr; gap:60px; align-items:center;
+    padding:70px 0; border-top:1px solid var(--line); scroll-margin-top:110px;
+  }
+  .venue:first-child{border-top:none; padding-top:26px}
+  .venue.flip .v-media{order:2}
+  .v-media{
+    position:relative; border-radius:18px; overflow:hidden; aspect-ratio:16/11;
+    background:#070707; box-shadow:0 40px 90px -40px rgba(0,0,0,0.95), 0 0 0 1px rgba(237,238,239,0.04);
+  }
+  .v-media img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .8s cubic-bezier(.2,.6,.2,1)}
+  .venue:hover .v-media img{transform:scale(1.04)}
+  /* the venue stills are tall PORTRAIT frames of OTEO on the decks; a landscape
+     16/11 crop with the default center origin cut his face out of frame. Bias the
+     crop toward the upper third so the subject stays framed in every room. */
+  #debonair .v-media img{object-position:50% 26%}
+  #theh     .v-media img{object-position:50% 20%}
+  /* videos share the same tall subject framing */
+  #debonair .v-media video{object-position:50% 26%}
+  #theh     .v-media video{object-position:50% 20%}
+  /* video layer — the frame holds both the still and the moving image */
+  .v-media video{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;
+    opacity:0; transition:opacity .6s ease; z-index:1;
+  }
+  .v-media.playing video{opacity:1}
+  .v-media .live-tag{
+    position:absolute; bottom:14px; right:14px; z-index:2; display:flex; align-items:center; gap:7px;
+    font-family:var(--mono); font-size:10px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--text); background:rgba(10,10,10,0.5); border-radius:999px; padding:5px 11px;
+    -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px); opacity:0; transition:opacity .5s ease;
+  }
+  .v-media.playing .live-tag{opacity:1}
+  .v-media .live-tag::before{content:""; width:6px; height:6px; border-radius:50%; background:#ff5a5a; box-shadow:0 0 8px #ff5a5a}
+  .v-media .badge{z-index:3}
+  .v-media::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 55%, rgba(10,10,10,0.55)); pointer-events:none}
+  .v-media .badge{
+    position:absolute; top:16px; left:16px; z-index:2; font-family:var(--mono); font-size:10px;
+    letter-spacing:0.16em; text-transform:uppercase; color:#0a0a0a; background:var(--gold);
+    border-radius:999px; padding:5px 12px; font-weight:600;
+  }
+  .v-body .kicker{font-family:var(--mono); font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:var(--blue-lt); opacity:0.85}
+  .v-body .kicker{display:flex; align-items:baseline; gap:12px}
+  .v-body .kicker .no{font-family:var(--sans); font-size:34px; font-weight:400; color:var(--gold); line-height:1; letter-spacing:-0.02em; opacity:0.9}
+  .v-body h2{font-family:var(--sans); font-size:clamp(34px,5.2vw,56px); font-weight:500; letter-spacing:-0.025em; margin:14px 0 6px; line-height:1.0}
+  .v-body .nights{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; color:var(--gold); margin-bottom:16px}
+  .v-body .desc{color:var(--muted); font-size:15px; line-height:1.65; max-width:460px}
+  .v-body .vibe{margin-top:14px; color:var(--text); font-size:14px; line-height:1.6; max-width:460px; font-style:italic; opacity:0.92}
+  .v-body .stats{display:flex; flex-wrap:wrap; gap:10px 22px; margin:20px 0 22px; font-family:var(--mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted)}
+  .v-body .stats b{color:var(--text); font-weight:400}
+  .v-cta{
+    display:inline-block; padding:13px 28px; border-radius:999px;
+    background:transparent; color:var(--gold); border:1.5px solid var(--gold);
+    font-family:var(--mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+    text-decoration:none; transition:background .2s ease, color .2s ease;
+  }
+  .v-cta:hover{background:var(--gold); color:#0a0a0a}
+
+  /* closing band */
+  .close-cta{border-top:1px solid var(--line); margin-top:70px; padding:88px 0 96px; text-align:center}
+  .close-cta .k{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.32em; text-transform:uppercase;
+    color:var(--gold); display:flex; align-items:center; justify-content:center; gap:14px;
+  }
+  .close-cta .k::before, .close-cta .k::after{content:""; width:34px; height:1px; background:rgba(200,169,106,0.55)}
+  .close-cta h3{
+    font-family:var(--sans); font-weight:400; font-size:clamp(32px,4.6vw,52px);
+    letter-spacing:-0.02em; line-height:1.05; margin:22px auto 0; max-width:640px;
+  }
+  .close-cta h3 em{font-style:italic; color:var(--gold)}
+  .close-cta .row{display:flex; justify-content:center; align-items:center; gap:26px; margin-top:36px; flex-wrap:wrap}
+  .close-cta .v-cta.solid{background:var(--gold); color:#0a0a0a}
+  .close-cta .v-cta.solid:hover{background:transparent; color:var(--gold)}
+  .close-cta .alt{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--muted); text-decoration:none; border-bottom:1px solid rgba(237,238,239,0.25);
+    padding-bottom:4px; transition:color .2s ease, border-color .2s ease;
+  }
+  .close-cta .alt:hover{color:var(--gold); border-color:rgba(200,169,106,0.5)}
+
+  .site-footer{border-top:1px solid var(--line); padding:42px 0 46px; text-align:center}
+  .site-footer nav{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; color:var(--muted)}
+  .site-footer nav a{text-decoration:none; transition:color .2s ease} .site-footer nav a:hover{color:var(--gold)}
+  .site-footer p{margin-top:14px; color:var(--muted); font-size:13px}
+  .site-footer p a{color:var(--gold); text-decoration:none}
+
+  /* subtle entrance — content is NEVER hidden (no opacity:0 trap); animation is
+     an enhancement layered only via .shown, so venues are always visible by default */
+  /* Past Residencies section divider */
+  .past-head{max-width:640px; margin:64px 0 8px; padding-top:44px; border-top:1px solid var(--line)}
+  .past-eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:var(--blue-lt); opacity:0.8}
+  .past-title{font-family:var(--sans); font-weight:400; font-size:clamp(30px,4.4vw,46px); letter-spacing:-0.02em; margin:12px 0 0}
+  .past-deck{margin-top:12px; color:var(--muted); font-size:15px; line-height:1.6; max-width:520px}
+  /* past bands read as archive: gently de-emphasized, no live tag */
+  .venue.past{opacity:0.9}
+  .venue.past .v-media img{filter:grayscale(0.35) brightness(0.92)}
+  .venue.past .badge{background:rgba(237,238,239,0.14); color:var(--text)}
+  .venue{opacity:1}
+  @media (prefers-reduced-motion:no-preference){
+    .reveal-armed .venue:not(.shown){opacity:0.001; transform:translateY(18px)}
+    .venue.shown{opacity:1; transform:none; transition:opacity .6s ease, transform .6s cubic-bezier(.16,1,.3,1)}
+  }
+
+  @media (max-width:820px){
+    .venue{grid-template-columns:1fr; gap:24px; padding:40px 0; scroll-margin-top:90px}
+    .venue.flip .v-media{order:0}
+    .venue:first-child{padding-top:14px}
+    .v-media{aspect-ratio:16/10}
+    .res-hero{padding:140px 0 38px}
+    .res-hero .wrap{padding-left:46px}
+    .hero-index{gap:12px 26px; margin-top:28px}
+    .close-cta{margin-top:44px; padding:64px 0 70px}
+    .close-cta .row{gap:20px}
+  }
+  /* More residencies — text track-record list (no images), styled with page tokens */
+  .more-res{ border-top:1px solid var(--line); padding:58px 0 4px; }
+  .more-res .mr-head{ font-family:var(--mono); font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:var(--blue-lt); opacity:0.85; margin-bottom:22px; }
+  .mr-list{ max-width:840px; }
+  .mr-item{ display:flex; justify-content:space-between; align-items:baseline; gap:16px 28px; padding:17px 0; border-top:1px solid var(--line); }
+  .mr-item:first-child{ border-top:none; }
+  .mr-name{ font-family:var(--sans); font-size:clamp(20px,2.6vw,27px); color:var(--text); letter-spacing:-0.01em; }
+  .mr-detail{ display:block; margin-top:3px; font-family:var(--sans); font-size:13px; color:var(--muted); }
+  .mr-tag{ font-family:var(--mono); font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+  @media(max-width:600px){ .mr-item{ flex-direction:column; gap:5px; } }
+</style>
+<link href="assets/inner-next.css" rel="stylesheet">
+<link href="assets/uniform-next.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/oteo-craft.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://djoteo.com/#oteo",
+    "name": "Alec Pontes",
+    "alternateName": ["OTEO", "DJ OTEO"],
+    "jobTitle": "DJ & Producer",
+    "description": "OTEO (Alec Pontes) \u2014 Orlando DJ, producer, curator, and founder of Fish Out of Water Records.",
+    "url": "https://djoteo.com/",
+    "image": "https://djoteo.com/assets/hero-oteo.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Orlando", "addressRegion": "FL", "addressCountry": "US" },
+    "sameAs": [
+      "https://www.instagram.com/djoteo/",
+      "https://www.tiktok.com/@djoteo",
+      "https://soundcloud.com/fishoutofwaterrecords"
+    ],
+    "worksFor": { "@type": "LocalBusiness", "@id": "https://djoteo.com/#business", "name": "OTEO", "url": "https://djoteo.com/" }
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/oteo-type.css">
+  <link rel="stylesheet" href="./assets/oteo-system.css">
+</head>
+<body class="page-residencies">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="OTEO — home">OTEO</a>
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+        <a class="btn btn-primary header-cta" href="/booking#book">
+          Book OTEO <span class="glyph" aria-hidden="true">&#8599;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="res-hero">
+    <div class="wrap">
+      <div class="eyebrow">OTEO · Experience</div>
+      <h1>The rooms behind <em>the work</em></h1>
+      <p class="lead"><b>OTEO (Alec Pontes)</b> &mdash; <b>Orlando Weekly Best Club DJ nominee</b>, a <b>summer residency at Debonair Supperclub</b>, and years of residencies across Orlando&rsquo;s rooms. Bilingual on the mic (Portuguese &amp; English). The track record behind the booking &mdash; bring the sound to your own room.</p>
+      <nav class="hero-index" aria-label="Rooms on this page">
+        <a href="#debonair">Debonair — Current</a>
+        <a href="#past">Past Experience</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="venues" aria-label="OTEO residencies">
+
+      <article class="venue" id="debonair">
+        <div class="v-media" data-video="assets/debonair-hd.mp4">
+          <span class="badge">Every Wednesday</span>
+          <picture>
+            <source type="image/webp" srcset="assets/screen-debonair-800.jpg.webp 800w, assets/screen-debonair-1400.jpg.webp 1400w" sizes="(max-width:820px) 100vw, 45vw">
+            <img src="assets/screen-debonair.jpg" alt="OTEO at Debonair Supperclub, Orlando" fetchpriority="high" decoding="async">
+          </picture>
+          <span class="live-tag">On the floor</span>
+        </div>
+        <div class="v-body">
+          <div class="kicker">Current Residency</div>
+          <h2>Debonair Supperclub</h2>
+          <div class="nights">Every Wednesday · select nights</div>
+          <p class="desc">OTEO's summer residency &mdash; every Wednesday, with select additional nights.</p>
+          <p class="vibe">His one standing room right now.</p>
+          <div class="stats">
+            <span>Set <b>Dinner to peak-time</b></span>
+            <span>Nights <b>Wednesdays + select</b></span>
+          </div>
+          <a class="v-cta" href="/booking#book">Book OTEO &rarr;</a>
+        </div>
+      </article>
+
+      <div class="past-head" id="past">
+        <span class="past-eyebrow">Experience</span>
+        <h2 class="past-title">Where OTEO has played</h2>
+        <p class="past-deck">Years of Orlando rooms, recurring bookings and shared bills — the experience behind the name. These are past rooms; current dates are on the agenda.</p>
+      </div>
+
+      <section class="more-res" aria-label="Rooms OTEO has played">
+        <div class="mr-head">Rooms &amp; residencies</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">The H</span><span class="mr-detail">Named-room residency — where open format became house &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
+          <div class="mr-item"><div><span class="mr-name">Celine Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
+          <div class="mr-item"><div><span class="mr-name">Elixir Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
+          <div class="mr-item"><div><span class="mr-name">Icon Park Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
+          <div class="mr-item"><div><span class="mr-name">The Eye Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
+          <div class="mr-item"><div><span class="mr-name">Helena Modern Riviera</span><span class="mr-detail">Performance room &middot; Orlando</span></div><span class="mr-tag">Past Room</span></div>
+          <div class="mr-item"><div><span class="mr-name">AVA Mediterranean</span><span class="mr-detail">Recurring booking &middot; Winter Park</span></div><span class="mr-tag">Rotating</span></div>
+          <div class="mr-item"><div><span class="mr-name">American Social</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
+          <div class="mr-item"><div><span class="mr-name">Grade A</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
+          <div class="mr-item"><div><span class="mr-name">Daydream</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
+          <div class="mr-item"><div><span class="mr-name">La Herradura &middot; The Lawn Bar</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">The Attic &middot; Aluxe</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">House of Blues &middot; The Vanguard</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">Pretty Please</span><span class="mr-detail">Guest set &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+        </div>
+      </section>
+
+      <section class="more-res recog" aria-label="Recognition &amp; shared bills">
+        <div class="mr-head">Recognition &amp; shared bills</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">Orlando Weekly</span><span class="mr-detail">Nominated &mdash; Best Club DJ</span></div><span class="mr-tag">Press</span></div>
+          <div class="mr-item"><div><span class="mr-name">KVSH</span><span class="mr-detail">Shared the bill &middot; AURA Nightclub</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Victor Lou</span><span class="mr-detail">Shared the bill &middot; Celine</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Alok &middot; Cat Dealers &middot; Bhaskar</span><span class="mr-detail">Shared the bill</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Liu &middot; Mr Pauer</span><span class="mr-detail">Shared the bill</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Onx &mdash; &ldquo;3310&rdquo;</span><span class="mr-detail">Release on MUSICALIDAD / Fish Out of Water Records</span></div><span class="mr-tag">Release</span></div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Mixes folded in from /blog/ (DESIGN/EXPERIENCE contract 2026-08-29, Alec's
+         call). Four written sets that were stranded on a listing page nothing
+         linked to. They belong here: three of the four ARE rooms on this page,
+         and a mix is the evidence of a night. Titles and slugs are the pages'
+         own — nothing invented. -->
+    <section class="more-res mixes-fold" aria-label="Sets from the rooms">
+      <div class="mr-head">Sets from the rooms</div>
+      <div class="mr-list">
+        <a class="mr-item" href="/mixes/inside-debonair-supperclub"><div><span class="mr-name">Inside the Debonair Supperclub Nights</span><span class="mr-detail">The standing Wednesday, written up &middot; Orlando</span></div><span class="mr-tag">Set</span></a>
+        <a class="mr-item" href="/mixes/the-h-late-sets-after-eleven"><div><span class="mr-name">The H &mdash; Late Sets After Eleven</span><span class="mr-detail">The room where open format became house &middot; Orlando</span></div><span class="mr-tag">Set</span></a>
+        <a class="mr-item" href="/mixes/helena-modern-riviera-nights"><div><span class="mr-name">Helena &mdash; Modern Riviera Nights</span><span class="mr-detail">A past room, on the record &middot; Orlando</span></div><span class="mr-tag">Set</span></a>
+        <a class="mr-item" href="/mixes/foowr-the-sound"><div><span class="mr-name">Fish Out of Water Records &mdash; The Sound</span><span class="mr-detail">The label behind the residencies</span></div><span class="mr-tag">Set</span></a>
+      </div>
+    </section>
+
+    <section class="close-cta" aria-label="Book OTEO">
+      <p class="k">Bookings</p>
+      <h3>Bring OTEO to <em>your</em> room.</h3>
+      <div class="row">
+        <a class="v-cta solid" href="/booking#book">Start a booking &rarr;</a>
+        <a class="alt" href="/calendar">View the agenda</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">OTEO</div><p class="footer-copy">&copy; <span data-year>2026</span> OTEO · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="./works/">Works</a><a href="./blog/">Mixes</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
+
+  <script>
+  /* Scroll reveal for venue bands — progressive enhancement, reduced-motion safe. */
+  (function () {
+    try {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items = [].slice.call(document.querySelectorAll('.venue'));
+      if (!items.length || reduce || !('IntersectionObserver' in window)) return;
+      // arm the hide ONLY now that JS is running and can guarantee reveal
+      document.querySelector('.venues').classList.add('reveal-armed');
+      function showAll() { items.forEach(function (el) { el.classList.add('shown'); }); }
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          en.target.classList.add('shown');
+          obs.unobserve(en.target);
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+      items.forEach(function (el) { io.observe(el); });
+      // HARD failsafe: nothing stays hidden past 1.4s, whatever happens
+      setTimeout(showAll, 1400);
+    } catch (e) {
+      [].slice.call(document.querySelectorAll('.venue')).forEach(function (el) { el.classList.add('shown'); });
+    }
+  })();
+  </script>
+
+  <script>
+  /* Media frames hold BOTH the still and the video. The poster image is always
+     the base layer; the venue video lazy-loads and plays (muted/looped) only when
+     the frame scrolls into view. Reduced-motion + no-IntersectionObserver keep the
+     still image and never load the video. Full control, poster-perfect fallback. */
+  (function () {
+    try {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var frames = [].slice.call(document.querySelectorAll('.v-media[data-video]'));
+      if (!frames.length || reduce || !('IntersectionObserver' in window)) return;
+
+      function mount(frame) {
+        if (frame.dataset.mounted) return;
+        frame.dataset.mounted = '1';
+        var src = frame.getAttribute('data-video');
+        var poster = frame.querySelector('img');
+        var v = document.createElement('video');
+        v.muted = true; v.loop = true; v.playsInline = true; v.setAttribute('playsinline', '');
+        v.setAttribute('preload', 'metadata'); v.setAttribute('aria-hidden', 'true');
+        v.tabIndex = -1;
+        if (poster && poster.currentSrc) v.poster = poster.currentSrc;
+        v.src = src;
+        v.addEventListener('playing', function () { frame.classList.add('playing'); });
+        v.addEventListener('error', function () { frame.classList.remove('playing'); });
+        frame.insertBefore(v, frame.querySelector('.live-tag') || null);
+        var play = v.play();
+        if (play && play.catch) play.catch(function () { /* autoplay blocked — poster stays */ });
+      }
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          var f = en.target;
+          if (en.isIntersecting) {
+            mount(f);
+            var vid = f.querySelector('video');
+            if (vid && vid.paused) { var pr = vid.play(); if (pr && pr.catch) pr.catch(function () {}); }
+          } else {
+            var vp = f.querySelector('video');
+            if (vp && !vp.paused) vp.pause(); /* pause off-screen — full control, saves battery */
+          }
+        });
+      }, { threshold: 0.35 });
+      frames.forEach(function (f) { io.observe(f); });
+    } catch (e) { /* any failure: posters remain, nothing breaks */ }
+  })();
+  </script>
+</body>
+</html>

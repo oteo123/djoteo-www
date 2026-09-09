@@ -1,0 +1,141 @@
+/* ============================================================================
+   LESMANA CRAFT LAYER — the $129 template's motion/craft, ported to the OTEO
+   design. Additive only: no layout/position/color-scheme change. Ports the
+   exact Lesmana parameters (from OTEO_SITE_ENGINE/djoteo-lesmana-v8/oteo-finish.js
+   + the Framer export): image grade + hover lift, card/button micro-lifts,
+   spring entrance easing, type refinement, gold selection. Guarded so no-JS /
+   reduced-motion users lose nothing.
+   ============================================================================ */
+
+:root{
+  /* the signature Lesmana entrance/hover easing (Framer export, verbatim) */
+  --lz-ease: cubic-bezier(.2,.7,.2,1);
+}
+
+/* ---- 1. IMAGE GRADE + HOVER LIFT (Lesmana oteo-finish.js lines 86-87, verbatim
+        treatment, scoped to real content photos) ---- */
+.neo-frame img, .neo-statement-image img, .neo-close-media img,
+.eqp-card img, .mr-item img, .v-media img, .card img, main article img{
+  box-shadow: 0 18px 40px -22px rgba(10,10,11,.55), 0 2px 8px -4px rgba(200,169,106,.18);
+  filter: saturate(1.04) contrast(1.03);
+  transition: box-shadow .5s var(--lz-ease), filter .5s ease, transform .55s var(--lz-ease);
+  will-change: transform;
+}
+
+/* gig-01 is shot near-black; lift it so the subject reads on the cream ground
+   (scoped to the tall collage frame only — the other photos are already lit) */
+.neo-frame-tall img{
+  filter: brightness(1.42) saturate(1.1) contrast(1.05);
+}
+html.js-motion .neo-frame:hover img, html.js-motion .eqp-card:hover img,
+html.js-motion .mr-item:hover img, html.js-motion .card:hover img{
+  box-shadow: 0 26px 60px -24px rgba(10,10,11,.65), 0 4px 14px -4px rgba(200,169,106,.28);
+  filter: saturate(1.1) contrast(1.05) brightness(1.02);
+  transform: scale(1.03);
+}
+html.js-motion .neo-frame-tall:hover img{
+  filter: brightness(1.46) saturate(1.14) contrast(1.06);
+}
+
+/* ---- 2. CARD / TILE HOVER LIFT (Lesmana translateY(-3..-9px) + gold shadow) ---- */
+html.js-motion .neo-service, html.js-motion .eqp-card, html.js-motion .pkg-card,
+html.js-motion .mr-item, html.js-motion .neo-quote-small, html.js-motion .card,
+html.js-motion .slot, html.js-motion .venue{
+  transition: transform .55s var(--lz-ease), box-shadow .4s var(--lz-ease), border-color .3s ease;
+}
+html.js-motion .neo-service:hover, html.js-motion .eqp-card:hover,
+html.js-motion .pkg-card:hover, html.js-motion .mr-item:hover,
+html.js-motion .neo-quote-small:hover, html.js-motion .card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px -26px rgba(10,10,11,.6), 0 4px 16px -6px rgba(200,169,106,.22);
+}
+
+/* ---- 3. BUTTON / LINK MICRO-LIFT ---- */
+html.js-motion .neo-button, html.js-motion .btn, html.js-motion .neo-service-arrow,
+html.js-motion .card-cta, html.js-motion .v-cta, html.js-motion .cta{
+  transition: transform .3s var(--lz-ease), box-shadow .3s var(--lz-ease), background .25s ease;
+}
+html.js-motion .neo-button:hover, html.js-motion .btn:hover,
+html.js-motion .card-cta:hover, html.js-motion .v-cta:hover, html.js-motion .cta:hover{
+  transform: translateY(-2px) scale(1.02);
+}
+html.js-motion .neo-service:hover .neo-service-arrow{ transform: translate(3px,-3px); }
+
+/* ---- 4. SPRINGIER ENTRANCE (upgrade the reveal easing + add subtle scale so it
+        reads like the Framer "appear" animation, not a flat fade) ---- */
+html.js-motion .reveal{
+  transform: translate3d(0,30px,0) scale(.985);
+  transition: opacity .8s var(--lz-ease), transform .8s var(--lz-ease);
+}
+html.js-motion .reveal.is-visible{ transform: none; }
+
+/* ---- 5. TYPE REFINEMENT (Lesmana oteo-finish.js type waves, verbatim) ---- */
+h1,h2,h3,h4,h5,h6{
+  font-optical-sizing:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  font-feature-settings:"ss01","liga" 1,"dlig" 1,"kern" 1; text-wrap:balance;
+}
+h1,h2{ letter-spacing:-.015em; }
+p,blockquote,figcaption{ text-wrap:pretty; }
+
+/* ---- 6. GOLD SELECTION + SCROLLBAR CHROME (Lesmana brand chrome) ---- */
+::selection{ background:rgba(200,169,106,.30); color:#0a0a0b; }
+::-moz-selection{ background:rgba(200,169,106,.30); color:#0a0a0b; }
+
+/* ---- 7. COUNT-UP STAT STRIP (the Lesmana counter mechanic, real numbers only)
+        Aligned to the section's 1200px column; display numbers speak with the
+        same 850-weight voice as .neo-resume-num; bottom margin keeps the
+        following block's border-top clear of the labels. ---- */
+.lz-stats{
+  display:flex; flex-wrap:wrap; gap:32px 72px;
+  max-width:1200px; margin:0 auto clamp(48px,6vw,88px);
+}
+.lz-stat{ display:flex; flex-direction:column; gap:10px; }
+.lz-stat-num{
+  font:850 clamp(56px,7vw,112px)/.85 var(--sans, inherit);
+  letter-spacing:-.06em; color:var(--neo-cobalt, #243f9c);
+  font-variant-numeric:tabular-nums;
+}
+.lz-stat-label{
+  font:600 11px/1.3 var(--sans, inherit); letter-spacing:.14em; text-transform:uppercase;
+  color:#6a655c;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .neo-frame img,.eqp-card img,.mr-item img,.card img,main article img,
+  .neo-service,.eqp-card,.pkg-card,.mr-item,.neo-button,.btn{ transition:none !important; }
+  html.js-motion .reveal{ transform:none; transition:none; }
+}
+
+/* --- homepage LISTEN band (hear OTEO's real music — self-contained dark section) --- */
+.neo-listen{ background:#0a0a0b; color:#f4f1ea; padding:clamp(64px,9vw,120px) 24px; }
+.neo-listen-inner{ max-width:1080px; margin:0 auto; }
+.neo-listen .neo-section-id{ color:#c8a96a; }
+.neo-listen h2{ font:600 clamp(30px,4.6vw,60px)/1.05 var(--sans,system-ui,sans-serif); letter-spacing:-.03em; margin:14px 0 0; color:#f4f1ea; }
+.neo-listen h2 em{ font-style:italic; color:#c8a96a; }
+.neo-listen-note{ margin-top:18px; max-width:620px; color:#a19b8e; font:500 16px/1.6 var(--sans,system-ui,sans-serif); }
+.neo-listen-note strong{ color:#f4f1ea; }
+.neo-listen-player{ margin:34px 0 20px; border-radius:16px; overflow:hidden; border:1px solid rgba(244,241,234,.10); box-shadow:0 40px 90px -46px rgba(0,0,0,.9); }
+.neo-listen-player iframe{ display:block; width:100%; height:340px; border:0; background:#111; }
+.neo-listen-link{ display:inline-flex; align-items:center; gap:8px; color:#c8a96a; font:600 13px/1 var(--sans,system-ui,sans-serif); letter-spacing:.04em; text-decoration:none; }
+.neo-listen-link:hover{ text-decoration:underline; text-underline-offset:4px; }
+
+/* --- SoundCloud click-to-load facade (no third-party cookies until play) --- */
+.sc-facade{ position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:16px; min-height:220px; cursor:pointer; text-align:center; padding:44px 24px; color:#f4f1ea;
+  background:radial-gradient(circle at 62% 22%, rgba(200,169,106,.18), transparent 46%), linear-gradient(150deg,#16120b,#080808 70%);
+  transition:background .35s ease; -webkit-tap-highlight-color:transparent; }
+.sc-facade:hover,.sc-facade:focus-visible{ background:radial-gradient(circle at 62% 22%, rgba(200,169,106,.26), transparent 46%), linear-gradient(150deg,#1c1710,#0a0a0a 70%); outline:none; }
+.sc-facade-play{ width:66px; height:66px; border-radius:50%; background:#c8a96a; color:#0a0a0a;
+  display:flex; align-items:center; justify-content:center; font-size:22px; padding-left:4px;
+  box-shadow:0 14px 34px -12px rgba(200,169,106,.5); transition:transform .25s cubic-bezier(.2,.7,.2,1); }
+.sc-facade:hover .sc-facade-play,.sc-facade:focus-visible .sc-facade-play{ transform:scale(1.09); }
+.sc-facade-label{ font:600 12px/1.5 var(--sans,system-ui,sans-serif); letter-spacing:.14em; text-transform:uppercase; color:#c8a96a; }
+.sc-facade-label b{ color:#f4f1ea; font-weight:600; }
+
+/* --- WCAG: footer email links must be distinguishable by more than color --- */
+.site-footer p a[href^="mailto:"],
+.footer-copy a[href^="mailto:"],
+.neo-footer a[href^="mailto:"],
+footer p a[href^="mailto:"]{
+  text-decoration:underline; text-decoration-color:rgba(200,169,106,.55); text-underline-offset:2px;
+}

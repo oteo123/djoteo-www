@@ -1,0 +1,31 @@
+{
+  "title": "OTEO \u2014 Alec Pontes (DJ OTEO)",
+  "name": "OTEO",
+  "artist": "Alec Pontes",
+  "role": "DJ + Producer",
+  "location": "Orlando, FL",
+  "motto": "Open House Format",
+  "genres": [
+    "House",
+    "Tech House"
+  ],
+  "email": "oteo@djoteo.com",
+  "label": "Fish Out of Water Records (FOOWR)",
+  "social": {
+    "instagram": "https://www.instagram.com/djoteo/",
+    "twitter": "https://twitter.com/djoteo",
+    "soundcloud_label": "https://soundcloud.com/fishoutofwaterrecords",
+    "spotify": "https://open.spotify.com/artist/0IMvhOmvqQAgLtUVCyz1rB",
+    "youtube": "https://www.youtube.com/@DjOteo"
+  },
+  "_meta": {
+    "source": "Verified from PAGES.md REAL OTEO FACTS block + live index.html social hrefs + Alec directive 2026-06-08. No invented values.",
+    "provenance": {
+      "motto": "Alec 2026-06-08 \u2014 'the open house format tag on my flyers should be the motto'",
+      "name/role/location/genres/label": "PAGES.md REAL OTEO FACTS block",
+      "instagram/twitter/spotify/youtube": "href values present in live index.html",
+      "soundcloud_label": "foowr.html + canonical FOOWR handle across repo",
+      "email": "oteo@djoteo.com is canonical (60 repo uses vs 31 stray bookings@)"
+    }
+  }
+}

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — OTEO</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="description" content="Book OTEO — Alec Pontes for DJ sets, production, entertainment direction, private events, and corporate events. Send a direct inquiry.">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OTEO">
+  <meta property="og:title" content="Contact — OTEO">
+  <meta property="og:description" content="Book OTEO for DJ sets, production, entertainment direction, private events, and corporate events.">
+  <meta property="og:image" content="https://djoteo.com/assets/og-contact.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Book OTEO — send the date, venue, room and format.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djoteo">
+  <meta name="twitter:creator" content="@djoteo">
+  <meta name="twitter:title" content="Contact — OTEO">
+  <meta name="twitter:description" content="Book OTEO for DJ sets, production, entertainment direction, private events, and corporate events.">
+  <meta name="twitter:image" content="https://djoteo.com/assets/og-contact.jpg">
+  <meta name="twitter:image:alt" content="Book OTEO — send the date, venue, room and format.">
+
+
+  <link rel="stylesheet" href="./assets/site.css">
+  <style>
+    /* ---- Contact page polish (page-scoped overrides) ---- */
+    /* Let the portrait read — it was double-darkened into a black smudge */
+    /* His portrait lives in a frame this page controls (.contact-portrait
+       below), never in the hero background. A background is sized by the
+       viewport, so at some width it always clipped his head or his chin; a
+       fixed 4/5 panel against a 2:3 source crops almost nothing. */
+    .contact-portrait{
+      margin:clamp(26px,3vw,38px) 0 0; padding:0;
+      width:min(300px,62%); aspect-ratio:4/5; overflow:hidden;
+      border-radius:var(--radius); border:1px solid rgba(244,241,234,.1);
+      box-shadow:0 34px 80px -28px rgba(0,0,0,.85);
+    }
+    .contact-portrait img{
+      width:100%; height:100%; object-fit:cover; object-position:50% 16%;
+      display:block; filter:grayscale(.12) saturate(.9) contrast(1.05);
+    }
+    @media (max-width:860px){
+      .contact-portrait{ width:min(260px,58%); }
+    }
+    .contact-hero-bg{
+      opacity:.9;
+      filter:grayscale(.3) sepia(.06) contrast(1.06);
+      /* No face in this hero, by design. The headline owns the left and the
+         form owns the right, so a portrait had nowhere to go: it landed
+         directly behind "Let's lock a date", and the frame clipped his head at
+         the top or his chin at the bottom depending on the width. Padding the
+         source bought headroom but could not stop the face colliding with the
+         type. A hands-on-the-decks frame carries the same atmosphere with no
+         face to cut — his portrait belongs where it has room, which is the
+         about and services heroes. */
+      background-position:56% 52%;
+    }
+    .contact-hero-bg::after{
+      background:
+        linear-gradient(180deg, rgba(10,10,11,.5) 0%, rgba(10,10,11,0) 26%, rgba(10,10,11,0) 58%, rgba(10,10,11,.94) 100%),
+        linear-gradient(90deg, rgba(10,10,11,.5) 0%, rgba(10,10,11,.34) 46%, rgba(10,10,11,.62) 100%);
+    }
+    .contact-hero-title{ text-shadow:0 4px 60px rgba(0,0,0,.8), 0 1px 18px rgba(0,0,0,.6); }
+    .contact-hero-copy .section-deck{ text-shadow:0 1px 14px rgba(0,0,0,.7); }
+    /* Facts: clickable email, consistent gold accents */
+    .contact-facts a{ color:inherit; }
+    .contact-facts a:hover strong{ text-decoration:underline; text-underline-offset:3px; }
+    /* Form: part of the editorial scene, not a pasted white template card. */
+    .contact-form{ box-shadow:0 50px 110px -30px rgba(0,0,0,.85), 0 0 0 1px rgba(200,169,106,.16); }
+    /* FAQ: cap line measure so the ruled list keeps an even editorial column */
+    .faq-list{ max-width:980px; }
+    /* Closer actions: even rhythm — button, then quiet links */
+    .contact-actions{ gap:14px 26px; }
+    @media (max-width:600px){
+      .contact-actions{ flex-direction:column; gap:18px; }
+    }
+    /* Mobile hero: keep the portrait present instead of a black void */
+    @media (max-width:860px){
+      .contact-hero-bg{ opacity:.55; background-position:24% 12%; }
+      .contact-hero-bg::after{
+        background:
+          linear-gradient(180deg, rgba(10,10,11,.55) 0%, rgba(10,10,11,.28) 30%, rgba(10,10,11,.8) 72%, rgba(10,10,11,.97) 100%);
+      }
+    }
+  </style>
+  <link href="./assets/inner-next.css" rel="stylesheet">
+  <link href="./assets/uniform-next.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/oteo-craft.css">
+  <link rel="stylesheet" href="./assets/oteo-system.css">
+  <link rel="canonical" href="https://djoteo.com/contact">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://djoteo.com/#oteo",
+    "name": "Alec Pontes",
+    "alternateName": ["OTEO", "DJ OTEO"],
+    "jobTitle": "DJ & Producer",
+    "description": "OTEO (Alec Pontes) \u2014 Orlando DJ, producer, curator, and founder of Fish Out of Water Records.",
+    "url": "https://djoteo.com/",
+    "image": "https://djoteo.com/assets/hero-oteo.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Orlando", "addressRegion": "FL", "addressCountry": "US" },
+    "sameAs": [
+      "https://www.instagram.com/djoteo/",
+      "https://www.tiktok.com/@djoteo",
+      "https://soundcloud.com/fishoutofwaterrecords"
+    ],
+    "worksFor": { "@type": "LocalBusiness", "@id": "https://djoteo.com/#business", "name": "OTEO", "url": "https://djoteo.com/" }
+  }
+  </script>
+</head>
+<body class="page-contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="OTEO — home">OTEO</a>
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/about">About</a><a href="/contact" aria-current="page" >Contact</a></div>
+        <a class="btn btn-primary header-cta" href="#booking-form">
+          Book OTEO <span class="glyph" aria-hidden="true">&#8599;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== CONTACT HERO ===================== -->
+    <section class="section contact-hero" aria-labelledby="contact-heading">
+      <div class="contact-hero-bg" style="background-image:url('./assets/img/process-03.jpg')" aria-hidden="true"></div>
+      <div class="wrap contact-hero-inner">
+        <div class="contact-hero-copy">
+          <span class="eyebrow dot reveal">Booking</span>
+          <h1 id="contact-heading" class="contact-hero-title reveal">Let's lock<br><em>a date.</em></h1>
+          <p class="section-deck reveal">Send the date, venue, room and format &mdash; and we'll build a night your crowd remembers.</p>
+          <div class="contact-facts reveal">
+            <span>Based in <strong>Orlando, FL</strong></span>
+            <span>Shared bills with <strong>Alok</strong>, <strong>Cat&nbsp;Dealers</strong>, <strong>Bhaskar</strong> &amp; <strong>KVSH</strong></span>
+            <span>Founder &middot; <strong>Fish Out of Water Records</strong></span>
+            <span><a href="mailto:oteo@djoteo.com?subject=Booking%20Inquiry"><strong>oteo@djoteo.com</strong></a></span>
+          </div>
+          <figure class="contact-portrait reveal" data-delay="120">
+            <img src="./assets/img/portrait-graded.jpg" width="1333" height="2000"
+                 alt="OTEO — Alec Pontes" loading="lazy" decoding="async">
+          </figure>
+        </div>
+        <form class="contact-form reveal" id="booking-form" action="https://api.web3forms.com/submit" method="post" data-contact-form aria-label="Booking inquiry">
+          <input type="hidden" name="access_key" value="0ea77eca-edf8-4b40-912e-c36a3dac6de7">
+          <input type="hidden" name="subject" value="Booking inquiry — djoteo.com contact">
+          <input type="hidden" name="from_name" value="djoteo.com contact form">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" class="botcheck">
+          <label class="field">
+            <span class="field-label">Name</span>
+            <input type="text" name="name" placeholder="Enter full name" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Email</span>
+            <input type="email" name="email" placeholder="Enter email address" autocomplete="email" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Message</span>
+            <textarea name="message" rows="4" placeholder="Date, venue, room and format…" required></textarea>
+          </label>
+          <div class="form-foot">
+            <p class="form-note">Your inquiry goes directly to OTEO. No account required.</p>
+            <button type="submit" class="btn btn-primary" data-contact-submit>Send inquiry <span class="glyph" aria-hidden="true">&#8594;</span></button>
+          </div>
+          <p class="contact-form-status" role="status" aria-live="polite" data-contact-status></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow dot reveal">Questions</span>
+          <h2 id="faq-heading" class="section-title reveal">Booking, <em>answered</em>.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal" open>
+            <summary>What kind of sets do you play?</summary>
+            <p>Residencies, clubs, private and corporate events. I read the room and hold it till close. Plus custom mixes, gear rental, and original productions on Fish Out of Water Records.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How does booking work?</summary>
+            <p>Send the date, venue, room and format. OTEO confirms availability and scope, then sends a quote. On the night, the set, mix and gear are dialed to the room.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you provide gear?</summary>
+            <p>Yes &mdash; pro AlphaTheta / Pioneer DJ and PA gear, delivered and set up.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can you play a room that's used to a different sound?</summary>
+            <p>That&rsquo;s the job &mdash; reading the room and building the night for the crowd in front of OTEO, rather than forcing a fixed setlist.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can you take requests on the night?</summary>
+            <p>Absolutely &mdash; reading the room includes reading the requests. If it fits the energy and the moment, I&rsquo;ll work it in.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How far in advance should I book?</summary>
+            <p>The calendar fills up around weekends and residency nights, so the earlier the better. Send your date and I&rsquo;ll confirm availability right away.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSER ===================== -->
+    <section class="contact" aria-labelledby="closer-heading">
+      <div class="contact-bg" style="background-image:url('./assets/img/footer-bg.jpg')" aria-hidden="true"></div>
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-inner">
+        <h2 id="closer-heading" class="contact-statement reveal">Let's build <em>the night</em>.</h2>
+        <p class="contact-sub reveal">Orlando · DJ sets, production, direction, clubs &amp; private events.</p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-lg" href="mailto:oteo@djoteo.com?subject=Booking%20Inquiry">
+            Book OTEO <span class="glyph" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="email-link" href="mailto:oteo@djoteo.com?subject=Booking%20Inquiry">oteo@djoteo.com</a>
+          <a class="email-link" href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">DM on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">OTEO</div><p class="footer-copy">&copy; <span data-year>2026</span> OTEO · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="./works/">Works</a><a href="./blog/">Mixes</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
+
+  <script defer src="./assets/vendor/gsap.min.js"></script>
+  <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="./assets/vendor/lenis.min.js"></script>
+  <script src="./assets/site.js" defer></script>
+</body>
+</html>

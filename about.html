@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — OTEO</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="description" content="Meet OTEO — Alec Pontes, an Orlando DJ, producer, curator, and founder of Fish Out of Water Records. Explore the work and book OTEO.">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OTEO">
+  <meta property="og:title" content="About — OTEO">
+  <meta property="og:description" content="Meet OTEO — Alec Pontes, DJ, producer, curator, and founder of Fish Out of Water Records.">
+  <meta property="og:image" content="https://djoteo.com/assets/og-about.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OTEO — Alec Pontes, Orlando DJ, producer and curator, behind the decks.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djoteo">
+  <meta name="twitter:creator" content="@djoteo">
+  <meta name="twitter:title" content="About — OTEO">
+  <meta name="twitter:description" content="Meet OTEO — Alec Pontes, DJ, producer, curator, and founder of Fish Out of Water Records.">
+  <meta name="twitter:image" content="https://djoteo.com/assets/og-about.jpg">
+  <meta name="twitter:image:alt" content="OTEO — Alec Pontes, Orlando DJ, producer and curator, behind the decks.">
+
+
+  <link rel="stylesheet" href="./assets/site.css">
+  <style>
+    /* ---- about-page refinements (page-scoped) ---- */
+
+    /* hero lede: deck left, artist vitals right — no dead column */
+    .about-lede{ display:grid; gap:36px; }
+    @media (min-width:960px){
+      .about-lede{ grid-template-columns:minmax(0,7fr) minmax(0,4fr); column-gap:96px; align-items:start; }
+    }
+    .about-lede .section-deck{ max-width:52ch; }
+    .about-vitals{ list-style:none; margin:0; padding:0; }
+    .about-vitals li{
+      display:flex; align-items:baseline; justify-content:space-between; gap:24px;
+      padding:13px 0; border-top:1px solid rgba(200,169,106,.18);
+    }
+    .about-vitals li:last-child{ border-bottom:1px solid rgba(200,169,106,.18); }
+    .vital-k{
+      font:500 11px/1.7 var(--sans); letter-spacing:.18em; text-transform:uppercase;
+      color:var(--gold); white-space:nowrap;
+    }
+    .vital-v{ font-family:var(--sans); font-size:14px; line-height:1.55; color:var(--ink); text-align:right; }
+
+    /* standing rooms — editorial ledger */
+    .rooms-list{ display:block; border-top:1px solid rgba(200,169,106,.18); }
+    a.room-row{
+      display:grid; grid-template-columns:minmax(0,1fr) 28px; gap:4px 20px;
+      align-items:center; padding:24px 0;
+      border-bottom:1px solid rgba(200,169,106,.18);
+    }
+    @media (min-width:860px){
+      a.room-row{
+        grid-template-columns:58px minmax(0,5fr) minmax(0,3fr) minmax(0,3fr) 28px;
+        align-items:baseline; padding:30px 0;
+      }
+    }
+    .room-idx{
+      font-family:var(--sans); font-weight:320; font-style:italic;
+      font-size:clamp(18px,1.8vw,24px); line-height:1; color:var(--gold);
+      display:none;
+    }
+    @media (min-width:860px){ .room-idx{ display:block; } }
+    .room-name{
+      font-family:var(--sans); font-weight:400; letter-spacing:-.01em;
+      font-size:clamp(24px,3vw,36px); line-height:1.1; color:var(--ink);
+      margin:0; transition:color .18s var(--ease);
+    }
+    .room-cat,.room-nights{
+      font:500 11px/1.7 var(--sans); letter-spacing:.18em; text-transform:uppercase;
+    }
+    .room-cat{ color:var(--muted); }
+    .room-nights{ color:var(--gold); }
+    @media (min-width:860px){ .room-nights{ text-align:right; } }
+    .room-go{
+      grid-row:1; grid-column:2; justify-self:end;
+      color:var(--muted); font-size:18px; line-height:1;
+      transition:color .18s var(--ease), transform .18s var(--ease);
+    }
+    @media (min-width:860px){ .room-go{ grid-column:5; } }
+    a.room-row:hover .room-name{ color:var(--gold); }
+    a.room-row:hover .room-go{ color:var(--gold); transform:translateX(4px); }
+    .rooms-foot{ margin-top:clamp(28px,4vw,40px); }
+
+    /* CTA actions: clean vertical stack on small screens */
+    @media (max-width:679px){
+      .contact-actions{ flex-direction:column; gap:18px; }
+    }
+
+    /* hero portrait is a TALL 1333x2000 shot — the default 16/8 wide-banner
+       crop cut the head off and showed only the chin. Give it a portrait-
+       friendly aspect + frame the face so the full head is in view. */
+    /* The source is 1333x2000 — a TALL portrait. It was in a full-width 16/9
+       banner, so `cover` had to zoom ~2.7x and there was no position that kept
+       both the top of his head and his chin: every desktop width cut one or
+       both. Widening the frame can never fix that; the frame has to match the
+       photograph. So the banner becomes a portrait-shaped panel, which also
+       fills the dead space that sat under the intro paragraph. */
+    .about-hero-media{ aspect-ratio:3/4; max-height:560px; }
+    .about-hero-media img{ object-position:50% 16%; }
+    @media (min-width:700px){
+      .about-hero-media{ aspect-ratio:4/5; max-width:430px; max-height:600px; margin-left:0; }
+      .about-hero-media img{ object-position:50% 14%; }
+    }
+    @media (min-width:960px){
+      .about-hero-media{ aspect-ratio:4/5; max-width:470px; max-height:640px; }
+      .about-hero-media img{ object-position:50% 13%; }
+    }
+
+    /* the parallax contact background is scaled (GSAP scale:1.08) a few px
+       past the viewport on narrow screens; clip it at the section AND on the
+       page's own main wrapper so it can't add any horizontal page scroll */
+    .contact{ overflow:clip; contain:paint; }
+    #main{ overflow-x:clip; }
+
+    /* the story — recovered verified bio prose */
+    .about-story{ max-width:66ch; display:grid; gap:22px; margin-top:8px; }
+    .about-story p{
+      font-family:var(--sans); font-size:clamp(16px,1.55vw,18px); line-height:1.78;
+      color:var(--ink); text-wrap:pretty;
+    }
+    .about-story em{ color:var(--gold); font-style:italic; }
+    .about-story strong{ color:var(--ink); font-weight:600; }
+</style>
+<link href="./assets/inner-next.css" rel="stylesheet">
+<link href="./assets/uniform-next.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/oteo-craft.css">
+  <link rel="stylesheet" href="./assets/oteo-system.css">
+  <link rel="canonical" href="https://djoteo.com/about">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://djoteo.com/#oteo",
+    "name": "Alec Pontes",
+    "alternateName": ["OTEO", "DJ OTEO"],
+    "jobTitle": "DJ & Producer",
+    "description": "OTEO (Alec Pontes) \u2014 Orlando DJ, producer, curator, and founder of Fish Out of Water Records.",
+    "url": "https://djoteo.com/",
+    "image": "https://djoteo.com/assets/hero-oteo.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Orlando", "addressRegion": "FL", "addressCountry": "US" },
+    "sameAs": [
+      "https://www.instagram.com/djoteo/",
+      "https://www.tiktok.com/@djoteo",
+      "https://soundcloud.com/fishoutofwaterrecords"
+    ],
+    "worksFor": { "@type": "LocalBusiness", "@id": "https://djoteo.com/#business", "name": "OTEO", "url": "https://djoteo.com/" }
+  }
+  </script>
+</head>
+<body class="page-about">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="OTEO — home">OTEO</a>
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/about" aria-current="page" >About</a><a href="/contact">Contact</a></div>
+        <a class="btn btn-primary header-cta" href="/booking#book">
+          Book OTEO <span class="glyph" aria-hidden="true">&#8599;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== ABOUT HERO ===================== -->
+    <section class="section about-hero" aria-labelledby="about-heading">
+      <div class="wrap">
+        <span class="eyebrow dot reveal">The Artist</span>
+        <h1 id="about-heading" class="about-title reveal">The artist behind <em>OTEO</em>.</h1>
+        <div class="about-lede">
+          <p class="section-deck reveal">
+            OTEO is Alec Pontes, an Orlando DJ, producer, curator and founder of Fish Out of
+            Water Records. He plays <em>open house format</em>, and Orlando&nbsp;Weekly nominated him
+            <strong>Best Club DJ</strong>.
+          </p>
+          <ul class="about-vitals reveal" data-delay="80" aria-label="Artist facts">
+            <li><span class="vital-k">Base</span><span class="vital-v">Orlando, Florida</span></li>
+            <li><span class="vital-k">Origin</span><span class="vital-v">Brazil &middot; raised in Florida</span></li>
+            <li><span class="vital-k">On the mic</span><span class="vital-v">English &amp; Portuguese</span></li>
+            <li><span class="vital-k">Recognition</span><span class="vital-v">Orlando Weekly &mdash; Best Club DJ nominee</span></li>
+            <li><span class="vital-k">Shared stages</span><span class="vital-v">Alok &middot; Cat&nbsp;Dealers &middot; Bhaskar &middot; KVSH</span></li>
+            <li><span class="vital-k">Roles</span><span class="vital-v">DJ &middot; Producer &middot; Curator</span></li>
+            <li><span class="vital-k">Label</span><span class="vital-v">Fish Out of Water Records</span></li>
+          </ul>
+        </div>
+        <div class="about-hero-media reveal" data-delay="120">
+          <img src="./assets/img/portrait-graded.jpg" width="1333" height="2000"
+               alt="OTEO (Alec Pontes) performing behind the decks in Orlando" decoding="async" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STORY ===================== -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow dot reveal">The Story</span>
+          <h2 id="story-heading" class="section-title reveal">Born in Brazil.<br>Built in <em>Orlando</em>.</h2>
+        </div>
+        <div class="about-story">
+          <p class="reveal">
+            Born in Brazil and brought to Florida at age one, OTEO's first instrument was his
+            grandfather's guitar in <strong>Tim&oacute;teo, Minas Gerais</strong> &mdash; summers spent
+            learning what music feels like long before he ever stood behind a booth. That inheritance
+            runs through every set: house threaded with Latin, Afro, Brazilian, and tribal texture,
+            paced for the room rather than the genre.
+          </p>
+          <p class="reveal" data-delay="80">
+            He started open-format in Orlando and grew into house through live mash-ups at The&nbsp;H
+            &mdash; the move from wide range to precision you can hear in the depth of his sets. Today he
+            plays what he calls <em>open house format</em>: house at the core, the surface whatever the
+            night asks for. He reads the floor fluently in English and Portuguese, and has shared bills
+            with Alok, Cat&nbsp;Dealers, Bhaskar, KVSH, Victor&nbsp;Lou, Liu, and Mr&nbsp;Pauer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRINCIPLES ===================== -->
+    <section class="section" aria-labelledby="principles-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow dot reveal">How OTEO Plays</span>
+          <h2 id="principles-heading" class="section-title reveal">Principles</h2>
+        </div>
+        <div class="principles-grid">
+          <article class="principle reveal">
+            <span class="principle-num">01.</span>
+            <h3 class="principle-name">Read the Room</h3>
+            <p class="principle-body">Play what the floor needs, not a fixed setlist. The room tells you where the night goes.</p>
+          </article>
+          <article class="principle reveal" data-delay="80">
+            <span class="principle-num">02.</span>
+            <h3 class="principle-name">Build the Night</h3>
+            <p class="principle-body">Open easy, build all night, and land the peak when the room is ready for it.</p>
+          </article>
+          <article class="principle reveal" data-delay="160">
+            <span class="principle-num">03.</span>
+            <h3 class="principle-name">Keep It Moving</h3>
+            <p class="principle-body">House and tech-house that never lets the energy drop. The low end does the talking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE WORK ===================== -->
+    <section class="section" aria-labelledby="rooms-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow dot reveal">The Work</span>
+          <h2 id="rooms-heading" class="section-title reveal">One artist, full range</h2>
+        </div>
+        <div class="rooms-list">
+          <a class="room-row reveal" href="/booking#book">
+            <span class="room-idx" aria-hidden="true">01.</span>
+            <h3 class="room-name">DJ &amp; Live Sets</h3>
+            <span class="room-cat">Performance</span>
+            <span class="room-nights">Room-led, moment-aware</span>
+            <span class="room-go" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="room-row reveal" data-delay="80" href="/booking#book">
+            <span class="room-idx" aria-hidden="true">02.</span>
+            <h3 class="room-name">Production &amp; Engineering</h3>
+            <span class="room-cat">Studio</span>
+            <span class="room-nights">Idea to final master</span>
+            <span class="room-go" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="room-row reveal" data-delay="160" href="/booking#book">
+            <span class="room-idx" aria-hidden="true">03.</span>
+            <h3 class="room-name">Entertainment Curation</h3>
+            <span class="room-cat">Direction</span>
+            <span class="room-nights">Lineup, flow, sound</span>
+            <span class="room-go" aria-hidden="true">&#8594;</span>
+          </a>
+        </div>
+        <div class="rooms-foot reveal">
+          <a class="label-line" href="/residencies">View OTEO's track record</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LABEL ===================== -->
+    <section class="section" aria-labelledby="label-heading">
+      <div class="wrap sound-grid">
+        <div class="sound-text">
+          <span class="eyebrow dot reveal">The Label</span>
+          <h2 id="label-heading" class="sound-head reveal">Fish Out of Water Records.</h2>
+          <p class="section-deck reveal">
+            OTEO is the founder of Fish Out of Water Records &mdash; original house and
+            tech-house productions and releases. The label puts out his own records
+            and those of artists he plays alongside.
+          </p>
+          <div class="tag-row reveal">
+            <span class="tag">DJ</span>
+            <span class="tag">Producer</span>
+            <span class="tag">Curator</span>
+          </div>
+        </div>
+        <div class="sound-photo-col reveal">
+          <div class="sound-photo">
+            <img src="./assets/img/the-h-graded.jpg" width="1800" height="3198" loading="lazy"
+                 decoding="async" alt="OTEO performing a late-night set in Orlando">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT CTA ===================== -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="contact-bg" style="background-image:url('./assets/img/footer-bg.jpg')" aria-hidden="true"></div>
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-inner">
+        <h2 id="contact-heading" class="contact-statement reveal">Let's build <em>the night</em>.</h2>
+        <p class="contact-sub reveal">
+          Orlando · DJ sets, production, direction and private events. For bookings and custom work, reach out.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-lg" href="/booking">
+            Book OTEO <span class="glyph" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="email-link" href="mailto:oteo@djoteo.com?subject=Booking%20Inquiry">oteo@djoteo.com</a>
+          <a class="email-link" href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">DM on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">OTEO</div><p class="footer-copy">&copy; <span data-year>2026</span> OTEO · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="./works/">Works</a><a href="./blog/">Mixes</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
+
+  <script defer src="./assets/vendor/gsap.min.js"></script>
+  <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="./assets/vendor/lenis.min.js"></script>
+  <script src="./assets/site.js" defer></script>
+</body>
+</html>
