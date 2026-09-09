@@ -189,6 +189,18 @@
     }
     .slot:hover{transform:none}
   }
+
+    .dates{margin:3rem 0 0}
+    .dates .h{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 1.2rem}
+    .datelist{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.12)}
+    .datelist li{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:baseline;
+      padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+    .datelist .d{font-family:ui-monospace,Menlo,monospace;font-size:.82rem;letter-spacing:.08em;
+      opacity:.75;min-width:9.5rem;text-transform:uppercase}
+    .datelist .v{font-weight:600}
+    .datelist .t{opacity:.6;font-size:.9rem;margin-left:auto}
+    .dates-note{opacity:.6;font-size:.9rem;margin:1rem 0 0}
+    @media (max-width:560px){.datelist .t{margin-left:0;width:100%}}
 </style>
 <link href="assets/inner-next.css" rel="stylesheet">
 <link href="assets/uniform-next.css" rel="stylesheet">
@@ -259,6 +271,13 @@
 
     </section>
 
+    <section class="dates" id="dates" aria-label="Upcoming confirmed dates" hidden>
+      <h2 class="h">Upcoming</h2>
+      <ol class="datelist" id="datelist"></ol>
+      <p class="dates-note" id="dates-note"></p>
+    </section>
+
+
     <section class="sync" aria-label="Booking and agenda sync">
       <div class="txt">
         <h2 class="h reveal">Looking for a specific date?</h2>
@@ -289,11 +308,57 @@
       /* strip internal cross-reference parentheticals — UI copy, not data loss */
       return String(s || "").replace(/\s*\(see residencies\)/i, "");
     }
+
+    /* Upcoming dates — real gigs from events.json (sourced from Google Calendar).
+       Dates are parsed as LOCAL y/m/d: new Date("2026-09-09") is UTC midnight, which
+       renders as the PREVIOUS day in US timezones. Past dates are filtered here so a
+       static page can never advertise a show that already happened. */
+    function renderDates(events){
+      var list = events && events.dates;
+      var ol = document.getElementById("datelist");
+      var sec = document.getElementById("dates");
+      var note = document.getElementById("dates-note");
+      if (!list || !list.length || !ol || !sec) return;
+      var now = new Date(); now.setHours(0,0,0,0);
+      var DOW = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+      var MON = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+      var upcoming = list.filter(function(e){
+        var p = String(e.date).split("-");
+        if (p.length !== 3) return false;
+        var dt = new Date(+p[0], +p[1]-1, +p[2]);
+        return dt >= now;
+      });
+      if (!upcoming.length) return;   /* nothing upcoming: leave the static roster alone */
+      var SHOW = 8;
+      upcoming.slice(0, SHOW).forEach(function(e){
+        var p = String(e.date).split("-");
+        var dt = new Date(+p[0], +p[1]-1, +p[2]);
+        var li = document.createElement("li");
+        var d = document.createElement("span"); d.className = "d";
+        d.textContent = DOW[dt.getDay()] + " \u00b7 " + MON[dt.getMonth()] + " " + dt.getDate();
+        var v = document.createElement("span"); v.className = "v";
+        v.textContent = e.venue + (e.city ? " \u00b7 " + e.city : "");
+        li.appendChild(d); li.appendChild(v);
+        if (e.start) {
+          var t = document.createElement("span"); t.className = "t";
+          t.textContent = e.start + (e.end ? " \u2013 " + e.end : "");
+          li.appendChild(t);
+        }
+        ol.appendChild(li);
+      });
+      if (upcoming.length > SHOW && note) {
+        note.textContent = "+ " + (upcoming.length - SHOW) +
+          " more confirmed dates through " + upcoming[upcoming.length-1].date + ".";
+      }
+      sec.hidden = false;
+    }
+
     Promise.all([
       fetch("data/events.json").then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }),
       fetch("data/residencies.json").then(function(r){ return r.ok ? r.json() : {residencies:[]}; }).catch(function(){ return {residencies:[]}; })
     ]).then(function(loaded){
       var events = loaded[0], resByTitle = {};
+      try { renderDates(events); } catch (err) { /* dates are additive; never break the roster */ }
       (loaded[1].residencies || []).forEach(function(r){ resByTitle[r.title] = r; });
       var rec = events.recurring;
       if (!rec || !rec.length) return; /* never render an empty roster — static fallback stands */

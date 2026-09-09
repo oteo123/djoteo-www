@@ -2,7 +2,8 @@
   "_meta": {
     "source": "PAGES.md residency roster + user facts (2026-07-13 correction)",
     "page": "calendar.html + residencies side spine",
-    "note": "OTEO's one current standing residency is Debonair (every Wednesday + select nights). The H is verified past proof with no confirmed current dates. Helena is allowed only as modest past-room proof, never current. No invented dates."
+    "note": "OTEO's one current standing residency is Debonair (every Wednesday + select nights). The H is verified past proof with no confirmed current dates. Helena is allowed only as modest past-room proof, never current. No invented dates.",
+    "dates_source": "Google Calendar oteo@djoteo.com, recurring event 'Club Set @ Debonair Supper Club' (22:00-02:00 America/New_York), read 2026-09-09. Only confirmed public gigs are published; internal admin events are excluded. Past dates are filtered client-side so the page never shows a stale schedule."
   },
   "recurring": [
     {
@@ -13,5 +14,143 @@
     }
   ],
   "sync_note": "Debonair is the standing Wednesday residency; other dates land across Orlando and beyond, announced on Instagram (@djoteo). To bring OTEO to your room or event, send an inquiry.",
-  "spine_format_example": "WED · DEB"
+  "spine_format_example": "WED \u00b7 DEB",
+  "dates": [
+    {
+      "date": "2026-09-09",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-16",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-23",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-30",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-07",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-14",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-21",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-28",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-11-04",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-11-11",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-11-18",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-11-25",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-12-02",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-12-09",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-12-16",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-12-23",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-12-30",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    }
+  ]
 }
