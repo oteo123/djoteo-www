@@ -134,11 +134,12 @@ var busy=false;
 var NAV=[
   {href:'/booking',label:'DJ Services'},
   {href:'/rentals',label:'Gear Rentals'},
+  {href:'/calendar',label:'Calendar'},
   {href:'/about',label:'About'},
   {href:'/contact',label:'Contact'}
 ];
 // Secondary pages: complete the footer without crowding the header column.
-var NAV_FOOTER=[{href:'/residencies',label:'Residencies'},{href:'/calendar',label:'Calendar'},{href:'/foowr',label:'FOOWR'}];
+var NAV_FOOTER=[{href:'/residencies',label:'Residencies'},{href:'/foowr',label:'FOOWR'}];
 // The Framer pages are a React app, so links are inserted rather than authored,
 // and re-inserted by the MutationObserver below if a re-render drops them.
 // Idempotent: each insert carries its own href marker, so repeated passes are
