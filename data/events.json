@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "source": "PAGES.md residency roster + user facts (2026-07-13 correction)",
+    "source": "OTEO gig calendar via scripts/gcal_to_events_json.py",
     "page": "calendar.html + residencies side spine",
-    "note": "OTEO's one current standing residency is Debonair (every Wednesday + select nights). The H is verified past proof with no confirmed current dates. Helena is allowed only as modest past-room proof, never current. No invented dates.",
-    "dates_source": "Google Calendar oteo@djoteo.com, recurring event 'Club Set @ Debonair Supper Club' (22:00-02:00 America/New_York), read 2026-09-09. Only confirmed public gigs are published; internal admin events are excluded. Past dates are filtered client-side so the page never shows a stale schedule."
+    "note": "Confirmed public dates for OTEO only. No invented dates.",
+    "dates_source": "Generated from the OTEO gig calendar. Whitelisted fields only (date, venue, city, start, end, status); descriptions are never read into this file. Only confirmed public gigs are published; tentative, show-as-free, private and admin events are excluded. Past dates are filtered client-side so the page never shows a stale schedule."
   },
   "recurring": [
     {
@@ -17,32 +17,32 @@
   "spine_format_example": "WED \u00b7 DEB",
   "dates": [
     {
-      "date": "2026-09-09",
-      "venue": "Debonair Supperclub",
-      "city": "Orlando, FL",
+      "date": "2026-09-26",
+      "venue": "Breeze Kissimmee",
+      "city": "Kissimmee, FL",
       "start": "10:00 PM",
-      "end": "2:00 AM",
-      "status": "confirmed"
-    },
-    {
-      "date": "2026-09-16",
-      "venue": "Debonair Supperclub",
-      "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
-      "status": "confirmed"
-    },
-    {
-      "date": "2026-09-23",
-      "venue": "Debonair Supperclub",
-      "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "end": "1:30 AM",
       "status": "confirmed"
     },
     {
       "date": "2026-09-30",
       "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-02",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-03",
+      "venue": "Casa Mezcal",
       "city": "Orlando, FL",
       "start": "10:00 PM",
       "end": "2:00 AM",
@@ -57,8 +57,40 @@
       "status": "confirmed"
     },
     {
+      "date": "2026-10-09",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-10",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
       "date": "2026-10-14",
       "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-16",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-17",
+      "venue": "Casa Mezcal",
       "city": "Orlando, FL",
       "start": "10:00 PM",
       "end": "2:00 AM",
@@ -73,8 +105,56 @@
       "status": "confirmed"
     },
     {
+      "date": "2026-10-23",
+      "venue": "Aphrodisiaco (speakeasy inside Casa Mezcal)",
+      "city": "Orlando, FL",
+      "start": "6:00 PM",
+      "end": "10:00 PM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-23",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-24",
+      "venue": "The Eye Restaurant & Lounge",
+      "city": "Orlando, FL",
+      "start": "6:00 PM",
+      "end": "10:00 PM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-24",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
       "date": "2026-10-28",
       "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-30",
+      "venue": "Casa Mezcal",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-10-31",
+      "venue": "Casa Mezcal",
       "city": "Orlando, FL",
       "start": "10:00 PM",
       "end": "2:00 AM",
@@ -146,6 +226,310 @@
     },
     {
       "date": "2026-12-30",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-01-06",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-01-13",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-01-20",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-01-27",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-02-03",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-02-10",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-02-17",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-02-24",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-03-03",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-03-10",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-03-17",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-03-24",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-03-31",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-04-07",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-04-14",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-04-21",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-04-28",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-05-05",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-05-12",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-05-19",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-05-26",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-06-02",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-06-09",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-06-16",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-06-23",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-06-30",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-07-07",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-07-14",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-07-21",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-07-28",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-08-04",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-08-11",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-08-18",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-08-25",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-09-01",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-09-08",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-09-15",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
+    },
+    {
+      "date": "2027-09-22",
       "venue": "Debonair Supperclub",
       "city": "Orlando, FL",
       "start": "10:00 PM",
