@@ -9,7 +9,7 @@ import * as THREE from './ref-agenda/site/js/threejs/three.module.js';
 const lerp = (a, b, n) => (1 - n) * a + n * b;
 
 
-// Agenda is COMPUTED from the one true CURRENT residency: Debonair Supperclub,
+// Agenda is COMPUTED from the one true CURRENT residency: Debonair Supper Club,
 // every Wednesday (+ select nights). Dates are the next real Wednesdays — never
 // hardcoded, never stale, never invented. Past rooms live on /residencies, not on
 // the upcoming agenda; the closing card turns intent into a booking.
