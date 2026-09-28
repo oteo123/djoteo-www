@@ -17,14 +17,6 @@
   "spine_format_example": "WED \u00b7 DEB",
   "dates": [
     {
-      "date": "2026-09-26",
-      "venue": "Breeze Kissimmee",
-      "city": "Kissimmee, FL",
-      "start": "10:00 PM",
-      "end": "1:30 AM",
-      "status": "confirmed"
-    },
-    {
       "date": "2026-09-30",
       "venue": "Debonair Supperclub",
       "city": "Orlando, FL",
