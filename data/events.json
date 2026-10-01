@@ -28,16 +28,16 @@
       "date": "2026-10-02",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
       "date": "2026-10-03",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
@@ -49,19 +49,11 @@
       "status": "confirmed"
     },
     {
-      "date": "2026-10-09",
-      "venue": "Casa Mezcal",
-      "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
-      "status": "confirmed"
-    },
-    {
       "date": "2026-10-10",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
@@ -76,16 +68,16 @@
       "date": "2026-10-16",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
       "date": "2026-10-17",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
@@ -97,35 +89,11 @@
       "status": "confirmed"
     },
     {
-      "date": "2026-10-23",
-      "venue": "Aphrodisiaco (speakeasy inside Casa Mezcal)",
-      "city": "Orlando, FL",
-      "start": "6:00 PM",
-      "end": "10:00 PM",
-      "status": "confirmed"
-    },
-    {
-      "date": "2026-10-23",
-      "venue": "Casa Mezcal",
-      "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
-      "status": "confirmed"
-    },
-    {
-      "date": "2026-10-24",
-      "venue": "The Eye Restaurant & Lounge",
-      "city": "Orlando, FL",
-      "start": "6:00 PM",
-      "end": "10:00 PM",
-      "status": "confirmed"
-    },
-    {
       "date": "2026-10-24",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
@@ -140,16 +108,16 @@
       "date": "2026-10-30",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
       "date": "2026-10-31",
       "venue": "Casa Mezcal",
       "city": "Orlando, FL",
-      "start": "10:00 PM",
-      "end": "2:00 AM",
+      "start": "8:00 PM",
+      "end": "12:00 AM",
       "status": "confirmed"
     },
     {
