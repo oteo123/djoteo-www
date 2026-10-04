@@ -17,14 +17,6 @@
   "spine_format_example": "WED \u00b7 DEB",
   "dates": [
     {
-      "date": "2026-10-03",
-      "venue": "Casa Mezcal",
-      "city": "Orlando, FL",
-      "start": "8:00 PM",
-      "end": "12:00 AM",
-      "status": "confirmed"
-    },
-    {
       "date": "2026-10-07",
       "venue": "Debonair Supperclub",
       "city": "Orlando, FL",
