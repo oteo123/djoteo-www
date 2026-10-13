@@ -471,6 +471,14 @@
       "start": "10:00 PM",
       "end": "2:00 AM",
       "status": "confirmed"
+    },
+    {
+      "date": "2027-10-13",
+      "venue": "Debonair Supperclub",
+      "city": "Orlando, FL",
+      "start": "10:00 PM",
+      "end": "2:00 AM",
+      "status": "confirmed"
     }
   ]
 }
