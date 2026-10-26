@@ -802,9 +802,16 @@ function start(){
   var te=document.querySelector("title");if(te){new MutationObserver(function(){if(TI[document.title])document.title=TI[document.title];}).observe(te,{childList:true,characterData:true,subtree:true});}
   [400,1200,2500,5000].forEach(function(d){setTimeout(pass,d);});
 }
-function early(){try{watchHiddenSlider();}catch(e){}try{pass();}catch(e){}reveal();}
+/* 2026-10-26: the server HTML and the React render now carry the same copy, so
+   nothing may touch the DOM before React has hydrated it. Any pre-hydration edit
+   (text, href, injected nav cells) made React throw the server tree away and
+   re-render the whole page client-side -- the visible "flicker" on every load.
+   We wait for React's fiber keys to appear on the page root, then run. */
+function early(){try{watchHiddenSlider();}catch(e){}reveal();}
+function hydrated(){var els=[document.querySelector('h1'),document.querySelector('footer a[href]'),document.querySelector('nav a[href]')];for(var e=0;e<els.length;e++){var el=els[e];if(!el)continue;var k=Object.keys(el);for(var i=0;i<k.length;i++){if(k[i].indexOf('__reactFiber')===0)return true;}}return false;}
+function whenHydrated(fn){var t0=Date.now();(function poll(){if(hydrated()||Date.now()-t0>6000){setTimeout(fn,hydrated()?150:0);return;}setTimeout(poll,50);})();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',early);else early();
-if(document.readyState==='complete')setTimeout(start,300);
-else window.addEventListener('load',function(){setTimeout(start,300);});
+function boot(){whenHydrated(start);}
+if(document.readyState==='complete')boot();else window.addEventListener('load',boot);
 
 })();
