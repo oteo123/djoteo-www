@@ -38,7 +38,7 @@ function OTEO_buildAgenda() {
   for (let w = 0; w < 6; w++) ev.push(debonair(next(3, w))); // Wednesday = day 3
   ev.push({
     id: "book_oteo", date: "YOUR", dayName: "DATE",
-    venue: "BOOK OTEO", colors: ["#0c0c0c", "#c8a96a"],
+    venue: "BOOK Oteo", colors: ["#0c0c0c", "#c8a96a"],
     image: "assets/debonair.jpg", text: "REQUEST A DATE",
     genre: "PRIVATE · CORPORATE · RESIDENCY", time: "ANY NIGHT",
     link: "/booking#book"

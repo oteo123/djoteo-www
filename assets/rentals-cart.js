@@ -80,7 +80,7 @@
       <button class="btn btn-primary cart-submit" type="submit">Request this night</button>
       <p class="cart-note cart-msg" role="alert"></p>
       <p class="cart-fineprint">This is a request &mdash; <strong>no card is taken here</strong>.
-        OTEO confirms availability and the price by email, then the 50% deposit is
+        Oteo confirms availability and the price by email, then the 50% deposit is
         arranged. Balance on delivery.</p>
     </form>`;
   document.body.appendChild(panel);
@@ -384,13 +384,13 @@
       state.remaining = data.remaining;
       state.blackout = !!data.blackout;
       el.avail.textContent = state.blackout
-        ? 'OTEO is not available that night — please pick another date.'
-        : 'All gear shows free for that night — OTEO confirms when he approves.';
+        ? 'Oteo is not available that night — please pick another date.'
+        : 'All gear shows free for that night — Oteo confirms when he approves.';
       if (dbStatus) {
         const free = Object.values(state.remaining || {}).filter((n) => n > 0).length;
         dbStatus.textContent = state.blackout
-          ? 'OTEO is booked that night — try another date.'
-          : `${free} of ${catalogue.size} pieces free that night — nothing is charged until OTEO approves.`;
+          ? 'Oteo is booked that night — try another date.'
+          : `${free} of ${catalogue.size} pieces free that night — nothing is charged until Oteo approves.`;
         dbStatus.className = 'date-bar-status' + (state.blackout ? ' is-out' : ' is-ok');
       }
       // trim any line that no longer fits
@@ -530,13 +530,13 @@
       // Says only what is true: the request was sent. No card was collected,
       // so it must never suggest one is on file or that a deposit is pending.
       el.msg.textContent =
-        `Request sent for ${state.date}. Nothing has been charged — OTEO will confirm the gear and the date by email, and the 50% deposit is arranged then.`;
+        `Request sent for ${state.date}. Nothing has been charged — Oteo will confirm the gear and the date by email, and the 50% deposit is arranged then.`;
     } catch (err) {
       // Never surface a raw exception to a customer, and never claim the
       // request was sent when it was not — give them a path that works.
       el.msg.classList.add('is-warn');
       el.msg.textContent =
-        'That did not send — please email oteo@djoteo.com with your date and the gear you need, and OTEO will pick it up from there.';
+        'That did not send — please email oteo@djoteo.com with your date and the gear you need, and Oteo will pick it up from there.';
       state.busy = false;
       el.submit.disabled = false;
     }

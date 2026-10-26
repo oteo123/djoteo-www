@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "source": "OTEO gig calendar via scripts/gcal_to_events_json.py",
+    "source": "Oteo gig calendar via scripts/gcal_to_events_json.py",
     "page": "calendar.html + residencies side spine",
-    "note": "Confirmed public dates for OTEO only. No invented dates.",
-    "dates_source": "Generated from the OTEO gig calendar. Whitelisted fields only (date, venue, city, start, end, status); descriptions are never read into this file. Only confirmed public gigs are published; tentative, show-as-free, private and admin events are excluded. Past dates are filtered client-side so the page never shows a stale schedule."
+    "note": "Confirmed public dates for Oteo only. No invented dates.",
+    "dates_source": "Generated from the Oteo gig calendar. Whitelisted fields only (date, venue, city, start, end, status); descriptions are never read into this file. Only confirmed public gigs are published; tentative, show-as-free, private and admin events are excluded. Past dates are filtered client-side so the page never shows a stale schedule."
   },
   "recurring": [
     {
@@ -13,7 +13,7 @@
       "start": "Evening"
     }
   ],
-  "sync_note": "Debonair is the standing Wednesday residency; other dates land across Orlando and beyond, announced on Instagram (@djoteo). To bring OTEO to your room or event, send an inquiry.",
+  "sync_note": "Debonair is the standing Wednesday residency; other dates land across Orlando and beyond, announced on Instagram (@djoteo). To bring Oteo to your room or event, send an inquiry.",
   "spine_format_example": "WED \u00b7 DEB",
   "dates": [
     {

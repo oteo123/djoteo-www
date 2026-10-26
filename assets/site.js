@@ -130,7 +130,7 @@
       }).then(function (data) {
         if (!data || !data.success) throw new Error("unconfirmed");
         form.reset();
-        setStatus("Inquiry received. OTEO will reply with availability and next steps.", "success");
+        setStatus("Inquiry received. Oteo will reply with availability and next steps.", "success");
       }).catch(emailFallback).finally(function () {
         if (submitEl) submitEl.disabled = false;
       });

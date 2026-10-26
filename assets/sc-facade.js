@@ -14,7 +14,7 @@
       "&color=%23" + color +
       "&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true";
     var ifr = document.createElement("iframe");
-    ifr.title = el.getAttribute("data-sc-title") || "OTEO on SoundCloud";
+    ifr.title = el.getAttribute("data-sc-title") || "Oteo on SoundCloud";
     ifr.setAttribute("allow", "autoplay");
     ifr.setAttribute("loading", "eager");
     ifr.style.cssText = "display:block;width:100%;height:" + height + "px;border:0;background:#111";

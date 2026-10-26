@@ -45,7 +45,7 @@
         <li><a href="/booking" class="${isActive('bookings')} js-hud-link" data-text="Services">Services</a></li>
         <li><a href="/foowr" class="${isActive('foowr')} js-hud-link" data-text="Label">Label</a></li>
         <li><a href="/calendar" class="${isActive('calendar')} js-hud-link" data-text="Agenda">Agenda</a></li>
-        <li><a href="/booking" class="hud-cta js-hud-link" data-text="Book OTEO">Book OTEO</a></li>
+        <li><a href="/booking" class="hud-cta js-hud-link" data-text="Book Oteo">Book Oteo</a></li>
       </ul>
     </nav>
     <div class="hud-sysinfo">
@@ -298,7 +298,7 @@
   deckContainer.className = 'hud-audio-deck';
   deckContainer.innerHTML = `
     <div class="hud-deck-header">
-      <span>AUDIO ENGINE // OTEO.CORE</span>
+      <span>AUDIO ENGINE // Oteo.CORE</span>
       <span class="hud-deck-pulse"></span>
     </div>
     <div class="hud-deck-body">
@@ -587,9 +587,9 @@
   setTimeout(() => {
     addLog('SYSTEM INITIALIZATION COMPLETING...', 'SYS');
     addLog('VISOR OVERLAY MATRIX ARMED', 'SYS');
-    addLog('OTEO CORE v4.8 STATUS: ONLINE', 'SYS');
+    addLog('Oteo CORE v4.8 STATUS: ONLINE', 'SYS');
     addLog('AUDIO DECK: READY FOR USER INTERACTION', 'SYS');
   }, 200);
 
-  console.log("OTEO HUD MODULE INITIALIZED [ONLINE]");
+  console.log("Oteo HUD MODULE INITIALIZED [ONLINE]");
 })();

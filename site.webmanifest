@@ -1,6 +1,6 @@
 {
-  "name": "OTEO",
-  "short_name": "OTEO",
+  "name": "Oteo",
+  "short_name": "Oteo",
   "icons": [
     { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
   ],

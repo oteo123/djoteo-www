@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Press Kit — OTEO | Orlando House &amp; Tech House DJ · Booking One-Sheet</title>
-<meta name="description" content="OTEO press kit — Orlando House and Tech House DJ and producer. Bio, sound, rooms played, rider and booking contact.">
+<title>Press Kit — Oteo | Orlando House &amp; Tech House DJ · Booking One-Sheet</title>
+<meta name="description" content="Oteo press kit — Orlando House and Tech House DJ and producer. Bio, sound, rooms played, rider and booking contact.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://djoteo.com/presskit">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://djoteo.com/presskit">
-<meta property="og:title" content="Press Kit — OTEO">
+<meta property="og:title" content="Press Kit — Oteo">
 <meta property="og:description" content="Brazilian-American House DJ + producer, Orlando. Bio, services, rig, links, booking.">
-<meta property="og:site_name" content="OTEO">
+<meta property="og:site_name" content="Oteo">
 <meta property="og:image" content="https://djoteo.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@djoteo">
-<meta name="twitter:title" content="Press Kit — OTEO">
-<meta name="twitter:description" content="Brazilian-American House DJ + producer, Orlando. Book OTEO.">
+<meta name="twitter:title" content="Press Kit — Oteo">
+<meta name="twitter:description" content="Brazilian-American House DJ + producer, Orlando. Book Oteo.">
 <meta name="twitter:image" content="https://djoteo.com/assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">
+<link href="/assets/inner-next.css" rel="stylesheet">
+<link href="/assets/uniform-next.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/oteo-craft.css">
+<link rel="stylesheet" href="/assets/oteo-system.css">
+<script src="/assets/site.js" defer></script>
 <style>
   :root{
     --bg:#0a0a0a; --gold:#c8a96a; --gold-lt:#e6cf9c; --blue:#243f9c; --blue-lt:#8ed1fc;
@@ -31,36 +37,6 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
 
-  /* ============ SHARED TOP NAV (unified with index.html) ============ */
-  .nav{
-    position:fixed; top:0; left:0; right:0; z-index:50;
-    display:flex; align-items:center; justify-content:space-between;
-    padding:22px clamp(20px,4vw,44px);
-    transition:background .4s ease, padding .4s ease, border-color .4s ease;
-    border-bottom:1px solid transparent;
-  }
-  .nav.scrolled{
-    background:rgba(10,10,10,0.72); backdrop-filter:blur(14px) saturate(1.2);
-    -webkit-backdrop-filter:blur(14px) saturate(1.2);
-    padding-top:15px; padding-bottom:15px; border-bottom:1px solid var(--line);
-  }
-  .nav .brand{ font-family:var(--serif); font-weight:600; font-size:19px; letter-spacing:0.02em; color:var(--text); text-decoration:none; }
-  .nav .brand b{color:var(--gold); font-weight:600}
-  .nav-links{display:flex; align-items:center; gap:30px}
-  .nav-links a.link{
-    font-family:var(--mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
-    color:var(--muted); transition:color .25s ease; text-decoration:none;
-  }
-  .nav-links a.link:hover{color:var(--text)}
-  .nav-links a.link[aria-current="page"]{color:var(--gold)}
-  .nav-cta{
-    font-family:var(--mono); font-size:11px; letter-spacing:0.16em; text-transform:uppercase;
-    color:#0a0a0a; background:var(--gold-grad); padding:11px 22px; border-radius:999px;
-    font-weight:600; text-decoration:none; transition:transform .25s ease, box-shadow .25s ease;
-    box-shadow:0 4px 18px rgba(200,169,106,0.18);
-  }
-  .nav-cta:hover{transform:translateY(-1px); box-shadow:0 8px 26px rgba(200,169,106,0.34)}
-  @media (max-width:760px){ .nav-links .link{display:none} }
   html{scroll-behavior:smooth}
   body{
     background:
@@ -172,13 +148,6 @@
   .quote-card .cite{margin-top:16px; font-family:var(--mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold)}
   .ph-tag{display:inline-block; font-family:var(--mono); font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:#0a0a0a; background:var(--gold); border-radius:4px; padding:2px 7px; margin-bottom:14px}
 
-  /* FOOTER */
-  .site-footer{border-top:1px solid var(--line); padding:34px 0; text-align:center; margin-top:20px}
-  .site-footer nav{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; color:var(--muted)}
-  .site-footer nav a{text-decoration:none} .site-footer nav a:hover{color:var(--gold)}
-  .site-footer p{margin-top:12px; color:var(--muted); font-size:13px}
-  .site-footer a{color:var(--gold)}
-
   @media (max-width:760px){
     .epk-hero{padding:140px 0 30px}
     .strengths, .quotes{grid-template-columns:1fr}
@@ -212,32 +181,37 @@
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://djoteo.com/media-kit#oteo","name":"Alec Pontes","alternateName":"DJ OTEO","jobTitle":"DJ & Music Producer","url":"https://djoteo.com","email":"oteo@djoteo.com","nationality":["Brazilian","American"],"homeLocation":{"@type":"Place","name":"Orlando, FL"},"knowsLanguage":["en","es"],"genre":["House","Tech House"],"memberOf":{"@type":"MusicGroup","name":"Fish Out of Water Records"},"sameAs":["https://instagram.com/djoteo","https://tiktok.com/@djoteo","https://djoteo.com"]}</script></head>
 <body>
-<nav class="nav-links" aria-label="Primary">
-      <a class="link" href="/residencies">Residencies</a>
-      <a class="link" href="/booking">Services</a>
-      <a class="link" href="/foowr">FOOWR</a>
-      <a class="link" href="/calendar">Agenda</a>
-      <a class="link" href="/media-kit" aria-current="page">Press Kit</a>
-      <a class="nav-cta" href="/booking">Book OTEO</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Oteo — home">Oteo</a>
+    <nav class="header-nav" aria-label="Primary">
+      <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+      <a class="btn btn-primary header-cta" href="/booking#book">
+        Book Oteo <span class="glyph" aria-hidden="true">&#8599;</span>
+      </a>
     </nav>
+  </div>
+</header>
 
 <header class="epk-hero">
   <div class="wrap">
     <div class="kicker">Press Kit &middot; Booking One-Sheet</div>
-    <h1>OTE<span>O</span> Press Kit</h1>
+    <h1>Ote<span>o</span> Press Kit</h1>
     <p class="position">Who you're booking, the sound, the rooms, and how to reach me.
       Best viewed full screen &mdash; or <a href="/presskit-text">read the text version</a>.</p>
     <div class="hero-cta">
-      <a class="btn primary" href="/booking">Book OTEO &rarr;</a>
+      <a class="btn primary" href="/booking">Book Oteo &rarr;</a>
       <a class="btn ghost" href="mailto:oteo@djoteo.com">oteo@djoteo.com</a>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="wrap">
     <div class="canva-embed">
-      <iframe title="OTEO Press Kit"
+      <iframe title="Oteo Press Kit"
               src="https://www.canva.com/design/DAHUtjOEXIQ/i0KLAYyTCzSh0f0AmGkKPw/view?embed"
               loading="lazy"
               allowfullscreen
@@ -260,11 +234,6 @@
   @media (max-width:640px){.canva-embed{padding-top:75%}}
 </style>
 
-<footer class="site-footer" role="contentinfo">
-    <nav aria-label="Site">
-      <a href="/">Home</a> · <a href="/residencies">Residencies</a> · <a href="/booking">Booking</a> · <a href="/media-kit">Press Kit</a> · <a href="/foowr">Label</a> · <a href="/calendar">Agenda</a>
-    </nav>
-    <p>© OTEO · Alec Pontes · Fish Out of Water Records · Orlando, FL · <a href="mailto:oteo@djoteo.com">oteo@djoteo.com</a> · <a href="https://www.instagram.com/djoteo" rel="noopener">@djoteo</a></p>
-  </footer>
+<footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">Oteo</div><p class="footer-copy">&copy; <span data-year>2026</span> Oteo · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="/mixes/">Sets</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
 </body>
 </html>
