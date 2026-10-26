@@ -208,6 +208,14 @@
   .mr-name{ font-family:var(--sans); font-size:clamp(20px,2.6vw,27px); color:var(--text); letter-spacing:-0.01em; }
   .mr-detail{ display:block; margin-top:3px; font-family:var(--sans); font-size:13px; color:var(--muted); }
   .mr-tag{ font-family:var(--mono); font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+  .history .yr{ font-family:var(--mono); font-size:11px; letter-spacing:0.24em; color:var(--gold); margin:34px 0 4px; }
+  .history .yr:first-of-type{ margin-top:0 }
+  .press .quotes{ max-width:840px; display:grid; gap:22px }
+  .press blockquote{ margin:0; padding:22px 0 0 22px; border-left:2px solid var(--gold) }
+  .press blockquote p{ font-family:var(--sans); font-size:clamp(17px,1.9vw,21px); line-height:1.45; color:var(--text); margin:0 }
+  .press cite{ display:block; margin-top:10px; font-family:var(--mono); font-style:normal; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted) }
+  .press cite a{ color:var(--gold); text-decoration:none }
+  .press cite a:hover{ text-decoration:underline }
   @media(max-width:600px){ .mr-item{ flex-direction:column; gap:5px; } }
 </style>
 <link href="assets/inner-next.css" rel="stylesheet">
@@ -256,10 +264,11 @@
     <div class="wrap">
       <div class="eyebrow">Oteo · Experience</div>
       <h1>The rooms behind <em>the work</em></h1>
-      <p class="lead"><b>Oteo (Alec Pontes)</b> &mdash; <b>Orlando Weekly Best Club DJ nominee</b>, a <b>summer residency at Debonair Supperclub</b>, and years of residencies across Orlando&rsquo;s rooms. Bilingual on the mic (Portuguese &amp; English). The track record behind the booking &mdash; bring the sound to your own room.</p>
+      <p class="lead"><b>Oteo (Alec Pontes)</b> has played Orlando rooms since 2017: standing residencies at <b>Taverna Opa, The H Orlando, The Lawn Bar at Icon Park, Ava MediterrAegean, Helena Modern Riviera and Debonair Supperclub</b>, and now <b>Casa Mezcal</b>. <b>Orlando Weekly Best Club DJ nominee.</b> Every room below is dated from the booking record, and the press is quoted as printed. Bilingual on the mic (Portuguese and English).</p>
       <nav class="hero-index" aria-label="Rooms on this page">
         <a href="#debonair">Debonair — Current</a>
-        <a href="#past">Past Experience</a>
+        <a href="#history">Track record</a>
+        <a href="#press">In the press</a>
       </nav>
     </div>
   </header>
@@ -280,7 +289,7 @@
           <div class="kicker">Current Residency</div>
           <h2>Debonair Supperclub</h2>
           <div class="nights">Every Wednesday · select nights</div>
-          <p class="desc">Oteo's summer residency &mdash; every Wednesday, with select additional nights.</p>
+          <p class="desc">The standing Wednesday residency since February 2024 &mdash; 10 PM to 2 AM, with select additional nights.</p>
           <p class="vibe">His one standing room right now.</p>
           <div class="stats">
             <span>Set <b>Dinner to peak-time</b></span>
@@ -293,28 +302,64 @@
 
       <div class="past-head" id="past">
         <span class="past-eyebrow">Experience</span>
-        <h2 class="past-title">Where Oteo has played</h2>
-        <p class="past-deck">Years of Orlando rooms, recurring bookings and shared bills — the experience behind the name. These are past rooms; current dates are on the agenda.</p>
+        <h2 class="past-title">Where Oteo has played, year by year</h2>
+        <p class="past-deck">Every line is dated from Oteo&rsquo;s own booking records &mdash; contracts, invoices, flyers and the gig calendar &mdash; or from press coverage. &ldquo;Residency&rdquo; means a standing weekly or biweekly night.</p>
       </div>
 
-      <section class="more-res" aria-label="Rooms Oteo has played">
-        <div class="mr-head">Rooms &amp; residencies</div>
+      <section class="more-res history" aria-label="Track record, year by year" id="history">
+        <div class="mr-head">Track record &middot; 2017 &rarr; now</div>
+        <div class="yr">2017</div>
         <div class="mr-list">
-          <a class="mr-item" href="/rooms/casa-mezcal/"><div><span class="mr-name">Casa Mezcal</span><span class="mr-detail">Saturdays &middot; select nights &middot; International Drive, Orlando</span></div><span class="mr-tag">Current</span></a>
-          <a class="mr-item" href="/rooms/the-h/"><div><span class="mr-name">The H</span><span class="mr-detail">Named-room residency — where open format became house &middot; Orlando</span></div><span class="mr-tag">Past</span></a>
-          <div class="mr-item"><div><span class="mr-name">Celine Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
-          <div class="mr-item"><div><span class="mr-name">Elixir Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
-          <div class="mr-item"><div><span class="mr-name">Icon Park Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
-          <div class="mr-item"><div><span class="mr-name">The Eye Orlando</span><span class="mr-detail">Named-room residency &middot; Orlando</span></div><span class="mr-tag">Past</span></div>
-          <a class="mr-item" href="/rooms/helena-modern-riviera/"><div><span class="mr-name">Helena Modern Riviera</span><span class="mr-detail">Performance room &middot; Orlando</span></div><span class="mr-tag">Past Room</span></a>
-          <a class="mr-item" href="/rooms/ava-mediterraegean/"><div><span class="mr-name">Ava MediterrAegean</span><span class="mr-detail">Two-year residency &middot; MM members&rsquo; lounge &middot; Winter Park</span></div><span class="mr-tag">Past</span></a>
-          <div class="mr-item"><div><span class="mr-name">American Social</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
-          <div class="mr-item"><div><span class="mr-name">Grade A</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
-          <div class="mr-item"><div><span class="mr-name">Daydream</span><span class="mr-detail">Recurring booking &middot; Orlando</span></div><span class="mr-tag">Rotating</span></div>
-          <div class="mr-item"><div><span class="mr-name">La Herradura &middot; The Lawn Bar</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
-          <div class="mr-item"><div><span class="mr-name">The Attic &middot; Aluxe</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
-          <div class="mr-item"><div><span class="mr-name">House of Blues &middot; The Vanguard</span><span class="mr-detail">Named performance rooms &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
-          <div class="mr-item"><div><span class="mr-name">Pretty Please</span><span class="mr-detail">Guest set &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">Orlando, open format</span><span class="mr-detail">Where it started: bars and clubs across Orlando, open-format sets.</span></div><span class="mr-tag">Start</span></div>
+        </div>
+        <div class="yr">2019</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">Taverna Opa</span><span class="mr-detail">Resident DJ &middot; September 2019 &ndash; early 2021 &middot; Pointe Orlando, International Drive</span></div><span class="mr-tag">Residency</span></div>
+          <div class="mr-item"><div><span class="mr-name">Corporate, convention &amp; wedding events</span><span class="mr-detail">Agency bookings across Orlando &middot; spring 2019</span></div><span class="mr-tag">Events</span></div>
+        </div>
+        <div class="yr">2020</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">Elixir Orlando</span><span class="mr-detail">House nights on the patio &middot; on the bill in Orlando Entertainment News, May 2020 &middot; performance contract, October 2021</span></div><span class="mr-tag">Played</span></div>
+        </div>
+        <div class="yr">2021</div>
+        <div class="mr-list">
+          <a class="mr-item" href="/rooms/the-h/"><div><span class="mr-name">The H Orlando</span><span class="mr-detail">Weekly resident &middot; January 2021 &ndash; November 2022 &middot; return run May&ndash;June 2026 &middot; Dr. Phillips</span></div><span class="mr-tag">Residency</span></a>
+          <div class="mr-item"><div><span class="mr-name">The Lawn Bar at Icon Park</span><span class="mr-detail">Weekly resident &middot; March 2021 &ndash; 2023 &middot; International Drive</span></div><span class="mr-tag">Residency</span></div>
+          <div class="mr-item"><div><span class="mr-name">La Herradura</span><span class="mr-detail">Taco Tuesday resident &middot; from April 2021 &middot; still named on the venue&rsquo;s own site</span></div><span class="mr-tag">Residency</span></div>
+          <div class="mr-item"><div><span class="mr-name">Pretty Please</span><span class="mr-detail">Performance contract, September 2021 &middot; Thursday night, June 27, 2024 &middot; Downtown Orlando</span></div><span class="mr-tag">Played</span></div>
+        </div>
+        <div class="yr">2022</div>
+        <div class="mr-list">
+          <a class="mr-item" href="/rooms/ava-mediterraegean/"><div><span class="mr-name">Ava MediterrAegean &middot; MM members&rsquo; lounge</span><span class="mr-detail">Resident &middot; November 2022 &ndash; September 2024 &middot; up to four nights a week &middot; Winter Park</span></div><span class="mr-tag">Residency</span></a>
+        </div>
+        <div class="yr">2024</div>
+        <div class="mr-list">
+          <a class="mr-item" href="/rooms/debonair-supperclub/"><div><span class="mr-name">Debonair Supperclub</span><span class="mr-detail">Standing Wednesday residency since February 2024 &middot; 10 PM &ndash; 2 AM plus select nights &middot; Downtown Orlando</span></div><span class="mr-tag">Current</span></a>
+          <a class="mr-item" href="/rooms/helena-modern-riviera/"><div><span class="mr-name">Helena Modern Riviera</span><span class="mr-detail">Resident &middot; October 2024 &ndash; June 2026 &middot; Thursday nights and weekend brunch &middot; ICON Park</span></div><span class="mr-tag">Residency</span></a>
+          <div class="mr-item"><div><span class="mr-name">Celine Rooftop</span><span class="mr-detail">Victor Lou sunset set, March 31, 2024 &middot; dates in 2025 &middot; Downtown Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">AURA Nightclub</span><span class="mr-detail">On the bill with KVSH, September 26, 2024 &middot; Downtown Orlando</span></div><span class="mr-tag">Bill</span></div>
+          <div class="mr-item"><div><span class="mr-name">The Eye Orlando</span><span class="mr-detail">November 2024 &ndash; March 2025 &middot; International Drive</span></div><span class="mr-tag">Played</span></div>
+        </div>
+        <div class="yr">2025</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">Great Southern Box Co.</span><span class="mr-detail">Recurring &middot; March &ndash; December 2025 &middot; Orlando</span></div><span class="mr-tag">Recurring</span></div>
+          <div class="mr-item"><div><span class="mr-name">Mango&rsquo;s Tropical Caf&eacute;</span><span class="mr-detail">January &ndash; July 2025 &middot; International Drive</span></div><span class="mr-tag">Recurring</span></div>
+          <div class="mr-item"><div><span class="mr-name">Coraz&oacute;n by Baires</span><span class="mr-detail">2025 &middot; Orlando</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">Daydream Luxury Events</span><span class="mr-detail">Private events since September 2025</span></div><span class="mr-tag">Private</span></div>
+          <div class="mr-item"><div><span class="mr-name">American Social</span><span class="mr-detail">Since December 2025 &middot; Dr. Phillips</span></div><span class="mr-tag">Recurring</span></div>
+        </div>
+        <div class="yr">2026</div>
+        <div class="mr-list">
+          <a class="mr-item" href="/rooms/casa-mezcal/"><div><span class="mr-name">Casa Mezcal</span><span class="mr-detail">Saturday residency since October 2026 &middot; International Drive</span></div><span class="mr-tag">Current</span></a>
+          <a class="mr-item" href="/mixes/opening-for-mochakk-sept-12-2026/"><div><span class="mr-name">Opening for Mochakk</span><span class="mr-detail">Main stage, Wall Street Plaza &middot; September 12, 2026</span></div><span class="mr-tag">Bill</span></a>
+          <div class="mr-item"><div><span class="mr-name">Sessions Orlando</span><span class="mr-detail">August 2026</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">Breeze Kissimmee</span><span class="mr-detail">September 2026</span></div><span class="mr-tag">Played</span></div>
+          <div class="mr-item"><div><span class="mr-name">The Citrus Club</span><span class="mr-detail">Private event &middot; June 2026</span></div><span class="mr-tag">Private</span></div>
+        </div>
+        <div class="yr">Also on the record</div>
+        <div class="mr-list">
+          <div class="mr-item"><div><span class="mr-name">House of Blues</span><span class="mr-detail">Opening act for Alok</span></div><span class="mr-tag">Bill</span></div>
+          <div class="mr-item"><div><span class="mr-name">The Vanguard &middot; Bullit Bar &middot; Aluxe &middot; The Attic &middot; Grade A</span><span class="mr-detail">Named rooms, dates not in the booking record</span></div><span class="mr-tag">Played</span></div>
         </div>
       </section>
 
@@ -322,11 +367,25 @@
         <div class="mr-head">Recognition &amp; shared bills</div>
         <div class="mr-list">
           <div class="mr-item"><div><span class="mr-name">Orlando Weekly</span><span class="mr-detail">Nominated &mdash; Best Club DJ</span></div><span class="mr-tag">Press</span></div>
-          <div class="mr-item"><div><span class="mr-name">KVSH</span><span class="mr-detail">Shared the bill &middot; AURA Nightclub</span></div><span class="mr-tag">Alongside</span></div>
-          <div class="mr-item"><div><span class="mr-name">Victor Lou</span><span class="mr-detail">Shared the bill &middot; Celine</span></div><span class="mr-tag">Alongside</span></div>
-          <div class="mr-item"><div><span class="mr-name">Alok &middot; Cat Dealers &middot; Bhaskar</span><span class="mr-detail">Shared the bill</span></div><span class="mr-tag">Alongside</span></div>
-          <div class="mr-item"><div><span class="mr-name">Liu &middot; Mr Pauer</span><span class="mr-detail">Shared the bill</span></div><span class="mr-tag">Alongside</span></div>
-          <div class="mr-item"><div><span class="mr-name">&ldquo;3310&rdquo; &mdash; with DJ Netics</span><span class="mr-detail">Release on MUSICALIDAD / Fish Out of Water Records</span></div><span class="mr-tag">Release</span></div>
+          <a class="mr-item" href="/mixes/opening-for-mochakk-sept-12-2026/"><div><span class="mr-name">Mochakk</span><span class="mr-detail">Opened the main stage &middot; Wall Street Plaza, Orlando &middot; September 12, 2026</span></div><span class="mr-tag">Alongside</span></a>
+          <div class="mr-item"><div><span class="mr-name">Alok</span><span class="mr-detail">One of the opening acts &middot; House of Blues</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">KVSH</span><span class="mr-detail">Shared the bill &middot; AURA Nightclub &middot; September 26, 2024</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Victor Lou</span><span class="mr-detail">Shared the bill &middot; Celine Rooftop &middot; March 31, 2024</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Cat Dealers &middot; Bhaskar</span><span class="mr-detail">Shared the bill</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">Liu &middot; Mr Pauer</span><span class="mr-detail">Shared the bill &middot; opening DJ for Grammy-nominated Mr Pauer at Debonair</span></div><span class="mr-tag">Alongside</span></div>
+          <div class="mr-item"><div><span class="mr-name">&ldquo;3310&rdquo; &mdash; with DJ Netics</span><span class="mr-detail">Release on MUSICALIDAD / Fish Out of Water Records &middot; April 2026</span></div><span class="mr-tag">Release</span></div>
+        </div>
+      </section>
+
+      <section class="more-res press" aria-label="In the press" id="press">
+        <div class="mr-head">In the press &middot; quoted as printed</div>
+        <div class="quotes">
+          <blockquote><p>&ldquo;Friday/Saturday night resident DJ Oteo (USA) was in the corner booth. Pumping out House music during our visit.&rdquo;</p><cite>Orlando Entertainment News &middot; Club Reports, MM Club at AVA &middot; <a href="https://www.orlandoentertainmentnews.com/?p=28949" target="_blank" rel="noopener noreferrer">July 27, 2024</a></cite></blockquote>
+          <blockquote><p>&ldquo;The music was great so we had to see if it was pre-recorded or from a live DJ. It was the latter! In the booth, DJ Oteo (USA).&rdquo; &hellip; &ldquo;Oteo had the club bouncing. People were dancing pretty much anywhere they could.&rdquo;</p><cite>Orlando Entertainment News &middot; Club Reports, AVA MM &middot; <a href="https://www.orlandoentertainmentnews.com/?p=27206" target="_blank" rel="noopener noreferrer">March 30, 2024</a></cite></blockquote>
+          <blockquote><p>&ldquo;And it&rsquo;s here we found DJ Oteo (USA) on the decks at one end of the building. The DJ begins at 10PM while many are still dining but things don&rsquo;t get cranked up until after 11PM. By midnight they&rsquo;ll clear a bunch of tables to create a dance floor.&rdquo;</p><cite>Orlando Entertainment News &middot; Club Reports, The H &middot; <a href="https://www.orlandoentertainmentnews.com/?p=11343" target="_blank" rel="noopener noreferrer">July 17, 2021</a></cite></blockquote>
+          <blockquote><p>&ldquo;Shoutout to our resident DJ @djoteo for providing us with the best beats in Orlando.&rdquo;</p><cite>The H Orlando &middot; venue Instagram, 2022</cite></blockquote>
+          <blockquote><p>&ldquo;Every Thursday&hellip; the captivating sounds of @djoteo.&rdquo;</p><cite>Ava MediterrAegean &middot; venue post, 2024</cite></blockquote>
+          <blockquote><p>&ldquo;The best beats by @djoteo &mdash; incredible tunes.&rdquo;</p><cite>La Herradura &middot; venue Instagram, 2022 &middot; and today on its site: &ldquo;Live singers, dancers and DJ Oteo.&rdquo;</cite></blockquote>
         </div>
       </section>
 
