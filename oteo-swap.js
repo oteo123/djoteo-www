@@ -391,16 +391,32 @@ function ruleFor(cell){
   return rule;
 }
 function orderNav(row,items){
+  // Build the wanted sequence first and compare it with what is already in the
+  // row. appendChild on a node that is already in place still fires a
+  // childList mutation, and the body MutationObserver answers every mutation
+  // with another pass 80ms later. Measured live 2026-10-27 at the bottom of
+  // every Framer page: orderNav re-appended all seven footer cells on every
+  // pass, 126 moves in 1.5s, the footer repainting about twelve times a second
+  // for as long as the page stayed open. That was the "flicker at the bottom".
+  // Moving nothing when nothing is out of order breaks the loop.
+  var want=[];
   for(var i=0;i<items.length;i++){
     var a=row.querySelector('a[href="'+items[i].href+'"],a[href="'+items[i].href.replace(/\/$/,'')+'/"]');
     if(!a)continue;
     var cell=a;
     while(cell.parentElement&&cell.parentElement!==row)cell=cell.parentElement;
     if(cell.parentElement!==row)continue;
+    want.push(cell);
     var rule=ruleFor(cell);
-    row.appendChild(cell);
-    if(rule)row.appendChild(rule);
+    if(rule)want.push(rule);
   }
+  if(!want.length)return;
+  // Already in order when the wanted nodes are the row's trailing children, in
+  // this sequence.
+  var kids=row.children, n=kids.length, ok=n>=want.length;
+  for(var k=0;ok&&k<want.length;k++)if(kids[n-want.length+k]!==want[k])ok=false;
+  if(ok)return;
+  for(var m=0;m<want.length;m++)row.appendChild(want[m]);
 }
 // Word-level heading fixes. These MUST NOT go in M: that map is applied as a
 // SUBSTRING replacement, so a key of "Design" also rewrote the middle of
@@ -491,6 +507,12 @@ function fixReveals(){
     if(isNaN(o)||o>=1)continue;
     var appearing=st.willChange&&st.willChange.indexOf('transform')>-1;
     if(!appearing&&o!==0)continue;
+    // Between 0 and 1 means Framer's own appear animation is writing this
+    // style every frame. Forcing opacity 1 / transform none in the middle of
+    // it makes the element pop to its final place for one frame and snap back
+    // on Framer's next write -- a visible stutter on every scroll tick. A
+    // frozen reveal sits at exactly 0; only that needs help.
+    if(o>0)continue;
     // An element at a hard opacity:0 with no appear transform is not a frozen
     // reveal — it is a resting state the template means to keep. Lesmana's
     // hover fills are exactly that shape: an empty <div data-framer-name="BG">
