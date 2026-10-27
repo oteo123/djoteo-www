@@ -663,8 +663,6 @@ a.alt, a.btn,
 @media (max-width: 900px) {
   .site-header.nav-open .nav-links {
     background: #12110d !important;
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
   }
 }
 
@@ -714,21 +712,21 @@ a.alt, a.btn,
 html.oteo-scrolled [data-framer-name="Transparent"] > [data-framer-name="BG"] {
   opacity: 1 !important;
 }
-html.oteo-scrolled div:has(> [data-framer-name="Desktop"]),
-html.oteo-scrolled div:has(> [data-framer-name="Phone"]) {
-  -webkit-backdrop-filter: blur(20px) saturate(1.1) brightness(.30) !important;
-  backdrop-filter: blur(20px) saturate(1.1) brightness(.30) !important;
+/* 2026-10-27: the frosted treatment is gone. The :has(> Desktop) selector also
+   matched the footer's Contact block, which put a second backdrop-filter at the
+   bottom of every page under the header's own; GPU Chrome on macOS flickered
+   every time the two overlapped. The scrolled state is now a solid ink band on
+   the fixed header container only, and the transition is on opacity and
+   background-color, never on a filter. */
+html.oteo-scrolled .framer-ca1k8a-container {
+  background: rgba(18, 17, 13, .97);
   border-bottom: 1px solid rgba(244, 241, 234, .08);
 }
-[data-framer-name="Transparent"] > [data-framer-name="BG"],
-div:has(> [data-framer-name="Desktop"]),
-div:has(> [data-framer-name="Phone"]) {
-  transition: opacity .32s ease, backdrop-filter .32s ease, -webkit-backdrop-filter .32s ease;
-}
+[data-framer-name="Transparent"] > [data-framer-name="BG"] { transition: opacity .32s ease; }
+.framer-ca1k8a-container { transition: background-color .32s ease; }
 @media (prefers-reduced-motion: reduce) {
   [data-framer-name="Transparent"] > [data-framer-name="BG"],
-  div:has(> [data-framer-name="Desktop"]),
-  div:has(> [data-framer-name="Phone"]) { transition: none; }
+  .framer-ca1k8a-container { transition: none; }
 }
 
 /* The proof block that fills the testimonials row's empty column (built by

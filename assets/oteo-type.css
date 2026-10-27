@@ -58,9 +58,11 @@
    frames. :has() targets the full-width fixed wrapper, not the centered
    content container, so the band runs edge to edge. */
 .framer-ca1k8a-container {
-  background: rgba(18, 17, 13, .82);
-  -webkit-backdrop-filter: blur(18px) saturate(1.15);
-  backdrop-filter: blur(18px) saturate(1.15);
+  /* No backdrop-filter anywhere on this site: a fixed blur layer over
+     scrolling content flickers in GPU-composited Chrome on macOS (the
+     "flicker at the bottom of every page" Alec reported for days, where the
+     header's blur and a second blur in the footer overlapped). Solid ink. */
+  background: rgba(18, 17, 13, .92);
   border-bottom: 1px solid rgba(241, 237, 228, .1);
 }
 

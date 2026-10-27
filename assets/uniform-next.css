@@ -77,8 +77,6 @@ h1 em, h2 em, .contact-statement em, .showcase-statement em,
   height: 64px;
   background: rgba(8, 9, 11, .82);
   border-bottom: 1px solid rgba(241, 237, 228, .1);
-  -webkit-backdrop-filter: blur(18px) saturate(1.15);
-  backdrop-filter: blur(18px) saturate(1.15);
 }
 .site-header.scrolled,
 .site-header.on-light.scrolled,
@@ -662,7 +660,7 @@ h1 em, h2 em, .contact-statement em, .showcase-statement em,
 .page-about .sound-head { font-family: var(--sans); font-weight: 620; letter-spacing: -.04em; }
 .page-contact .contact-hero-bg { opacity: .54; filter: grayscale(.25) saturate(.72) contrast(1.12) !important; }
 .page-contact .contact-hero-bg::after { background: linear-gradient(90deg, rgba(8, 9, 11, .94), rgba(8, 9, 11, .58) 64%, rgba(8, 9, 11, .3)) !important; }
-.page-contact .contact-form { padding: clamp(26px, 4vw, 46px); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.page-contact .contact-form { padding: clamp(26px, 4vw, 46px); }
 .page-contact .faq-item,
 .page-contact .faq-list { border-color: var(--line); }
 .page-contact .faq-item summary { font-family: var(--sans); font-weight: 570; letter-spacing: -.025em; }
