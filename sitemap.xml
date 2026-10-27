@@ -41,44 +41,16 @@
     <loc>https://djoteo.com/presskit-text</loc>
     <lastmod>2026-10-26</lastmod>
   </url>
-  <url>
-    <loc>https://djoteo.com/mixes/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/mixes/casa-mezcal-oct-10-2026/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/mixes/casa-mezcal-oct-3-2026/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/mixes/opening-for-mochakk-sept-12-2026/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/mixes/ava-mm-lounge-july-6-2024/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/rooms/debonair-supperclub/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/rooms/casa-mezcal/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/rooms/the-h/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/rooms/helena-modern-riviera/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://djoteo.com/rooms/ava-mediterraegean/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
+
+  <url><loc>https://djoteo.com/works/</loc></url>
+  <url><loc>https://djoteo.com/works/debonair-supper-club/</loc></url>
+  <url><loc>https://djoteo.com/works/casa-mezcal/</loc></url>
+  <url><loc>https://djoteo.com/works/the-h-orlando/</loc></url>
+  <url><loc>https://djoteo.com/works/helena-modern-riviera/</loc></url>
+  <url><loc>https://djoteo.com/works/ava-mediterraegean/</loc></url>
+  <url><loc>https://djoteo.com/blog/</loc></url>
+  <url><loc>https://djoteo.com/blog/casa-mezcal-oct-10-2026/</loc></url>
+  <url><loc>https://djoteo.com/blog/casa-mezcal-oct-3-2026/</loc></url>
+  <url><loc>https://djoteo.com/blog/opening-for-mochakk-sept-12-2026/</loc></url>
+  <url><loc>https://djoteo.com/blog/ava-mm-lounge-july-6-2024/</loc></url>
 </urlset>

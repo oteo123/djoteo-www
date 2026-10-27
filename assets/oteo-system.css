@@ -315,7 +315,6 @@ small, .small { font-size: var(--t-small); line-height: 1.6; }
    Why us      Scattered heading, a right-aligned orphan paragraph, and stats in
                dark gold on black that barely register — led by "15+ nights
                behind the decks", a number that undersells him. */
-[data-framer-name="Works"],
 [data-framer-name="Why us"] { display: none !important; }
 
 /* Switzer is the hand-built system's body face and it is not in Lesmana's spec.

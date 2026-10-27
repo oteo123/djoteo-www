@@ -135,11 +135,13 @@ var NAV=[
   {href:'/booking',label:'DJ Services'},
   {href:'/rentals',label:'Gear Rentals'},
   {href:'/residencies',label:'Residencies'},
+  {href:'/works',label:'Rooms'},
+  {href:'/blog',label:'Sets'},
   {href:'/about',label:'About'},
   {href:'/contact',label:'Contact'}
 ];
 // Secondary pages: complete the footer without crowding the header column.
-var NAV_FOOTER=[{href:'/mixes/',label:'Sets'},{href:'/foowr',label:'FOOWR'}];
+var NAV_FOOTER=[{href:'/foowr',label:'FOOWR'}];
 // The Framer pages are a React app, so links are inserted rather than authored,
 // and re-inserted by the MutationObserver below if a re-render drops them.
 // Idempotent: each insert carries its own href marker, so repeated passes are
@@ -164,11 +166,11 @@ var NAV_FOOTER=[{href:'/mixes/',label:'Sets'},{href:'/foowr',label:'FOOWR'}];
 //     exclude is ~3700, so 400 keeps a wide margin on both sides.
 function navGroups(){
   var out=[];
-  var works=document.querySelectorAll('a[href$="works"]');
+  var works=document.querySelectorAll('a[href$="works"],a[href$="works/"]');
   for(var i=0;i<works.length;i++){
     var w=works[i], h=w.getAttribute('href')||'';
-    if(!/^(\/|(\.\.?\/)+)works$/.test(h))continue;
-    var base=h.slice(0,h.length-5);
+    if(!/^(\/|(\.\.?\/)+)works\/?$/.test(h))continue;
+    var base=h.replace(/works\/?$/,'');
     var row=w.parentElement;
     while(row&&row!==document.body){
       if(row.querySelector('a[href="'+base+'about"]')&&row.querySelector('a[href="'+base+'contact"]'))break;
@@ -185,7 +187,7 @@ function navGroups(){
 // and rewrite it into the missing item. Cloning keeps Framer's own markup,
 // classes and hover animation, which authoring a bare <a> would lose.
 function navCell(row,item,templateLabel){
-  var w=row.querySelector('a[href$="works"]');
+  var w=row.querySelector('a[href$="works"],a[href$="works/"]');
   if(!w)return null;
   var cell=w;
   while(cell.parentElement&&cell.parentElement!==row)cell=cell.parentElement;
@@ -217,8 +219,13 @@ function navCell(row,item,templateLabel){
   unzeroReveal(copy);
   // Rewrite every text node, not just childless elements: the footer nav wraps
   // its label in extra markup and kept saying "Works".
+  // The cloned cell's own label is the word to replace. It used to be hard-coded
+  // as "Works"; once the authored cell was relabelled "Rooms" every clone kept
+  // saying "Rooms" and the header read "Rooms Rooms Rooms Rooms".
+  var srcLabel=templateLabel, tw0=document.createTreeWalker(copy,NodeFilter.SHOW_TEXT,null,false),t0;
+  while((t0=tw0.nextNode())){ if(t0.nodeValue.trim()){ srcLabel=t0.nodeValue.trim(); break; } }
   var tw=document.createTreeWalker(copy,NodeFilter.SHOW_TEXT,null,false),t;
-  while((t=tw.nextNode())){ if(t.nodeValue.trim()===templateLabel)t.nodeValue=t.nodeValue.replace(templateLabel,item.label); }
+  while((t=tw.nextNode())){ if(t.nodeValue.trim()===srcLabel)t.nodeValue=t.nodeValue.replace(srcLabel,item.label); }
   return copy;
 }
 // The footer's hairline rules are not part of a link cell — each is its own
@@ -267,7 +274,7 @@ function unifyNav(){
     var items=isFooter?NAV.concat(NAV_FOOTER):NAV;
     for(var i=0;i<items.length;i++){
       var item=items[i];
-      if(row.querySelector('a[href="'+item.href+'"]'))continue;
+      if(row.querySelector('a[href="'+item.href+'"],a[href="'+item.href.replace(/\/$/,'')+'/"]'))continue;
       if(row.querySelector('[data-oteo-nav="'+item.href+'"]'))continue;
       var cell=navCell(row,item,'Works');
       if(!cell)continue;
@@ -385,7 +392,7 @@ function ruleFor(cell){
 }
 function orderNav(row,items){
   for(var i=0;i<items.length;i++){
-    var a=row.querySelector('a[href="'+items[i].href+'"]');
+    var a=row.querySelector('a[href="'+items[i].href+'"],a[href="'+items[i].href.replace(/\/$/,'')+'/"]');
     if(!a)continue;
     var cell=a;
     while(cell.parentElement&&cell.parentElement!==row)cell=cell.parentElement;
@@ -432,11 +439,16 @@ function absHrefs(){
     if(qi>-1){q=h.slice(qi);h=h.slice(0,qi);}
     var pth=h.replace(/^(?:\.\.\/)+/,'').replace(/^\.\//,'');
     if(!pth){
-      var base=location.pathname.replace(/\/[^\/]*\/?$/,'/');
-      if(/^\/mixes\/?$/.test(base))as[i].setAttribute('href','/blog');
+      // A bare "./" or "../" is the logo (or a home link) on a template page;
+      // Framer exported it relative to the page folder, so on /blog/ it pointed
+      // at /blog/ itself. Home is the root.
+      as[i].setAttribute('href','/'+q);
       continue;
     }
-    as[i].setAttribute('href','/'+pth+q);
+    var abs='/'+pth;
+    // Rooms and Sets are folders on GitHub Pages; the slash avoids a 301 per click.
+    if(/^\/(works|blog|mixes)\/[^\/]+$/.test(abs)&&!/\.[a-z]+$/.test(abs))abs+='/';
+    as[i].setAttribute('href',abs+q);
   }
 }
 /* iOS: Framer re-sets touch-action:none on the hero drag surface after
@@ -790,7 +802,57 @@ function hideUnsourcedStats(){
   }
 }
 
-function pass(){if(busy)return;busy=true;try{swapText();swapSplitHeadings();absHrefs();swapAttrs();swapImgs();fixCounter();linkCards();fixWorksH1();fixWords();fixDupIds();unifyNav();fixTouch();fixBrand();fixReveals();stripHiddenSlider();insertServices();insertTestimonialProof();phoneHeaderCta();fixHeadingSemantics();addSkipLink();hideBorrowedSocials();hideUnsourcedStats();}finally{busy=false;}}
+// Set pages (/mixes/<slug>/) are the template's post pages, which carry a cover image and
+// text only. The recording itself is added here, after hydration, so the server HTML and
+// React's render stay identical and the player never takes part in hydration.
+var SET_MEDIA={"casa-mezcal-oct-10-2026":{yt:"QH1LPQfxR3g",t:"Casa Mezcal — 4 Hour Set"},"casa-mezcal-oct-3-2026":{yt:"8IPALiY9RoY",t:"Casa Mezcal — 5 Hour Set"},"opening-for-mochakk-sept-12-2026":{yt:"f1KYvO-kKvo",t:"Opening for Mochakk — Wall Street Plaza"},"ava-mm-lounge-july-6-2024":{sc:"https://soundcloud.com/oteo-397563902/ava-mm-070624",t:"AVA MM Lounge — Saturday Night"}};
+function insertSetPlayer(){
+  var m=location.pathname.match(/^\/(?:blog|mixes)\/([a-z0-9-]+)\/?$/);if(!m||!SET_MEDIA[m[1]])return;
+  if(document.querySelector('[data-oteo-player]'))return;
+  var main=document.querySelector('[data-framer-name="Main content"]');if(!main)return;
+  var d=SET_MEDIA[m[1]],w=document.createElement('div');w.setAttribute('data-oteo-player','');
+  if(d.yt){w.style.cssText='position:relative;aspect-ratio:16/9;width:100%;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#000';
+    w.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+d.yt+'" title="'+d.t+'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';}
+  else{w.style.cssText='width:100%;height:166px;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#0d0d0f';
+    w.innerHTML='<iframe src="https://w.soundcloud.com/player/?url='+encodeURIComponent(d.sc)+'&color=%23c8a96a&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false" title="'+d.t+' on SoundCloud" loading="lazy" allow="autoplay" style="width:100%;height:100%;border:0"></iframe>';}
+  // The template's post layout is Main content > Container (the 760px column) >
+  // Image mask (cover) + Text. The player is the set itself, so it takes the
+  // cover's slot at the top of the column; dropped straight into Main content it
+  // became a flex sibling and squeezed the column to 1px.
+  var col=main.querySelector('[data-framer-name="Container"]')||main;
+  var cover=col.querySelector('[data-framer-name="Image mask"]');if(cover)cover.style.display='none';
+  col.insertBefore(w,col.firstChild);
+}
+// Rooms index filter tabs. The purchased template's tabs only switch their own
+// active look; the list they were meant to filter re-queries Framer's CMS, which
+// this static export does not have (the exported template did not filter either).
+// Each room card carries its category chips as text, so the tabs filter here.
+var roomFilterLabel='All';
+function roomFilterApply(){
+  // The gold underline is the tab's "Border" layer; the template only ever lit
+  // it on the static "All" tab, so the active one is lit here.
+  var f=document.querySelector('[data-framer-name="Filter"]');
+  if(f){var tabs=f.querySelectorAll('[class$="-container"]');
+    for(var t=0;t<tabs.length;t++){var border=tabs[t].querySelector('[data-framer-name="Border"]');if(!border)continue;
+      border.style.opacity=((tabs[t].innerText||'').trim()===roomFilterLabel)?'1':'0';}}
+  var cards=document.querySelectorAll('#main a[href*="/works/"]');
+  for(var i=0;i<cards.length;i++){
+    var a=cards[i];if(!/\/works\/[a-z0-9-]+\/?$/.test(a.getAttribute('href')||''))continue;
+    var show=roomFilterLabel==='All'||(a.innerText||'').toUpperCase().indexOf(roomFilterLabel.toUpperCase())>-1;
+    var cell=(a.parentElement&&a.parentElement.children.length===1&&!a.parentElement.getAttribute('data-framer-name'))?a.parentElement:a;
+    cell.style.display=show?'':'none';
+  }
+}
+function roomFilter(){
+  if(!/^\/works\/?$/.test(location.pathname))return;
+  var f=document.querySelector('[data-framer-name="Filter"]');if(!f)return;
+  if(!f.__oteoFilter){f.__oteoFilter=1;f.addEventListener('click',function(e){
+    var tab=e.target&&e.target.closest?e.target.closest('[data-framer-name="Filter"] [class$="-container"]'):null;if(!tab)return;
+    var label=(tab.innerText||'').trim();if(!label)return;roomFilterLabel=label;roomFilterApply();
+  },true);}
+  if(roomFilterLabel!=='All')roomFilterApply();
+}
+function pass(){if(busy)return;busy=true;try{swapText();swapSplitHeadings();absHrefs();swapAttrs();swapImgs();fixCounter();linkCards();fixWorksH1();fixWords();fixDupIds();unifyNav();roomFilter();fixTouch();fixBrand();fixReveals();stripHiddenSlider();insertServices();insertTestimonialProof();phoneHeaderCta();fixHeadingSemantics();addSkipLink();hideBorrowedSocials();hideUnsourcedStats();insertSetPlayer();}finally{busy=false;}}
 function reveal(){document.documentElement.style.setProperty('opacity','1','important');}
 function start(){
   pass();reveal();headerScrim();
