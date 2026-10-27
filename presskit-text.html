@@ -22,48 +22,21 @@
 <meta name="twitter:title" content="Press Kit — Oteo">
 <meta name="twitter:description" content="Brazilian-American House DJ + producer, Orlando. Book Oteo.">
 <meta name="twitter:image" content="https://djoteo.com/assets/og.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">
+<link href="/assets/inner-next.css" rel="stylesheet">
+<link href="/assets/uniform-next.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/oteo-craft.css">
+<link rel="stylesheet" href="/assets/oteo-system.css">
+<script src="/assets/site.js" defer></script>
 <style>
   :root{
     --bg:#0a0a0a; --gold:#c8a96a; --gold-lt:#e6cf9c; --blue:#243f9c; --blue-lt:#8ed1fc;
     --text:#edeeef; --muted:#8a8b8e; --line:rgba(237,238,239,0.10);
-    --serif:'Fraunces',Georgia,serif; --sans:'Outfit',system-ui,sans-serif; --mono:'Share Tech Mono',monospace;
+    --serif:'Playfair Display',Georgia,serif; --sans:"Geist",system-ui,sans-serif; --mono:"Geist Mono",ui-monospace,Menlo,monospace;
     --gold-grad:linear-gradient(135deg,#e6cf9c 0%,#c8a96a 46%,#9c8046 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
 
-  /* ============ SHARED TOP NAV (unified with index.html) ============ */
-  .nav{
-    position:fixed; top:0; left:0; right:0; z-index:50;
-    display:flex; align-items:center; justify-content:space-between;
-    padding:22px clamp(20px,4vw,44px);
-    transition:background .4s ease, padding .4s ease, border-color .4s ease;
-    border-bottom:1px solid transparent;
-  }
-  .nav.scrolled{
-    background:rgba(10,10,10,0.72); backdrop-filter:blur(14px) saturate(1.2);
-    -webkit-backdrop-filter:blur(14px) saturate(1.2);
-    padding-top:15px; padding-bottom:15px; border-bottom:1px solid var(--line);
-  }
-  .nav .brand{ font-family:var(--serif); font-weight:600; font-size:19px; letter-spacing:0.02em; color:var(--text); text-decoration:none; }
-  .nav .brand b{color:var(--gold); font-weight:600}
-  .nav-links{display:flex; align-items:center; gap:30px}
-  .nav-links a.link{
-    font-family:var(--mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
-    color:var(--muted); transition:color .25s ease; text-decoration:none;
-  }
-  .nav-links a.link:hover{color:var(--text)}
-  .nav-links a.link[aria-current="page"]{color:var(--gold)}
-  .nav-cta{
-    font-family:var(--mono); font-size:11px; letter-spacing:0.16em; text-transform:uppercase;
-    color:#0a0a0a; background:var(--gold-grad); padding:11px 22px; border-radius:999px;
-    font-weight:600; text-decoration:none; transition:transform .25s ease, box-shadow .25s ease;
-    box-shadow:0 4px 18px rgba(200,169,106,0.18);
-  }
-  .nav-cta:hover{transform:translateY(-1px); box-shadow:0 8px 26px rgba(200,169,106,0.34)}
-  @media (max-width:760px){ .nav-links .link{display:none} }
   html{scroll-behavior:smooth}
   body{
     background:
@@ -176,11 +149,6 @@
   .ph-tag{display:inline-block; font-family:var(--mono); font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:#0a0a0a; background:var(--gold); border-radius:4px; padding:2px 7px; margin-bottom:14px}
 
   /* FOOTER */
-  .site-footer{border-top:1px solid var(--line); padding:34px 0; text-align:center; margin-top:20px}
-  .site-footer nav{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; color:var(--muted)}
-  .site-footer nav a{text-decoration:none} .site-footer nav a:hover{color:var(--gold)}
-  .site-footer p{margin-top:12px; color:var(--muted); font-size:13px}
-  .site-footer a{color:var(--gold)}
 
   @media (max-width:760px){
     .epk-hero{padding:140px 0 30px}
@@ -216,24 +184,25 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://djoteo.com/presskit#oteo","name":"Alec Pontes","alternateName":"DJ OTEO","jobTitle":"DJ & Music Producer","url":"https://djoteo.com","email":"oteo@djoteo.com","nationality":["Brazilian","American"],"homeLocation":{"@type":"Place","name":"Orlando, FL"},"knowsLanguage":["en","es"],"genre":["House","Tech House"],"memberOf":{"@type":"MusicGroup","name":"Fish Out of Water Records"},"sameAs":["https://instagram.com/djoteo","https://tiktok.com/@djoteo","https://djoteo.com"]}</script></head>
 <body>
 
-  <!-- ============ SHARED TOP NAV (unified with index.html) ============ -->
-  <div class="nav" id="nav">
-    <a class="brand" href="/">DJ&nbsp;<b>Oteo</b></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a class="link" href="/residencies">Residencies</a>
-      <a class="link" href="/booking">Services</a>
-      <a class="link" href="/foowr">FOOWR</a>
-      <a class="link" href="/calendar">Agenda</a>
-      <a class="link" href="/presskit" aria-current="page">Press Kit</a>
-      <a class="nav-cta" href="/booking">Book Oteo</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Oteo — home">Oteo</a>
+    <nav class="header-nav" aria-label="Primary">
+      <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+      <a class="btn btn-primary header-cta" href="/booking#book">
+        Book Oteo <span class="glyph" aria-hidden="true">&#8599;</span>
+      </a>
     </nav>
   </div>
+</header>
 
   <header class="epk-hero">
     <div class="wrap">
       <div class="kicker">Electronic Press Kit · Booking One-Sheet</div>
-      <h1>DJ OTE<span>O</span></h1>
-      <p class="position"><b>Brazilian-American House DJ &amp; producer</b> — Orlando. Residency-tested floors, all-original cleared music, and a bilingual room read that keeps the whole crowd moving.</p>
+      <h1>Ote<span>o</span> Press Kit</h1>
+      <p class="position"><b>Brazilian-American House DJ &amp; producer</b> — Orlando. Residency-tested floors, original releases on his own label, and a bilingual room read that keeps the whole crowd moving.</p>
       <div class="meta">
         <span>Alec Pontes</span>
         <span>Orlando, FL</span>
@@ -247,21 +216,21 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
 
     <section class="band">
       <div class="kicker">Bio</div>
       <h2 class="head">Who You're Booking</h2>
-      <p class="lead">Oteo is <b>Alec Pontes</b> — a Brazilian-American House DJ and producer based in Orlando, holding weekly residencies at <b>The H</b> and <b>Debonair</b>. He plays a warm, floor-first blend of House and Tech House, and reads a bilingual crowd equally in English and Spanish. As founder of <b>Fish Out of Water Records</b>, Oteo produces and spins his own original, fully-cleared music — the same sound live and on record.</p>
+      <p class="lead">Oteo is <b>Alec Pontes</b> — a Brazilian-American House DJ and producer based in Orlando, holding standing residencies at <b>Debonair Supperclub</b> and <b>Casa Mezcal</b>. He plays a warm, floor-first blend of House and Tech House, and reads a bilingual crowd equally in English and Spanish. As founder of <b>Fish Out of Water Records</b>, Oteo produces and spins his own original, fully-cleared music — the same sound live and on record.</p>
     </section>
 
     <section class="band">
       <div class="kicker">Why Book Oteo</div>
       <h2 class="head">What You Get</h2>
       <ul class="strengths">
-        <li><span class="n">01</span><span class="t"><b>Residency-tested.</b> Weekly rooms at The H and Debonair — a set built and proven in front of real Orlando crowds, not a fill-in.</span></li>
+        <li><span class="n">01</span><span class="t"><b>Residency-tested.</b> Standing nights at Debonair Supperclub and Casa Mezcal, with The H, Helena Modern Riviera and Ava MediterrAegean before them — a set built and proven in front of real Orlando crowds, not a fill-in.</span></li>
         <li><span class="n">02</span><span class="t"><b>Bilingual crowd control.</b> Reads and works the room in English and Spanish, so mixed rooms stay on the floor all night.</span></li>
-        <li><span class="n">03</span><span class="t"><b>All-original, cleared music.</b> Plays his own productions on Fish Out of Water Records — no licensing headaches, nothing to clear.</span></li>
+        <li><span class="n">03</span><span class="t"><b>Original music.</b> Releases his own productions on Fish Out of Water Records and plays them in the set alongside the records the room came for.</span></li>
         <li><span class="n">04</span><span class="t"><b>Can supply the rig.</b> Full pro AlphaTheta / Pioneer setup available on request — one point of contact for talent and gear.</span></li>
       </ul>
     </section>
@@ -287,7 +256,7 @@
         </a></li>
         <li><a href="/residencies">
           <span class="s-name">Residencies</span>
-          <span class="s-desc">Ongoing weekly nights — The H &amp; Debonair, Orlando.</span>
+          <span class="s-desc">Standing nights — Debonair Supperclub &amp; Casa Mezcal, Orlando.</span>
           <span class="s-arrow">&rarr;</span>
         </a></li>
         <li><a href="/booking">
@@ -336,14 +305,12 @@
         <a href="mailto:oteo@djoteo.com">
           <div class="k">Booking</div><div class="v">oteo@djoteo.com</div>
         </a>
-        <!-- PLACEHOLDER: Spotify / Onyx "3310" release link — Alec to supply the real URL, then convert this to a live <a href="..."> like the others. -->
-        <div class="link-ph">
-          <div class="k">Listen · "3310"</div><div class="v">Spotify link — to add</div>
-        </div>
-        <!-- PLACEHOLDER: downloadable rider + press photo — Alec to upload the PDF rider and hi-res press photo, then link them here. -->
-        <div class="link-ph">
-          <div class="k">Press &amp; Rider</div><div class="v">Rider + press photo — to add</div>
-        </div>
+        <a href="https://open.spotify.com/track/1ORLWBdhxEXp3hOrMYgl3N" target="_blank" rel="noopener noreferrer">
+            <div class="k">Listen &middot; &ldquo;3310&rdquo;</div><div class="v">Spotify</div>
+          </a>
+        <a href="/presskit">
+            <div class="k">Press kit</div><div class="v">Deck with photos &amp; rider</div>
+          </a>
       </div>
     </section>
 
@@ -351,20 +318,16 @@
       <div class="kicker">Testimonials</div>
       <h2 class="head">What Rooms Say</h2>
       <div class="quotes">
-        <!-- TESTIMONIAL PLACEHOLDER — replace [quote] and [Name, Venue] with a real approved quote before this page is sent. Do NOT ship these placeholders publicly. -->
-        <div class="quote-card">
-          <span class="ph-tag">Placeholder — add real quote</span>
-          <p class="q">“[quote]”</p>
-          <p class="cite">[Name, Venue]</p>
+          <div class="quote-card">
+            <p class="q">&ldquo;Oteo had the club bouncing. People were dancing pretty much anywhere they could.&rdquo;</p>
+            <p class="cite">Orlando Entertainment News &middot; Club Reports, AVA MM &middot; <a href="https://www.orlandoentertainmentnews.com/?p=27206" target="_blank" rel="noopener noreferrer">March 30, 2024</a></p>
+          </div>
+          <div class="quote-card">
+            <p class="q">&ldquo;And it&rsquo;s here we found DJ Oteo (USA) on the decks at one end of the building. The DJ begins at 10PM while many are still dining but things don&rsquo;t get cranked up until after 11PM.&rdquo;</p>
+            <p class="cite">Orlando Entertainment News &middot; Club Reports, The H &middot; <a href="https://www.orlandoentertainmentnews.com/?p=11343" target="_blank" rel="noopener noreferrer">July 17, 2021</a></p>
+          </div>
         </div>
-        <!-- TESTIMONIAL PLACEHOLDER — replace [quote] and [Name, Venue] with a real approved quote before this page is sent. Do NOT ship these placeholders publicly. -->
-        <div class="quote-card">
-          <span class="ph-tag">Placeholder — add real quote</span>
-          <p class="q">“[quote]”</p>
-          <p class="cite">[Name, Venue]</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <section class="band" style="text-align:center; border-bottom:1px solid var(--line)">
       <h2 class="head" style="margin-bottom:8px">Ready to Book?</h2>
@@ -377,22 +340,6 @@
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <nav aria-label="Site">
-      <a href="/">Home</a> · <a href="/residencies">Residencies</a> · <a href="/booking">Booking</a> · <a href="/presskit">Press Kit</a> · <a href="/foowr">Label</a> · <a href="/calendar">Agenda</a>
-    </nav>
-    <p>© Oteo · Alec Pontes · Fish Out of Water Records · Orlando, FL · <a href="mailto:oteo@djoteo.com">oteo@djoteo.com</a> · <a href="https://www.instagram.com/djoteo" rel="noopener">@djoteo</a></p>
-  </footer>
-
-  <script>
-  /* Shared top-nav scroll state (unified with index.html) */
-  (function () {
-    var nav = document.getElementById('nav');
-    if (!nav) return;
-    var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 24); };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  })();
-  </script>
+<footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">Oteo</div><p class="footer-copy">&copy; <span data-year>2026</span> Oteo · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="/mixes/">Sets</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/calendar">Calendar</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
 </body>
 </html>

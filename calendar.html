@@ -35,7 +35,7 @@
   :root{
     --bg:#0a0a0b; --gold:#c8a96a; --blue:#c8a96a; --blue-lt:#dec48e;
     --text:#f4f1ea; --muted:#a19b8e; --line:rgba(244,241,234,0.10);
-    --serif:'Playfair Display',Georgia,serif; --sans:"Switzer",system-ui,sans-serif; --mono:"Switzer",system-ui,sans-serif;
+    --serif:'Playfair Display',Georgia,serif; --sans:"Geist",system-ui,sans-serif; --mono:"Geist Mono",ui-monospace,Menlo,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -198,7 +198,7 @@
     .datelist{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.12)}
     .datelist li{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:baseline;
       padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
-    .datelist .d{font-family:ui-monospace,Menlo,monospace;font-size:.82rem;letter-spacing:.08em;
+    .datelist .d{font-family:var(--mono);font-size:.82rem;letter-spacing:.08em;
       opacity:.75;min-width:9.5rem;text-transform:uppercase}
     .datelist .v{font-weight:600}
     .datelist .t{opacity:.6;font-size:.9rem;margin-left:auto}
@@ -356,9 +356,11 @@
         }
         ol.appendChild(li);
       });
+      var MONF = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+      function longDate(iso){ var q = String(iso).split("-"); return MONF[+q[1]-1] + " " + (+q[2]) + ", " + q[0]; }
       if (upcoming.length > SHOW && note) {
         note.textContent = "+ " + (upcoming.length - SHOW) +
-          " more confirmed dates through " + upcoming[upcoming.length-1].date + ".";
+          " more confirmed dates through " + longDate(upcoming[upcoming.length-1].date) + ".";
       }
       sec.hidden = false;
     }

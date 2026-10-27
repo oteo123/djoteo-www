@@ -48,7 +48,7 @@ body > header.page-hero{display:block !important}
 .player iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
 .player.audio{aspect-ratio:auto; height:166px; background:#0d0d0f}
 .player-note{margin-top:12px; font-family:var(--mono); font-size:11px; letter-spacing:0.1em; color:var(--muted)}
-.player-note a{color:var(--gold); text-decoration:none}
+.player-note a{color:var(--gold); text-decoration:none; display:inline-block; padding:6px 0; margin:-6px 0}
 .player-note a:hover{text-decoration:underline}
 .room-media{position:relative; margin-top:40px; border:1px solid var(--line); border-radius:18px; overflow:hidden; aspect-ratio:16/9; background:#000}
 .room-media img,.room-media video{display:block; width:100%; height:100%; object-fit:cover}
