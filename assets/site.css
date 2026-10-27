@@ -155,7 +155,7 @@ h1 em, h2 em, h3 em,
 
 /* ---------- reset ---------- */
 *,*::before,*::after{ box-sizing:border-box; }
-html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:auto; }
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
 body{
   margin:0;
@@ -189,12 +189,10 @@ h1 em,h2 em,.contact-statement em,.showcase-statement em{
 
 ::selection{ background:var(--gold); color:var(--bg); }
 
-/* cinematic film grain over everything (pure CSS/SVG, no request) */
-body::after{
-  content:""; position:fixed; inset:0; z-index:2147483000; pointer-events:none;
-  opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+/* The fixed full-screen film-grain overlay (body::after, mix-blend-mode) was removed on
+   2026-10-26: a fixed blended layer over composited content makes the whole page flash
+   while scrolling in Chrome on macOS. */
+body::after{ content:none; display:none; }
 
 /* ---------- accessibility ---------- */
 .skip-link{

@@ -33,7 +33,7 @@ body {
     var(--bg) !important;
   color: var(--ink);
 }
-body::after { opacity: .025 !important; mix-blend-mode: soft-light; }
+
 
 /* One typographic voice: precise grotesk structure + one editorial italic. */
 h1, h2, h3, .serif,

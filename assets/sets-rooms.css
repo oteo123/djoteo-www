@@ -6,7 +6,7 @@
   --serif:'Playfair Display',Georgia,serif; --sans:"Geist",system-ui,sans-serif; --mono:"Geist Mono",ui-monospace,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 body{
   background:
     radial-gradient(120% 80% at 50% -10%, rgba(200,169,106,0.12), transparent 60%),

@@ -607,7 +607,7 @@ a.alt, a.btn,
 .cat-jump-link.is-here { border-color: var(--oteo-gold); color: var(--oteo-gold); }
 /* Anchored headings must clear the fixed header when jumped to. */
 .gear-cat { scroll-margin-top: calc(var(--hdr-h, 64px) + 76px); }
-@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior:auto; } }
 
 /* Venue names under the two service cards. The homepage carried no link to the
    track record in its body — only in the footer — so the strongest reason to
