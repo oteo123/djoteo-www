@@ -335,3 +335,28 @@
   }, { passive: true });
   loop();
 })();
+
+/* Hash landing: "/booking#book" and friends. The browser jumps to the anchor
+   before the hero image, fonts and reveals have laid out, so the target ends
+   up 2-3 screens below the fold (measured 2026-10-26: /booking#book landed at
+   scrollY 2 with #book at 2428). Re-seat the anchor after load, twice, and
+   stop the moment the visitor scrolls themselves. */
+(function () {
+  if (!location.hash || location.hash.length < 2) return;
+  var moved = false;
+  function userScroll() { moved = true; }
+  window.addEventListener("wheel", userScroll, { passive: true, once: true });
+  window.addEventListener("touchstart", userScroll, { passive: true, once: true });
+  window.addEventListener("keydown", userScroll, { once: true });
+  function seat() {
+    if (moved) return;
+    var id = decodeURIComponent(location.hash.slice(1));
+    var el = document.getElementById(id);
+    if (!el) return;
+    var header = document.querySelector(".site-header");
+    var off = header && getComputedStyle(header).position === "fixed" ? header.getBoundingClientRect().height + 12 : 12;
+    var y = el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - off;
+    window.scrollTo(0, Math.max(0, y));
+  }
+  window.addEventListener("load", function () { seat(); setTimeout(seat, 350); setTimeout(seat, 1200); });
+})();

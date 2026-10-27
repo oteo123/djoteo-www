@@ -126,7 +126,7 @@ function swapImgs(){
 var busy=false;
 // THE ONE NAV. djoteo.com is two codebases — this Framer clone (/, /works,
 // /blog) and the hand-built OTEO pages (/residencies, /booking, /rentals,
-// /calendar, /foowr, /about, /contact) — and the clone only ever linked four of
+// /foowr, /about, /contact) — and the clone only ever linked four of
 // them, so five real pages were unreachable from the homepage and the two
 // halves read as two different sites. This list is the shared contract: the
 // hand-built header in *.html carries the same items in the same order. Change
@@ -134,12 +134,12 @@ var busy=false;
 var NAV=[
   {href:'/booking',label:'DJ Services'},
   {href:'/rentals',label:'Gear Rentals'},
-  {href:'/calendar',label:'Calendar'},
+  {href:'/residencies',label:'Residencies'},
   {href:'/about',label:'About'},
   {href:'/contact',label:'Contact'}
 ];
 // Secondary pages: complete the footer without crowding the header column.
-var NAV_FOOTER=[{href:'/residencies',label:'Residencies'},{href:'/foowr',label:'FOOWR'}];
+var NAV_FOOTER=[{href:'/mixes/',label:'Sets'},{href:'/foowr',label:'FOOWR'}];
 // The Framer pages are a React app, so links are inserted rather than authored,
 // and re-inserted by the MutationObserver below if a re-render drops them.
 // Idempotent: each insert carries its own href marker, so repeated passes are
@@ -297,7 +297,7 @@ function unifyNav(){
     // this subtree, and deleting its nodes is what crashed hydration before.
     {
       var keep={};
-      for(var k=0;k<items.length;k++)keep[items[k].href]=1;
+      for(var k=0;k<items.length;k++)keep[items[k].href.replace(/\/$/,'')]=1;
       var anchors=row.querySelectorAll('a[href]');
       for(var a=0;a<anchors.length;a++){
         var path=(anchors[a].getAttribute('href')||'').replace(/^\.+/,'').replace(/\/$/,'');
@@ -601,12 +601,13 @@ function insertServices(){
 // The counter stays hidden — an animated component fighting a DOM rewrite is
 // how you get a number that flickers back to 0 — and the same slot is filled
 // with static, sourced proof instead:
-//   19  = distinct venues named on /residencies (Debonair, The H, Celine,
-//         Elixir, Icon Park, The Eye, Helena, AVA, Daydream, American Social,
-//         Grade A, La Herradura, The Lawn Bar, The Attic, Aluxe, House of
-//         Blues, The Vanguard, Pretty Please, AURA). check.sh gates every one
-//         of those names on that page, so the number is verifiable from the
-//         site itself rather than asserted here.
+//   27  = distinct rooms named on /residencies (2026-10-26): House of Blues,
+//         Taverna Opa, Elixir, The H, The Lawn Bar at Icon Park, La Herradura,
+//         Pretty Please, Ava, Debonair, Helena, Celine, AURA, The Eye, Great
+//         Southern Box Co., Mango's, Corazón by Baires, American Social, Casa
+//         Mezcal, Wall Street Plaza, Sessions Orlando, Breeze Kissimmee, The
+//         Citrus Club, Grade A, The Vanguard, Bullit Bar, Aluxe, The Attic.
+//         Event companies and agency bookings are not counted as rooms.
 //   Orlando Weekly = real press credential (OTEO_CREDENTIALS.md). It is a
 //         NOMINATION and is worded as one; "won" would be a fabrication.
 function insertTestimonialProof(){
@@ -619,7 +620,7 @@ function insertTestimonialProof(){
   var box=document.createElement('div');
   box.setAttribute('data-oteo-tproof','');
   box.className='oteo-tproof';
-  box.innerHTML='<div class="oteo-tproof-stat"><span class="oteo-tproof-num">19</span>'+
+  box.innerHTML='<div class="oteo-tproof-stat"><span class="oteo-tproof-num">27</span>'+
     '<span class="oteo-tproof-lbl">rooms played across Orlando</span></div>'+
     '<div class="oteo-tproof-press"><span class="oteo-tproof-k">Press</span>'+
     '<span class="oteo-tproof-v">Orlando Weekly \u2014 nominated, Best Club DJ</span></div>';
