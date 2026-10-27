@@ -1177,6 +1177,7 @@ html.js-motion .showcase-statement.is-visible,html.js-motion .contact-statement.
 .gear-thumb img{ width:100%; height:100%; object-fit:contain; mix-blend-mode:multiply; display:block; }
 .gear-thumb:hover{ opacity:1; border-color:rgba(200,169,106,.5); }
 .gear-thumb.is-active{ opacity:1; border-color:var(--gold); }
+.gear-thumb:disabled{ cursor:default; opacity:1; border-color:var(--gold); }
 .gear-card.is-booked .gear-thumbs{ opacity:.5; }
 
 /* ---- date-first bar + per-card availability (assets/rentals-cart.js) ---- */

@@ -601,13 +601,13 @@ function insertServices(){
 // The counter stays hidden — an animated component fighting a DOM rewrite is
 // how you get a number that flickers back to 0 — and the same slot is filled
 // with static, sourced proof instead:
-//   27  = distinct rooms named on /residencies (2026-10-26): House of Blues,
+//   26  = distinct rooms named on /residencies (2026-10-26): House of Blues,
 //         Taverna Opa, Elixir, The H, The Lawn Bar at Icon Park, La Herradura,
 //         Pretty Please, Ava, Debonair, Helena, Celine, AURA, The Eye, Great
 //         Southern Box Co., Mango's, Corazón by Baires, American Social, Casa
 //         Mezcal, Wall Street Plaza, Sessions Orlando, Breeze Kissimmee, The
-//         Citrus Club, Grade A, The Vanguard, Bullit Bar, Aluxe, The Attic.
-//         Event companies and agency bookings are not counted as rooms.
+//         Citrus Club, The Vanguard, Bullitt Bar, The Attic. Event companies,
+//         agency bookings and Grade A (a private event) are not counted as rooms.
 //   Orlando Weekly = real press credential (OTEO_CREDENTIALS.md). It is a
 //         NOMINATION and is worded as one; "won" would be a fabrication.
 function insertTestimonialProof(){
@@ -620,7 +620,7 @@ function insertTestimonialProof(){
   var box=document.createElement('div');
   box.setAttribute('data-oteo-tproof','');
   box.className='oteo-tproof';
-  box.innerHTML='<div class="oteo-tproof-stat"><span class="oteo-tproof-num">27</span>'+
+  box.innerHTML='<div class="oteo-tproof-stat"><span class="oteo-tproof-num">26</span>'+
     '<span class="oteo-tproof-lbl">rooms played across Orlando</span></div>'+
     '<div class="oteo-tproof-press"><span class="oteo-tproof-k">Press</span>'+
     '<span class="oteo-tproof-v">Orlando Weekly \u2014 nominated, Best Club DJ</span></div>';

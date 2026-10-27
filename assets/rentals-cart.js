@@ -138,8 +138,19 @@
       if (!btn) return;
       main.src = btn.dataset.src;
       main.loading = 'eager';
-      for (const b of strip.querySelectorAll('.gear-thumb')) b.classList.toggle('is-active', b === btn);
+      markActive(strip, btn);
     });
+    // The angle already showing is not a button to press again: disable it so
+    // every enabled thumbnail does something when tapped.
+    markActive(strip, strip.querySelector('.gear-thumb.is-active') || strip.querySelector('.gear-thumb'));
+  }
+  function markActive(strip, btn) {
+    for (const b of strip.querySelectorAll('.gear-thumb')) {
+      const on = b === btn;
+      b.classList.toggle('is-active', on);
+      b.disabled = on;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
   }
 
   /* ---------- date bar: pick the night BEFORE shopping ----------
