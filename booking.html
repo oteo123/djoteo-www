@@ -519,6 +519,8 @@
   /* NOTE: .sec sits on the same element as .wrap — never zero the horizontal
      padding here or content goes flush to the viewport edge below 1168px. */
   .sec{padding-top:56px; padding-bottom:10px}
+  .sec-pair{display:grid; gap:0 64px; align-items:start}
+  @media (min-width:1024px){ .sec-pair{grid-template-columns:1fr 1fr} .sec-pair > .sec > .sub{max-width:none} }
   .sec > .head{font-family:var(--sans); font-size:clamp(26px,4vw,40px); font-weight:500; margin-bottom:6px}
   .sec > .sub{color:var(--muted); font-size:15px; margin-bottom:30px; max-width:640px; line-height:1.6}
 
@@ -806,16 +808,18 @@
       <p class="sec-cta"><a href="#book">Ready to book? &rarr; Request a date</a></p>
     </section>
 
-    <section class="sec wrap" aria-label="Demo submissions">
+    <div class="wrap sec-pair">
+    <section class="sec" aria-label="Demo submissions">
       <h2 class="head reveal">Demo Submissions</h2>
       <p class="sub">Artists can submit a track for consideration on Oteo's label, <b style="color:var(--text)">Fish Out of Water Records (FOOWR)</b>. Send a private stream link in the message below or email <a href="mailto:oteo@djoteo.com" style="color:var(--gold);text-decoration:underline;text-underline-offset:2px">oteo@djoteo.com</a>. Submissions are reviewed weekly.</p>
     </section>
 
-    <section class="sec wrap" aria-label="Gear rental">
+    <section class="sec" aria-label="Gear rental">
       <h2 class="head reveal">Need the gear, too?</h2>
       <p class="sub">Pro AlphaTheta / Pioneer DJ decks, mixers and full PA &mdash; on their own or bundled with your booking. Delivered, set up, and collected. The full rental inventory and rig packages live on the rentals page.</p>
       <p class="sec-cta"><a href="/rentals">Browse gear rentals &rarr;</a></p>
     </section>
+    </div>
 
     <section class="book-sec" id="book" aria-label="Booking inquiry">
       <div class="wrap">
