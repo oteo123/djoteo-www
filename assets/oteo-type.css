@@ -63,3 +63,7 @@
   backdrop-filter: blur(18px) saturate(1.15);
   border-bottom: 1px solid rgba(241, 237, 228, .1);
 }
+
+/* Inline text links keep a 24px tap target without changing the line box (audit3 "tiny"). */
+p.sub a, p.canva-note a, p.cite a, p.player-note a { display:inline-block; padding:6px 0; margin:-6px 0; }
+main.e404 a.mark { padding:3px 0; margin:-3px 0; }
