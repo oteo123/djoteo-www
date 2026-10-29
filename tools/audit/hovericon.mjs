@@ -1,0 +1,17 @@
+import { createRequire } from 'node:module';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const b = await chromium.launch({ channel: 'chrome', args: ['--headless=new'] });
+const p = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await p.goto('https://djoteo.com/works/', { waitUntil: 'networkidle' }); await p.waitForTimeout(1500);
+await p.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); await p.waitForTimeout(2500);
+const t = await p.evaluate(() => { const a = [...document.querySelectorAll('footer [data-framer-name="Socials"] a')].find(a => a.getBoundingClientRect().width > 0); const r = a.getBoundingClientRect(); return { x: r.left + 10, y: r.top + r.height / 2, html: a.outerHTML.slice(0, 700) }; });
+console.log(t.html);
+await p.mouse.move(t.x, t.y); await p.waitForTimeout(400);
+await p.evaluate(() => { window.__m = []; new MutationObserver(l => { for (const m of l) { const e = m.target; window.__m.push({ t: performance.now() | 0, el: e.className.toString().slice(0, 30) + '[' + (e.getAttribute('data-framer-name') || '') + ']', style: (e.getAttribute('style') || '').slice(0, 140) }); } }).observe(document.body, { attributes: true, subtree: true, attributeFilter: ['style'] }); });
+await p.waitForTimeout(2000);
+const m = await p.evaluate(() => window.__m); console.log('writes in 2s while parked on a social link:', m.length);
+for (const x of m.filter((_, i) => i % 12 === 0).slice(0, 12)) console.log(' ', x.t, x.el, x.style);
+await p.mouse.move(10, 10); await p.waitForTimeout(800); await p.evaluate(() => { window.__m = []; }); await p.waitForTimeout(1500);
+console.log('writes after mouse left:', await p.evaluate(() => window.__m.length));
+await b.close();

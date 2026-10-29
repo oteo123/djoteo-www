@@ -1,0 +1,15 @@
+import { createRequire } from 'node:module';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const b = await chromium.launch({ channel: 'chrome', args: ['--headless=new'] });
+const p = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await p.goto('https://djoteo.com/works/', { waitUntil: 'networkidle' }); await p.waitForTimeout(1500);
+await p.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); await p.waitForTimeout(2500);
+const t = await p.evaluate(() => { const a = [...document.querySelectorAll('footer [data-framer-name="Socials"] a')].find(a => a.getBoundingClientRect().width > 0); const r = a.getBoundingClientRect(); const icon = a.querySelector('.framer-z5xdb3') || a.querySelector('[data-framer-name="Icon"]'); return { x: r.left + 10, y: r.top + r.height / 2, iconOuter: icon ? icon.outerHTML.slice(0, 600) : 'none', iconParent: icon ? icon.parentElement.outerHTML.slice(0, 300) : '' }; });
+console.log('ICON:', t.iconOuter.replace(/\s+/g, ' ')); console.log('PARENT:', t.iconParent.replace(/\s+/g, ' '));
+await p.mouse.move(t.x, t.y); await p.waitForTimeout(300);
+await p.evaluate(() => { window.__m = []; new MutationObserver(l => { for (const m of l) { const e = m.target; if (!/z5xdb3/.test(e.className)) continue; const s = e.getAttribute('style') || ''; const op = (s.match(/opacity: ([\d.]+)/) || [])[1]; const tr = (s.match(/translate3d\(([^)]*)\)/) || [])[1]; window.__m.push((performance.now() | 0) + ':' + op + '@' + (tr || '').split(',').slice(0, 2).join(',')); } }).observe(document.body, { attributes: true, subtree: true, attributeFilter: ['style'] }); });
+await p.waitForTimeout(2500); const m = await p.evaluate(() => window.__m); console.log('sequence (' + m.length + '):', m.join(' '));
+const cs = await p.evaluate(() => { const e = document.querySelector('.framer-z5xdb3'); return getComputedStyle(e).animationName + ' / transition: ' + getComputedStyle(e).transition.slice(0, 80); });
+console.log('icon computed animation/transition:', cs);
+await b.close();

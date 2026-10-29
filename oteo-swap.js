@@ -904,7 +904,13 @@ function start(){
    (text, href, injected nav cells) made React throw the server tree away and
    re-render the whole page client-side -- the visible "flicker" on every load.
    We wait for React's fiber keys to appear on the page root, then run. */
-function early(){try{watchHiddenSlider();}catch(e){}reveal();}
+function early(){try{watchHiddenSlider();}catch(e){}
+  // Reveal only once the webfonts are in (they are preloaded, so this is a few
+  // hundred ms at most); otherwise the page painted in Georgia/Arial and swapped
+  // to Playfair/Geist in front of the visitor. 1.2s cap so nothing can hang.
+  var done=false,go=function(){if(done)return;done=true;reveal();};
+  // fonts.ready resolves instantly before any @font-face is known, so the three faces every page uses are requested explicitly.
+  if(document.fonts&&document.fonts.load)Promise.all([document.fonts.load('500 1em "Playfair Display"'),document.fonts.load('400 1em Geist'),document.fonts.load('500 1em "Geist Mono"')]).then(go,go);else go();setTimeout(go,2500);}
 function hydrated(){var els=[document.querySelector('h1'),document.querySelector('footer a[href]'),document.querySelector('nav a[href]')];for(var e=0;e<els.length;e++){var el=els[e];if(!el)continue;var k=Object.keys(el);for(var i=0;i<k.length;i++){if(k[i].indexOf('__reactFiber')===0)return true;}}return false;}
 function whenHydrated(fn){var t0=Date.now();(function poll(){if(hydrated()||Date.now()-t0>6000){setTimeout(fn,hydrated()?150:0);return;}setTimeout(poll,50);})();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',early);else early();

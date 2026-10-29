@@ -1,0 +1,20 @@
+// Capture the hydrated + swapped header, footer and opened phone menu from a template page.
+import { createRequire } from 'node:module'; import fs from 'node:fs';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const BASE = process.env.BASE || 'http://127.0.0.1:8765';
+const b = await chromium.launch();
+const clean = html => html;
+const d = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await d.goto(BASE + '/works/', { waitUntil: 'networkidle' }); await d.waitForTimeout(2500);
+const got = await d.evaluate(() => { const h = document.querySelector('.framer-ca1k8a-container'); const f = document.querySelector('footer[data-framer-name="Footer"]'); return { header: h.outerHTML, footer: f.outerHTML, headerParentClass: h.parentElement.className, footerParentClass: f.parentElement.className, bodyClass: document.body.className, mainClass: document.getElementById('main').className }; });
+fs.writeFileSync('/tmp/chrome/header.html', got.header); fs.writeFileSync('/tmp/chrome/footer.html', got.footer);
+console.log('header', got.header.length, 'footer', got.footer.length, 'parents', got.headerParentClass, '|', got.footerParentClass, '| body', got.bodyClass, '| main', got.mainClass);
+const m = await (await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true })).newPage();
+await m.goto(BASE + '/works/', { waitUntil: 'networkidle' }); await m.waitForTimeout(2500);
+await m.tap('[data-framer-name="Menu"]').catch(async () => { await m.mouse.click(350, 32); }); await m.waitForTimeout(1200);
+const menu = await m.evaluate(() => { const n = document.querySelector('[data-framer-name="Phone Open"]'); let top = n; while (top.parentElement && !top.parentElement.classList.contains('framer-ca1k8a-container')) top = top.parentElement; return { nav: n.outerHTML, wrapper: top.outerHTML, wrapperTag: top.tagName + '.' + top.className, headerNow: document.querySelector('.framer-ca1k8a-container').outerHTML }; });
+fs.writeFileSync('/tmp/chrome/menu-open-nav.html', menu.nav); fs.writeFileSync('/tmp/chrome/menu-open-wrapper.html', menu.wrapper); fs.writeFileSync('/tmp/chrome/header-phone-open.html', menu.headerNow);
+console.log('menu nav', menu.nav.length, 'wrapper', menu.wrapper.length, menu.wrapperTag);
+await m.screenshot({ path: '/tmp/chrome/menu-open.png' });
+await b.close();

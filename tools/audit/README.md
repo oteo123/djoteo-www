@@ -8,6 +8,7 @@ Checks (each is a standalone script, Playwright from `~/Dropbox/OTEO code/DJOTEO
 - `tpl-leftovers.mjs` – no visible Lesmana/Mandala/Bima/Works/Mixes/“DJ OTEO” text at any width.
 - `idleflick.mjs` – at rest at the bottom of each page: DOM mutations and frame-to-frame pixel changes must both be zero (the slider progress bar and the About glow are the allowed movers).
 - `gpuflick.mjs` – real Google Chrome, `--headless=new`, Apple Metal GPU: frames while wheeling into the bottom and after settling. Chrome itself re-rasterises text once after any wheel gesture (also on the static 404 page); anything larger than that, or any change that keeps going, is the site's fault.
+- `fout.mjs` – on a throttled connection, no page may show text before its webfonts are loaded (the visible "font change"); every page must reveal.
 - `faces.mjs` – face detection on every rendered image mapped through object-fit and ancestor clipping at three scroll positions; a face outside its visible window is a failure.
 - `layers.mjs`, `footeranim.mjs`, `willchange.mjs`, `gpuprobe.mjs` – diagnostics used to find the 2026-10 footer replay and layer problems; not part of the gate.
 
