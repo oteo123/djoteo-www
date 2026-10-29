@@ -1544,7 +1544,7 @@ footer[data-framer-name="Footer"] div[style*="position: absolute"][style*="heigh
 /* Faces that sit in the top tenth of their file, and the about-me portrait on
    phones (face 23px above the window at 50% 50%). */
 #main img[src*="debonair-supper-club/b.jpg"] { object-position: 50% 0% !important; }
-#main img[src*="helena-modern-riviera/b.jpg"] { object-position: 50% 100% !important; }
+#main img[src*="helena-modern-riviera/b.jpg"] { object-position: 50% 30% !important; }
 @media (max-width: 809.98px) { [data-framer-name="About me"] [data-framer-name="Image BG"] img { object-position: 50% 0% !important; } }
 /* Phone menu: the template staggers its links in one by one (10 links took
    700ms, the panel opened blank). They are visible the moment the menu opens. */

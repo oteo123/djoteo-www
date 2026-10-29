@@ -448,6 +448,11 @@ function fixWords(){
 function fixDupIds(){
   var bad=document.querySelectorAll('[id^="undefined-"]');
   for(var i=0;i<bad.length;i++) bad[i].removeAttribute('id');
+  // The template repeats id="parallax-image" (and -1) on every room page and
+  // id="main" twice on every page. Later copies get a numbered id so each id is
+  // unique; React does not re-read ids after hydration.
+  var seen={},els=document.querySelectorAll('[id]');
+  for(var j=0;j<els.length;j++){var id=els[j].id;if(!id)continue;if(seen[id]){var k=2;while(document.getElementById(id+'-'+k))k++;els[j].id=id+'-'+k;}else seen[id]=1;}
 }
 function absHrefs(){
   var as=document.querySelectorAll('a[href^="./"],a[href^="../"]');

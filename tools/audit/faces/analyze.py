@@ -3,7 +3,8 @@ import json, os, sys, urllib.request, hashlib, math
 import cv2, numpy as np
 inv = json.load(open(sys.argv[1] if len(sys.argv) > 1 else 'inventory2.json'))
 os.makedirs('src', exist_ok=True)
-yn = cv2.FaceDetectorYN.create('yunet.onnx', '', (320, 320), 0.5, 0.3, 5000)
+# 0.65: the mirror ball on the Helena night photo scored 0.527 as a 'face'; real faces on these pages score 0.84+
+yn = cv2.FaceDetectorYN.create('yunet.onnx', '', (320, 320), 0.65, 0.3, 5000)
 def detect(img):
     h, w = img.shape[:2]
     scale = 1.0
@@ -102,7 +103,9 @@ for it in inv:
                 face_screen = [round(ox + fx * s), round(oy + fy * s2), round(fw * s), round(fh * s2)]
                 detail[pos] = {'face_screen': face_screen, 'clip': ci['clip'], 'shown_src': [round(sx0), round(sy0), round(sx1), round(sy1)], 'face_src': [fx, fy, fw, fh]}
                 if not inside:
-                    verdicts.append(('CUT' if pos == 'centred' else 'WARN-' + pos) + f" face@screen{face_screen} clip{ci['clip']}")
+                    # An element taller than the viewport is only ever "clipped" by the viewport itself; the visitor scrolls to it.
+                    tall = ci['el'][3] >= (844 if it.get('width') == 'phone' else 900) * 0.9
+                    verdicts.append(('TALL-ELEMENT' if tall else ('CUT' if pos == 'centred' else 'WARN-' + pos)) + f" face@screen{face_screen} clip{ci['clip']}")
                 if pos == 'centred' and fh * s2 < 24: verdicts.append(f'FACE-TOO-SMALL ({round(fh*s2)}px)')
         else:
             detail['faces'] = 'none detected'

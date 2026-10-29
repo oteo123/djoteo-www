@@ -13,8 +13,8 @@ for (const path of pages) {
   const total = await p.evaluate(() => document.documentElement.scrollHeight); for (let y = 0; y < total; y += 900) { await p.evaluate(y => window.scrollTo(0, y), y); await p.waitForTimeout(100); }
   const info = await p.evaluate(() => { const hrefs = [...new Set([...document.querySelectorAll('a[href]')].map(a => a.href).filter(h => h.startsWith(location.origin)))]; const imgs = [...document.querySelectorAll('img')].filter(i => i.getBoundingClientRect().width > 0 && i.complete && i.naturalWidth === 0 && i.currentSrc).map(i => i.currentSrc.slice(-60)); const ids = {}; for (const e of document.querySelectorAll('[id]')) ids[e.id] = (ids[e.id] || 0) + 1; const dups = Object.entries(ids).filter(([k, v]) => v > 1).map(([k]) => k); return { hrefs, imgs, dups }; });
   const bad = []; for (const h of info.hrefs) { const s = await head(h); if (s !== 200) bad.push(h.replace(BASE, '') + '=' + s); }
-  broken += bad.length; badImg += info.imgs.length; dupIds += info.dups.filter(d => d !== 'main').length; consoleErr += errs.length;
-  if (bad.length || info.imgs.length || errs.length || info.dups.filter(d => d !== 'main').length) console.log(path, 'broken:', bad.join(' '), 'imgs:', info.imgs.join(' '), 'dupIds:', info.dups.join(','), 'console:', errs[0] || '');
+  broken += bad.length; badImg += info.imgs.length; dupIds += info.dups.length; consoleErr += errs.length;
+  if (bad.length || info.imgs.length || errs.length || info.dups.length) console.log(path, 'broken:', bad.join(' '), 'imgs:', info.imgs.join(' '), 'dupIds:', info.dups.join(','), 'console:', errs[0] || '');
   p.removeAllListeners('console');
 }
 await b.close(); console.log(`LINKS: broken=${broken} undecodable-images=${badImg} duplicate-ids=${dupIds} console-errors=${consoleErr}`);
