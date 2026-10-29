@@ -326,7 +326,9 @@ function unifyNav(){
     // things OTEO sells. Only the footer is exempt: its dividers animate from
     // width:0 on entry, and moving an already-entered cell restarts that
     // transition from zero and it never runs again.
-    if(!isFooter)orderNav(row,items);
+    // The footer dividers are static now (oteo-system.css forces them to full
+    // width), so the footer takes the same order as the header.
+    orderNav(row,items);
     // A pass from before this guard existed may have left the grid inline on
     // the phone row, and React only rewrites style when it re-renders.
     if(isPhoneMenu&&row.style.gridAutoFlow){
@@ -615,7 +617,7 @@ function insertServices(){
   pLead.textContent='Resident at Debonair Supper Club';
   var pRooms=document.createElement('span');
   pRooms.className='oteo-proof-rooms';
-  pRooms.textContent='House of Blues · ICON Park · Helena · The H · Celine · AVA';
+  pRooms.textContent='Rooms played: House of Blues · ICON Park · Helena · The H · Celine · AVA';
   var pCta=document.createElement('span');
   pCta.className='oteo-proof-cta';
   pCta.textContent='See the track record';
@@ -834,16 +836,21 @@ function insertSetPlayer(){
   var main=document.querySelector('[data-framer-name="Main content"]');if(!main)return;
   var d=SET_MEDIA[m[1]],w=document.createElement('div');w.setAttribute('data-oteo-player','');
   if(d.yt){w.style.cssText='position:relative;aspect-ratio:16/9;width:100%;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#000';
-    w.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+d.yt+'" title="'+d.t+'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';}
+    // Our own cover with a play button; YouTube's iframe (with its burned-in
+    // thumbnail text) only loads once the visitor presses play.
+    var cov=main.querySelector('[data-framer-name="Image mask"] img');var poster=(cov&&(cov.currentSrc||cov.src))||'';
+    w.innerHTML='<button type="button" aria-label="Play: '+d.t.replace(/"/g,'&quot;')+'" style="position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;margin:0;cursor:pointer;background:#000 url('+poster+') center/cover no-repeat"><span style="position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(18,17,13,.74);border:1.5px solid rgba(200,169,106,.95);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#c8a96a" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>';
+    w.querySelector('button').addEventListener('click',function(){w.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+d.yt+'?autoplay=1&rel=0" title="'+d.t.replace(/"/g,'&quot;')+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';});}
   else{w.style.cssText='width:100%;height:166px;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#0d0d0f';
     w.innerHTML='<iframe src="https://w.soundcloud.com/player/?url='+encodeURIComponent(d.sc)+'&color=%23c8a96a&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false" title="'+d.t+' on SoundCloud" loading="lazy" allow="autoplay" style="width:100%;height:100%;border:0"></iframe>';}
   // The template's post layout is Main content > Container (the 760px column) >
   // Image mask (cover) + Text. The player is the set itself, so it takes the
   // cover's slot at the top of the column; dropped straight into Main content it
   // became a flex sibling and squeezed the column to 1px.
-  var col=main.querySelector('[data-framer-name="Container"]')||main;
-  var cover=col.querySelector('[data-framer-name="Image mask"]');if(cover)cover.style.display='none';
-  col.insertBefore(w,col.firstChild);
+  // Full content width: Main content wraps (oteo-system.css) and the player
+  // takes the first full row; the template's cover mask is hidden.
+  var cover=main.querySelector('[data-framer-name="Image mask"]');if(cover)cover.style.display='none';
+  main.insertBefore(w,main.firstChild);
 }
 // Rooms index filter tabs. The purchased template's tabs only switch their own
 // active look; the list they were meant to filter re-queries Framer's CMS, which
@@ -897,6 +904,9 @@ function hydrated(){var els=[document.querySelector('h1'),document.querySelector
 function whenHydrated(fn){var t0=Date.now();(function poll(){if(hydrated()||Date.now()-t0>6000){setTimeout(fn,hydrated()?150:0);return;}setTimeout(poll,50);})();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',early);else early();
 function boot(){whenHydrated(start);}
-if(document.readyState==='complete')boot();else window.addEventListener('load',boot);
+/* Boot as soon as the DOM exists: whenHydrated() waits for React itself, and
+   waiting for window.load let one slow third-party embed hold the template's
+   placeholder nav and dead social links on screen for the whole visit. */
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 
 })();

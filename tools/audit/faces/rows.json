@@ -1,0 +1,14797 @@
+[
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png",
+  "kind": "img",
+  "alt": "Carousel image 1",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png",
+  "kind": "img",
+  "alt": "Carousel image 2",
+  "nat": [
+   1400,
+   933
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia1"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png",
+  "kind": "img",
+  "alt": "Carousel image 3",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png",
+  "kind": "img",
+  "alt": "Carousel image 4",
+  "nat": [
+   1600,
+   1067
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png",
+  "kind": "img",
+  "alt": "Carousel image 5",
+  "nat": [
+   1120,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png",
+  "kind": "img",
+  "alt": "Carousel image 6",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia5"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png",
+  "kind": "img",
+  "alt": "Carousel image 7",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png",
+  "kind": "img",
+  "alt": "Carousel image 8",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png",
+  "kind": "img",
+  "alt": "Carousel image 9",
+  "nat": [
+   1400,
+   933
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png",
+  "kind": "img",
+  "alt": "Carousel image 10",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png",
+  "kind": "img",
+  "alt": "Carousel image 11",
+  "nat": [
+   1600,
+   1067
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia10.png",
+  "id": "ia10"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png",
+  "kind": "img",
+  "alt": "Carousel image 12",
+  "nat": [
+   1120,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia11.png",
+  "id": "ia11"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png",
+  "kind": "img",
+  "alt": "Carousel image 13",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia12"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png",
+  "kind": "img",
+  "alt": "Carousel image 14",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/desktop___ia13.png",
+  "id": "ia13"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Avatar",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   1226,
+   1600
+  ],
+  "el": [
+   436,
+   0,
+   568,
+   741
+  ],
+  "clip": [
+   436,
+   0,
+   1004,
+   741
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     598,
+     238,
+     186,
+     219
+    ],
+    "clip": [
+     436,
+     0,
+     1004,
+     741
+    ],
+    "shown_src": [
+     0,
+     0,
+     1226,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     598,
+     238,
+     186,
+     219
+    ],
+    "clip": [
+     436,
+     0,
+     1004,
+     741
+    ],
+    "shown_src": [
+     0,
+     0,
+     1226,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     598,
+     238,
+     186,
+     219
+    ],
+    "clip": [
+     436,
+     0,
+     1004,
+     741
+    ],
+    "shown_src": [
+     0,
+     0,
+     1226,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia14.png",
+  "id": "ia14"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   639
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     353,
+     425,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     639
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     353,
+     645,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     859
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     353,
+     205,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     419
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia15.png",
+  "id": "ia15"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   140,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   140,
+   106,
+   712,
+   793
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     310,
+     366,
+     121,
+     157
+    ],
+    "clip": [
+     140,
+     106,
+     712,
+     793
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1427
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     310,
+     432,
+     121,
+     157
+    ],
+    "clip": [
+     140,
+     172,
+     712,
+     859
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1427
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     310,
+     300,
+     121,
+     157
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     727
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1427
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia16.png",
+  "id": "ia16"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   793
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     759,
+     185,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     793
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     759,
+     251,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     859
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     759,
+     119,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     727
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia17.png",
+  "id": "ia17"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   728,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   728,
+   260,
+   1300,
+   639
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     967,
+     334,
+     74,
+     103
+    ],
+    "clip": [
+     728,
+     260,
+     1300,
+     639
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     967,
+     554,
+     74,
+     103
+    ],
+    "clip": [
+     728,
+     480,
+     1300,
+     859
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     967,
+     114,
+     74,
+     103
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     419
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia18.png",
+  "id": "ia18"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   899,
+   538
+  ],
+  "el": [
+   1033,
+   370,
+   267,
+   160
+  ],
+  "clip": [
+   1033,
+   370,
+   1300,
+   530
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1133,
+     424,
+     57,
+     76
+    ],
+    "clip": [
+     1033,
+     370,
+     1300,
+     530
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1133,
+     754,
+     57,
+     76
+    ],
+    "clip": [
+     1033,
+     700,
+     1300,
+     860
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1133,
+     94,
+     57,
+     76
+    ],
+    "clip": [
+     1033,
+     40,
+     1300,
+     200
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia19.png",
+  "id": "ia19"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   2000,
+   2080
+  ],
+  "el": [
+   0,
+   -100,
+   1440,
+   1500
+  ],
+  "clip": [
+   0,
+   300,
+   1440,
+   900
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "WARN-leaving face@screen[522, 525, 275, 369] clip[0, 640, 1440, 900]"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     522,
+     298,
+     275,
+     369
+    ],
+    "clip": [
+     0,
+     300,
+     1440,
+     900
+    ],
+    "shown_src": [
+     2,
+     555,
+     1998,
+     1387
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     522,
+     71,
+     275,
+     369
+    ],
+    "clip": [
+     0,
+     0,
+     1440,
+     860
+    ],
+    "shown_src": [
+     2,
+     453,
+     1998,
+     1646
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     522,
+     525,
+     275,
+     369
+    ],
+    "clip": [
+     0,
+     640,
+     1440,
+     900
+    ],
+    "shown_src": [
+     2,
+     711,
+     1998,
+     1072
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia20.png",
+  "id": "ia20"
+ },
+ {
+  "page": "/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   257,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   257,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop___ia21.png",
+  "id": "ia21"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     353,
+     425,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     353,
+     645,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     353,
+     205,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   140,
+   106,
+   712,
+   794
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     499,
+     270,
+     118,
+     162
+    ],
+    "clip": [
+     140,
+     106,
+     712,
+     794
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     499,
+     336,
+     118,
+     162
+    ],
+    "clip": [
+     140,
+     172,
+     712,
+     860
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     499,
+     204,
+     118,
+     162
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     728
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     379,
+     334,
+     74,
+     103
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     924
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     379,
+     554,
+     74,
+     103
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     924
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     379,
+     114,
+     74,
+     103
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     924
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   793
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     759,
+     185,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     793
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     759,
+     251,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     859
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     759,
+     119,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     727
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   728,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   728,
+   260,
+   1300,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     899,
+     457,
+     120,
+     155
+    ],
+    "clip": [
+     728,
+     260,
+     1300,
+     640
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     924
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     899,
+     677,
+     120,
+     155
+    ],
+    "clip": [
+     728,
+     480,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     924
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     899,
+     237,
+     120,
+     155
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     420
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     924
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   65,
+   1160,
+   770
+  ],
+  "clip": [
+   140,
+   65,
+   1300,
+   835
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     573,
+     400,
+     278,
+     376
+    ],
+    "clip": [
+     140,
+     65,
+     1300,
+     835
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     573,
+     425,
+     278,
+     376
+    ],
+    "clip": [
+     140,
+     90,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     573,
+     375,
+     278,
+     376
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     810
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     394,
+     408,
+     94,
+     118
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     394,
+     565,
+     94,
+     118
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     394,
+     252,
+     94,
+     118
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     961,
+     326,
+     115,
+     176
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     961,
+     483,
+     115,
+     176
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     961,
+     170,
+     115,
+     176
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     393,
+     435,
+     97,
+     113
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     393,
+     592,
+     97,
+     113
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     393,
+     279,
+     97,
+     113
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 0%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     924,
+     257,
+     126,
+     174
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     914
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     924,
+     414,
+     126,
+     174
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     914
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     924,
+     101,
+     126,
+     174
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     914
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   140,
+   -68,
+   1160,
+   1035
+  ],
+  "clip": [
+   140,
+   0,
+   1300,
+   900
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [
+   "WARN-entered face@screen[618, -62, 185, 237] clip[140, 0, 1300, 859]"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     618,
+     45,
+     185,
+     237
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     184,
+     1024,
+     979
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     618,
+     -62,
+     185,
+     237
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     859
+    ],
+    "shown_src": [
+     0,
+     279,
+     1024,
+     1037
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     618,
+     153,
+     185,
+     237
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     124,
+     1024,
+     884
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     250,
+     251,
+     84,
+     113
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     124,
+     1024,
+     1038
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     250,
+     408,
+     84,
+     113
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     124,
+     1024,
+     1038
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     250,
+     95,
+     84,
+     113
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     124,
+     1024,
+     1038
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     267,
+     299,
+     94,
+     102
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     267,
+     519,
+     94,
+     102
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     267,
+     79,
+     94,
+     102
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   794
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1087,
+     270,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     794
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1087,
+     336,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     860
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1087,
+     204,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     728
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_debonair_supper_club__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   140,
+   65,
+   1160,
+   770
+  ],
+  "clip": [
+   140,
+   65,
+   1300,
+   835
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     397,
+     145,
+     190,
+     208
+    ],
+    "clip": [
+     140,
+     65,
+     1300,
+     835
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     397,
+     170,
+     190,
+     208
+    ],
+    "clip": [
+     140,
+     90,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     397,
+     120,
+     190,
+     208
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     810
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     981
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     418,
+     349,
+     97,
+     128
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     418,
+     506,
+     97,
+     128
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     418,
+     193,
+     97,
+     128
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1014,
+     311,
+     110,
+     147
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1014,
+     468,
+     110,
+     147
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1014,
+     155,
+     110,
+     147
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     158,
+     234,
+     165,
+     176
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     158,
+     391,
+     165,
+     176
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     158,
+     78,
+     165,
+     176
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     833
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1080,
+   1080
+  ],
+  "el": [
+   140,
+   -68,
+   1160,
+   1035
+  ],
+  "clip": [
+   140,
+   0,
+   1300,
+   900
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   760,
+   1080
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     165,
+     557,
+     24,
+     28
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     80,
+     760,
+     759
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     165,
+     714,
+     24,
+     28
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     80,
+     760,
+     759
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     165,
+     401,
+     24,
+     28
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     80,
+     760,
+     759
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   140,
+   106,
+   712,
+   794
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     310,
+     386,
+     220,
+     298
+    ],
+    "clip": [
+     140,
+     106,
+     712,
+     794
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     310,
+     452,
+     220,
+     298
+    ],
+    "clip": [
+     140,
+     172,
+     712,
+     860
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     310,
+     320,
+     220,
+     298
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     728
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   794
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1087,
+     270,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     794
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1087,
+     336,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     860
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1087,
+     204,
+     118,
+     162
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     728
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_casa_mezcal__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   65,
+   1160,
+   770
+  ],
+  "clip": [
+   140,
+   65,
+   1300,
+   835
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     812,
+     187,
+     149,
+     205
+    ],
+    "clip": [
+     140,
+     65,
+     1300,
+     835
+    ],
+    "shown_src": [
+     0,
+     117,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     812,
+     212,
+     149,
+     205
+    ],
+    "clip": [
+     140,
+     90,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     117,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     812,
+     162,
+     149,
+     205
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     810
+    ],
+    "shown_src": [
+     0,
+     117,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 78%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     456,
+     375,
+     71,
+     93
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     335,
+     1200,
+     1406
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     456,
+     532,
+     71,
+     93
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     335,
+     1200,
+     1406
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     456,
+     219,
+     71,
+     93
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     335,
+     1200,
+     1406
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     948,
+     402,
+     92,
+     102
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     948,
+     559,
+     92,
+     102
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     948,
+     246,
+     92,
+     102
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1157
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     405,
+     333,
+     144,
+     184
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     405,
+     490,
+     144,
+     184
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     405,
+     177,
+     144,
+     184
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     998,
+     533,
+     80,
+     90
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     998,
+     690,
+     80,
+     90
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     998,
+     377,
+     80,
+     90
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1082
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   140,
+   -68,
+   1160,
+   1035
+  ],
+  "clip": [
+   140,
+   0,
+   1300,
+   900
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     474,
+     271,
+     278,
+     362
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     192,
+     1067,
+     1020
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     474,
+     164,
+     278,
+     362
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     291,
+     1067,
+     1082
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     474,
+     379,
+     278,
+     362
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     921
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 78%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     353,
+     425,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     353,
+     645,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     353,
+     205,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   793
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     759,
+     185,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     793
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     759,
+     251,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     859
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     759,
+     119,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     727
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   257,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   257,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     286,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     257,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     922
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_the_h_orlando__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   140,
+   65,
+   1160,
+   770
+  ],
+  "clip": [
+   140,
+   65,
+   1300,
+   835
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     487,
+     464,
+     243,
+     315
+    ],
+    "clip": [
+     140,
+     65,
+     1300,
+     835
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     923
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     487,
+     489,
+     243,
+     315
+    ],
+    "clip": [
+     140,
+     90,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     923
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     487,
+     439,
+     243,
+     315
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     810
+    ],
+    "shown_src": [
+     0,
+     126,
+     1200,
+     923
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     282,
+     311,
+     160,
+     227
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     282,
+     468,
+     160,
+     227
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     282,
+     155,
+     160,
+     227
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   2000,
+   1333
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1127,
+     337,
+     50,
+     64
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     253,
+     0,
+     1747,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1127,
+     494,
+     50,
+     64
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     253,
+     0,
+     1747,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1127,
+     181,
+     50,
+     64
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     253,
+     0,
+     1747,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     345,
+     271,
+     122,
+     148
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     345,
+     428,
+     122,
+     148
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     345,
+     115,
+     122,
+     148
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 0%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     1111,
+     214,
+     123,
+     162
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     952
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     1111,
+     371,
+     123,
+     162
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     952
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     1111,
+     58,
+     123,
+     162
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     952
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1600,
+   1066
+  ],
+  "el": [
+   140,
+   -68,
+   1160,
+   1035
+  ],
+  "clip": [
+   140,
+   0,
+   1300,
+   900
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     580,
+     240,
+     206,
+     271
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     900
+    ],
+    "shown_src": [
+     203,
+     70,
+     1397,
+     997
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     580,
+     133,
+     206,
+     271
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     859
+    ],
+    "shown_src": [
+     203,
+     180,
+     1397,
+     1065
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     580,
+     348,
+     206,
+     271
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     900
+    ],
+    "shown_src": [
+     203,
+     0,
+     1397,
+     886
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     388,
+     368,
+     89,
+     133
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     388,
+     525,
+     89,
+     133
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     388,
+     212,
+     89,
+     133
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1081
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     353,
+     425,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     353,
+     645,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     353,
+     205,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   794
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     759,
+     185,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     794
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     759,
+     251,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     860
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     759,
+     119,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     728
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_helena_modern_riviera__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   140,
+   65,
+   1160,
+   770
+  ],
+  "clip": [
+   140,
+   65,
+   1300,
+   835
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     624,
+     214,
+     151,
+     209
+    ],
+    "clip": [
+     140,
+     65,
+     1300,
+     835
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     923
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     624,
+     239,
+     151,
+     209
+    ],
+    "clip": [
+     140,
+     90,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     923
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     624,
+     189,
+     151,
+     209
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     810
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     923
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   901,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     319,
+     320,
+     108,
+     140
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     319,
+     477,
+     108,
+     140
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     319,
+     164,
+     108,
+     140
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   2000,
+   1123
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     863,
+     376,
+     58,
+     72
+    ],
+    "clip": [
+     732,
+     196,
+     1300,
+     703
+    ],
+    "shown_src": [
+     371,
+     0,
+     1629,
+     1123
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     863,
+     533,
+     58,
+     72
+    ],
+    "clip": [
+     732,
+     353,
+     1300,
+     860
+    ],
+    "shown_src": [
+     371,
+     0,
+     1629,
+     1123
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     863,
+     220,
+     58,
+     72
+    ],
+    "clip": [
+     732,
+     40,
+     1300,
+     547
+    ],
+    "shown_src": [
+     371,
+     0,
+     1629,
+     1123
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     332,
+     266,
+     103,
+     147
+    ],
+    "clip": [
+     140,
+     196,
+     708,
+     703
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     332,
+     423,
+     103,
+     147
+    ],
+    "clip": [
+     140,
+     353,
+     708,
+     860
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     332,
+     110,
+     103,
+     147
+    ],
+    "clip": [
+     140,
+     40,
+     708,
+     547
+    ],
+    "shown_src": [
+     0,
+     159,
+     900,
+     963
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   732,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   732,
+   196,
+   1300,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   140,
+   -68,
+   1160,
+   1035
+  ],
+  "clip": [
+   140,
+   0,
+   1300,
+   900
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     619,
+     223,
+     213,
+     291
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     184,
+     1024,
+     979
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     619,
+     116,
+     213,
+     291
+    ],
+    "clip": [
+     140,
+     0,
+     1300,
+     860
+    ],
+    "shown_src": [
+     0,
+     279,
+     1024,
+     1038
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     619,
+     331,
+     213,
+     291
+    ],
+    "clip": [
+     140,
+     40,
+     1300,
+     900
+    ],
+    "shown_src": [
+     0,
+     124,
+     1024,
+     884
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   140,
+   196,
+   568,
+   507
+  ],
+  "clip": [
+   140,
+   196,
+   708,
+   703
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   140,
+   260,
+   572,
+   380
+  ],
+  "clip": [
+   140,
+   260,
+   712,
+   640
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     353,
+     425,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     260,
+     712,
+     640
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     353,
+     645,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     480,
+     712,
+     860
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     353,
+     205,
+     137,
+     186
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     420
+    ],
+    "shown_src": [
+     0,
+     27,
+     1600,
+     1090
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   728,
+   106,
+   572,
+   688
+  ],
+  "clip": [
+   728,
+   106,
+   1300,
+   793
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     759,
+     185,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     106,
+     1300,
+     793
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     759,
+     251,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     172,
+     1300,
+     859
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     759,
+     119,
+     150,
+     164
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     727
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1078
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__works_ava_mediterraegean__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/blog/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-10.jpg",
+  "kind": "img",
+  "alt": "Casa Mezcal \u2014 4 Hour Set",
+  "nat": [
+   1600,
+   900
+  ],
+  "el": [
+   140,
+   235,
+   572,
+   430
+  ],
+  "clip": [
+   140,
+   235,
+   712,
+   665
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     278,
+     300,
+     95,
+     89
+    ],
+    "clip": [
+     140,
+     235,
+     712,
+     665
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     278,
+     494,
+     95,
+     89
+    ],
+    "clip": [
+     140,
+     430,
+     712,
+     860
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     278,
+     104,
+     95,
+     89
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     470
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   }
+  },
+  "shot": "clips/desktop__blog__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/blog/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-03.jpg",
+  "kind": "img",
+  "alt": "Casa Mezcal \u2014 5 Hour Set",
+  "nat": [
+   1920,
+   1080
+  ],
+  "el": [
+   728,
+   235,
+   572,
+   430
+  ],
+  "clip": [
+   728,
+   235,
+   1300,
+   665
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     950,
+     285,
+     80,
+     104
+    ],
+    "clip": [
+     728,
+     235,
+     1300,
+     665
+    ],
+    "shown_src": [
+     242,
+     0,
+     1678,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     950,
+     480,
+     80,
+     104
+    ],
+    "clip": [
+     728,
+     430,
+     1300,
+     860
+    ],
+    "shown_src": [
+     242,
+     0,
+     1678,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     950,
+     90,
+     80,
+     104
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     470
+    ],
+    "shown_src": [
+     242,
+     0,
+     1678,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   }
+  },
+  "shot": "clips/desktop__blog__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/blog/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/opening-for-mochakk-2026-09-12.jpg",
+  "kind": "img",
+  "alt": "Opening for Mochakk \u2014 Wall Street Plaza",
+  "nat": [
+   1280,
+   720
+  ],
+  "el": [
+   140,
+   235,
+   572,
+   430
+  ],
+  "clip": [
+   140,
+   235,
+   712,
+   665
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     384,
+     403,
+     41,
+     55
+    ],
+    "clip": [
+     140,
+     235,
+     712,
+     665
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     384,
+     598,
+     41,
+     55
+    ],
+    "clip": [
+     140,
+     430,
+     712,
+     860
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     384,
+     208,
+     41,
+     55
+    ],
+    "clip": [
+     140,
+     40,
+     712,
+     470
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   }
+  },
+  "shot": "clips/desktop__blog__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/blog/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/ava-mm-2024-07-06.jpg",
+  "kind": "img",
+  "alt": "AVA MM Lounge \u2014 Saturday Night",
+  "nat": [
+   1600,
+   900
+  ],
+  "el": [
+   728,
+   235,
+   572,
+   430
+  ],
+  "clip": [
+   728,
+   235,
+   1300,
+   665
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CUT-SOURCE face[677, 0, 177, 152] touches the edge of the file (1600x900)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     955,
+     235,
+     85,
+     73
+    ],
+    "clip": [
+     728,
+     235,
+     1300,
+     665
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     955,
+     430,
+     85,
+     73
+    ],
+    "clip": [
+     728,
+     430,
+     1300,
+     860
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     955,
+     40,
+     85,
+     73
+    ],
+    "clip": [
+     728,
+     40,
+     1300,
+     470
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   }
+  },
+  "shot": "clips/desktop__blog__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/blog/",
+  "width": "desktop",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   386,
+   256,
+   524,
+   714
+  ],
+  "clip": [
+   386,
+   256,
+   909,
+   900
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     568,
+     285,
+     65,
+     103
+    ],
+    "clip": [
+     386,
+     256,
+     909,
+     900
+    ],
+    "shown_src": [
+     0,
+     0,
+     784,
+     924
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/desktop__blog__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png",
+  "kind": "img",
+  "alt": "Carousel image 1",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia0"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png",
+  "kind": "img",
+  "alt": "Carousel image 2",
+  "nat": [
+   1400,
+   933
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia1"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png",
+  "kind": "img",
+  "alt": "Carousel image 3",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png",
+  "kind": "img",
+  "alt": "Carousel image 4",
+  "nat": [
+   1600,
+   1067
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png",
+  "kind": "img",
+  "alt": "Carousel image 5",
+  "nat": [
+   1120,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia4"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png",
+  "kind": "img",
+  "alt": "Carousel image 6",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia5"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png",
+  "kind": "img",
+  "alt": "Carousel image 7",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia6"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png",
+  "kind": "img",
+  "alt": "Carousel image 8",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png",
+  "kind": "img",
+  "alt": "Carousel image 9",
+  "nat": [
+   1400,
+   933
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png",
+  "kind": "img",
+  "alt": "Carousel image 10",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png",
+  "kind": "img",
+  "alt": "Carousel image 11",
+  "nat": [
+   1600,
+   1067
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia10.png",
+  "id": "ia10"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png",
+  "kind": "img",
+  "alt": "Carousel image 12",
+  "nat": [
+   1120,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia11"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png",
+  "kind": "img",
+  "alt": "Carousel image 13",
+  "nat": [
+   1200,
+   1600
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": null,
+  "id": "ia12"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Slider",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png",
+  "kind": "img",
+  "alt": "Carousel image 14",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": null,
+  "clip": null,
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CAROUSEL (3D rotating hero slide; judged on source framing)",
+   "DUPLICATE x2"
+  ],
+  "detail": {},
+  "shot": "clips/phone___ia13.png",
+  "id": "ia13"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Avatar",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   1226,
+   1600
+  ],
+  "el": [
+   -6,
+   60,
+   403,
+   526
+  ],
+  "clip": [
+   0,
+   60,
+   390,
+   586
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     109,
+     229,
+     132,
+     155
+    ],
+    "clip": [
+     0,
+     60,
+     390,
+     586
+    ],
+    "shown_src": [
+     18,
+     0,
+     1205,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     109,
+     229,
+     132,
+     155
+    ],
+    "clip": [
+     0,
+     60,
+     390,
+     586
+    ],
+    "shown_src": [
+     18,
+     0,
+     1205,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     109,
+     209,
+     132,
+     155
+    ],
+    "clip": [
+     0,
+     40,
+     390,
+     566
+    ],
+    "shown_src": [
+     18,
+     0,
+     1205,
+     1600
+    ],
+    "face_src": [
+     349,
+     513,
+     401,
+     473
+    ]
+   }
+  },
+  "shot": "clips/phone___ia14.png",
+  "id": "ia14"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     673,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone___ia15.png",
+  "id": "ia15"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     39,
+     259,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     39,
+     431,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     39,
+     88,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone___ia16.png",
+  "id": "ia16"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   631
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     124,
+     370,
+     74,
+     96
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     631
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1426
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     124,
+     542,
+     74,
+     96
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     803
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1426
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     124,
+     199,
+     74,
+     96
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     460
+    ],
+    "shown_src": [
+     6,
+     0,
+     1194,
+     1426
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/phone___ia17.png",
+  "id": "ia17"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     166,
+     351,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     166,
+     617,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     166,
+     85,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/phone___ia18.png",
+  "id": "ia18"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   899,
+   538
+  ],
+  "el": [
+   62,
+   342,
+   267,
+   160
+  ],
+  "clip": [
+   62,
+   342,
+   329,
+   502
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     162,
+     396,
+     57,
+     76
+    ],
+    "clip": [
+     62,
+     342,
+     329,
+     502
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     162,
+     698,
+     57,
+     76
+    ],
+    "clip": [
+     62,
+     644,
+     329,
+     804
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     162,
+     94,
+     57,
+     76
+    ],
+    "clip": [
+     62,
+     40,
+     329,
+     200
+    ],
+    "shown_src": [
+     1,
+     0,
+     898,
+     538
+    ],
+    "face_src": [
+     338,
+     183,
+     193,
+     255
+    ]
+   }
+  },
+  "shot": "clips/phone___ia19.png",
+  "id": "ia19"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   2000,
+   2080
+  ],
+  "el": [
+   0,
+   -106,
+   390,
+   1444
+  ],
+  "clip": [
+   0,
+   300,
+   390,
+   844
+  ],
+  "fit": "cover 50% 32%",
+  "verdicts": [
+   "CUT face@screen[4, 277, 265, 355] clip[0, 300, 390, 844]",
+   "WARN-leaving face@screen[4, 496, 265, 355] clip[0, 640, 390, 844]"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     4,
+     277,
+     265,
+     355
+    ],
+    "clip": [
+     0,
+     300,
+     390,
+     844
+    ],
+    "shown_src": [
+     719,
+     585,
+     1281,
+     1368
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     4,
+     58,
+     265,
+     355
+    ],
+    "clip": [
+     0,
+     0,
+     390,
+     804
+    ],
+    "shown_src": [
+     719,
+     468,
+     1281,
+     1626
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     4,
+     496,
+     265,
+     355
+    ],
+    "clip": [
+     0,
+     640,
+     390,
+     844
+    ],
+    "shown_src": [
+     719,
+     759,
+     1281,
+     1053
+    ],
+    "face_src": [
+     725,
+     552,
+     382,
+     512
+    ]
+   }
+  },
+  "shot": "clips/phone___ia20.png",
+  "id": "ia20"
+ },
+ {
+  "page": "/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone___ia21.png",
+  "id": "ia21"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     673,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     39,
+     259,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     39,
+     431,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     39,
+     88,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   631
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     240,
+     311,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     631
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1197
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     240,
+     483,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     803
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1197
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     240,
+     140,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     460
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1197
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   539
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     125,
+     426,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     539
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     926
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     125,
+     692,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     926
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     125,
+     160,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     273
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     926
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     166,
+     351,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     166,
+     617,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     166,
+     85,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     489,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     388,
+     370,
+     620
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     177,
+     396,
+     58,
+     73
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     177,
+     622,
+     58,
+     73
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     177,
+     170,
+     58,
+     73
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     537,
+     533,
+     199,
+     250
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     161,
+     346,
+     71,
+     108
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     161,
+     572,
+     71,
+     108
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     161,
+     120,
+     71,
+     108
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     483,
+     360,
+     242,
+     372
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     176,
+     413,
+     60,
+     70
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     964
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     176,
+     639,
+     60,
+     70
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     964
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     176,
+     187,
+     60,
+     70
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     964
+    ],
+    "face_src": [
+     401,
+     538,
+     154,
+     179
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 0%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     304,
+     78,
+     107
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     913
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     530,
+     78,
+     107
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     913
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     78,
+     78,
+     107
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     0,
+     1024,
+     913
+    ],
+    "face_src": [
+     347,
+     110,
+     227,
+     313
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     164,
+     300,
+     56,
+     71
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1037
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     164,
+     526,
+     56,
+     71
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1037
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     164,
+     74,
+     56,
+     71
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1037
+    ],
+    "face_src": [
+     422,
+     224,
+     163,
+     209
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     88,
+     300,
+     52,
+     70
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     88,
+     526,
+     52,
+     70
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     88,
+     74,
+     52,
+     70
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     198,
+     224,
+     152,
+     204
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   539
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     98,
+     330,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     539
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     984
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     98,
+     596,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     984
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     98,
+     64,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     273
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     984
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     240,
+     311,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     240,
+     483,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     240,
+     140,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/debonair-supper-club/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works_debonair_supper_club__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     98,
+     330,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     980
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     98,
+     379,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     355,
+     370,
+     587
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     980
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     98,
+     64,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     25,
+     1440,
+     980
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     191,
+     360,
+     60,
+     79
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     191,
+     586,
+     60,
+     79
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     191,
+     134,
+     60,
+     79
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     423,
+     294,
+     148,
+     195
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     194,
+     337,
+     68,
+     90
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     194,
+     563,
+     68,
+     90
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     194,
+     111,
+     68,
+     90
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     429,
+     237,
+     167,
+     223
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     31,
+     290,
+     102,
+     108
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     31,
+     516,
+     102,
+     108
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     31,
+     64,
+     102,
+     108
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     62,
+     864,
+     832
+    ],
+    "face_src": [
+     27,
+     120,
+     251,
+     267
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   864,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1080,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   760,
+   1080
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [
+   "FACE-TOO-SMALL (18px)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     36,
+     488,
+     15,
+     18
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     81,
+     760,
+     758
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     36,
+     714,
+     15,
+     18
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     81,
+     760,
+     758
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     36,
+     262,
+     15,
+     18
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     81,
+     760,
+     758
+    ],
+    "face_src": [
+     34,
+     563,
+     32,
+     38
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     124,
+     383,
+     135,
+     182
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     124,
+     555,
+     135,
+     182
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     124,
+     212,
+     135,
+     182
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     240,
+     311,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     240,
+     483,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     240,
+     140,
+     72,
+     99
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     301,
+     0,
+     1299,
+     1200
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/casa-mezcal/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works_casa_mezcal__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 85%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     223,
+     343,
+     45,
+     62
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     119,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     223,
+     392,
+     45,
+     62
+    ],
+    "clip": [
+     20,
+     355,
+     370,
+     587
+    ],
+    "shown_src": [
+     0,
+     119,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     223,
+     77,
+     45,
+     62
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     119,
+     1600,
+     1179
+    ],
+    "face_src": [
+     927,
+     286,
+     205,
+     283
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 78%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     215,
+     376,
+     44,
+     57
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     336,
+     1200,
+     1409
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     215,
+     602,
+     44,
+     57
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     336,
+     1200,
+     1409
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     215,
+     150,
+     44,
+     57
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     336,
+     1200,
+     1409
+    ],
+    "face_src": [
+     668,
+     713,
+     151,
+     196
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1200,
+   1500
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     153,
+     393,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     153,
+     619,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     153,
+     167,
+     57,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     86,
+     1200,
+     1156
+    ],
+    "face_src": [
+     456,
+     520,
+     195,
+     216
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     183,
+     350,
+     89,
+     113
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     183,
+     576,
+     89,
+     113
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     183,
+     124,
+     89,
+     113
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     497,
+     387,
+     270,
+     345
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     184,
+     473,
+     49,
+     56
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     184,
+     699,
+     49,
+     56
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     184,
+     247,
+     49,
+     56
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1081
+    ],
+    "face_src": [
+     500,
+     762,
+     150,
+     170
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     121,
+     368,
+     84,
+     109
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1084
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     121,
+     594,
+     84,
+     109
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1084
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     121,
+     142,
+     84,
+     109
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     130,
+     1067,
+     1084
+    ],
+    "face_src": [
+     307,
+     441,
+     256,
+     333
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at The H Orlando",
+  "nat": [
+   1067,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 78%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     673,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     39,
+     259,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     39,
+     431,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     39,
+     88,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/the-h-orlando/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works_the_h_orlando__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1200,
+   1429
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     125,
+     426,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     125,
+     508,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     388,
+     370,
+     620
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     125,
+     160,
+     73,
+     95
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     359,
+     539,
+     251,
+     326
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     108,
+     337,
+     99,
+     140
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     108,
+     563,
+     99,
+     140
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     108,
+     111,
+     99,
+     140
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     267,
+     345,
+     301,
+     426
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   2000,
+   1333
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     263,
+     353,
+     31,
+     39
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     252,
+     0,
+     1748,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     263,
+     579,
+     31,
+     39
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     252,
+     0,
+     1748,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     263,
+     127,
+     31,
+     39
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     252,
+     0,
+     1748,
+     1333
+    ],
+    "face_src": [
+     1292,
+     372,
+     132,
+     168
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     146,
+     312,
+     75,
+     91
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     146,
+     538,
+     75,
+     91
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     146,
+     86,
+     75,
+     91
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     325,
+     278,
+     193,
+     234
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 0%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     254,
+     277,
+     76,
+     100
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     953
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     254,
+     503,
+     76,
+     100
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     953
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     254,
+     51,
+     76,
+     100
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     0,
+     1066,
+     953
+    ],
+    "face_src": [
+     712,
+     34,
+     230,
+     304
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1600,
+   1066
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     153,
+     359,
+     62,
+     82
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     202,
+     0,
+     1398,
+     1066
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     153,
+     585,
+     62,
+     82
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     202,
+     0,
+     1398,
+     1066
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     153,
+     133,
+     62,
+     82
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     202,
+     0,
+     1398,
+     1066
+    ],
+    "face_src": [
+     656,
+     317,
+     212,
+     279
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at Helena Modern Riviera",
+  "nat": [
+   1066,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     173,
+     372,
+     55,
+     82
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     173,
+     598,
+     55,
+     82
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     173,
+     146,
+     55,
+     82
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     130,
+     1066,
+     1080
+    ],
+    "face_src": [
+     466,
+     453,
+     167,
+     249
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     673,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     39,
+     259,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     39,
+     431,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     39,
+     88,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/helena-modern-riviera/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works_helena_modern_riviera__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1200,
+   1430
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     166,
+     351,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     166,
+     400,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     355,
+     370,
+     587
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     166,
+     85,
+     46,
+     63
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     127,
+     1200,
+     922
+    ],
+    "face_src": [
+     501,
+     281,
+     156,
+     216
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/hero.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   901,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     130,
+     342,
+     66,
+     86
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     130,
+     568,
+     66,
+     86
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     130,
+     116,
+     66,
+     86
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     159,
+     901,
+     963
+    ],
+    "face_src": [
+     284,
+     356,
+     171,
+     222
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/wide.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   2000,
+   1123
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     101,
+     377,
+     36,
+     44
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     370,
+     0,
+     1630,
+     1127
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     101,
+     603,
+     36,
+     44
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     370,
+     0,
+     1630,
+     1127
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     101,
+     151,
+     36,
+     44
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     370,
+     0,
+     1630,
+     1127
+    ],
+    "face_src": [
+     662,
+     398,
+     129,
+     160
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/a.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   900,
+   1600
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     309,
+     63,
+     91
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     578
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     535,
+     63,
+     91
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     83,
+     63,
+     91
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     352
+    ],
+    "shown_src": [
+     0,
+     160,
+     900,
+     962
+    ],
+    "face_src": [
+     305,
+     271,
+     163,
+     233
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/b.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia4.png",
+  "id": "ia4"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/c.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   579
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     165,
+     354,
+     64,
+     88
+    ],
+    "clip": [
+     20,
+     266,
+     370,
+     579
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     165,
+     580,
+     64,
+     88
+    ],
+    "clip": [
+     20,
+     492,
+     370,
+     805
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     165,
+     128,
+     64,
+     88
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     353
+    ],
+    "shown_src": [
+     0,
+     125,
+     1024,
+     1040
+    ],
+    "face_src": [
+     423,
+     381,
+     188,
+     257
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia5.png",
+  "id": "ia5"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/tall.jpg",
+  "kind": "img",
+  "alt": "Oteo at AVA MediterrAegean",
+  "nat": [
+   1024,
+   1536
+  ],
+  "el": [
+   20,
+   266,
+   350,
+   312
+  ],
+  "clip": [
+   20,
+   266,
+   370,
+   578
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "faces": "none detected"
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia6.png",
+  "id": "ia6"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Debonair Supper Club",
+  "nat": [
+   1600,
+   1200
+  ],
+  "el": [
+   20,
+   306,
+   350,
+   232
+  ],
+  "clip": [
+   20,
+   306,
+   370,
+   538
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     151,
+     407,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     306,
+     370,
+     538
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     151,
+     673,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     572,
+     370,
+     804
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     151,
+     141,
+     84,
+     114
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     272
+    ],
+    "shown_src": [
+     0,
+     28,
+     1600,
+     1088
+    ],
+    "face_src": [
+     597,
+     489,
+     384,
+     519
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia7.png",
+  "id": "ia7"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "kind": "img",
+  "alt": "Oteo at Casa Mezcal",
+  "nat": [
+   1440,
+   1080
+  ],
+  "el": [
+   20,
+   211,
+   350,
+   421
+  ],
+  "clip": [
+   20,
+   211,
+   370,
+   632
+  ],
+  "fit": "cover 50% 20%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     39,
+     259,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     211,
+     370,
+     632
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     39,
+     431,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     383,
+     370,
+     804
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     39,
+     88,
+     92,
+     101
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     461
+    ],
+    "shown_src": [
+     271,
+     0,
+     1169,
+     1080
+    ],
+    "face_src": [
+     319,
+     124,
+     236,
+     258
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia8.png",
+  "id": "ia8"
+ },
+ {
+  "page": "/works/ava-mediterraegean/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__works_ava_mediterraegean__ia9.png",
+  "id": "ia9"
+ },
+ {
+  "page": "/blog/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-10.jpg",
+  "kind": "img",
+  "alt": "Casa Mezcal \u2014 4 Hour Set",
+  "nat": [
+   1600,
+   900
+  ],
+  "el": [
+   20,
+   290,
+   350,
+   263
+  ],
+  "clip": [
+   20,
+   290,
+   370,
+   553
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     105,
+     329,
+     58,
+     55
+    ],
+    "clip": [
+     20,
+     290,
+     370,
+     553
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     105,
+     517,
+     58,
+     55
+    ],
+    "clip": [
+     20,
+     478,
+     370,
+     741
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     105,
+     79,
+     58,
+     55
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     303
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     491,
+     135,
+     198,
+     187
+    ]
+   }
+  },
+  "shot": "clips/phone__blog__ia0.png",
+  "id": "ia0"
+ },
+ {
+  "page": "/blog/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-03.jpg",
+  "kind": "img",
+  "alt": "Casa Mezcal \u2014 5 Hour Set",
+  "nat": [
+   1920,
+   1080
+  ],
+  "el": [
+   20,
+   290,
+   350,
+   263
+  ],
+  "clip": [
+   20,
+   290,
+   370,
+   553
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     156,
+     320,
+     49,
+     64
+    ],
+    "clip": [
+     20,
+     290,
+     370,
+     553
+    ],
+    "shown_src": [
+     241,
+     0,
+     1679,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     156,
+     571,
+     49,
+     64
+    ],
+    "clip": [
+     20,
+     541,
+     370,
+     804
+    ],
+    "shown_src": [
+     241,
+     0,
+     1679,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     156,
+     70,
+     49,
+     64
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     303
+    ],
+    "shown_src": [
+     241,
+     0,
+     1679,
+     1080
+    ],
+    "face_src": [
+     798,
+     125,
+     202,
+     261
+    ]
+   }
+  },
+  "shot": "clips/phone__blog__ia1.png",
+  "id": "ia1"
+ },
+ {
+  "page": "/blog/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/opening-for-mochakk-2026-09-12.jpg",
+  "kind": "img",
+  "alt": "Opening for Mochakk \u2014 Wall Street Plaza",
+  "nat": [
+   1280,
+   720
+  ],
+  "el": [
+   20,
+   290,
+   350,
+   263
+  ],
+  "clip": [
+   20,
+   290,
+   370,
+   553
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     169,
+     393,
+     25,
+     34
+    ],
+    "clip": [
+     20,
+     290,
+     370,
+     553
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     169,
+     644,
+     25,
+     34
+    ],
+    "clip": [
+     20,
+     541,
+     370,
+     804
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     169,
+     143,
+     25,
+     34
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     303
+    ],
+    "shown_src": [
+     161,
+     0,
+     1119,
+     720
+    ],
+    "face_src": [
+     570,
+     282,
+     69,
+     92
+    ]
+   }
+  },
+  "shot": "clips/phone__blog__ia2.png",
+  "id": "ia2"
+ },
+ {
+  "page": "/blog/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/assets/sets/ava-mm-2024-07-06.jpg",
+  "kind": "img",
+  "alt": "AVA MM Lounge \u2014 Saturday Night",
+  "nat": [
+   1600,
+   900
+  ],
+  "el": [
+   20,
+   290,
+   350,
+   263
+  ],
+  "clip": [
+   20,
+   290,
+   370,
+   553
+  ],
+  "fit": "cover 50% 50%",
+  "verdicts": [
+   "CUT-SOURCE face[677, 0, 177, 152] touches the edge of the file (1600x900)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     159,
+     290,
+     52,
+     44
+    ],
+    "clip": [
+     20,
+     290,
+     370,
+     553
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     159,
+     541,
+     52,
+     44
+    ],
+    "clip": [
+     20,
+     541,
+     370,
+     804
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     159,
+     40,
+     52,
+     44
+    ],
+    "clip": [
+     20,
+     40,
+     370,
+     303
+    ],
+    "shown_src": [
+     201,
+     0,
+     1399,
+     900
+    ],
+    "face_src": [
+     677,
+     0,
+     177,
+     152
+    ]
+   }
+  },
+  "shot": "clips/phone__blog__ia3.png",
+  "id": "ia3"
+ },
+ {
+  "page": "/blog/",
+  "width": "phone",
+  "slot": "Image",
+  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png",
+  "kind": "img",
+  "alt": "",
+  "nat": [
+   785,
+   1024
+  ],
+  "el": [
+   70,
+   285,
+   200,
+   273
+  ],
+  "clip": [
+   70,
+   285,
+   270,
+   558
+  ],
+  "fit": "fill 50% 50%",
+  "verdicts": [
+   "UNIFORM-EDGES (vertical bars or plain backdrop; informational)"
+  ],
+  "detail": {
+   "centred": {
+    "face_screen": [
+     139,
+     296,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     285,
+     270,
+     558
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "entered": {
+    "face_screen": [
+     139,
+     542,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     531,
+     270,
+     804
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   },
+   "leaving": {
+    "face_screen": [
+     139,
+     51,
+     25,
+     39
+    ],
+    "clip": [
+     70,
+     40,
+     270,
+     313
+    ],
+    "shown_src": [
+     0,
+     0,
+     785,
+     1024
+    ],
+    "face_src": [
+     272,
+     42,
+     97,
+     148
+    ]
+   }
+  },
+  "shot": "clips/phone__blog__ia4.png",
+  "id": "ia4"
+ }
+]

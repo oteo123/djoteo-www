@@ -1194,7 +1194,7 @@ form button[type="submit"] {
    The value is written literally rather than as var(--grade) — that token lives
    in site.css, which the Framer routes do not load. */
 [data-framer-name="About me"] [data-framer-name="Image BG"] img {
-  filter: grayscale(.92) sepia(.18) brightness(.93) contrast(1.1);
+  filter: grayscale(.85) sepia(.15) brightness(1.18) contrast(1.04);
   transition: filter .45s cubic-bezier(.2, .75, .2, 1);
 }
 [data-framer-name="About me"]:hover [data-framer-name="Image BG"] img {
@@ -1461,3 +1461,102 @@ body {
   --token-65dd4334-0c31-45a1-8884-489e8c0028c2: #c8a96a !important;
   --token-78efc348-9ea2-4e55-bbce-c0093b1f90e4: #9b9da3 !important;
 }
+
+/* 2026-10-29. Framer leaves will-change:transform on every element it has ever
+   animated. Measured on the live homepage after settling at the bottom: 108
+   elements still promoted, 71 of them pure text. Each is its own GPU layer; when
+   a scroll settles, Chrome on macOS re-rasterises those layers and the text
+   snaps between the greyscale anti-aliasing of a layer and the subpixel
+   anti-aliasing of the page. That is the footer "flicker at the bottom" on a
+   real GPU, invisible to a software-rendered headless browser. Text keeps no
+   layer; anything holding an image, video or canvas (the hero slider, the
+   parallax room images, the footer figure) keeps the hint it needs. */
+#main [style*="will-change"]:not(:has(img, video, canvas, picture)) { will-change: auto !important; }
+
+/* 2026-10-29. The footer's entrance effect replays every time the footer scrolls
+   into view: the whole block fades from the server-rendered opacity:0 and each
+   nav divider draws from width 0, with the spring still settling after the
+   scroll has stopped (Chrome layer tree: the five divider layers repainted 60
+   times in the 1.2 s after the wheel stopped). Reaching the bottom of any page
+   therefore flashed the footer in. The footer is now static: text, links and
+   the figure are always fully opaque and the dividers are always full width.
+   Hover fills (the BG layers at opacity 0 with no will-change) are untouched. */
+footer[data-framer-name="Footer"] [style*="will-change"] { opacity: 1 !important; }
+footer[data-framer-name="Footer"] div[style*="position:absolute"][style*="height:1px"],
+footer[data-framer-name="Footer"] div[style*="position: absolute"][style*="height: 1px"] { width: 100% !important; }
+
+/* ====== 2026-10-29 audit batch ====== */
+
+/* Room images: the template clips each photo to a 1.12:1 window and slides a
+   taller layer through it (top:-200px), so the top of every portrait crop was
+   invisible at rest and heads were cut on every room page. The window is now
+   static: the layer matches the window, no parallax, and the photo is anchored
+   near its top edge so a head in the upper part of the frame always shows. */
+.framer-KBlIk .framer-pput0k > * > [data-framer-name="Image"],
+.framer-KBlIk .framer-yre2sd, .framer-KBlIk .framer-joh5cl, .framer-KBlIk .framer-10hcyav {
+  top: 0 !important; bottom: 0 !important; transform: none !important; will-change: auto !important;
+}
+.framer-KBlIk .framer-pput0k img { object-position: 50% 18% !important; }
+/* Subjects that sit low in their frame. */
+.framer-KBlIk .framer-pput0k img[src*="the-h-orlando/hero"],
+.framer-KBlIk .framer-pput0k img[src*="the-h-orlando/tall"] { object-position: 50% 78% !important; }
+
+/* Phone footer: the figure (aspect-ratio makes it 477px tall at 350 wide) was
+   anchored 110px below an empty row and climbed over "Let's Book the Night".
+   Keep it inside its own row, under the headline. */
+@media (max-width: 809.98px) {
+  footer[data-framer-name="Footer"] .framer-14c529k { height: 273px !important; width: 200px !important; left: auto !important; right: 0 !important; bottom: -40px !important; aspect-ratio: auto !important; }
+}
+
+/* Venue names inside titles and meta rows are links in the template, which
+   underlined "The H Orlando" alone on every card. Links in copy stay unmarked
+   here; the card itself is the link. */
+.framer-KBlIk .framer-text a, .framer-wQ73Q .framer-text a, #main h4.framer-text a, #main h3.framer-text a { text-decoration: none !important; --framer-link-text-decoration: none !important; }
+
+/* Rooms filter tabs wrap on phones instead of clipping at "Club N…". */
+@media (max-width: 809.98px) { .framer-wQ73Q .framer-ww7fzg { flex-wrap: wrap !important; row-gap: 6px !important; } }
+
+/* "AVA MediterrAegean" broke mid-word in the narrow meta column. */
+.framer-KBlIk h4.framer-text { word-break: keep-all !important; overflow-wrap: normal !important; hyphens: none !important; }
+
+/* Set pages: the player is the set, so it spans the full content width and
+   shows our own cover with a play button until it is played. */
+[data-framer-name="Main content"] { flex-wrap: wrap !important; }
+[data-oteo-player] { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; order: -1; }
+
+/* Room photographs everywhere (cards, heroes, galleries): anchor near the top so
+   the head stays inside whatever box the template cuts; per-file overrides for
+   the few frames where he stands low. */
+#main img[src*="/assets/rooms/"] { object-position: 50% 20% !important; }
+#main img[src*="the-h-orlando/thumb"] { object-position: 50% 85% !important; }
+#main img[src*="the-h-orlando/hero"], #main img[src*="the-h-orlando/tall"] { object-position: 50% 78% !important; }
+
+/* Filter tabs (phone): wrap instead of clipping. Attribute selector because the
+   phone variant carries its own hash classes. */
+@media (max-width: 809.98px) { [data-framer-name="Filter"] { flex-wrap: wrap !important; overflow: visible !important; justify-content: flex-start !important; row-gap: 4px !important; } }
+/* Desktop footer figure sat a few px over the headline on short pages. */
+@media (min-width: 810px) { footer[data-framer-name="Footer"] .framer-14c529k { bottom: -70px !important; } }
+
+/* Rentals category strip on phones: a sticky single row clipped mid-word with no
+   scroll hint; it now wraps into a static block of chips. */
+@media (max-width: 760px) { .cat-jump { position: static !important; flex-wrap: wrap !important; overflow: visible !important; } }
+
+/* Faces that sit in the top tenth of their file, and the about-me portrait on
+   phones (face 23px above the window at 50% 50%). */
+#main img[src*="debonair-supper-club/b.jpg"] { object-position: 50% 0% !important; }
+#main img[src*="helena-modern-riviera/b.jpg"] { object-position: 50% 100% !important; }
+@media (max-width: 809.98px) { [data-framer-name="About me"] [data-framer-name="Image BG"] img { object-position: 50% 0% !important; } }
+/* Phone menu: the template staggers its links in one by one (10 links took
+   700ms, the panel opened blank). They are visible the moment the menu opens. */
+nav[data-framer-name="Phone Open"] [style*="will-change"] { opacity: 1 !important; transform: none !important; }
+
+/* Same static-window rule for the room hero on phones ("Image mask", 232px tall,
+   with its Image layer at top:-100px). */
+#main [data-framer-name="Image mask"] > * > [data-framer-name="Image"], #main [data-framer-name="Image mask"] > [data-framer-name="Image"] { top: 0 !important; bottom: 0 !important; height: 100% !important; transform: none !important; will-change: auto !important; }
+
+/* The filter row's inner Container scrolls sideways on phones (557px in a 390px
+   viewport) with a 69px shadow as the only hint; it wraps instead. */
+@media (max-width: 809.98px) { [data-framer-name="Filter"] > [data-framer-name="Container"] { flex-wrap: wrap !important; overflow: visible !important; row-gap: 6px !important; } [data-framer-name="Filter"] > [data-framer-name="Shadow"] { display: none !important; } }
+
+/* The tab strip inside the filter Container is itself a nowrap row. */
+@media (max-width: 809.98px) { [data-framer-name="Filter"] [data-framer-name="Container"], [data-framer-name="Filter"] [data-framer-name="Container"] > * { flex-wrap: wrap !important; overflow: visible !important; width: 100% !important; row-gap: 6px !important; } }

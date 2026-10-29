@@ -1,0 +1,7 @@
+import { createRequire } from 'node:module';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const b = await chromium.launch(); const p = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await p.goto('http://127.0.0.1:8765/works/casa-mezcal/', { waitUntil: 'networkidle' }); await p.waitForTimeout(1000);
+const r = await p.evaluate(() => { const out = {}; const img = document.querySelector('img[src*="casa-mezcal/a.jpg"]'); const g = getComputedStyle(img); out.img = { objPos: g.objectPosition, rect: JSON.stringify(img.getBoundingClientRect()).slice(0, 80) }; let a = img.parentElement; const chain = []; while (a && chain.length < 5) { const ga = getComputedStyle(a); chain.push({ name: a.getAttribute('data-framer-name') || a.className.toString().slice(0, 30), top: ga.top, h: Math.round(a.getBoundingClientRect().height), tr: ga.transform.slice(0, 20), wc: ga.willChange }); a = a.parentElement; } out.chain = chain; out.rootClasses = [...document.querySelectorAll('[class*="framer-KBlIk"]')].length; const sheet = [...document.styleSheets].find(s => (s.href || '').includes('oteo-system')); out.sheetLoaded = !!sheet; out.rule = sheet ? [...sheet.cssRules].filter(r => r.cssText.includes('pput0k')).map(r => r.cssText.slice(0, 160)) : []; return out; });
+console.log(JSON.stringify(r, null, 1)); await b.close();

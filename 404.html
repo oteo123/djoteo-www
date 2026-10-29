@@ -11,6 +11,10 @@
   <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/inner-next.css">
+  <link rel="stylesheet" href="/assets/uniform-next.css">
+  <link rel="stylesheet" href="/assets/oteo-craft.css">
+  <link rel="stylesheet" href="/assets/oteo-system.css">
   <style>
     @font-face{font-family:"Geist";src:url("/_ext/fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4mJPby1QNtA.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
     @font-face{font-family:"Geist";src:url("/_ext/fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RQuQImpna.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -28,7 +32,7 @@
     }
     .e404 .mark{ font:600 19px/1 var(--sans); letter-spacing:.02em; color:var(--ink);
       position:relative; margin-bottom:clamp(28px,5vw,52px); }
-    .e404 .mark::after{ content:"·"; color:var(--gold); margin-left:3px; }
+    
     .e404 .code{ font:600 clamp(96px,24vw,240px)/.86 var(--sans); letter-spacing:-.05em;
       color:var(--gold); }
     .e404 h1{ font:600 clamp(24px,4.2vw,44px)/1.08 var(--sans); letter-spacing:-.02em;
@@ -48,8 +52,19 @@
   <link rel="stylesheet" href="/assets/oteo-type.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Oteo — home">Oteo</a>
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-links"><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/residencies">Residencies</a><a href="/works/">Rooms</a><a href="/blog/">Sets</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+        <a class="btn btn-primary header-cta" href="/booking#book">
+          Book Oteo <span class="glyph" aria-hidden="true">&#8599;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
   <main class="e404">
-    <a class="mark" href="/" style="text-decoration:none">Oteo</a>
+    
     <div class="code" aria-hidden="true">404</div>
     <h1>This track isn't in the <em>crate</em>.</h1>
     <p>The page you're after moved or never existed. Let's get you back to the music &mdash; or straight to a booking.</p>
@@ -58,5 +73,6 @@
       <a class="btn ghost" href="/">Back home</a>
     </div>
   </main>
+  <footer class="site-footer" role="contentinfo"><div class="wrap"><div class="footer-rule"></div><div class="footer-row"><div><div class="footer-brand">Oteo</div><p class="footer-copy">&copy; <span data-year>2026</span> Oteo · Fish Out of Water Records</p></div><nav class="footer-nav" aria-label="All pages"><a href="/">Home</a><a href="/residencies">Residencies</a><a href="/works/">Rooms</a><a href="/blog/">Sets</a><a href="/booking">DJ Services</a><a href="/rentals">Gear Rentals</a><a href="/foowr">FOOWR</a><a href="/about">About</a><a href="/contact">Contact</a></nav><nav class="social" aria-label="Social links"><a href="https://www.instagram.com/djoteo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@djoteo" target="_blank" rel="noopener">TikTok</a></nav></div></div></footer>
 </body>
 </html>

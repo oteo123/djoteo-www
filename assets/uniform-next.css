@@ -834,6 +834,12 @@ h1 em, h2 em, .contact-statement em, .showcase-statement em,
   flex-wrap: wrap;
   gap: 10px 22px;
 }
+/* Nine links on one line orphaned "CONTACT" at 1440; the list takes its own
+   centred row under the brand and the social links instead. */
+@media (min-width: 720px) {
+  .site-footer .footer-row { flex-wrap: wrap; row-gap: 22px; }
+  .site-footer .footer-nav { order: 3; flex-basis: 100%; justify-content: center; }
+}
 .site-footer .footer-nav a {
   font-family: var(--sans);
   font-weight: 500;
