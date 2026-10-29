@@ -13,3 +13,6 @@ Checks (each is a standalone script, Playwright from `~/Dropbox/OTEO code/DJOTEO
 - `layers.mjs`, `footeranim.mjs`, `willchange.mjs`, `gpuprobe.mjs` – diagnostics used to find the 2026-10 footer replay and layer problems; not part of the gate.
 
 Lessons that shaped this gate (2026-10-27 → 29): headless Chromium composites in software and cannot show GPU flicker; `will-change`, `backdrop-filter` and replaying entrance effects were all invisible to it. Never keep tooling in the session scratchpad; it is wiped between sessions.
+
+## Shared header and footer (tools/chrome)
+The hand-built pages carry the Framer template's header, footer and phone menu as static markup: `tools/chrome/*.norm.html` (captured from a hydrated template page, normalised), `assets/oteo-chrome.css` (template rules those blocks need, plus hand-written scoping rules at the end), and `tools/chrome/inject.py <page.html>` which swaps a page's `<header class="site-header">` and `<footer class="site-footer">` for them. Re-run inject.py after changing the captured markup. Nav order and links are fixed in the markup; change them in `header.norm.html`, `header-phone.norm.html`, `menu.norm.html` and `footer.norm.html` together.
