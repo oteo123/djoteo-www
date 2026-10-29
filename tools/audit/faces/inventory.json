@@ -5,13 +5,13 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
   "slot": "Slider",
   "rect": [
-   -64,
-   110,
-   327,
-   307
+   37,
+   129,
+   284,
+   269
   ],
   "nat": [
    1200,
@@ -23,48 +23,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -98,
-     104,
-     342,
-     320
+     9,
+     124,
+     295,
+     279
     ],
     "clip": [
-     0,
-     104,
-     244,
-     423
+     9,
+     124,
+     305,
+     403
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -132,
-     97,
-     358,
-     333
+     -19,
+     119,
+     307,
+     290
     ],
     "clip": [
      0,
-     97,
-     226,
-     430
+     119,
+     288,
+     408
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 70,
+    "scrollY": 89,
     "el": [
-     -169,
-     19,
-     376,
-     348
+     -49,
+     24,
+     320,
+     301
     ],
     "clip": [
      0,
-     19,
-     207,
-     368
+     24,
+     271,
+     325
     ],
     "vis": true
    }
@@ -77,13 +77,13 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   -901,
-   -84,
-   822,
-   694
+   -588,
+   -5,
+   612,
+   537
   ],
   "nat": [
    1400,
@@ -95,15 +95,15 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -1735,
-     -309,
-     1465,
-     1145
+     -1090,
+     -133,
+     959,
+     793
     ],
     "clip": [
      0,
      0,
-     -270,
+     -132,
      557
     ],
     "vis": false
@@ -111,15 +111,15 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     -2017,
-     -388,
-     1701,
-     1303
+     -1237,
+     -172,
+     1069,
+     871
     ],
     "clip": [
      0,
      0,
-     -316,
+     -168,
      557
     ],
     "vis": false
@@ -127,15 +127,15 @@
    "leaving": {
     "scrollY": 0,
     "el": [
-     -2375,
-     -489,
-     2009,
-     1506
+     -1409,
+     -219,
+     1202,
+     965
     ],
     "clip": [
      0,
      0,
-     -366,
+     -207,
      557
     ],
     "vis": false
@@ -148,13 +148,13 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
   "slot": "Slider",
   "rect": [
-   -953,
-   -11501,
-   40465,
-   23529
+   -6235,
+   -1614,
+   5612,
+   3755
   ],
   "nat": [
    1600,
@@ -166,10 +166,10 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -3790,
-     -898,
-     6138,
-     2323
+     -1968,
+     -863,
+     5621,
+     2253
     ],
     "clip": [
      0,
@@ -180,28 +180,28 @@
     "vis": true
    },
    "entered": {
-    "scrollY": 5063,
+    "scrollY": 1281,
     "el": [
-     -3811,
-     -5967,
-     6154,
-     2335
+     -1975,
+     -2140,
+     5614,
+     2245
     ],
     "clip": [
      0,
      0,
      1440,
-     -4506
+     -724
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     -4920,
-     -1229,
-     7048,
-     2985
+     -2312,
+     -723,
+     5465,
+     1972
     ],
     "clip": [
      0,
@@ -220,13 +220,13 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
   "slot": "Slider",
   "rect": [
-   1432,
-   -5962,
-   19468,
-   12451
+   -7472,
+   -1979,
+   9380,
+   4485
   ],
   "nat": [
    1600,
@@ -238,13 +238,13 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     413,
-     -347,
-     1275,
-     1221
+     690,
+     -498,
+     1628,
+     1522
     ],
     "clip": [
-     413,
+     690,
      0,
      1440,
      557
@@ -252,31 +252,31 @@
     "vis": true
    },
    "entered": {
-    "scrollY": 5063,
+    "scrollY": 1646,
     "el": [
-     411,
-     -5409,
-     1274,
-     1220
+     689,
+     -2142,
+     1624,
+     1520
     ],
     "clip": [
-     411,
+     689,
      0,
      1440,
-     -4506
+     -1089
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     328,
-     -320,
-     1230,
-     1167
+     616,
+     -444,
+     1492,
+     1416
     ],
     "clip": [
-     328,
+     616,
      0,
      1440,
      557
@@ -292,13 +292,13 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
   "slot": "Slider",
   "rect": [
-   188,
-   -287,
-   1195,
-   1102
+   495,
+   -377,
+   1337,
+   1282
   ],
   "nat": [
    1120,
@@ -310,47 +310,47 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -10676,
-     -3351,
-     10761,
-     7229
+     -2605,
+     -975,
+     3024,
+     2477
     ],
     "clip": [
      0,
      0,
-     85,
+     418,
      557
     ],
     "vis": true
    },
    "entered": {
-    "scrollY": 0,
+    "scrollY": 45,
     "el": [
-     -27369,
-     -8315,
-     27346,
-     17157
+     -3534,
+     -1288,
+     3864,
+     3014
     ],
     "clip": [
      0,
      0,
-     -23,
-     557
+     330,
+     512
     ],
-    "vis": false
+    "vis": true
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     -144,
-     -18445,
-     64392,
-     37418
+     -4956,
+     -1659,
+     5197,
+     3846
     ],
     "clip": [
      0,
      0,
-     1440,
+     241,
      557
     ],
     "vis": true
@@ -364,13 +364,13 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   -7729,
-   -2478,
-   7872,
-   5482
+   -2276,
+   -879,
+   2733,
+   2285
   ],
   "nat": [
    1200,
@@ -382,52 +382,53 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     2083,
-     -1806,
-     6236,
-     4139
+     -22831,
+     -6965,
+     25262,
+     14457
     ],
     "clip": [
-     2083,
+     0,
      0,
      1440,
      557
     ],
-    "vis": false
+    "vis": true
    },
    "entered": {
-    "scrollY": 2144,
+    "scrollY": 546,
     "el": [
-     2081,
-     -3930,
-     6171,
-     4100
+     2316,
+     -32531,
+     107406,
+     64498
     ],
     "clip": [
-     2081,
+     2316,
      0,
      1440,
-     -1587
+     11
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     2009,
-     -1231,
-     4359,
-     2989
+     2215,
+     -4586,
+     15471,
+     9699
     ],
     "clip": [
-     2009,
+     2215,
      0,
      1440,
      557
     ],
     "vis": false
    }
-  }
+  },
+  "shot": "clips/desktop___ia5.png"
  },
  {
   "page": "/",
@@ -435,13 +436,13 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
   "slot": "Slider",
   "rect": [
-   -10002,
-   -3151,
-   12559,
-   6830
+   -2584,
+   -967,
+   5830,
+   2461
   ],
   "nat": [
    1200,
@@ -453,48 +454,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     1350,
-     34,
-     512,
-     459
+     1405,
+     2,
+     595,
+     524
     ],
     "clip": [
-     1350,
-     34,
+     1405,
+     2,
      1440,
-     493
+     525
     ],
     "vis": true
    },
    "entered": {
-    "scrollY": 2819,
+    "scrollY": 634,
     "el": [
-     1350,
-     -2785,
-     511,
-     458
+     1404,
+     -632,
+     594,
+     523
     ],
     "clip": [
-     1350,
+     1404,
      0,
      1440,
-     -2326
+     -109
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     1327,
-     46,
-     481,
-     434
+     1379,
+     17,
+     554,
+     492
     ],
     "clip": [
-     1327,
-     46,
+     1379,
+     17,
      1440,
-     481
+     510
     ],
     "vis": true
    }
@@ -507,13 +508,13 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
   "slot": "Slider",
   "rect": [
-   1562,
-   -124,
-   932,
-   774
+   1701,
+   -294,
+   1424,
+   1116
   ],
   "nat": [
    1200,
@@ -525,48 +526,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     1038,
-     150,
-     238,
-     227
+     1069,
+     142,
+     254,
+     242
     ],
     "clip": [
-     1038,
-     150,
-     1275,
-     377
+     1069,
+     142,
+     1323,
+     385
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     1024,
-     153,
-     231,
-     221
+     1054,
+     146,
+     246,
+     235
     ],
     "clip": [
-     1024,
-     153,
-     1255,
-     374
+     1054,
+     146,
+     1300,
+     381
     ],
     "vis": true
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     1010,
-     156,
-     225,
-     215
+     1040,
+     149,
+     239,
+     229
     ],
     "clip": [
-     1010,
-     156,
-     1235,
-     371
+     1040,
+     149,
+     1279,
+     378
     ],
     "vis": true
    }
@@ -579,13 +580,13 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   1200,
-   102,
-   346,
-   323
+   1269,
+   74,
+   412,
+   378
   ],
   "nat": [
    1400,
@@ -597,48 +598,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     812,
-     185,
-     166,
-     157
+     836,
+     182,
+     171,
+     162
     ],
     "clip": [
-     812,
-     185,
-     978,
-     342
+     836,
+     182,
+     1007,
+     345
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     801,
-     186,
-     164,
-     155
+     825,
+     184,
+     168,
+     160
     ],
     "clip": [
-     801,
-     186,
-     965,
-     341
+     825,
+     184,
+     994,
+     343
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 62,
+    "scrollY": 34,
     "el": [
-     790,
-     125,
-     163,
-     154
+     814,
+     151,
+     166,
+     158
     ],
     "clip": [
-     790,
-     125,
-     953,
-     278
+     814,
+     151,
+     980,
+     308
     ],
     "vis": true
    }
@@ -651,13 +652,13 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
   "slot": "Slider",
   "rect": [
-   980,
-   162,
-   212,
-   204
+   1027,
+   152,
+   232,
+   223
   ],
   "nat": [
    1600,
@@ -669,48 +670,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     611,
-     193,
+     635,
+     194,
      153,
-     140
+     139
     ],
     "clip": [
-     611,
-     193,
-     765,
-     334
+     635,
+     194,
+     787,
+     333
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     600,
-     193,
-     154,
-     141
+     624,
+     194,
+     153,
+     139
     ],
     "clip": [
-     600,
-     193,
-     754,
-     334
+     624,
+     194,
+     777,
+     333
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 122,
+    "scrollY": 112,
     "el": [
-     589,
-     71,
-     154,
-     142
+     613,
+     81,
+     153,
+     140
     ],
     "clip": [
-     589,
-     71,
-     743,
-     212
+     613,
+     81,
+     766,
+     222
     ],
     "vis": true
    }
@@ -723,13 +724,13 @@
   "dpr": 1,
   "id": "ia10",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
   "slot": "Slider",
   "rect": [
-   808,
-   185,
-   166,
-   157
+   848,
+   181,
+   173,
+   165
   ],
   "nat": [
    1600,
@@ -741,47 +742,47 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     381,
-     178,
+     411,
      180,
-     172
+     174,
+     166
     ],
     "clip": [
-     381,
-     178,
-     561,
-     349
+     411,
+     180,
+     585,
+     347
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     367,
-     176,
-     183,
-     175
+     398,
+     179,
+     177,
+     169
     ],
     "clip": [
-     367,
-     176,
-     550,
-     351
+     398,
+     179,
+     574,
+     348
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 145,
+    "scrollY": 141,
     "el": [
-     352,
-     29,
-     186,
-     178
+     383,
+     37,
+     180,
+     172
     ],
     "clip": [
-     352,
-     29,
-     538,
+     383,
+     37,
+     563,
      208
     ],
     "vis": true
@@ -795,13 +796,13 @@
   "dpr": 1,
   "id": "ia11",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
   "slot": "Slider",
   "rect": [
-   651,
-   194,
-   153,
-   139
+   689,
+   193,
+   154,
+   141
   ],
   "nat": [
    1120,
@@ -813,48 +814,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     26,
-     127,
-     288,
-     273
+     79,
+     136,
+     268,
+     255
     ],
     "clip": [
-     26,
-     127,
-     315,
-     400
+     79,
+     136,
+     347,
+     391
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -1,
-     122,
-     300,
-     283
+     54,
+     132,
+     277,
+     263
     ],
     "clip": [
-     0,
-     122,
-     298,
-     405
+     54,
+     132,
+     331,
+     395
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 154,
+    "scrollY": 153,
     "el": [
-     -31,
-     -37,
-     312,
-     294
+     28,
+     -26,
+     288,
+     273
     ],
     "clip": [
+     28,
      0,
-     0,
-     281,
-     256
+     316,
+     247
     ],
     "vis": true
    }
@@ -867,13 +868,13 @@
   "dpr": 1,
   "id": "ia12",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   482,
-   186,
-   163,
-   154
+   525,
+   189,
+   158,
+   148
   ],
   "nat": [
    1200,
@@ -885,15 +886,15 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -1001,
-     -110,
-     893,
-     746
+     -777,
+     -52,
+     736,
+     631
     ],
     "clip": [
      0,
      0,
-     -107,
+     -41,
      557
     ],
     "vis": false
@@ -901,32 +902,32 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     -1136,
-     -145,
-     993,
-     817
+     -876,
+     -77,
+     805,
+     682
     ],
     "clip": [
      0,
      0,
-     -143,
+     -72,
      557
     ],
     "vis": false
    },
    "leaving": {
-    "scrollY": 146,
+    "scrollY": 149,
     "el": [
-     -1290,
-     -333,
-     1109,
-     900
+     -989,
+     -256,
+     885,
+     740
     ],
     "clip": [
      0,
      0,
-     -180,
-     411
+     -104,
+     408
     ],
     "vis": false
    }
@@ -938,13 +939,13 @@
   "dpr": 1,
   "id": "ia13",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
   "slot": "Slider",
   "rect": [
-   271,
-   165,
-   206,
-   198
+   328,
+   172,
+   191,
+   183
   ],
   "nat": [
    1200,
@@ -956,10 +957,10 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -1778,
-     -988,
-     5870,
-     2504
+     -1328,
+     -1739,
+     7993,
+     4004
     ],
     "clip": [
      0,
@@ -972,10 +973,10 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     -2071,
-     -812,
-     5544,
-     2151
+     -1518,
+     -1289,
+     6647,
+     3104
     ],
     "clip": [
      0,
@@ -986,18 +987,18 @@
     "vis": true
    },
    "leaving": {
-    "scrollY": 125,
+    "scrollY": 132,
     "el": [
-     -2445,
-     -810,
-     5464,
-     1898
+     -1753,
+     -1141,
+     5919,
+     2546
     ],
     "clip": [
      0,
      0,
      1440,
-     432
+     425
     ],
     "vis": true
    }
@@ -1010,7 +1011,7 @@
   "dpr": 1,
   "id": "ia14",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Avatar",
   "rect": [
    436,
@@ -1082,7 +1083,7 @@
   "dpr": 1,
   "id": "ia15",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -1154,7 +1155,7 @@
   "dpr": 1,
   "id": "ia16",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -1226,7 +1227,7 @@
   "dpr": 1,
   "id": "ia17",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -1298,7 +1299,7 @@
   "dpr": 1,
   "id": "ia18",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -1370,7 +1371,7 @@
   "dpr": 1,
   "id": "ia19",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png?scale-down-to=512&width=2666&height=1780",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png?scale-down-to=512&width=2666&height=1780",
   "slot": "Image",
   "rect": [
    1033,
@@ -1442,7 +1443,7 @@
   "dpr": 1,
   "id": "ia20",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png?scale-down-to=2048&width=2752&height=1536",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png?scale-down-to=2048&width=2752&height=1536",
   "slot": "Image",
   "rect": [
    0,
@@ -1514,11 +1515,11 @@
   "dpr": 1,
   "id": "ia21",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
-   5320,
+   5576,
    524,
    714
   ],
@@ -1530,7 +1531,7 @@
   "alt": "",
   "clips": {
    "centred": {
-    "scrollY": 5063,
+    "scrollY": 5319,
     "el": [
      386,
      257,
@@ -1546,7 +1547,7 @@
     "vis": true
    },
    "entered": {
-    "scrollY": 5063,
+    "scrollY": 5319,
     "el": [
      386,
      257,
@@ -1562,7 +1563,7 @@
     "vis": true
    },
    "leaving": {
-    "scrollY": 5063,
+    "scrollY": 5319,
     "el": [
      386,
      257,
@@ -1586,7 +1587,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -1658,7 +1659,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -1730,7 +1731,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -1802,7 +1803,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -1874,7 +1875,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -1946,7 +1947,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -2018,7 +2019,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2090,7 +2091,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/hero.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2162,7 +2163,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/wide.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -2234,7 +2235,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/a.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2306,7 +2307,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/b.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -2378,7 +2379,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/c.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2450,7 +2451,7 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/tall.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2522,7 +2523,7 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2594,7 +2595,7 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -2666,7 +2667,7 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -2738,7 +2739,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2810,7 +2811,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/hero.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -2882,7 +2883,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/wide.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -2954,7 +2955,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/a.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3026,7 +3027,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/b.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -3098,7 +3099,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/c.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3170,7 +3171,7 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/tall.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3242,7 +3243,7 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3314,7 +3315,7 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -3386,7 +3387,7 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -3458,7 +3459,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3530,7 +3531,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/hero.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3602,7 +3603,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/wide.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -3674,7 +3675,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/a.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3746,7 +3747,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/b.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -3818,7 +3819,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/c.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3890,7 +3891,7 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/tall.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -3962,7 +3963,7 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4034,7 +4035,7 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -4106,7 +4107,7 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -4178,7 +4179,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4250,7 +4251,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/hero.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4322,7 +4323,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/wide.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -4394,7 +4395,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/a.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4466,7 +4467,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/b.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -4538,7 +4539,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/c.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4610,7 +4611,7 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/tall.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4682,7 +4683,7 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4754,7 +4755,7 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -4826,7 +4827,7 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -4898,7 +4899,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -4970,7 +4971,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/hero.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5042,7 +5043,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/wide.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -5114,7 +5115,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/a.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5186,7 +5187,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/b.jpg",
   "slot": "Image",
   "rect": [
    732,
@@ -5258,7 +5259,7 @@
   "dpr": 1,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/c.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5330,7 +5331,7 @@
   "dpr": 1,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/tall.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5402,7 +5403,7 @@
   "dpr": 1,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5474,7 +5475,7 @@
   "dpr": 1,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -5546,7 +5547,7 @@
   "dpr": 1,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -5618,7 +5619,7 @@
   "dpr": 1,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-10.jpg",
+  "src": "https://djoteo.com/assets/sets/casa-mezcal-2026-10-10.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5690,7 +5691,7 @@
   "dpr": 1,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-03.jpg",
+  "src": "https://djoteo.com/assets/sets/casa-mezcal-2026-10-03.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -5762,7 +5763,7 @@
   "dpr": 1,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/opening-for-mochakk-2026-09-12.jpg",
+  "src": "https://djoteo.com/assets/sets/opening-for-mochakk-2026-09-12.jpg",
   "slot": "Image",
   "rect": [
    140,
@@ -5834,7 +5835,7 @@
   "dpr": 1,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/ava-mm-2024-07-06.jpg",
+  "src": "https://djoteo.com/assets/sets/ava-mm-2024-07-06.jpg",
   "slot": "Image",
   "rect": [
    728,
@@ -5906,7 +5907,7 @@
   "dpr": 1,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    386,
@@ -5978,13 +5979,13 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
   "slot": "Slider",
   "rect": [
-   -260,
-   94,
-   189,
-   178
+   -201,
+   105,
+   165,
+   156
   ],
   "nat": [
    1200,
@@ -5996,48 +5997,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -279,
-     90,
-     198,
-     185
+     -217,
+     102,
+     171,
+     162
     ],
     "clip": [
      0,
-     90,
-     -81,
-     276
+     102,
+     -46,
+     264
     ],
     "vis": false
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -299,
-     86,
-     208,
-     193
+     -234,
+     99,
+     178,
+     168
     ],
     "clip": [
      0,
-     86,
-     -92,
-     280
+     99,
+     -55,
+     267
     ],
     "vis": false
    },
    "leaving": {
-    "scrollY": 54,
+    "scrollY": 65,
     "el": [
-     -321,
-     28,
-     218,
-     202
+     -251,
+     31,
+     186,
+     174
     ],
     "clip": [
      0,
-     28,
-     -103,
-     230
+     31,
+     -65,
+     205
     ],
     "vis": false
    }
@@ -6049,13 +6050,13 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   -745,
-   -18,
-   477,
-   403
+   -563,
+   27,
+   355,
+   311
   ],
   "nat": [
    1400,
@@ -6067,48 +6068,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -1209,
-     -144,
-     834,
-     653
+     -840,
+     -43,
+     545,
+     452
     ],
     "clip": [
      0,
      0,
-     -376,
-     476
+     -295,
+     409
     ],
     "vis": false
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -1368,
-     -188,
-     966,
-     742
+     -925,
+     -66,
+     608,
+     497
     ],
     "clip": [
      0,
      0,
-     -402,
-     476
+     -316,
+     432
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     -1574,
-     -246,
-     1142,
-     858
+     -1022,
+     -92,
+     683,
+     550
     ],
     "clip": [
      0,
      0,
-     -432,
-     476
+     -339,
+     458
     ],
     "vis": false
    }
@@ -6120,13 +6121,13 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
   "slot": "Slider",
   "rect": [
-   -775,
-   -6545,
-   23149,
-   13456
+   -3821,
+   -902,
+   3238,
+   2170
   ],
   "nat": [
    1600,
@@ -6138,10 +6139,10 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -2363,
-     -474,
-     3519,
-     1314
+     -1335,
+     -487,
+     3288,
+     1339
     ],
     "clip": [
      0,
@@ -6152,28 +6153,28 @@
     "vis": true
    },
    "entered": {
-    "scrollY": 6107,
+    "scrollY": 464,
     "el": [
-     -2375,
-     -6585,
-     3527,
-     1321
+     -1527,
+     -865,
+     3175,
+     1167
     ],
     "clip": [
      0,
      0,
      390,
-     -5631
+     12
     ],
-    "vis": false
+    "vis": true
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     -2986,
-     -656,
-     4010,
-     1678
+     -1783,
+     -336,
+     3197,
+     1038
     ],
     "clip": [
      0,
@@ -6192,13 +6193,13 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
   "slot": "Slider",
   "rect": [
-   608,
-   -3401,
-   11202,
-   7168
+   -4516,
+   -1107,
+   5401,
+   2581
   ],
   "nat": [
    1600,
@@ -6210,13 +6211,13 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     25,
-     -174,
-     745,
-     714
+     140,
+     -231,
+     874,
+     828
     ],
     "clip": [
-     25,
+     140,
      0,
      390,
      476
@@ -6224,31 +6225,31 @@
     "vis": true
    },
    "entered": {
-    "scrollY": 2963,
+    "scrollY": 670,
     "el": [
-     23,
-     -3136,
-     744,
-     713
+     139,
+     -900,
+     872,
+     826
     ],
     "clip": [
-     23,
+     139,
      0,
      390,
-     -2487
+     -194
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     -24,
-     -158,
-     717,
-     682
+     94,
+     -204,
+     809,
+     774
     ],
     "clip": [
-     0,
+     94,
      0,
      390,
      476
@@ -6264,13 +6265,13 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
   "slot": "Slider",
   "rect": [
-   -114,
-   -136,
-   693,
-   639
+   64,
+   -190,
+   777,
+   746
   ],
   "nat": [
    1120,
@@ -6282,15 +6283,15 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -5913,
-     -1765,
-     5748,
-     3895
+     -2215,
+     -674,
+     2188,
+     1715
     ],
     "clip": [
      0,
      0,
-     -165,
+     -27,
      476
     ],
     "vis": false
@@ -6298,15 +6299,15 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     -13863,
-     -4128,
-     13635,
-     8622
+     -3001,
+     -904,
+     2923,
+     2174
     ],
     "clip": [
      0,
      0,
-     -228,
+     -78,
      476
     ],
     "vis": false
@@ -6314,18 +6315,18 @@
    "leaving": {
     "scrollY": 0,
     "el": [
-     -296,
-     -18586,
-     63928,
-     37537
+     -4492,
+     -1344,
+     4358,
+     3054
     ],
     "clip": [
      0,
      0,
-     390,
+     -134,
      476
     ],
-    "vis": true
+    "vis": false
    }
   }
  },
@@ -6335,13 +6336,13 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   -4721,
-   -1411,
-   4581,
-   3189
+   -1553,
+   -484,
+   1596,
+   1333
   ],
   "nat": [
    1200,
@@ -6353,52 +6354,53 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     997,
-     -1143,
-     4030,
-     2652
+     -232649,
+     -69274,
+     233784,
+     138913
     ],
     "clip": [
-     997,
+     0,
      0,
      390,
      476
     ],
-    "vis": false
+    "vis": true
    },
    "entered": {
-    "scrollY": 974,
+    "scrollY": 45,
     "el": [
-     994,
-     -2091,
-     3946,
-     2601
+     1074,
+     -3358,
+     11259,
+     6993
     ],
     "clip": [
-     994,
+     1074,
      0,
      390,
-     -498
+     431
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     951,
-     -737,
-     2700,
-     1840
+     1021,
+     -1495,
+     5193,
+     3356
     ],
     "clip": [
-     951,
+     1021,
      0,
      390,
      476
     ],
     "vis": false
    }
-  }
+  },
+  "shot": "clips/phone___ia5.png"
  },
  {
   "page": "/",
@@ -6406,13 +6408,13 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
   "slot": "Slider",
   "rect": [
-   -6048,
-   -1805,
-   7308,
-   3976
+   -1731,
+   -534,
+   3385,
+   1435
   ],
   "nat": [
    1200,
@@ -6424,48 +6426,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     563,
-     48,
-     301,
-     269
+     582,
+     38,
+     328,
+     291
     ],
     "clip": [
-     563,
-     48,
+     582,
+     38,
      390,
-     318
+     328
     ],
     "vis": false
    },
    "entered": {
-    "scrollY": 1367,
+    "scrollY": 97,
     "el": [
-     563,
-     -1319,
-     300,
-     269
+     567,
+     -51,
+     307,
+     274
     ],
     "clip": [
-     563,
+     567,
      0,
      390,
-     -1050
+     223
     ],
     "vis": false
    },
    "leaving": {
     "scrollY": 0,
     "el": [
-     550,
-     56,
-     282,
-     255
+     554,
+     54,
+     287,
+     259
     ],
     "clip": [
-     550,
-     56,
+     554,
+     54,
      390,
-     310
+     312
     ],
     "vis": false
    }
@@ -6477,13 +6479,13 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/w0uVqxgNwd7ZKKEqHKno2T3Y.png?width=454&height=373",
   "slot": "Slider",
   "rect": [
-   683,
-   -41,
-   540,
-   449
+   763,
+   -140,
+   823,
+   646
   ],
   "nat": [
    1200,
@@ -6495,29 +6497,29 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     381,
-     117,
-     139,
-     133
+     384,
+     116,
+     140,
+     134
     ],
     "clip": [
-     381,
-     117,
+     384,
+     116,
      390,
-     249
+     250
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     373,
+     376,
      118,
-     135,
-     129
+     136,
+     130
     ],
     "clip": [
-     373,
+     376,
      118,
      390,
      248
@@ -6527,13 +6529,13 @@
    "leaving": {
     "scrollY": 0,
     "el": [
-     365,
+     368,
      120,
-     131,
-     126
+     132,
+     127
     ],
     "clip": [
-     365,
+     368,
      120,
      390,
      246
@@ -6549,13 +6551,13 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/RDd3jGMvY6HRQt9yEYwTK042Okk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   473,
-   89,
-   200,
-   187
+   513,
+   73,
+   239,
+   219
   ],
   "nat": [
    1400,
@@ -6567,15 +6569,15 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     251,
+     252,
      137,
      97,
      92
     ],
     "clip": [
-     251,
+     252,
      137,
-     347,
+     349,
      229
     ],
     "vis": true
@@ -6583,32 +6585,32 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     244,
+     246,
      138,
      96,
      91
     ],
     "clip": [
-     244,
+     246,
      138,
-     340,
+     342,
      228
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 49,
+    "scrollY": 33,
     "el": [
-     238,
-     89,
+     240,
+     105,
      95,
-     89
+     90
     ],
     "clip": [
-     238,
-     89,
-     332,
-     179
+     240,
+     105,
+     335,
+     195
     ],
     "vis": true
    }
@@ -6621,13 +6623,13 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/CAK6U6lwUO39QyJEbDMwmOqRmUc.png?width=458&height=374",
   "slot": "Slider",
   "rect": [
-   346,
-   124,
-   123,
-   118
+   373,
+   118,
+   135,
+   129
   ],
   "nat": [
    1600,
@@ -6639,48 +6641,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     134,
+     136,
      142,
      89,
      81
     ],
     "clip": [
-     134,
+     136,
      142,
-     223,
-     224
+     224,
+     223
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     127,
+     129,
      142,
      89,
      82
     ],
     "clip": [
-     127,
+     129,
      142,
-     216,
+     218,
      224
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 84,
+    "scrollY": 78,
     "el": [
-     121,
-     58,
+     123,
+     64,
      89,
      82
     ],
     "clip": [
-     121,
-     58,
-     210,
-     140
+     123,
+     64,
+     212,
+     146
     ],
     "vis": true
    }
@@ -6693,13 +6695,13 @@
   "dpr": 2,
   "id": "ia10",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/uWIl2rDOUSj7uKoZiflihSMlWI.png?width=1448&height=1086",
   "slot": "Slider",
   "rect": [
-   246,
-   137,
-   96,
-   91
+   269,
+   135,
+   100,
+   95
   ],
   "nat": [
    1600,
@@ -6711,48 +6713,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     1,
-     133,
-     104,
+     4,
+     134,
+     103,
      99
     ],
     "clip": [
-     1,
-     133,
-     105,
-     233
+     4,
+     134,
+     107,
+     232
     ],
     "vis": true
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -7,
-     132,
+     -5,
+     133,
      105,
-     101
+     100
     ],
     "clip": [
      0,
-     132,
-     99,
+     133,
+     100,
      233
     ],
     "vis": true
    },
    "leaving": {
-    "scrollY": 97,
+    "scrollY": 95,
     "el": [
-     -16,
-     35,
+     -13,
+     37,
      107,
-     103
+     102
     ],
     "clip": [
      0,
-     35,
-     92,
-     137
+     37,
+     94,
+     139
     ],
     "vis": true
    }
@@ -6765,13 +6767,13 @@
   "dpr": 2,
   "id": "ia11",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/jMclQrECpxDl0LzEWoWNTy1txI.png?width=840&height=1200",
   "slot": "Slider",
   "rect": [
-   155,
-   143,
+   177,
+   142,
    89,
-   80
+   82
   ],
   "nat": [
    1120,
@@ -6783,47 +6785,47 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -202,
+     -198,
      105,
-     165,
-     157
+     163,
+     155
     ],
     "clip": [
      0,
      105,
-     -37,
-     261
+     -34,
+     260
     ],
     "vis": false
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -218,
-     102,
-     171,
-     162
+     -213,
+     103,
+     170,
+     160
     ],
     "clip": [
      0,
-     102,
-     -46,
-     264
+     103,
+     -43,
+     263
     ],
     "vis": false
    },
    "leaving": {
-    "scrollY": 103,
+    "scrollY": 102,
     "el": [
-     -234,
-     -4,
-     178,
-     168
+     -229,
+     -2,
+     176,
+     166
     ],
     "clip": [
      0,
      0,
-     -56,
+     -53,
      164
     ],
     "vis": false
@@ -6836,13 +6838,13 @@
   "dpr": 2,
   "id": "ia12",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/rm9dyg51nkckwfxfRFZ5nxsZGIk.png?width=1200&height=800",
   "slot": "Slider",
   "rect": [
-   57,
-   138,
-   95,
-   89
+   82,
+   140,
+   92,
+   86
   ],
   "nat": [
    1200,
@@ -6854,48 +6856,48 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -771,
-     -25,
-     495,
-     416
+     -752,
+     -20,
+     481,
+     406
     ],
     "clip": [
      0,
      0,
-     -276,
-     391
+     -270,
+     386
     ],
     "vis": false
    },
    "entered": {
     "scrollY": 0,
     "el": [
-     -844,
-     -44,
-     548,
-     454
+     -822,
+     -38,
+     532,
+     443
     ],
     "clip": [
      0,
      0,
-     -296,
-     410
+     -290,
+     404
     ],
     "vis": false
    },
    "leaving": {
-    "scrollY": 98,
+    "scrollY": 100,
     "el": [
-     -927,
-     -164,
-     610,
-     498
+     -901,
+     -159,
+     591,
+     485
     ],
     "clip": [
      0,
      0,
-     -317,
-     334
+     -311,
+     325
     ],
     "vis": false
    }
@@ -6907,13 +6909,13 @@
   "dpr": 2,
   "id": "ia13",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/OVJzihxpRW3IFxhaHqUOjn4W3Q.png?width=1600&height=1200",
   "slot": "Slider",
   "rect": [
-   -66,
-   126,
-   119,
-   115
+   -32,
+   130,
+   111,
+   106
   ],
   "nat": [
    1200,
@@ -6925,10 +6927,10 @@
    "centred": {
     "scrollY": 0,
     "el": [
-     -1186,
-     -606,
-     3554,
-     1577
+     -1144,
+     -655,
+     3684,
+     1677
     ],
     "clip": [
      0,
@@ -6941,10 +6943,10 @@
    "entered": {
     "scrollY": 0,
     "el": [
-     -1339,
-     -484,
-     3284,
-     1334
+     -1291,
+     -515,
+     3344,
+     1396
     ],
     "clip": [
      0,
@@ -6955,18 +6957,18 @@
     "vis": true
    },
    "leaving": {
-    "scrollY": 86,
+    "scrollY": 90,
     "el": [
-     -1536,
-     -483,
-     3173,
-     1161
+     -1470,
+     -511,
+     3192,
+     1208
     ],
     "clip": [
      0,
      0,
      390,
-     390
+     386
     ],
     "vis": true
    }
@@ -6979,7 +6981,7 @@
   "dpr": 2,
   "id": "ia14",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png?scale-down-to=2048&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/0hub9wyaITwSqSJcSoV6WHnvIM.png?scale-down-to=2048&width=2272&height=2964",
   "slot": "Avatar",
   "rect": [
    -6,
@@ -7051,7 +7053,7 @@
   "dpr": 2,
   "id": "ia15",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7123,7 +7125,7 @@
   "dpr": 2,
   "id": "ia16",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7195,7 +7197,7 @@
   "dpr": 2,
   "id": "ia17",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7267,7 +7269,7 @@
   "dpr": 2,
   "id": "ia18",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7339,7 +7341,7 @@
   "dpr": 2,
   "id": "ia19",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png?scale-down-to=1024&width=2666&height=1780",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/kktJp69ox4U5CfexrUhqAbyXkw.png?scale-down-to=1024&width=2666&height=1780",
   "slot": "Image",
   "rect": [
    62,
@@ -7411,7 +7413,7 @@
   "dpr": 2,
   "id": "ia20",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png?scale-down-to=1024&width=2752&height=1536",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/125B2ikZ8YdPj2Yc6fnLlPJT8p0.png?scale-down-to=1024&width=2752&height=1536",
   "slot": "Image",
   "rect": [
    0,
@@ -7483,7 +7485,7 @@
   "dpr": 2,
   "id": "ia21",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -7555,7 +7557,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7627,7 +7629,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7699,7 +7701,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7771,7 +7773,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7843,7 +7845,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -7915,7 +7917,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -7987,7 +7989,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8059,7 +8061,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/hero.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8131,7 +8133,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/wide.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8203,7 +8205,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/a.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8275,7 +8277,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/b.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8347,7 +8349,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/c.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8419,7 +8421,7 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/tall.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8491,7 +8493,7 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8563,7 +8565,7 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8635,7 +8637,7 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -8707,7 +8709,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8779,7 +8781,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/hero.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8851,7 +8853,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/wide.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8923,7 +8925,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/a.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -8995,7 +8997,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/b.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9067,7 +9069,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/c.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9139,7 +9141,7 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/tall.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9211,7 +9213,7 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9283,7 +9285,7 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9355,7 +9357,7 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -9427,7 +9429,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9499,7 +9501,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/hero.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9571,7 +9573,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/wide.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9643,7 +9645,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/a.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9715,7 +9717,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/b.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9787,7 +9789,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/c.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9859,7 +9861,7 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/the-h-orlando/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/the-h-orlando/tall.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -9931,7 +9933,7 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10003,7 +10005,7 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10075,7 +10077,7 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -10147,7 +10149,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10219,7 +10221,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/hero.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10291,7 +10293,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/wide.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10363,7 +10365,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/a.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10435,7 +10437,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/b.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10507,7 +10509,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/c.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10579,7 +10581,7 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/helena-modern-riviera/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/helena-modern-riviera/tall.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10651,7 +10653,7 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10723,7 +10725,7 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10795,7 +10797,7 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -10867,7 +10869,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -10939,7 +10941,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/hero.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/hero.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11011,7 +11013,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/wide.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/wide.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11083,7 +11085,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/a.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/a.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11155,7 +11157,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/b.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/b.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11227,7 +11229,7 @@
   "dpr": 2,
   "id": "ia5",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/c.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/c.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11299,7 +11301,7 @@
   "dpr": 2,
   "id": "ia6",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/ava-mediterraegean/tall.jpg",
+  "src": "https://djoteo.com/assets/rooms/ava-mediterraegean/tall.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11371,7 +11373,7 @@
   "dpr": 2,
   "id": "ia7",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/debonair-supper-club/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/debonair-supper-club/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11443,7 +11445,7 @@
   "dpr": 2,
   "id": "ia8",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/rooms/casa-mezcal/thumb.jpg",
+  "src": "https://djoteo.com/assets/rooms/casa-mezcal/thumb.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11515,7 +11517,7 @@
   "dpr": 2,
   "id": "ia9",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
@@ -11587,7 +11589,7 @@
   "dpr": 2,
   "id": "ia0",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-10.jpg",
+  "src": "https://djoteo.com/assets/sets/casa-mezcal-2026-10-10.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11659,7 +11661,7 @@
   "dpr": 2,
   "id": "ia1",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/casa-mezcal-2026-10-03.jpg",
+  "src": "https://djoteo.com/assets/sets/casa-mezcal-2026-10-03.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11731,7 +11733,7 @@
   "dpr": 2,
   "id": "ia2",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/opening-for-mochakk-2026-09-12.jpg",
+  "src": "https://djoteo.com/assets/sets/opening-for-mochakk-2026-09-12.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11803,7 +11805,7 @@
   "dpr": 2,
   "id": "ia3",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/assets/sets/ava-mm-2024-07-06.jpg",
+  "src": "https://djoteo.com/assets/sets/ava-mm-2024-07-06.jpg",
   "slot": "Image",
   "rect": [
    20,
@@ -11875,7 +11877,7 @@
   "dpr": 2,
   "id": "ia4",
   "kind": "img",
-  "src": "http://127.0.0.1:8765/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
+  "src": "https://djoteo.com/_ext/framerusercontent.com/images/7iG0t4y0ODmQCwl99wJW1DIxFg.png?scale-down-to=1024&width=2272&height=2964",
   "slot": "Image",
   "rect": [
    70,
