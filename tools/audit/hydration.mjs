@@ -5,18 +5,19 @@ const { chromium } = require('playwright');
 const BASE = process.env.BASE || 'https://djoteo.com';
 const pages = ['/', '/works/', '/works/debonair-supper-club/', '/works/casa-mezcal/', '/works/the-h-orlando/', '/works/helena-modern-riviera/', '/works/ava-mediterraegean/', '/blog/', '/blog/casa-mezcal-oct-10-2026/', '/blog/casa-mezcal-oct-3-2026/', '/blog/opening-for-mochakk-sept-12-2026/', '/blog/ava-mm-lounge-july-6-2024/'];
 const b = await chromium.launch(); let bad = 0;
-for (const [w, h] of [[1440, 900], [810, 1080], [390, 844]]) {
-  const ctx = await b.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
+// The last pass throttles the CPU 6x: under load React hydrates slowly, and anything that touches the DOM too early makes it discard the server tree ("Caught a recoverable error" x15 per load, a visible re-render).
+for (const [w, h, rate] of [[1440, 900, 1], [810, 1080, 1], [390, 844, 1], [1440, 900, 6]]) {
+  const ctx = await b.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage(); if (rate > 1) { const cdp = await ctx.newCDPSession(p); await cdp.send('Emulation.setCPUThrottlingRate', { rate }); }
   for (const path of pages) {
     const errs = []; const cms = [];
-    p.on('console', m => { const t = m.text(); if (/Minified React error #4(18|22|23|25)|Hydration|hydrat/i.test(t) || m.type() === 'error') errs.push(t.slice(0, 100)); });
+    p.on('console', m => { const t = m.text(); if (/Minified React error #4(18|22|23|25)|Hydration|hydrat|recoverable error/i.test(t) || m.type() === 'error') errs.push(t.slice(0, 100)); });
     p.on('pageerror', e => errs.push('uncaught ' + String(e).slice(0, 100)));
     p.on('request', r => { if (/framercms|framerusercontent\.com\/.*\.json|api\.framer/.test(r.url())) cms.push(r.url().slice(0, 80)); });
     await p.goto(BASE + path, { waitUntil: 'networkidle' }); await p.waitForTimeout(1500);
     const total = await p.evaluate(() => document.documentElement.scrollHeight); for (let y = 0; y < total; y += h) { await p.evaluate(y => window.scrollTo(0, y), y); await p.waitForTimeout(120); }
     await p.waitForTimeout(800);
-    const react = errs.filter(e => /#4(18|22|23|25)/.test(e)); const other = errs.filter(e => !/#4(18|22|23|25)/.test(e) && !/youtube|googlevideo|canva|favicon|ERR_BLOCKED|third-party/i.test(e));
-    if (react.length || other.length || cms.length) { bad++; console.log(`${w}px ${path} react=${react.length} other=${other.length} cms=${cms.length}` + (other[0] ? ' | ' + other[0] : '')); }
+    const react = errs.filter(e => /#4(18|22|23|25)|recoverable error/.test(e)); const other = errs.filter(e => !/#4(18|22|23|25)/.test(e) && !/youtube|googlevideo|canva|favicon|ERR_BLOCKED|third-party/i.test(e));
+    if (react.length || other.length || cms.length) { bad++; console.log(`${w}px${rate > 1 ? ' cpu x' + rate : ''} ${path} react=${react.length} other=${other.length} cms=${cms.length}` + (other[0] ? ' | ' + other[0] : '')); }
     p.removeAllListeners('console'); p.removeAllListeners('pageerror'); p.removeAllListeners('request');
   }
   await ctx.close();
