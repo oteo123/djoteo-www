@@ -1,0 +1,10 @@
+import { createRequire } from 'node:module';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const b = await chromium.launch(); const ctx = await b.newContext(); const p = await ctx.newPage(); const cdp = await ctx.newCDPSession(p);
+await cdp.send('Network.enable'); await cdp.send('Network.emulateNetworkConditions', { offline: false, latency: 80, downloadThroughput: 1500 * 1024, uploadThroughput: 500 * 1024 });
+const t0 = Date.now(); p.on('response', r => { if (/woff2?|ttf/.test(r.url())) console.log(Date.now() - t0, 'ms font', r.url().split('/').pop().slice(0, 50)); });
+await p.addInitScript(() => { const t = performance.now(); const obs = () => { const c = document.documentElement.classList.contains('fonts-pending'); if (!c && !window.__rev) { window.__rev = Math.round(performance.now() - t); } if (performance.now() - t < 4000) setTimeout(obs, 20); }; obs(); });
+await p.goto('http://127.0.0.1:8765/booking', { waitUntil: 'load' }); await p.waitForTimeout(3000);
+console.log('revealed at', await p.evaluate(() => window.__rev), 'ms; faces:', await p.evaluate(() => [...document.fonts].map(f => f.family + ' ' + f.weight + ' ' + f.style + ' ' + f.status).filter(x => /loaded/.test(x)).join(', ')));
+await b.close();

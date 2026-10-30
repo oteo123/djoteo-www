@@ -1,0 +1,14 @@
+import { createRequire } from 'node:module';
+const require = createRequire('/Users/alecpontes/Dropbox/OTEO code/DJOTEO-REDESIGN/node_modules/');
+const { chromium } = require('playwright');
+const b = await chromium.launch(); const B = 'http://127.0.0.1:8765';
+const p = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await p.goto(B + '/', { waitUntil: 'networkidle' }); await p.waitForTimeout(3000);
+console.log('pill gap:', await p.evaluate(() => { const s = document.querySelector('[data-framer-name="About me"]'); const pill = [...s.querySelectorAll('a')].find(a => /Full Story/.test(a.textContent)); const w = [...s.querySelectorAll('p')].filter(e => /Decks/.test(e.textContent)).pop(); return Math.round(pill.getBoundingClientRect().left - w.getBoundingClientRect().right) + 'px, pill right edge ' + Math.round(pill.getBoundingClientRect().right); }));
+await p.goto(B + '/works/', { waitUntil: 'networkidle' }); await p.waitForTimeout(3000);
+const h = await p.evaluate(() => { const e = [...document.querySelectorAll('h3')].find(x => x.textContent.trim() === 'The H Orlando' && x.getBoundingClientRect().width > 0); return { deco: getComputedStyle(e).textDecorationLine, inline: e.getAttribute('style') || '' }; }); console.log('The H card title:', JSON.stringify(h));
+const [popup] = await Promise.all([p.waitForEvent('popup', { timeout: 3000 }).catch(() => null), p.click('h3:has-text("The H Orlando")')]); await p.waitForTimeout(1500);
+console.log('click The H title -> popup:', popup ? popup.url() : 'none', '| page now:', p.url());
+await p.goto(B + '/blog/casa-mezcal-oct-10-2026/', { waitUntil: 'networkidle' }); await p.waitForTimeout(3500);
+console.log('set player:', await p.evaluate(() => { const r = document.querySelector('[data-oteo-player]').getBoundingClientRect(); const t = [...document.querySelectorAll('h1,h2')].find(e => /4 Hour/.test(e.textContent)).getBoundingClientRect(); return `player x=${Math.round(r.left)} w=${Math.round(r.width)} | title x=${Math.round(t.left)}`; }));
+await b.close();

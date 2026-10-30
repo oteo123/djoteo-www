@@ -1522,7 +1522,7 @@ footer[data-framer-name="Footer"] div[style*="position: absolute"][style*="heigh
 /* Set pages: the player is the set, so it spans the full content width and
    shows our own cover with a play button until it is played. */
 [data-framer-name="Main content"] { flex-wrap: wrap !important; }
-[data-oteo-player] { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; order: -1; }
+[data-oteo-player-row] { flex: 0 0 100% !important; width: 100% !important; order: -1; }
 
 /* Room photographs everywhere (cards, heroes, galleries): anchor near the top so
    the head stays inside whatever box the template cuts; per-file overrides for
@@ -1560,3 +1560,7 @@ nav[data-framer-name="Phone Open"] [style*="will-change"] { opacity: 1 !importan
 
 /* The tab strip inside the filter Container is itself a nowrap row. */
 @media (max-width: 809.98px) { [data-framer-name="Filter"] [data-framer-name="Container"], [data-framer-name="Filter"] [data-framer-name="Container"] > * { flex-wrap: wrap !important; overflow: visible !important; width: 100% !important; row-gap: 6px !important; } }
+
+/* 2026-10-29 consistency pass */
+@media (min-width: 1200px) { [data-framer-name="About me"] .framer-1p6xzxd-container { margin-left: 28px !important; } }
+[data-oteo-player] { width: 100% !important; max-width: 760px !important; margin: 0 auto 36px !important; }

@@ -855,7 +855,9 @@ function insertSetPlayer(){
   // Full content width: Main content wraps (oteo-system.css) and the player
   // takes the first full row; the template's cover mask is hidden.
   var cover=main.querySelector('[data-framer-name="Image mask"]');if(cover)cover.style.display='none';
-  main.insertBefore(w,main.firstChild);
+  // A full-width row of its own, so the text column always wraps below it.
+  var row=document.createElement('div');row.setAttribute('data-oteo-player-row','');row.appendChild(w);
+  main.insertBefore(row,main.firstChild);
 }
 // Rooms index filter tabs. The purchased template's tabs only switch their own
 // active look; the list they were meant to filter re-queries Framer's CMS, which
@@ -886,7 +888,7 @@ function roomFilter(){
   },true);}
   if(roomFilterLabel!=='All')roomFilterApply();
 }
-function pass(){if(busy)return;busy=true;try{swapText();swapSplitHeadings();absHrefs();swapAttrs();swapImgs();fixCounter();linkCards();fixWorksH1();fixWords();fixDupIds();unifyNav();roomFilter();fixTouch();fixBrand();fixReveals();stripHiddenSlider();insertServices();insertTestimonialProof();phoneHeaderCta();fixHeadingSemantics();addSkipLink();hideBorrowedSocials();hideUnsourcedStats();insertSetPlayer();}finally{busy=false;}}
+function pass(){if(busy)return;busy=true;try{swapText();swapSplitHeadings();absHrefs();swapAttrs();swapImgs();fixCounter();fixWorksH1();fixWords();fixDupIds();unifyNav();roomFilter();fixTouch();fixBrand();fixReveals();stripHiddenSlider();insertServices();insertTestimonialProof();phoneHeaderCta();fixHeadingSemantics();addSkipLink();hideBorrowedSocials();hideUnsourcedStats();insertSetPlayer();}finally{busy=false;}}
 function reveal(){document.documentElement.style.setProperty('opacity','1','important');}
 function start(){
   pass();reveal();headerScrim();
@@ -913,7 +915,9 @@ function early(){try{watchHiddenSlider();}catch(e){}
   // The @font-face rules must be parsed before load() means anything: on a slow
   // stylesheet, DOMContentLoaded can fire first and the loads resolve empty.
   var t0=Date.now(),wait=function(){var known=false;try{document.fonts.forEach(function(f){if(/Playfair/.test(f.family))known=true});}catch(e){}
-    if(known||Date.now()-t0>2300){if(document.fonts&&document.fonts.load)Promise.all([document.fonts.load('500 1em "Playfair Display"'),document.fonts.load('italic 600 1em "Playfair Display"'),document.fonts.load('400 1em Geist'),document.fonts.load('600 1em Geist'),document.fonts.load('700 1em Geist'),document.fonts.load('500 1em "Geist Mono"')]).then(function(){return document.fonts.ready;}).then(go,go);else go();}else setTimeout(wait,40);};
+    if(known||Date.now()-t0>2300){if(document.fonts&&document.fonts.load)Promise.all([document.fonts.load('500 1em "Playfair Display"'),document.fonts.load('italic 600 1em "Playfair Display"'),document.fonts.load('400 1em Geist'),document.fonts.load('600 1em Geist'),document.fonts.load('700 1em Geist'),document.fonts.load('500 1em "Geist Mono"')]).then(function(){return document.fonts.ready;}).then(function(){settle(3);},go);else go();}else setTimeout(wait,40);};
+  // Weights first used once the page lays out start loading only then; re-check after two frames.
+  var settle=function(k){requestAnimationFrame(function(){requestAnimationFrame(function(){if(document.fonts.status==='loading'&&k>0)document.fonts.ready.then(function(){settle(k-1);});else go();});});};
   wait();setTimeout(go,2500);}
 function fiberCount(){var els=document.querySelectorAll('#main [data-framer-name], #main a[href], #main h1, #main h2, #main p'),n=0;for(var i=0;i<els.length;i++){var k=Object.keys(els[i]);for(var j=0;j<k.length;j++){if(k[j].indexOf('__reactFiber')===0){n++;break;}}}return n;}
 /* "Hydrated" used to mean the first fibers had appeared on the page root. Under
