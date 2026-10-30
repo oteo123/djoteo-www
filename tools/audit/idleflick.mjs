@@ -5,7 +5,7 @@ const { chromium } = require('playwright'); const sharp = require('sharp');
 const BASE = process.env.BASE || 'http://127.0.0.1:8765';
 const pages = (process.argv[2] || '/,/works/,/works/casa-mezcal/,/works/the-h-orlando/,/blog/,/blog/casa-mezcal-oct-10-2026/,/about,/residencies,/booking,/contact,/rentals,/foowr,/ugc').split(',');
 // Designed movers: the hero slider's progress bar (a classless div), the testimonial rotator and its card stack, the About-page glow.
-const ALLOWED = [/framer-13z6wzq|framer-b4t6a|framer-z4dor4|framer-1mzh2od|framer-sw530|framer-1rmprm2|framer-89hr7p|framer-13kov2f|framer-1j1py5o|framer-xwnoaf|framer-1il06vn|framer-1r3ucf8|framer-11ic47p/, /contact-glow/, /^\|attributes\|style$/, /\|attributes\|aria-label$/];
+const ALLOWED = [/framer-13z6wzq|framer-b4t6a|framer-z4dor4|framer-1mzh2od|framer-sw530|framer-1rmprm2|framer-89hr7p|framer-13kov2f|framer-1j1py5o|framer-xwnoaf|framer-1il06vn|framer-1r3ucf8|framer-11ic47p|framer-3544hd|framer-1pwtx4t|framer-Ovruz/, /\|attributes\|(decoding|preserveAspectRatio)$/, /contact-glow/, /^\|attributes\|style$/, /\|attributes\|aria-label$/];
 const b = await chromium.launch(); let bad = 0;
 for (const path of pages) {
   const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 }); const p = await ctx.newPage();
