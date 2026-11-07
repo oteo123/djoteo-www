@@ -476,8 +476,6 @@
   }
   .eyebrow::before{content:""; width:34px; height:1px; background:var(--gold); display:inline-block}
 
-  /* ---- HERO ---- */
-  /* Keep the editorial hero explicit alongside the fixed shared site header. */
   body > header.svc-hero{display:block !important}
   .svc-hero{padding:190px 0 44px}
   .svc-hero .wrap{max-width:620px; position:relative; padding-left:30px}
@@ -503,16 +501,12 @@
   }
   .hero-cta:hover{background:var(--gold); color:#0a0a0a}
 
-  /* ---- SECTION HEADS ---- */
-  /* NOTE: .sec sits on the same element as .wrap — never zero the horizontal
-     padding here or content goes flush to the viewport edge below 1168px. */
   .sec{padding-top:56px; padding-bottom:10px}
   .sec-pair{display:grid; gap:0 64px; align-items:start}
   @media (min-width:1024px){ .sec-pair{grid-template-columns:1fr 1fr} .sec-pair > .sec > .sub{max-width:none} }
   .sec > .head{font-family:var(--sans); font-size:clamp(26px,4vw,40px); font-weight:500; margin-bottom:6px}
   .sec > .sub{color:var(--muted); font-size:15px; margin-bottom:30px; max-width:640px; line-height:1.6}
 
-  /* ---- SERVICES GRID ---- */
   .svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
   .card{
     border:1px solid var(--line); border-radius:16px; padding:26px 24px;
@@ -523,10 +517,7 @@
   .card .n{font-family:var(--mono); font-size:11px; letter-spacing:0.2em; color:var(--gold); opacity:0.7}
   .card h3{font-family:var(--sans); font-size:22px; font-weight:500; margin:12px 0 8px; line-height:1.15}
   .card p{color:var(--muted); font-size:14px; line-height:1.55}
-  /* Systems group has 7 cards; in a 3-col grid the 7th lands alone on a new row,
-     leaving two empty cells (an orphan / half-built look). Center that trailing
-     card in the middle column so the row reads as intentional, not broken.
-     Only applies at the 3-col desktop width — narrower breakpoints handle it below. */
+  
   .eqp-grid-sys > .eqp-card:last-child:nth-child(3n+1){grid-column:2}
   .avail-bar{
     display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:26px 0 8px;
@@ -560,7 +551,6 @@
   @media (max-width:960px){ .pkg-grid{grid-template-columns:repeat(2,1fr)} }
   @media (max-width:560px){ .pkg-grid{grid-template-columns:1fr} .avail-bar .t{width:100%} }
 
-  /* no-JS safe: cards hidden only after JS marks the section ready */
   .reveal-ready .eqp-card, .reveal-ready .pkg-card{opacity:0; transform:translateY(20px)}
   .eqp-card.revealed, .pkg-card.revealed{opacity:1; transform:none}
   @media (prefers-reduced-motion:reduce){
@@ -604,7 +594,6 @@
     letter-spacing:0.1em; color:var(--muted); opacity:0.7; pointer-events:none
   }
 
-  /* ---- SOUND SYSTEM GROUP (models pending confirmation — no images) ---- */
   .snd-card{
     margin-top:16px; border:1px dashed rgba(142,209,252,0.35); border-radius:16px; padding:24px 26px;
     background:linear-gradient(180deg, rgba(36,63,156,0.08), rgba(255,255,255,0.008));
@@ -619,7 +608,6 @@
   .snd-note{color:var(--muted); font-size:12px; font-family:var(--mono); letter-spacing:0.04em; line-height:1.6}
   .snd-note b{color:var(--blue-lt); font-weight:500}
 
-  /* ---- BOOKING FORM ---- */
   .book-sec{padding:70px 0 90px}
   .book-panel{
     display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;
@@ -662,7 +650,6 @@
   #oteo-booking-submit:disabled{opacity:0.6; cursor:default}
   #oteo-booking-status{margin:16px 0 0; min-height:18px; font-size:13px; letter-spacing:0.03em; color:var(--blue-lt)}
 
-  /* ---- FOOTER ---- */
   .site-footer{border-top:1px solid var(--line); padding:34px 0; text-align:center}
   .site-footer p{color:var(--muted); font-size:13px}
   .site-footer a{color:var(--gold); text-decoration:none}
@@ -677,8 +664,6 @@
     .svc-hero{padding:130px 0 24px}
   }
 
-  /* Tablet + mobile inventory uses compact swipe rails instead of a 13-card
-     vertical wall. Every verified unit remains present and keyboard reachable. */
   @media (max-width:820px){
     .eqp-grid,.pkg-grid{
       display:flex; gap:14px; overflow-x:auto; overscroll-behavior-inline:contain;
@@ -690,7 +675,6 @@
     .pkg-card{flex:0 0 min(80vw,320px); scroll-snap-align:center}
   }
 
-  /* ---- SKIP LINK ---- */
   .skip-link{
     position:absolute; left:-9999px; top:0; z-index:100;
     background:var(--gold); color:#0c0c0c; padding:10px 18px; border-radius:0 0 9px 0;
@@ -698,7 +682,6 @@
   }
   .skip-link:focus{left:0}
 
-  /* ---- SECTION / CARD CTAs ---- */
   .sec-cta{margin-top:26px; font-family:var(--mono); font-size:12px; letter-spacing:0.12em; text-transform:uppercase}
   .sec-cta a{color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(200,169,106,0.45); padding-bottom:3px}
   .sec-cta a:hover{border-color:var(--gold)}
@@ -708,7 +691,6 @@
   }
   .card .card-cta:hover{text-decoration:underline}
 
-  /* ---- BOOKING TRUST / MICROCOPY ---- */
   .trust-strip{font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--muted); margin-bottom:16px; line-height:1.7}
   .trust-strip a{color:var(--gold); text-decoration:none}
   .trust-strip a:hover{text-decoration:underline}
@@ -716,11 +698,9 @@
   .form-note{font-family:var(--mono); font-size:10px; letter-spacing:0.1em; color:var(--muted); margin-bottom:14px}
   .reply-note{margin-top:12px; font-family:var(--mono); font-size:11px; letter-spacing:0.06em; color:var(--muted); text-align:center}
 
-  /* ---- FOOTER NAV ---- */
   .site-footer nav{margin-bottom:12px; font-family:var(--mono); font-size:12px; letter-spacing:0.12em; text-transform:uppercase}
   .site-footer nav a{margin:0 10px}
 
-  /* ---- MOBILE STICKY BOOKING CTA ---- */
   .mob-cta{display:none}
   @media (max-width:900px){
     .mob-cta{
@@ -731,7 +711,7 @@
       transition:opacity .3s ease, transform .3s ease;
     }
     .mob-cta.hide{opacity:0; pointer-events:none; transform:translateY(10px)}
-    /* Fade scrim so scrolling content dissolves into the bg instead of colliding with the pill */
+    
     .mob-cta::before{
       content:""; position:fixed; left:0; right:0; bottom:0; height:104px; z-index:-1;
       background:linear-gradient(to top, var(--bg,#0a0a0b) 34%, rgba(10,10,11,0) 100%);
@@ -740,10 +720,8 @@
     .mob-cta.hide::before{opacity:0}
   }
 
-  /* ---- ZOOM HINT: show for keyboard focus too, not just hover ---- */
   .eqp-stage:focus-visible .eqp-zoom-hint{opacity:1}
 
-  /* ---- REDUCED MOTION ---- */
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto !important}
     body::before{animation:none !important}
@@ -867,16 +845,13 @@
   (function () {
     'use strict';
     var WEB3FORMS_ACCESS_KEY = '0ea77eca-edf8-4b40-912e-c36a3dac6de7';
-    /* Web3Forms documents browser-side JSON as its supported integration path. */
+    
     var WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
     var EMAIL = 'oteo@djoteo.com';
 
     try {
       var form = document.getElementById('oteo-booking-form');
 
-      // An event date in the past is never a real booking — it is a typo or a
-      // mis-set year, and it arrives with no signal that anything is wrong.
-      // Set the floor at today, at runtime, so it can never go stale.
       var dateField = form && form.querySelector('input[name="event_date"]');
       if (dateField && !dateField.min) {
         var now = new Date();
@@ -926,9 +901,7 @@
         var href = 'mailto:' + EMAIL +
           '?subject=' + encodeURIComponent(subject) +
           '&body=' + encodeURIComponent(lines.join('\r\n'));
-        /* Honest fallback: a mailto navigation can fail silently (no mail app,
-           kiosk/managed browser). Never claim the inquiry was sent — keep a
-           visible manual path on the page. Static strings only, no user input. */
+        
         if (statusEl) {
           statusEl.textContent = '';
           statusEl.style.color = '#ff9f9f';
@@ -1012,20 +985,12 @@
           });
       });
 
-      /* Mobile sticky CTA: hide while ANY other "Request a date" button is on
-         screen. It used to watch only the booking form, so at the top of the
-         page the sticky pill sat 160px under the hero's identical gold CTA —
-         two of the same button in one phone viewport. Watching both means the
-         pill only appears once the real CTA has scrolled away, which is the
-         whole point of a sticky CTA. The footer counts too: it carries its own
-         Book Oteo button and the pill used to cover its last link. */
       var mobCta = document.getElementById('mob-cta');
       var ctaRivals = [document.getElementById('book'), document.querySelector('.hero-cta')]
         .concat(Array.prototype.slice.call(document.querySelectorAll('footer')))
         .filter(Boolean);
       if (mobCta && ctaRivals.length && 'IntersectionObserver' in window) {
-        /* threshold 0: the booking section is taller than a phone viewport, so
-           a fractional threshold could never be reached. */
+        
         var onScreen = new Set();
         var ctaObserver = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
@@ -1037,8 +1002,6 @@
         ctaRivals.forEach(function (el) { ctaObserver.observe(el); });
       }
 
-      /* Rental CTAs: pre-select "Equipment rental"; per-item links also note
-         the exact unit (from the card's own data-name) in the message. */
       Array.prototype.forEach.call(document.querySelectorAll('.eqp-req, .js-rental-cta'), function (linkEl) {
         linkEl.addEventListener('click', function () {
           var venueSel = form.querySelector('[name="venue_type"]');
@@ -1061,7 +1024,6 @@
         });
       });
 
-      /* Availability quick-check: date -> prefill form + jump to it */
       var availGo = document.getElementById('avail-go');
       var availDate = document.getElementById('avail-date');
       if (availGo && availDate) {
@@ -1074,7 +1036,7 @@
           var ta = form.querySelector('[name="message"]');
           if (ta) {
             var line = 'Requesting equipment availability' + (d ? ' for ' + d : '') + '.';
-            /* replace any prior availability line so an updated date can't contradict it */
+            
             var kept = ta.value.split('\n').filter(function (l) { return l.indexOf('Requesting equipment availability') === -1; });
             kept.push(line);
             ta.value = kept.join('\n').replace(/^\n+/, '');
@@ -1097,7 +1059,7 @@
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var cards = [].slice.call(document.querySelectorAll('.eqp-card, .pkg-card'));
       if (!cards.length) return;
-      if (reduce || !('IntersectionObserver' in window)) return; /* leave visible */
+      if (reduce || !('IntersectionObserver' in window)) return; 
       var sec = document.querySelector('section[aria-label="Equipment rentals"]');
       if (sec) sec.classList.add('reveal-ready');
       cards.forEach(function (c) { c.classList.add('reveal-ready'); });
@@ -1113,11 +1075,10 @@
         });
       }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
       cards.forEach(function (c) { io.observe(c); });
-      /* HARD failsafe: nothing stays hidden past 1.6s — the observer can miss
-         cards on print, restored tabs, or odd viewports. Content is never lost. */
+      
       setTimeout(function () { cards.forEach(function (c) { c.classList.add('revealed'); }); }, 1600);
     } catch (e) {
-      /* on any failure, force-show so nothing is ever hidden */
+      
       [].slice.call(document.querySelectorAll('.eqp-card, .pkg-card')).forEach(function (c) { c.classList.add('revealed'); });
     }
   })();

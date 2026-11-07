@@ -1,168 +1,4 @@
 (function() {
-  var M = {"Available for projects": "Available for bookings", "Start a project": "Book Oteo", "Web Design": "Residency", "UX Audit": "Residency", "Mobile App": "Club Night", "Bima - Investment App": "Debonair — Supperclub", "Interaction Design": "Label", "Web App Design": "Custom Mixes", "AI product experiences": "Genre-blend on request", "Project Based": "Per Booking", "UI design direction": "Your genre direction", "Final Figma file": "High-quality audio file", "3 Months": "Weekly", "Increase in Traffic": "Fuller Floors", "User Engagement": "Repeat Nights", "Performance Score": "Peak Energy", "Conversion Rate": "Regulars", "It starts much earlier.": "It starts much earlier — in the studio.", "$2000": "Custom", "/month": "· per event", "whatsapp/telegram": "Phone"}, T = { "Collab": "Book the Night", "The page you are looking for does not exist or may have been moved.": "That page isn't here. The music still is — head back and find a night.", "Back to home": "Back to djoteo.com", "Let's Collab": "Let's Book the Night", "Read My Story": "Read the Full Story", "Live Project": "Book Oteo", "Buy Template": "Book Oteo", "More Templates": "More nights", "404": "YouTube", "LinkedIn": "SoundCloud", "X/Twitter": "Spotify", "Hundreds of nights behind the decks": "Nights behind the decks", "Understanding the Product Goals": "Understanding the Night", "Designing the Best Late Nights": "Building the Set", "Refine and Polish Everything Together": "Locking In the Details", "Senior Product Designer Turned Freelancer": "Resident DJ · Producer · Label Founder", "Blog": "Mixes", "Lesmana": "Oteo", "LESMANA": "Oteo", "Lesmana.": "Oteo", "Product &": "DJ &", "UX Designer": "Producer", "$50K+": "5+", "Notes": "Nights", "& Insights": "& Sets", "Screens": "Booth", "Insight": "Set", "Mandala": "Helena", "Bima": "Debonair", "Pandawa": "The H", "Blockhaus": "Fish Out Of Water Records", "Sarah": "The H Orlando", "Michael": "AVA Mediterranean", "Adriano": "La Herradura", "Product Manager at Batavia": "Venue post · 2022", "Founder of Sanjaya": "Venue post · 2024", "CEO of Kresna": "Venue post · 2022", "Flexible": "Clear", "design": "options", "support": "", "stage": "night", "Digital": "Late", "Experience": "Nights", "Handoff": "Close", "SaaS": "Any genre or vibe", "Dashboard & analytics UI": "Clean, mixed & mastered", "Web3 & crypto interfaces": "Delivered ready to play", "Internal tools & admin panels": "High-quality audio file", "UX Audit": "Production & Label", "Most marketing agency websites rely heavily on polished visuals and big claims, but often miss the user journey. Visitors arrive with different levels of intent. Some are exploring. Some are comparing agencies. Some are ready to talk.": "The answer isn’t more polish — it’s reading the room and adjusting in real time, set after set.", "Turning a premium lifestyle brand into an online store that still converts.": "Turning studio productions into records that hold up on a real club system.", "Building a modular data system that turns complexity into clear, actionable insight.": "Reading the crowd in real time and building the set as the night moves, not from a fixed script.", "The dashboard empowered The H’s team to make faster, smarter decisions, reducing campaign review time and improving overall campaign performance significantly.": "A residency the room keeps asking back for — regulars who show up specifically for the late set.", "We focused on a design-first strategy, crafting a visually striking layout with smooth animations and intuitive navigation. The site was built to be fully responsive and optimized for fast load times across all devices.": "Every set is paced to the room — clean transitions, a build that never stalls, and a peak timed to when the floor is ready for it.", "Debonair’s app launched to strong market reception, earning high user satisfaction scores and attracting significant new investor sign-ups within the first quarter after launch.": "Wednesday nights at Debonair now draw a crowd that plans its week around it — dinner reservations that turn into a full dance floor.", "Fish Out saw a significant uplift in both average order value and repeat purchases, with the brand gaining recognition for its distinctive and memorable online presence.": "Fish Out Of Water Records keeps building a catalog DJs actually play out — tracks made for the booth, not just the studio.", "An online store that boosted both sales and brand recognition.": "A label catalog that keeps landing in other DJs' sets.", "Hi, I’m Lesmana, a freelance product designer focused on mobile apps, web apps, and digital experiences for founders, startups, and agencies.": "Hi, I’m Oteo — a Brazilian-American House and Tech House DJ and producer based in Orlando, bilingual in English and Portuguese, playing clubs, weddings, corporate and private events.", "Happy": "Full", "client,": "floor,", "successful": "real", "business.": "feedback.", "2 slots": "Inquire" }, H = { "https://djoteo.com/booking#book": "/contact", "https://djoteo.com/contact?utm_medium=buy-button": "/contact", "https://djoteo.com/works": "/works/", "/bima---investment-app": "/rooms/debonair-supperclub/", "/bima---investment-app/": "/rooms/debonair-supperclub/", "/blockhaus---e-commerce-experience": "/foowr", "/blockhaus---e-commerce-experience/": "/foowr", "/mandala---campaign-website-copy": "/rooms/helena-modern-riviera/", "/mandala---campaign-website-copy/": "/rooms/helena-modern-riviera/", "/pandawa---campaign-dashboard": "/rooms/the-h/", "/pandawa---campaign-dashboard/": "/rooms/the-h/", "/design-details-that-quietly-improve-conversion": "/rooms/helena-modern-riviera/", "/design-details-that-quietly-improve-conversion/": "/rooms/helena-modern-riviera/", "/how-i-turn-rough-ideas-into-clean-interfaces": "/rooms/debonair-supperclub/", "/how-i-turn-rough-ideas-into-clean-interfaces/": "/rooms/debonair-supperclub/", "/what-makes-a-website-feel-premium": "/rooms/the-h/", "/what-makes-a-website-feel-premium/": "/rooms/the-h/", "/why-good-ux-starts-before-the-first-screen": "/foowr", "/why-good-ux-starts-before-the-first-screen/": "/foowr", "/mixes": "/mixes/", "/mixes/": "/mixes/", "/mixes/": "/mixes/", "/mixes": "/mixes/", "https://bima.framer.media": "https://djoteo.com/contact", "https://blockhaus.framer.website": "https://djoteo.com/contact", "https://batavia.framer.website": "https://djoteo.com/contact", "https://pandawa.framer.ai": "https://djoteo.com/contact", "https://veloxthemes.com": "https://djoteo.com/", "https://veloxthemes.com/framer-templates": "https://djoteo.com/works", "https://veloxthemes.com/framer-templates?ref=preview": "https://djoteo.com/works", "https://www.framer.com": "https://djoteo.com/", "./works/bima---investment-app": "/rooms/debonair-supperclub/", "./works/bima---investment-app/": "/rooms/debonair-supperclub/", "/works/bima---investment-app": "/rooms/debonair-supperclub/", "/works/bima---investment-app/": "/rooms/debonair-supperclub/", "../works/bima---investment-app": "/rooms/debonair-supperclub/", "../works/bima---investment-app/": "/rooms/debonair-supperclub/", "./works/blockhaus---e-commerce-experience": "/foowr", "./works/blockhaus---e-commerce-experience/": "/foowr", "/works/blockhaus---e-commerce-experience": "/foowr", "/works/blockhaus---e-commerce-experience/": "/foowr", "../works/blockhaus---e-commerce-experience": "/foowr", "../works/blockhaus---e-commerce-experience/": "/foowr", "./works/mandala---campaign-website-copy": "/rooms/helena-modern-riviera/", "./works/mandala---campaign-website-copy/": "/rooms/helena-modern-riviera/", "/works/mandala---campaign-website-copy": "/rooms/helena-modern-riviera/", "/works/mandala---campaign-website-copy/": "/rooms/helena-modern-riviera/", "../works/mandala---campaign-website-copy": "/rooms/helena-modern-riviera/", "../works/mandala---campaign-website-copy/": "/rooms/helena-modern-riviera/", "./works/pandawa---campaign-dashboard": "/rooms/the-h/", "./works/pandawa---campaign-dashboard/": "/rooms/the-h/", "/works/pandawa---campaign-dashboard": "/rooms/the-h/", "/works/pandawa---campaign-dashboard/": "/rooms/the-h/", "../works/pandawa---campaign-dashboard": "/rooms/the-h/", "../works/pandawa---campaign-dashboard/": "/rooms/the-h/", "./blog/what-makes-a-website-feel-premium": "/rooms/the-h/", "./blog/what-makes-a-website-feel-premium/": "/rooms/the-h/", "/blog/what-makes-a-website-feel-premium": "/rooms/the-h/", "/blog/what-makes-a-website-feel-premium/": "/rooms/the-h/", "../blog/what-makes-a-website-feel-premium": "/rooms/the-h/", "../blog/what-makes-a-website-feel-premium/": "/rooms/the-h/", "./blog/design-details-that-quietly-improve-conversion": "/rooms/helena-modern-riviera/", "./blog/design-details-that-quietly-improve-conversion/": "/rooms/helena-modern-riviera/", "/blog/design-details-that-quietly-improve-conversion": "/rooms/helena-modern-riviera/", "/blog/design-details-that-quietly-improve-conversion/": "/rooms/helena-modern-riviera/", "../blog/design-details-that-quietly-improve-conversion": "/rooms/helena-modern-riviera/", "../blog/design-details-that-quietly-improve-conversion/": "/rooms/helena-modern-riviera/", "./blog/how-i-turn-rough-ideas-into-clean-interfaces": "/rooms/debonair-supperclub/", "./blog/how-i-turn-rough-ideas-into-clean-interfaces/": "/rooms/debonair-supperclub/", "/blog/how-i-turn-rough-ideas-into-clean-interfaces": "/rooms/debonair-supperclub/", "/blog/how-i-turn-rough-ideas-into-clean-interfaces/": "/rooms/debonair-supperclub/", "../blog/how-i-turn-rough-ideas-into-clean-interfaces": "/rooms/debonair-supperclub/", "../blog/how-i-turn-rough-ideas-into-clean-interfaces/": "/rooms/debonair-supperclub/", "./blog/why-good-ux-starts-before-the-first-screen": "/foowr", "./blog/why-good-ux-starts-before-the-first-screen/": "/foowr", "/blog/why-good-ux-starts-before-the-first-screen": "/foowr", "/blog/why-good-ux-starts-before-the-first-screen/": "/foowr", "../blog/why-good-ux-starts-before-the-first-screen": "/foowr", "../blog/why-good-ux-starts-before-the-first-screen/": "/foowr", "/works/bima---investment-app": "/rooms/debonair-supperclub/", "/works/blockhaus---e-commerce-experience": "/foowr", "/works/mandala---campaign-website-copy": "/rooms/helena-modern-riviera/", "/works/pandawa---campaign-dashboard": "/rooms/the-h/", "/blog/what-makes-a-website-feel-premium": "/rooms/the-h/", "/blog/design-details-that-quietly-improve-conversion": "/rooms/helena-modern-riviera/", "/blog/how-i-turn-rough-ideas-into-clean-interfaces": "/rooms/debonair-supperclub/", "/blog/why-good-ux-starts-before-the-first-screen": "/foowr", "mailto:hello@lesmana.com": "mailto:oteo@djoteo.com", "https://instagram.com": "https://instagram.com/djoteo", "https://Linkedin.com": "https://soundcloud.com/oteo-397563902", "https://X.com": "https://open.spotify.com/artist/0VWg7x5ZtdISD4mnvi99RX", "/404": "https://www.youtube.com/@DjOteo", "./404": "https://www.youtube.com/@DjOteo" }, TI = { "Bima - Investment App - Oteo": "Debonair — Supperclub | Oteo", "Blockhaus - E-Commerce Experience - Oteo": "Fish Out Of Water Records | Oteo", "Mandala - Campaign Website - Oteo": "Helena — Modern Riviera | Oteo", "Pandawa - Campaign Dashboard - Oteo": "The H — Late Sets | Oteo", "What Makes a Website Feel Premium? - Oteo": "The H — Late Sets After Eleven | Oteo", "Design Details That Quietly Improve Conversion - Oteo": "Helena — Modern Riviera Nights | Oteo", "How I Turn Rough Ideas Into Clean Interfaces - Oteo": "Inside the Debonair Supper Club Nights | Oteo", "Why Good UX Starts Before the First Screen - Oteo": "Fish Out Of Water Records — The Sound | Oteo", "Lesmana - Product Designer Portfolio": "Oteo | Open-Format DJ and House Music Producer, Orlando", "Works | Lesmana": "Works | Oteo", "About | Lesmana": "About | Oteo", "Contact | Lesmana": "Contact | Oteo", "Blog | Lesmana": "Mixes | Oteo", "Mandala - Campaign Website - Lesmana": "Helena — Modern Riviera - Oteo", "Bima - Investment App - Lesmana": "Debonair — Supperclub - Oteo", "Pandawa - Campaign Dashboard - Lesmana": "The H — Late Sets - Oteo", "Blockhaus - E-Commerce Experience - Lesmana": "Fish Out Of Water Records - Oteo", "Design Details That Quietly Improve Conversion - Lesmana": "Helena — Modern Riviera Nights | Oteo", "How I Turn Rough Ideas Into Clean Interfaces - Lesmana": "Inside the Debonair Supper Club Nights | Oteo", "What Makes a Website Feel Premium? - Lesmana": "The H — Late Sets After Eleven | Oteo", "Why Good UX Starts Before the First Screen - Lesmana": "Fish Out Of Water Records — The Sound | Oteo" };
-  var IMG = { "tE6wkhPQKx1QZfIlYSJh9oViTRE": "Fjrj7ztMXTBN6agc8Re8zOuM2kQ", "gljczsiEWcEBG1hiLhr7284rEM": "RtrE9xi8MOGeQuTW7d0QXKE4SfY", "DNgUfyUyYltvZ4qxMqpIq59v0i8": "5NFs5Md8da69gZ9w7kgO7wQGJB8", "PFE41MOy4bs555YU1vVTqZORgI": "dB5TqG4urmMaTOhTQ0G2Ympe5mk", "M1mGo6PlosM6Fz3LvkEcIG5X0Q": "Gq9bT1a907mifI3zTRWCb8Y9Y", "OYrkoPb3wxVoE1SuRZEiNPBKvs": "iZ6WkfUqdnkGvq8qSD4YGEo8QCw", "kKXo7032TuuTfWAZHpWnmSwSDRs": "wVaKKOUoB3sZWCeRVlFfJjuqstM", "fSPLvenhoLcOs8pXI4VzDpzgNps": "9G1Fodo1L2ywQaUsckr72LFA4", "qEDmpCTYiSmG8bxC1oBHmjz7Br8": "Gq9bT1a907mifI3zTRWCb8Y9Y", "x67bPmPZuO65L3ZEptiTW5TlDA": "dB5TqG4urmMaTOhTQ0G2Ympe5mk", "fnH8HyonoXuMa4vDC39wfxYn2pc": "iZ6WkfUqdnkGvq8qSD4YGEo8QCw", "bZBQjKorjYcahYG1F762fVKUko": "RtrE9xi8MOGeQuTW7d0QXKE4SfY" };
-  T["Design that drives real impact"] = "Real sets, real rooms, real energy";
-  T["Idea Archive"] = "Night Archive";
-  T["Design Exploration"] = "From the Booth";
-  T["with Clarity and Impact"] = "the Night Clean";
-  var MK = Object.keys(M).sort(function(a, b) {
-    return b.length - a.length;
-  });
-  function swapText() {
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n;
-    while (n = w.nextNode()) {
-      var p = n.parentNode && n.parentNode.nodeName;
-      if (p === "SCRIPT" || p === "STYLE") continue;
-      var t = n.nodeValue;
-      if (!t) continue;
-      var k = t.trim();
-      if (T.hasOwnProperty(k)) {
-        n.nodeValue = t.replace(k, T[k]);
-        continue;
-      }
-      var c = t;
-      for (var i = 0; i < MK.length; i++) {
-        if (c.indexOf(MK[i]) !== -1) c = c.split(MK[i]).join(M[MK[i]]);
-      }
-      if (c !== t) n.nodeValue = c;
-    }
-  }
-  function swapSplitHeadings() {
-    var els = document.querySelectorAll("h1,h2,h3,h4,h5,p,figcaption,li");
-    var fixed = 0;
-    for (var e = 0; e < els.length; e++) {
-      var el = els[e];
-      if (el.children.length < 2) continue;
-      if (el.querySelector("br")) continue;
-      var norm = (el.textContent || "").replace(/\s+/g, " ").trim();
-      if (!norm) continue;
-      if (norm.length > 140) continue;
-      var rep = norm;
-      if (T.hasOwnProperty(norm)) rep = T[norm];
-      else {
-        for (var tk in T) {
-          if (T.hasOwnProperty(tk) && rep.indexOf(tk) !== -1) rep = rep.split(tk).join(T[tk]);
-        }
-        for (var mi = 0; mi < MK.length; mi++) {
-          if (rep.indexOf(MK[mi]) !== -1) rep = rep.split(MK[mi]).join(M[MK[mi]]);
-        }
-      }
-      if (rep === norm) continue;
-      var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), n, nodes = [];
-      while (n = w.nextNode()) {
-        if ((n.nodeValue || "").trim()) nodes.push(n);
-      }
-      if (nodes.length < 2) continue;
-      var words = rep.split(" ");
-      for (var i = 0; i < nodes.length; i++) {
-        if (i < words.length) {
-          nodes[i].nodeValue = i === nodes.length - 1 && words.length > nodes.length ? words.slice(i).join(" ") : words[i];
-        } else nodes[i].nodeValue = "";
-      }
-      fixed++;
-    }
-    return fixed;
-  }
-  function swapAttrs() {
-    document.querySelectorAll("a[href]").forEach(function(a) {
-      var h = a.getAttribute("href");
-      if (H[h]) {
-        a.setAttribute("href", H[h]);
-        h = H[h];
-      }
-      if (/^https?:\/\/(www\.)?djoteo\.com\/?$/.test(h)) {
-        a.setAttribute("href", "/");
-        h = "/";
-      }
-      if (/^(\/|https?:\/\/djoteo\.com)/.test(h) && a.getAttribute("target") === "_blank") {
-        a.removeAttribute("target");
-        a.removeAttribute("rel");
-      }
-    });
-    document.querySelectorAll('[data-framer-name="Replace this logo"] p,[data-framer-name="Logo"] p').forEach(function(p) {
-      if (/lesmana/i.test(p.textContent)) p.textContent = "Oteo";
-    });
-    if (TI[document.title]) document.title = TI[document.title];
-  }
-  function fixCounter() {
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n, labels = [], zeros = [];
-    while (n = w.nextNode()) {
-      var v = (n.nodeValue || "").trim();
-      if (v.indexOf("played across Orlando") !== -1) labels.push(n);
-      else if (v === "0") zeros.push(n);
-    }
-    labels.forEach(function(l) {
-      zeros.forEach(function(z) {
-        var a = z.parentNode, hops = 0;
-        while (a && hops < 14) {
-          if (a.contains(l) && (a.textContent || "").length < 3e3) {
-            return;
-          }
-          a = a.parentNode;
-          hops++;
-        }
-      });
-    });
-  }
-  function linkCards() {
-    var L = { "The H Orlando": "https://thehorlando.com", "AVA Mediterranean": "https://www.instagram.com/avawinterpark/", "La Herradura": "https://www.instagram.com/laherraduramx/" };
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n;
-    while (n = w.nextNode()) {
-      var t = (n.nodeValue || "").trim();
-      if (L[t]) {
-        var el = n.parentNode;
-        if (el && !el.__oteoLink) {
-          el.__oteoLink = 1;
-          el.style.cursor = "pointer";
-          el.style.textDecoration = "underline";
-          el.style.textUnderlineOffset = "3px";
-          (function(u) {
-            el.addEventListener("click", function(e) {
-              e.stopPropagation();
-              window.open(u, "_blank", "noopener");
-            });
-          })(L[t]);
-        }
-      }
-    }
-  }
-  function fixWorksH1() {
-    var TBL = { "mandala": "Helena — Modern Riviera", "bima": "Debonair — Supperclub", "pandawa": "The H — Late Sets", "blockhaus": "Fish Out Of Water Records" };
-    var slug = null;
-    for (var k in TBL) {
-      if (location.pathname.indexOf("/works/" + k) === 0 || location.pathname.indexOf("/works/" + k) > 0) {
-        slug = k;
-        break;
-      }
-    }
-    if (!slug) return;
-    var h1 = document.querySelector("h1");
-    if (!h1) return;
-    var words = TBL[slug].split(" ");
-    var w = document.createTreeWalker(h1, NodeFilter.SHOW_TEXT, null), n, nodes = [];
-    while (n = w.nextNode()) {
-      if (n.nodeValue && n.nodeValue.trim()) nodes.push(n);
-    }
-    if (!nodes.length) return;
-    for (var i = 0; i < nodes.length; i++) {
-      if (i < words.length) {
-        var val = i === nodes.length - 1 && words.length > nodes.length ? words.slice(i).join(" ") : words[i];
-        if (i < nodes.length - 1 && i < words.length - 1) val += " ";
-        nodes[i].nodeValue = val;
-      } else nodes[i].nodeValue = "";
-    }
-  }
-  function swapImgs() {
-    document.querySelectorAll("img").forEach(function(im) {
-      for (var k in IMG) {
-        var s = im.getAttribute("src") || "", ss = im.getAttribute("srcset") || "";
-        if (s.indexOf(k) === -1 && ss.indexOf(k) === -1) continue;
-        if (s) im.setAttribute("src", s.split(k).join(IMG[k]));
-        if (ss) im.setAttribute("srcset", ss.split(k).join(IMG[k]));
-        break;
-      }
-    });
-  }
   var busy = false;
   var NAV = [
     { href: "/booking", label: "Booking" },
@@ -345,17 +181,6 @@
     if (ok) return;
     for (var m = 0; m < want.length; m++) row.appendChild(want[m]);
   }
-  var W = { "Design": "From the", "Exploration": "Floor", "Idea": "Night", "The Mind": "The Decks" };
-  function fixWords() {
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false), n, jobs = [];
-    while (n = w.nextNode()) {
-      if (Object.prototype.hasOwnProperty.call(W, n.nodeValue.trim())) jobs.push(n);
-    }
-    for (var i = 0; i < jobs.length; i++) {
-      var t = jobs[i].nodeValue, k = t.trim();
-      jobs[i].nodeValue = t.replace(k, W[k]);
-    }
-  }
   function fixDupIds() {
     var bad = document.querySelectorAll('[id^="undefined-"]');
     for (var i = 0; i < bad.length; i++) bad[i].removeAttribute("id");
@@ -370,25 +195,18 @@
       } else seen[id] = 1;
     }
   }
-  function absHrefs() {
-    var as = document.querySelectorAll('a[href^="./"],a[href^="../"]');
+  function fixLinks() {
+    var as = document.querySelectorAll("a[href]");
     for (var i = 0; i < as.length; i++) {
-      var h = as[i].getAttribute("href");
-      if (!h) continue;
-      var q = "", hash = "";
-      var qi = h.search(/[?#]/);
-      if (qi > -1) {
-        q = h.slice(qi);
-        h = h.slice(0, qi);
+      var a = as[i], h = a.getAttribute("href") || "";
+      if (/^https?:\/\/(www\.)?djoteo\.com\/?$/.test(h)) {
+        a.setAttribute("href", "/");
+        h = "/";
       }
-      var pth = h.replace(/^(?:\.\.\/)+/, "").replace(/^\.\//, "");
-      if (!pth) {
-        as[i].setAttribute("href", "/" + q);
-        continue;
+      if (/^(\/|https?:\/\/djoteo\.com)/.test(h) && a.getAttribute("target") === "_blank") {
+        a.removeAttribute("target");
+        a.removeAttribute("rel");
       }
-      var abs = "/" + pth;
-      if (/^\/(works|blog|mixes)\/[^\/]+$/.test(abs) && !/\.[a-z]+$/.test(abs)) abs += "/";
-      as[i].setAttribute("href", abs + q);
     }
   }
   function fixTouch() {
@@ -409,25 +227,6 @@
       t.textContent = "Oteo";
       t.style.cssText = "position:absolute;inset:0;display:flex;align-items:center;color:#f1ede4;";
       s.appendChild(t);
-    }
-  }
-  function fixReveals() {
-    return;
-    var vh = window.innerHeight;
-    var els = document.querySelectorAll('[style*="opacity"]');
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i], st = el.style;
-      var o = parseFloat(st.opacity);
-      if (isNaN(o) || o >= 1) continue;
-      var appearing = st.willChange && st.willChange.indexOf("transform") > -1;
-      if (!appearing && o !== 0) continue;
-      if (o > 0) continue;
-      if (!appearing && !(el.textContent || "").trim() && !el.querySelector("img,svg,video,picture")) continue;
-      var r = el.getBoundingClientRect();
-      if (r.top < vh * 1.05) {
-        st.opacity = "1";
-        if (st.willChange) st.transform = "none";
-      }
     }
   }
   function stripHiddenSlider() {
@@ -475,7 +274,7 @@
       kicker: "02 / Gear Rental",
       title: "Rent the gear",
       copy: "Pioneer DJ and AlphaTheta decks, mixers, speakers and mics, delivered, set up and collected.",
-      note: "21 pieces · $150 minimum · Central Florida",
+      note: "21 pieces · $150 minimum · Central Florida",
       cta: "See the gear"
     }
   ];
@@ -588,36 +387,6 @@
     a.textContent = "Skip to content";
     document.body.insertBefore(a, document.body.firstChild);
   }
-  var BORROWED = [/1HzcHe0WFm4koBalCEOkVh/, /UCT0DEDLRQmlcBE93gLzWJ5A/, /^https?:\/\/X\.com/i, /\/404$/];
-  function hideBorrowedSocials() {
-    var as = document.querySelectorAll("a[href]");
-    for (var i = 0; i < as.length; i++) {
-      var a = as[i], h = a.getAttribute("href") || "";
-      var bad = false;
-      for (var j = 0; j < BORROWED.length; j++) {
-        if (BORROWED[j].test(h)) {
-          bad = true;
-          break;
-        }
-      }
-      if (!bad) continue;
-      if (!/spotify|youtube|X\.com|\/404/i.test(h)) continue;
-      if (a.getAttribute("data-oteo-hidden")) continue;
-      a.setAttribute("data-oteo-hidden", "borrowed-social");
-      a.setAttribute("aria-hidden", "true");
-      a.setAttribute("tabindex", "-1");
-      a.style.display = "none";
-    }
-  }
-  function hideUnsourcedStats() {
-    var els = document.querySelectorAll('[data-framer-name="Results numbers"]');
-    for (var i = 0; i < els.length; i++) {
-      if (els[i].getAttribute("data-oteo-hidden")) continue;
-      els[i].setAttribute("data-oteo-hidden", "unsourced-stats");
-      els[i].setAttribute("aria-hidden", "true");
-      els[i].style.display = "none";
-    }
-  }
   var SET_MEDIA = { "casa-mezcal-oct-10-2026": { yt: "QH1LPQfxR3g", t: "Four Hours at Casa Mezcal" }, "casa-mezcal-oct-3-2026": { yt: "8IPALiY9RoY", t: "Five Hours at Casa Mezcal" }, "opening-for-mochakk-sept-12-2026": { yt: "f1KYvO-kKvo", t: "Opening for Mochakk at Wall Street Plaza" }, "ava-mm-lounge-july-6-2024": { sc: "https://soundcloud.com/oteo-397563902/ava-mm-070624", t: "Saturday Night at the AVA MM Lounge" } };
   function insertSetPlayer() {
     var m = location.pathname.match(/^\/(?:blog|mixes)\/([a-z0-9-]+)\/?$/);
@@ -695,28 +464,18 @@
     if (busy) return;
     busy = true;
     try {
-      swapText();
-      swapSplitHeadings();
-      absHrefs();
-      swapAttrs();
-      swapImgs();
-      fixCounter();
-      fixWorksH1();
-      fixWords();
+      fixLinks();
       fixDupIds();
       unifyNav();
       roomFilter();
       fixTouch();
       fixBrand();
-      fixReveals();
       stripHiddenSlider();
       insertServices();
       insertTestimonialProof();
       phoneHeaderCta();
       fixHeadingSemantics();
       addSkipLink();
-      hideBorrowedSocials();
-      hideUnsourcedStats();
       insertSetPlayer();
     } finally {
       busy = false;
@@ -730,28 +489,11 @@
     reveal();
     headerScrim();
     window.addEventListener("scroll", headerScrim, { passive: true });
-    var rv = 0;
-    window.addEventListener("scroll", function() {
-      var n = Date.now();
-      if (n - rv < 160) return;
-      rv = n;
-      fixReveals();
-    }, { passive: true });
-    window.addEventListener("scroll", function() {
-      clearTimeout(window.__rvend);
-      window.__rvend = setTimeout(fixReveals, 220);
-    }, { passive: true });
     var mo = new MutationObserver(function() {
       clearTimeout(window.__od);
       window.__od = setTimeout(pass, 80);
     });
     mo.observe(document.body, { childList: true, subtree: true, characterData: true });
-    var te = document.querySelector("title");
-    if (te) {
-      new MutationObserver(function() {
-        if (TI[document.title]) document.title = TI[document.title];
-      }).observe(te, { childList: true, characterData: true, subtree: true });
-    }
     [400, 1200, 2500, 5e3].forEach(function(d) {
       setTimeout(pass, d);
     });

@@ -32,12 +32,7 @@
 
   <link rel="stylesheet" href="./assets/site.css?v=2611060100">
   <style>
-    /* ---- Contact page polish (page-scoped overrides) ---- */
-    /* Let the portrait read — it was double-darkened into a black smudge */
-    /* His portrait lives in a frame this page controls (.contact-portrait
-       below), never in the hero background. A background is sized by the
-       viewport, so at some width it always clipped his head or his chin; a
-       fixed 4/5 panel against a 2:3 source crops almost nothing. */
+
     .contact-portrait{
       margin:clamp(26px,3vw,38px) 0 0; padding:0;
       width:min(300px,62%); aspect-ratio:4/5; overflow:hidden;
@@ -54,14 +49,7 @@
     .contact-hero-bg{
       opacity:.9;
       filter:grayscale(.3) sepia(.06) contrast(1.06);
-      /* No face in this hero, by design. The headline owns the left and the
-         form owns the right, so a portrait had nowhere to go: it landed
-         directly behind "Let's lock a date", and the frame clipped his head at
-         the top or his chin at the bottom depending on the width. Padding the
-         source bought headroom but could not stop the face colliding with the
-         type. A hands-on-the-decks frame carries the same atmosphere with no
-         face to cut — his portrait belongs where it has room, which is the
-         about and services heroes. */
+      
       background-position:56% 52%;
     }
     .contact-hero-bg::after{
@@ -71,19 +59,19 @@
     }
     .contact-hero-title{ text-shadow:0 4px 60px rgba(0,0,0,.8), 0 1px 18px rgba(0,0,0,.6); }
     .contact-hero-copy .section-deck{ text-shadow:0 1px 14px rgba(0,0,0,.7); }
-    /* Facts: clickable email, consistent gold accents */
+    
     .contact-facts a{ color:inherit; }
     .contact-facts a:hover strong{ text-decoration:underline; text-underline-offset:3px; }
-    /* Form: part of the editorial scene, not a pasted white template card. */
+    
     .contact-form{ box-shadow:0 50px 110px -30px rgba(0,0,0,.85), 0 0 0 1px rgba(200,169,106,.16); }
-    /* FAQ: cap line measure so the ruled list keeps an even editorial column */
+    
     .faq-list{ max-width:980px; }
-    /* Closer actions: even rhythm — button, then quiet links */
+    
     .contact-actions{ gap:14px 26px; }
     @media (max-width:600px){
       .contact-actions{ flex-direction:column; gap:18px; }
     }
-    /* Mobile hero: keep the portrait present instead of a black void */
+    
     @media (max-width:860px){
       .contact-hero-bg{ opacity:.55; background-position:24% 12%; }
       .contact-hero-bg::after{

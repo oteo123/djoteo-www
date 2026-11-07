@@ -255,7 +255,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,[data-fra
 [data-framer-generated] *{pointer-events:unset}
 nav[data-framer-name="Desktop"],nav[data-framer-name="Phone"],nav[data-framer-name="Phone Open"]{mix-blend-mode:normal!important}
 [data-framer-name="Testimonials"] [data-framer-name="Arrow"]{display:none!important}
-a[href*="veloxthemes"],a[href*="buy.polar.sh"],.framer-vqFJh,[data-framer-name="Made By"]{display:none!important}
+
 
 .oteo-chrome { font-size: 12px; }                 
 [data-oteo-chrome-header] .framer-1oh62vv, [data-oteo-chrome-header] .framer-8qdu1w, [data-oteo-chrome-menu] .framer-1oh62vv, [data-oteo-chrome-menu] .framer-8qdu1w, .oteo-chrome [data-framer-name="Made By"], .oteo-chrome a[href*="veloxthemes"], .oteo-chrome .framer-vqFJh { display: none !important; }
