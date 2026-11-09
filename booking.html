@@ -630,7 +630,7 @@
     display:block; width:100%; margin-top:6px; padding:12px 13px;
     background:rgba(0,0,0,0.4); border:1px solid var(--line); border-radius:9px;
     color:var(--text); font-family:var(--sans); font-size:16px; box-sizing:border-box;
-    transition:border-color .2s ease;
+    transition:border-color .2s ease; color-scheme:dark;
   }
   #oteo-booking-form input:focus,
   #oteo-booking-form select:focus,
@@ -691,7 +691,7 @@
   }
   .card .card-cta:hover{text-decoration:underline}
 
-  .trust-strip{font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--muted); margin-bottom:16px; line-height:1.7}
+  .book-panel .intro p.trust-strip{margin-top:12px}
   .trust-strip a{color:var(--gold); text-decoration:none}
   .trust-strip a:hover{text-decoration:underline}
   #oteo-booking-form .req{color:var(--gold)}
@@ -705,19 +705,25 @@
   @media (max-width:900px){
     .mob-cta{
       display:block; position:fixed; left:16px; right:16px; bottom:16px; z-index:60;
-      background:var(--gold); color:#0c0c0c; text-align:center; padding:15px 20px; border-radius:999px;
+      color:#0c0c0c; text-align:center; padding:15px 20px; border-radius:999px;
       font-family:var(--mono); font-size:12px; letter-spacing:0.16em; text-transform:uppercase;
-      text-decoration:none; box-shadow:0 8px 30px rgba(0,0,0,0.5);
+      text-decoration:none;
       transition:opacity .3s ease, transform .3s ease;
+    }
+    .mob-cta::after{
+      content:""; position:absolute; inset:0; z-index:-1; border-radius:999px;
+      background:var(--gold); box-shadow:0 8px 30px rgba(0,0,0,0.5);
     }
     .mob-cta.hide{opacity:0; pointer-events:none; transform:translateY(10px)}
     
     .mob-cta::before{
-      content:""; position:fixed; left:0; right:0; bottom:0; height:104px; z-index:-1;
+      content:""; position:fixed; left:0; right:0; bottom:0; height:104px; z-index:-2;
       background:linear-gradient(to top, var(--bg,#0a0a0b) 34%, rgba(10,10,11,0) 100%);
       pointer-events:none;
     }
     .mob-cta.hide::before{opacity:0}
+    .direct-line .dl-sep{display:none}
+    .direct-line a[href^="tel:"]{display:block}
   }
 
   .eqp-stage:focus-visible .eqp-zoom-hint{opacity:1}
@@ -735,7 +741,7 @@
 <link href="assets/uniform-next.css?v=2611060100" rel="stylesheet">
 <link rel="stylesheet" href="assets/oteo-craft.css">
   <link rel="stylesheet" href="/assets/oteo-type.css">
-  <link rel="stylesheet" href="./assets/oteo-system.css?v=2611090100">
+  <link rel="stylesheet" href="./assets/oteo-system.css?v=2611090200">
 <link rel="stylesheet" href="/assets/oteo-chrome.css?v=2611060100">
 </head>
 <body class="page-booking">
@@ -775,10 +781,10 @@
       <div class="wrap">
         <div class="book-panel">
           <div class="intro">
-            <p class="trust-strip">One inquiry covers DJ sets, production, lineup booking, branded content and gear. <a href="/residencies">View Oteo&rsquo;s track record</a> or the <a href="/presskit">press kit</a>.</p>
-            <h2>Request a<br>date</h2>
+            <h2>Request a date</h2>
             <p>Send the date, the venue and the format. Oteo replies within 48 hours with availability and a quote.</p>
-            <div class="direct-line">DIRECT · <a href="mailto:oteo@djoteo.com">oteo@djoteo.com</a> · <a href="tel:+14073738177">(407) 373-8177</a></div>
+            <p class="trust-strip">One inquiry covers DJ sets, production, lineup booking, branded content and gear. <a href="/residencies">View Oteo&rsquo;s track record</a> or the <a href="/presskit">press kit</a>.</p>
+            <div class="direct-line">DIRECT · <a href="mailto:oteo@djoteo.com">oteo@djoteo.com</a><span class="dl-sep"> · </span><a href="tel:+14073738177">(407) 373-8177</a></div>
           </div>
 
           <form id="oteo-booking-form" action="https://api.web3forms.com/submit" method="post">

@@ -756,6 +756,15 @@ form button[type="submit"] {
   [data-framer-name="About me"] [data-framer-name="Image BG"] img { transition: none; }
 }
 
+@media (min-width: 1200px) {
+  section[data-framer-name="About me"] [data-framer-name="Bottom"] {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    row-gap: 22px;
+  }
+  section[data-framer-name="About me"] [data-framer-name="Bottom"] .framer-1p6xzxd-container { margin-left: 0 !important; }
+}
+
 a.mr-item {
   text-decoration: none;
   color: inherit;
@@ -883,7 +892,6 @@ nav[data-framer-name="Phone Open"] [style*="will-change"] { opacity: 1 !importan
 
 @media (max-width: 809.98px) { [data-framer-name="Filter"] [data-framer-name="Container"], [data-framer-name="Filter"] [data-framer-name="Container"] > * { flex-wrap: wrap !important; overflow: visible !important; width: 100% !important; row-gap: 6px !important; } }
 
-@media (min-width: 1200px) { [data-framer-name="About me"] .framer-1p6xzxd-container { margin-left: 28px !important; } }
 [data-oteo-player] { width: 100% !important; max-width: 760px !important; margin: 0 auto !important; }
 
 [data-framer-name="Main content"] .framer-1hpa1sx[data-framer-name="Image mask"] { aspect-ratio: 16 / 9 !important; height: auto !important; }

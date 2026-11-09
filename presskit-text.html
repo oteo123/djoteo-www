@@ -26,11 +26,11 @@
 <link href="/assets/inner-next.css" rel="stylesheet">
 <link href="/assets/uniform-next.css?v=2611060100" rel="stylesheet">
 <link rel="stylesheet" href="/assets/oteo-craft.css">
-<link rel="stylesheet" href="/assets/oteo-system.css?v=2611090100">
+<link rel="stylesheet" href="/assets/oteo-system.css?v=2611090200">
 <script src="/assets/site.js?v=2611060100" defer></script>
 <style>
   :root{
-    --bg:#0a0a0a; --gold:#c8a96a; --gold-lt:#e6cf9c; --blue:#c8a96a; --blue-lt:#dec48e;
+    --bg:#12110d; --gold:#c8a96a; --gold-lt:#e6cf9c; --blue:#c8a96a; --blue-lt:#dec48e;
     --text:#edeeef; --muted:#8a8b8e; --line:rgba(237,238,239,0.10);
     --serif:'Playfair Display',Georgia,serif; --sans:"Geist",system-ui,sans-serif; --mono:"Geist Mono",ui-monospace,Menlo,monospace;
     --gold-grad:linear-gradient(135deg,#e6cf9c 0%,#c8a96a 46%,#9c8046 100%);
@@ -70,7 +70,7 @@
   .epk-hero .position{margin:22px 0 0; max-width:640px; color:var(--text); font-size:clamp(17px,2.1vw,23px); line-height:1.5; font-weight:400}
   .epk-hero .position b{color:var(--gold); font-weight:600}
   .epk-hero .meta{margin-top:16px; font-family:var(--mono); font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted); display:flex; flex-wrap:wrap; gap:8px 20px}
-  .hero-cta{margin-top:30px; display:flex; flex-wrap:wrap; gap:12px}
+  .hero-cta{margin-top:30px; display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-start}
 
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:15px 26px; border-radius:999px;
@@ -101,12 +101,13 @@
 
   .services{list-style:none; margin-top:26px; border-top:1px solid var(--line)}
   .services li{border-bottom:1px solid var(--line)}
+  .services li:last-child{border-bottom:0}
   .services a{
     display:flex; align-items:baseline; gap:18px; padding:20px 4px; text-decoration:none;
     transition:padding-left .2s ease, color .2s ease;
   }
   .services a:hover{padding-left:12px; color:var(--gold)}
-  .services .s-name{font-family:var(--serif); font-size:clamp(21px,2.6vw,28px); font-weight:500; letter-spacing:-0.01em; flex:0 0 auto; min-width:230px}
+  .services .s-name{font-family:var(--serif); font-size:clamp(21px,2.6vw,28px); font-weight:500; letter-spacing:-0.01em; flex:0 0 340px}
   .services .s-desc{color:var(--muted); font-size:15px; line-height:1.5; flex:1}
   .services .s-arrow{font-family:var(--mono); font-size:13px; color:var(--gold); opacity:0; transition:opacity .2s ease}
   .services a:hover .s-arrow{opacity:1}
@@ -145,7 +146,8 @@
     .epk-hero{padding:140px 0 30px}
     .strengths, .quotes{grid-template-columns:1fr}
     .services a{flex-direction:column; gap:6px}
-    .services .s-name{min-width:0}
+    .services .s-name{flex:0 0 auto}
+    .services .s-arrow{display:none}
   }
 
   @media print{
@@ -203,7 +205,7 @@
     <section class="band">
       <div class="kicker">Bio</div>
       <h2 class="head">Biography</h2>
-      <p class="lead">Oteo is <b>Alec Pontes</b>, a Brazilian-American open-format DJ and House music producer based in Orlando. His residencies include <b>Debonair Supper Club</b>, <b>Casa Mezcal</b>, The H Orlando, Helena Modern Riviera and AVA MediterrAegean. He has opened for Alok, Cat Dealers, Mr. Pauer and Mochakk and shared bills with Bhaskar, KVSH and Victor Lou. He plays open format built on Afro House, Latin rhythm and Latin Tech and works a crowd in English and Portuguese. He founded <b>Fish Out Of Water Records</b> to release his own productions, and Orlando Weekly nominated him for Best Club DJ.</p>
+      <p class="lead">Oteo is <b>Alec Pontes</b>, a Brazilian-American open-format DJ and House music producer based in Orlando. His residencies include Debonair Supper Club, Casa Mezcal, The H Orlando, Helena Modern Riviera and AVA MediterrAegean. He has opened for Alok, Cat Dealers, Mr. Pauer and Mochakk and shared bills with Bhaskar, KVSH and Victor Lou. He plays open format built on Afro House, Latin rhythm and Latin Tech and works a crowd in English and Portuguese. He founded <b>Fish Out Of Water Records</b> to release his own productions, and Orlando Weekly nominated him for Best Club DJ.</p>
     </section>
 
     <section class="band">

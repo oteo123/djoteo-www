@@ -396,28 +396,21 @@
     if (!main) return;
     var d = SET_MEDIA[m[1]], w = document.createElement("div");
     w.setAttribute("data-oteo-player", "");
-    if (d.yt) {
-      w.style.cssText = "position:relative;aspect-ratio:16/9;width:100%;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#000";
-      var cov = main.querySelector('[data-framer-name="Image mask"] img');
-      var poster = cov && (cov.currentSrc || cov.src) || "";
-      w.innerHTML = '<button type="button" aria-label="Play: ' + d.t.replace(/"/g, "&quot;") + '" style="position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;margin:0;cursor:pointer;background:#000 url(' + poster + ') center/cover no-repeat"><span style="position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(18,17,13,.74);border:1.5px solid rgba(200,169,106,.95);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#c8a96a" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>';
-      w.querySelector("button").addEventListener("click", function() {
-        w.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + d.yt + '?autoplay=1&rel=0" title="' + d.t.replace(/"/g, "&quot;") + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';
-      });
-    } else {
-      w.style.cssText = "width:100%;height:166px;margin:0;border-radius:14px;overflow:hidden;background:#0d0d0f";
-      w.innerHTML = '<iframe src="https://w.soundcloud.com/player/?url=' + encodeURIComponent(d.sc) + '&color=%23c8a96a&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false" title="' + d.t + ' on SoundCloud" loading="lazy" allow="autoplay" style="width:100%;height:100%;border:0"></iframe>';
-    }
+    w.style.cssText = "position:relative;aspect-ratio:16/9;width:100%;margin:0 0 36px;border-radius:14px;overflow:hidden;background:#000";
+    var cov = main.querySelector('[data-framer-name="Image mask"] img');
+    var poster = cov && (cov.currentSrc || cov.src) || "";
+    w.innerHTML = '<button type="button" aria-label="Play: ' + d.t.replace(/"/g, "&quot;") + '" style="position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;margin:0;cursor:pointer;background:#000 url(' + poster + ') center/cover no-repeat"><span style="position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(18,17,13,.74);border:1.5px solid rgba(200,169,106,.95);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#c8a96a" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>';
+    w.querySelector("button").addEventListener("click", function() {
+      var src = d.yt ? "https://www.youtube-nocookie.com/embed/" + d.yt + "?autoplay=1&rel=0" : "https://w.soundcloud.com/player/?url=" + encodeURIComponent(d.sc) + "&color=%23c8a96a&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=true";
+      w.innerHTML = '<iframe src="' + src + '" title="' + d.t.replace(/"/g, "&quot;") + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';
+    });
     var cover = main.querySelector('[data-framer-name="Image mask"]');
     var row = document.createElement("div");
     row.setAttribute("data-oteo-player-row", "");
     row.appendChild(w);
-    if (cover && d.yt) {
+    if (cover) {
       cover.style.display = "none";
       cover.parentNode.insertBefore(row, cover);
-    } else if (cover) {
-      cover.style.marginBottom = "0";
-      cover.parentNode.insertBefore(row, cover.nextSibling);
     } else {
       row.style.order = "-1";
       main.insertBefore(row, main.firstChild);
