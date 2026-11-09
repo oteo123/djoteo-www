@@ -1008,3 +1008,9 @@ nav[data-framer-name="Desktop"] [data-framer-name="Links"] { align-items: center
 .label-line::after, .hero-index a::after { content: "\2192"; margin-left: 8px; }
 .hero-index a { color: var(--oteo-gold) !important; opacity: 1 !important; }
 .label-line:hover, .hero-index a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.page-booking > .svc-hero h1, .page-residencies > .res-hero h1, .page-foowr > .label-hero h1,
+.page-about .about-title, .page-rentals .about-title, .page-contact .contact-hero-title, .page-ugc h1 { line-height: 1 !important; }
+.page-rentals .gear-grid { --ggap: 16px; }
+.page-rentals .gear-card:not(:has(.gear-thumbs)) .gear-img { margin-bottom: 54px; }
+.page-ugc .email-link { color: var(--oteo-gold) !important; }
+.e404 .code { font-family: var(--oteo-display) !important; font-weight: 500 !important; font-variant-numeric: lining-nums; letter-spacing: -.02em !important; line-height: 1 !important; }
