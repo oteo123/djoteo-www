@@ -165,12 +165,12 @@ small, .small { font-size: var(--t-small); line-height: 1.6; }
 }
 .contact-statement, .contact-hero-title { color: var(--oteo-cream) !important; }
 
-[data-framer-name="Why us"] [data-framer-name="Scroll trigger"] {
+[data-framer-name="Intro"] [data-framer-name="Scroll trigger"] {
   height: 420px !important;
   min-height: 0 !important;
 }
 @media (min-width: 900px) {
-  [data-framer-name="Why us"] [data-framer-name="Middle"] {
+  [data-framer-name="Intro"] [data-framer-name="Middle"] {
     min-width: 382px !important;
     max-width: 420px !important;
   }
@@ -178,13 +178,13 @@ small, .small { font-size: var(--t-small); line-height: 1.6; }
 
 [data-framer-name="Testimonials"] .framer-1rwjy3b { display: none !important; }
 
-[data-framer-name="Expertise"],
-[data-framer-name="How we work"],
-[data-framer-name="Pricing"],
-[data-framer-name="Design exploration"],
-[data-framer-name="FAQ"] { display: none !important; }
+section[data-framer-name="Expertise"],
+section[data-framer-name="Process"],
+section[data-framer-name="Rates"],
+section[data-framer-name="Gallery"],
+section[data-framer-name="FAQ"] { display: none !important; }
 
-[data-framer-name="Why us"] { display: none !important; }
+section[data-framer-name="Intro"] { display: none !important; }
 
 .framer-styles-preset-1y7c7cl,
 .framer-styles-preset-19qorhk { font-family: var(--oteo-body) !important; }
