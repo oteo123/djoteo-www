@@ -436,7 +436,7 @@ h1 em, h2 em, .contact-statement em, .showcase-statement em,
 .contact-form {
   border: 1px solid var(--line) !important;
   border-radius: var(--radius) !important;
-  background: linear-gradient(145deg, rgba(21, 24, 30, .92), rgba(12, 14, 18, .96)) !important;
+  background: linear-gradient(145deg, rgba(29, 26, 20, .92), rgba(18, 17, 13, .96)) !important;
   box-shadow: none !important;
 }
 .page-booking .card:hover,

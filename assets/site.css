@@ -746,7 +746,7 @@ html.js-motion .hero-wordmark.is-visible i{ opacity:1; transform:none; }
   position:absolute; z-index:0;
   left:50%; top:46%; transform:translate(-50%,-50%);
   width:min(900px,100vw); height:min(600px,80vh);
-  background:radial-gradient(closest-side, rgba(36,63,156,.30), rgba(200,169,106,.06) 55%, transparent 74%);
+  background:radial-gradient(closest-side, rgba(145,123,80,.30), rgba(200,169,106,.06) 55%, transparent 74%);
   pointer-events:none;
   opacity:.34;
 }

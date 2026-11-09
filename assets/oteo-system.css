@@ -952,3 +952,59 @@ nav[data-framer-name="Desktop"] [data-framer-name="Links"] { align-items: center
 .framer-1ti6rxj[data-framer-name="Logo"] { display: none !important; }
 
 .framer-8vq36f[data-framer-name="Venue"] { display: none !important; }
+
+/* One button, one field, one label, one eyebrow across the hand-built pages. */
+.btn.primary, .btn.solid, .btn.btn-primary, a.hero-cta,
+#oteo-booking-submit, #foowr-submit, .contact-form button[type="submit"],
+.btn.ghost {
+  display: inline-flex !important; align-items: center; justify-content: center !important; gap: 8px;
+  width: auto !important; min-height: 50px; padding: 0 26px !important; border-radius: 999px !important;
+  text-align: center !important; text-decoration: none !important; box-shadow: none !important; font-style: normal !important;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.btn.primary, .btn.solid, .btn.btn-primary, a.hero-cta,
+#oteo-booking-submit, #foowr-submit, .contact-form button[type="submit"] {
+  background: var(--oteo-gold) !important; color: var(--oteo-ink) !important; border: 1px solid var(--oteo-gold) !important;
+}
+.mob-cta { color: var(--oteo-ink) !important; border: 0 !important; text-align: center !important; }
+.btn.primary:hover, .btn.solid:hover, .btn.btn-primary:hover, a.hero-cta:hover,
+#oteo-booking-submit:hover, #foowr-submit:hover, .contact-form button[type="submit"]:hover {
+  background: var(--oteo-cream) !important; border-color: var(--oteo-cream) !important; color: var(--oteo-ink) !important;
+}
+.btn.ghost { background: transparent !important; color: var(--oteo-cream) !important; border: 1px solid rgba(241, 237, 228, .28) !important; }
+.btn.ghost:hover { border-color: var(--oteo-gold) !important; color: var(--oteo-gold) !important; background: transparent !important; }
+
+#oteo-booking-form input, #oteo-booking-form select, #oteo-booking-form textarea,
+.contact-form input, .contact-form textarea,
+.demo-form input, .demo-form textarea,
+.page-rentals .date-bar-input {
+  background: rgba(0, 0, 0, .3) !important; border: 1px solid rgba(241, 237, 228, .13) !important; border-radius: 3px !important;
+  font: 400 16px/1.4 var(--oteo-body) !important; color: var(--oteo-cream) !important; padding: 12px 13px !important;
+  box-shadow: none !important; color-scheme: dark;
+}
+#oteo-booking-form :is(input, select, textarea):focus, .contact-form :is(input, textarea):focus,
+.demo-form :is(input, textarea):focus, .page-rentals .date-bar-input:focus {
+  border-color: var(--oteo-gold) !important; outline: none;
+}
+#oteo-booking-form label, .demo-form label, .field-label, .page-rentals .date-bar-label {
+  font-family: var(--oteo-label) !important; font-size: 11px !important; font-weight: 500 !important;
+  letter-spacing: .14em !important; text-transform: uppercase !important; font-style: normal !important; color: var(--oteo-gold) !important;
+}
+
+.eyebrow, .kicker, .past-eyebrow, .mr-head {
+  display: flex !important; align-items: center; gap: 10px !important; justify-content: flex-start !important;
+  color: var(--oteo-gold) !important; font-family: var(--oteo-label) !important; font-weight: 600 !important;
+  font-size: 12px !important; letter-spacing: .14em !important; text-transform: uppercase !important; font-style: normal !important;
+}
+.eyebrow::before, .kicker::before, .past-eyebrow::before, .mr-head::before {
+  content: ""; display: block; flex: 0 0 auto; width: 5px !important; height: 5px !important; border-radius: 50% !important;
+  background: var(--oteo-gold) !important; margin: 0 !important; position: static !important;
+}
+.eyebrow::after, .kicker::after { content: none !important; }
+#foowr-submit, #oteo-booking-submit, .contact-form button[type="submit"] { justify-self: start; align-self: flex-start; margin-left: 0 !important; }
+.page-booking .svc-grid { max-width: none; }
+.page-booking .card { min-height: 0; }
+.label-line::before { display: inline-block; vertical-align: middle; margin-right: 10px; }
+.label-line::after, .hero-index a::after { content: "\2192"; margin-left: 8px; }
+.hero-index a { color: var(--oteo-gold) !important; opacity: 1 !important; }
+.label-line:hover, .hero-index a:hover { text-decoration: underline; text-underline-offset: 4px; }
