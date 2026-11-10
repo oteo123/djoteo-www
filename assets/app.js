@@ -265,7 +265,7 @@
       href: "/booking",
       kicker: "01 / Live DJ",
       title: "DJ for your night",
-      copy: "Residencies and club nights across Orlando, plus weddings, corporate and private events. Oteo plays open format for the room, with House at the core, through to close.",
+      copy: "Residencies and club nights across Orlando, plus weddings, corporate and private events. Oteo plays open format built on House, from the first set to close.",
       note: "Quoted per event",
       cta: "Book Oteo"
     },
@@ -274,7 +274,7 @@
       kicker: "02 / Gear Rental",
       title: "Rent the gear",
       copy: "Pioneer DJ and AlphaTheta decks, mixers, speakers and mics, delivered, set up and collected.",
-      note: "21 pieces · $150 minimum · Central Florida",
+      note: "22 models · $150 minimum · Central Florida",
       cta: "See the gear"
     }
   ];
@@ -531,7 +531,7 @@
     wait();
     setTimeout(go, 2500);
   }
-  function fiberCount() {
+  function fiberCoverage() {
     var els = document.querySelectorAll("#main [data-framer-name], #main a[href], #main h1, #main h2, #main p"), n = 0;
     for (var i = 0; i < els.length; i++) {
       var k = Object.keys(els[i]);
@@ -542,24 +542,23 @@
         }
       }
     }
-    return n;
+    return { n: n, total: els.length };
   }
-  var __fiberLast = -1, __fiberStable = 0;
+  var __coverStable = 0;
   function hydrated() {
-    var n = fiberCount();
-    if (n === 0) return false;
-    if (n === __fiberLast) {
-      __fiberStable++;
-    } else {
-      __fiberStable = 0;
-      __fiberLast = n;
+    var c = fiberCoverage();
+    if (c.n === 0 || c.n < c.total) {
+      __coverStable = 0;
+      return false;
     }
-    return __fiberStable >= 3;
+    __coverStable++;
+    return __coverStable >= 2;
   }
   function whenHydrated(fn) {
     var t0 = Date.now();
     (function poll() {
-      if (hydrated() || Date.now() - t0 > 12e3) {
+      var age = Date.now() - t0;
+      if (hydrated() || (age > 12e3 && fiberCoverage().n === 0) || age > 60e3) {
         setTimeout(fn, 150);
         return;
       }
