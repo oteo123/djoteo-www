@@ -1014,3 +1014,5 @@ nav[data-framer-name="Desktop"] [data-framer-name="Links"] { align-items: center
 .page-rentals .gear-card:not(:has(.gear-thumbs)) .gear-img { margin-bottom: 54px; }
 .page-ugc .email-link { color: var(--oteo-gold) !important; }
 .e404 .code { font-family: var(--oteo-display) !important; font-weight: 500 !important; font-variant-numeric: lining-nums; letter-spacing: -.02em !important; line-height: 1 !important; }
+/* An email address is never shouted: exempt the address itself from uppercase strips and buttons. */
+.direct-line a[href^="mailto:"], .contact-facts a[href^="mailto:"], .hero-cta .btn[href="mailto:oteo@djoteo.com"] { text-transform: none !important; letter-spacing: .04em !important; }

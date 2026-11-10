@@ -192,7 +192,7 @@
 <link href="assets/uniform-next.css?v=2611092100" rel="stylesheet">
 <link rel="stylesheet" href="assets/oteo-craft.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","@id":"https://djoteo.com/foowr#label","name":"Fish Out Of Water Records","alternateName":"FOOWR","url":"https://djoteo.com/foowr","founder":{"@type":"Person","name":"Alec Pontes","alternateName":"Oteo"},"sameAs":["https://soundcloud.com/fishoutofwaterrecords"]}</script>  <link rel="stylesheet" href="/assets/oteo-type.css">
-  <link rel="stylesheet" href="./assets/oteo-system.css?v=2611092100">
+  <link rel="stylesheet" href="./assets/oteo-system.css?v=2611100830">
 <link rel="stylesheet" href="/assets/oteo-chrome.css?v=2611060100">
 </head>
 <body class="page-foowr">
@@ -242,7 +242,7 @@
     <section class="band">
       <div class="kicker reveal">Submissions</div>
       <h2 class="head reveal">Demo Submissions</h2>
-      <p>The label accepts demos. If the track fits, you will hear back directly.</p>
+      <p>The label accepts demos. If the track fits, Oteo will reply.</p>
       <div class="demo reveal">
         <div>
           <ul class="steps">
@@ -300,7 +300,7 @@
       }).then(function (r) { return r.json(); }).then(function (data) {
         if (data && data.success) {
           form.reset();
-          set('Demo received. If it fits the label, you will hear back directly.', '#9bf6c1');
+          set('Demo received. If it fits the label, Oteo will reply.', '#9bf6c1');
         } else {
           btn.disabled = false;
           set('The demo did not send. Email your link to oteo@djoteo.com directly.', '#ff9f9f');
