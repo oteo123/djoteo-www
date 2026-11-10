@@ -265,7 +265,7 @@
       href: "/booking",
       kicker: "01 / Live DJ",
       title: "DJ for your night",
-      copy: "Residencies, club nights, weddings, corporate and private events across Orlando. Open format for the room, with House at the core, played through to close.",
+      copy: "Residencies and club nights across Orlando, plus weddings, corporate and private events. Oteo plays open format for the room, with House at the core, through to close.",
       note: "Quoted per event",
       cta: "Book Oteo"
     },
