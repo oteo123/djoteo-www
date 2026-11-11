@@ -265,7 +265,7 @@
       href: "/booking",
       kicker: "01 / Live DJ",
       title: "Book a DJ",
-      copy: "Weekly residencies, club nights and private events. Oteo plays open format built on House, from dinner music to a full dance floor.",
+      copy: "Any crowd, any vibe. Oteo plays everything from hip hop and Top 40 to Latin, disco and international music, often on a House beat, and keeps it classy, clean and high-energy.",
       note: "Quoted per event",
       cta: "Book Oteo"
     },
