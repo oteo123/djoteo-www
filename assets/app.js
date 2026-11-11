@@ -264,16 +264,16 @@
     {
       href: "/booking",
       kicker: "01 / Live DJ",
-      title: "DJ for your night",
-      copy: "Residencies and club nights across Orlando, plus weddings, corporate and private events. Oteo plays open format built on House and holds the room until close.",
+      title: "Book a DJ",
+      copy: "Weekly residencies, club nights and private events. Oteo plays open format built on House, from dinner music to a full dance floor.",
       note: "Quoted per event",
       cta: "Book Oteo"
     },
     {
       href: "/rentals",
       kicker: "02 / Gear Rental",
-      title: "Rent the gear",
-      copy: "Pioneer DJ and AlphaTheta decks, mixers, speakers and mics, delivered, set up and collected.",
+      title: "Rent DJ gear",
+      copy: "Pioneer DJ and AlphaTheta decks, mixers, speakers and microphones, delivered, set up and picked up.",
       note: "22 models · $150 minimum · Central Florida",
       cta: "See the gear"
     }
@@ -312,7 +312,7 @@
     proof.href = "/residencies";
     var pLead = document.createElement("span");
     pLead.className = "oteo-proof-lead";
-    pLead.textContent = "Orlando rooms since 2017";
+    pLead.textContent = "Playing Orlando since 2017";
     var pRooms = document.createElement("span");
     pRooms.className = "oteo-proof-rooms";
     pRooms.textContent = "Debonair Supper Club · Casa Mezcal · The H Orlando · Helena Modern Riviera · AVA MediterrAegean · Taverna Opa · The Lawn Bar at ICON Park";
