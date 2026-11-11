@@ -3,7 +3,7 @@
   var NAV = [
     { href: "/booking", label: "Booking" },
     { href: "/rentals", label: "Gear Rentals" },
-    { href: "/residencies", label: "Residencies" },
+    { href: "/residencies", label: "Track Record" },
     { href: "/works", label: "Rooms" },
     { href: "/blog", label: "Sets" },
     { href: "/about", label: "About" },
