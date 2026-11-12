@@ -333,7 +333,7 @@
     var box = document.createElement("div");
     box.setAttribute("data-oteo-tproof", "");
     box.className = "oteo-tproof";
-    box.innerHTML = '<div class="oteo-tproof-stat"><span class="oteo-tproof-num">27</span><span class="oteo-tproof-lbl">venues played, Greater Orlando</span></div><div class="oteo-tproof-press"><span class="oteo-tproof-k">Press</span><span class="oteo-tproof-v">Orlando Weekly, Best Club DJ nominee</span></div>';
+    box.innerHTML = '<div class="oteo-tproof-stat"><span class="oteo-tproof-num">31</span><span class="oteo-tproof-lbl">venues played, Greater Orlando</span></div><div class="oteo-tproof-press"><span class="oteo-tproof-k">Press</span><span class="oteo-tproof-v">Orlando Weekly, Best Club DJ nominee</span></div>';
     left.parentElement.appendChild(box);
   }
   function phoneHeaderCta() {
