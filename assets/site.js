@@ -20,6 +20,8 @@
       o.observe(dt);
     });
   }
+  // moving pictures: stop them for people who asked for less motion, and on data-saver connections
+  if (reduce || (navigator.connection && navigator.connection.saveData)) document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
   // Portrait placement, measured against each photo's real frame: the whole head stays in, the top of the hair sits 7% below the
   // top edge, the face is centred left to right, and neck and shoulders show below. Runs again whenever the frame changes size.
   const place = img => {
