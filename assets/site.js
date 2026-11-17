@@ -21,7 +21,36 @@
     });
   }
   // moving pictures: stop them for people who asked for less motion, and on data-saver connections
-  if (reduce || (navigator.connection && navigator.connection.saveData)) document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  const still = reduce || (navigator.connection && navigator.connection.saveData);
+  if (still) document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+
+  // residency cards: the room's clip loads on first use, plays on hover (computer) or while the card is in view (phone)
+  const loops = [...document.querySelectorAll('video.loop')];
+  if (!still && loops.length) {
+    const load = v => { if (v.dataset.loaded) return; v.dataset.loaded = 1;
+      [['webm', 'video/webm'], ['mp4', 'video/mp4']].forEach(([k, t]) => { const s = document.createElement('source'); s.src = v.dataset['src' + k[0].toUpperCase() + k.slice(1)]; s.type = t; v.appendChild(s); }); v.load(); };
+    const play = v => { load(v); const p = v.play(); if (p) p.then(() => v.classList.add('on')).catch(() => {}); };
+    const stop = v => { v.classList.remove('on'); v.pause(); };
+    if (matchMedia('(hover: hover)').matches) {
+      loops.forEach(v => { const card = v.closest('a'); card.addEventListener('mouseenter', () => play(v)); card.addEventListener('mouseleave', () => stop(v)); card.addEventListener('focus', () => play(v)); card.addEventListener('blur', () => stop(v)); });
+    } else if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(es => es.forEach(en => en.intersectionRatio >= 0.6 ? play(en.target) : stop(en.target)), { threshold: [0, 0.6] });
+      loops.forEach(v => io.observe(v));
+    }
+  }
+
+  // what people say: one quote at a time; changes every 7 seconds, holds while hovered or focused, never moves on its own for reduced motion
+  document.querySelectorAll('.rot').forEach(rot => {
+    const slides = [...rot.querySelectorAll('.rot-slide')], dotsBox = rot.querySelector('.rot-dots');
+    if (slides.length < 2) return;
+    const dots = [...dotsBox.children]; let i = 0, timer = null, held = false;
+    const show = n => { i = (n + slides.length) % slides.length; slides.forEach((s, k) => { s.classList.toggle('cur', k === i); s.setAttribute('aria-hidden', String(k !== i)); }); dots.forEach((d, k) => d.setAttribute('aria-current', String(k === i))); };
+    const tick = () => { clearTimeout(timer); if (!reduce && !held) timer = setTimeout(() => { show(i + 1); tick(); }, 7000); };
+    dots.forEach((d, k) => d.addEventListener('click', () => { show(k); tick(); }));
+    rot.addEventListener('mouseenter', () => { held = true; clearTimeout(timer); }); rot.addEventListener('mouseleave', () => { held = false; tick(); });
+    rot.addEventListener('focusin', () => { held = true; clearTimeout(timer); }); rot.addEventListener('focusout', () => { held = false; tick(); });
+    rot.classList.add('on'); dotsBox.hidden = false; show(0); tick();
+  });
   // Portrait placement, measured against each photo's real frame: the whole head stays in, the top of the hair sits 7% below the
   // top edge, the face is centred left to right, and neck and shoulders show below. Runs again whenever the frame changes size.
   const place = img => {
