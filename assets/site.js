@@ -1,390 +1,114 @@
-(function() {
-  "use strict";
-  var doc = document, root = doc.documentElement;
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  root.classList.add("js-motion");
-  var header = doc.querySelector(".site-header");
-  var creamBand = null;
-  function onScrollHeader(y) {
-    if (!header) return;
-    y = y == null ? window.scrollY || window.pageYOffset : y;
-    header.classList.toggle("scrolled", y > 40);
-    if (creamBand) {
-      var hb = header.getBoundingClientRect().bottom;
-      var cr = creamBand.getBoundingClientRect();
-      header.classList.toggle("on-light", cr.top <= hb && cr.bottom >= hb);
-    }
-  }
-  (function mobileNav() {
-    var navWrap = header && header.querySelector(".header-nav");
-    var links = navWrap && navWrap.querySelector(".nav-links");
-    if (!navWrap || !links) return;
-    var btn = doc.createElement("button");
-    btn.className = "nav-toggle";
-    btn.type = "button";
-    btn.setAttribute("aria-label", "Menu");
-    btn.setAttribute("aria-expanded", "false");
-    btn.innerHTML = '<span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span>';
-    navWrap.insertBefore(btn, links);
-    function setOpen(open) {
-      header.classList.toggle("nav-open", open);
-      btn.setAttribute("aria-expanded", open ? "true" : "false");
-    }
-    btn.addEventListener("click", function() {
-      setOpen(!header.classList.contains("nav-open"));
+// djoteo.com behaviour: phone menu, forms (Web3Forms, same endpoint as the old site), gear request list, active category tab.
+(() => {
+  // scroll reveal: each block eases in once; cards in the same row arrive one after another
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    const sel = '.head, .card, .rc, .hl, .gear, .pkcard, .setcard, .q, .svc article, .release, .list .li, .steps li, .faq details, .photos .ph, .nums div, .terms div, .facts div, .creds div, .cta h2, .cta p, .cta .ctas, .split > h2, .stack > p, .video, .vcap, .deck';
+    const els = [...document.querySelectorAll(sel)].filter(el => !el.closest('.hero, .page-head, .label-hero'));
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(el => {
+      const sibs = el.parentElement ? [...el.parentElement.children].filter(c => c.matches(sel)) : [];
+      el.style.setProperty('--d', (Math.min(sibs.indexOf(el), 5) * 0.08) + 's');
+      el.classList.add('rv'); io.observe(el);
     });
-    links.addEventListener("click", function(e) {
-      if (e.target.closest("a")) setOpen(false);
-    });
-    window.addEventListener("resize", function() {
-      if (window.innerWidth >= 900) setOpen(false);
-    });
-  })();
-  var yr = doc.querySelector("[data-year]");
-  if (yr) yr.textContent = (new Date()).getFullYear();
-  (function heroMedia() {
-    var video = doc.querySelector("[data-hero-video]");
-    var toggle = doc.querySelector("[data-hero-media-toggle]");
-    var label = toggle && toggle.querySelector("[data-hero-media-label]");
-    if (!video) return;
-    function setPaused(paused) {
-      if (paused) video.pause();
-      else {
-        var playback = video.play();
-        if (playback && typeof playback.catch === "function") {
-          playback.catch(function() {
-            setPaused(true);
-          });
-        }
-      }
-      if (!toggle) return;
-      toggle.setAttribute("aria-pressed", paused ? "true" : "false");
-      if (label) label.textContent = paused ? "Play motion" : "Pause motion";
-    }
-    setPaused(reduce);
-    if (toggle) {
-      toggle.addEventListener("click", function() {
-        setPaused(!video.paused);
-      });
-    }
-  })();
-  var form = doc.querySelector("[data-contact-form]");
-  if (form) {
-    var web3formsId = "0ea77eca-edf8-4b40-912e-c36a3dac6de7";
-    var statusEl = form.querySelector("[data-contact-status]");
-    var submitEl = form.querySelector("[data-contact-submit]");
-    var value = function(n) {
-      var field = form.querySelector('[name="' + n + '"]');
-      return field ? String(field.value || "").trim() : "";
-    };
-    var setStatus = function(message, state) {
-      if (!statusEl) return;
-      statusEl.textContent = message;
-      statusEl.setAttribute("data-state", state || "");
-    };
-    var emailFallback = function() {
-      var body = value("message") + "\n\n" + value("name") + (value("email") ? " · " + value("email") : "");
-      setStatus("Your inquiry has not been sent yet. If an email draft opened, send it from there, or write to oteo@djoteo.com.", "error");
-      window.location.href = "mailto:oteo@djoteo.com?subject=" + encodeURIComponent("Booking inquiry from " + (value("name") || "djoteo.com")) + "&body=" + encodeURIComponent(body);
-    };
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-      if (submitEl) submitEl.disabled = true;
-      setStatus("Sending your inquiry…", "");
-      var payload = {};
-      new FormData(form).forEach(function(v, k) {
-        payload[k] = v;
-      });
-      payload.access_key = web3formsId;
-      fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(payload)
-      }).then(function(response) {
-        return response.json().catch(function() {
-          return {};
-        });
-      }).then(function(data) {
-        if (!data || !data.success) throw new Error("unconfirmed");
-        form.reset();
-        setStatus("Inquiry received. Oteo will reply within 48 hours.", "success");
-      }).catch(emailFallback).finally(function() {
-        if (submitEl) submitEl.disabled = false;
-      });
+    // stat numbers count up once (years stay as they are)
+    document.querySelectorAll('.nums dt').forEach(dt => {
+      const n = parseInt(dt.textContent, 10); if (!n || n > 1900) return;
+      const o = new IntersectionObserver(([e]) => { if (!e.isIntersecting) return; o.disconnect(); const t0 = performance.now();
+        const step = t => { const p = Math.min(1, (t - t0) / 1100); dt.textContent = Math.round(n * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+        requestAnimationFrame(step); });
+      o.observe(dt);
     });
   }
-  function show(el) {
-    el.classList.add("is-visible");
-  }
-  var reveals = Array.prototype.slice.call(doc.querySelectorAll(".reveal"));
-  function ioFallback() {
-    function revealInView() {
-      var vh = window.innerHeight || 0;
-      reveals.forEach(function(el) {
-        if (el.classList.contains("is-visible")) return;
-        if (el.getBoundingClientRect().top < vh * 0.92) show(el);
-      });
-    }
-    if ("IntersectionObserver" in window && reveals.length) {
-      var io = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) {
-          if (!e.isIntersecting) return;
-          var d = reduce ? 0 : parseInt(e.target.getAttribute("data-delay"), 10) || 0;
-          setTimeout(function() {
-            show(e.target);
-          }, d);
-          io.unobserve(e.target);
-        });
-      }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
-      reveals.forEach(function(el) {
-        io.observe(el);
-      });
-      revealInView();
-      setTimeout(function() {
-        doc.querySelectorAll(".reveal:not(.is-visible)").forEach(show);
-      }, 1400);
-    } else {
-      reveals.forEach(show);
-    }
-    window.addEventListener("scroll", function() {
-      onScrollHeader();
-    }, { passive: true });
-    onScrollHeader();
-  }
-  if (reduce) {
-    reveals.forEach(show);
-    Array.prototype.forEach.call(doc.querySelectorAll("[data-hero]"), show);
-    window.addEventListener("scroll", function() {
-      onScrollHeader();
-    }, { passive: true });
-    onScrollHeader();
-    return;
-  }
-  function heroIntro() {
-    var items = Array.prototype.slice.call(doc.querySelectorAll("[data-hero]"));
-    items.forEach(function(el, i) {
-      setTimeout(function() {
-        show(el);
-      }, 120 + i * 110);
-    });
-  }
-  function boot() {
-    var hasGSAP = window.gsap && window.ScrollTrigger;
-    if (!hasGSAP) {
-      ioFallback();
-      heroIntro();
-      return;
-    }
-    var gsap = window.gsap, ST = window.ScrollTrigger;
-    gsap.registerPlugin(ST);
-    var lenis = null;
-    var Lenis = window.Lenis || window.lenis && window.lenis.default;
-    if (typeof Lenis === "function") {
-      try {
-        lenis = new Lenis({
-          duration: 1.05,
-          smoothWheel: true,
-          easing: function(t) {
-            return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-          }
-        });
-        lenis.on("scroll", ST.update);
-        gsap.ticker.add(function(time) {
-          lenis.raf(time * 1e3);
-        });
-        gsap.ticker.lagSmoothing(0);
-      } catch (e) {
-        lenis = null;
-      }
-    }
-    ST.addEventListener("refresh", function() {
-      if (lenis) lenis.resize();
-    });
-    function revealSweep() {
-      var vh = window.innerHeight;
-      doc.querySelectorAll(".reveal:not(.is-visible)").forEach(function(el) {
-        if (el.getBoundingClientRect().top < vh * 0.96) show(el);
-      });
-    }
-    window.addEventListener("scroll", function() {
-      onScrollHeader();
-      revealSweep();
-    }, { passive: true });
-    if (lenis) lenis.on("scroll", function(e) {
-      onScrollHeader(e.scroll);
-      revealSweep();
-    });
-    onScrollHeader();
-    heroIntro();
-    var hero = doc.querySelector(".hero");
-    if (hero) {
-      var wm = hero.querySelector(".hero-wordmark");
-      if (wm) gsap.to(wm, { yPercent: -18, ease: "none", scrollTrigger: {
-        trigger: hero,
-        start: "top top",
-        end: "bottom top",
-        scrub: 0.6
-      } });
-      var qx = gsap.quickTo(hero, "--mx", { duration: 0.5, ease: "power3" });
-      var qy = gsap.quickTo(hero, "--my", { duration: 0.5, ease: "power3" });
-      hero.addEventListener("pointermove", function(e) {
-        var r = hero.getBoundingClientRect();
-        qx((e.clientX - r.left) / r.width - 0.5);
-        qy((e.clientY - r.top) / r.height - 0.5);
-      });
-      hero.addEventListener("pointerleave", function() {
-        qx(0);
-        qy(0);
-      });
-    }
-    var batchTargets = reveals.filter(function(el) {
-      return !el.hasAttribute("data-hero");
-    });
-    ST.batch(batchTargets, {
-      start: "top 88%",
-      onEnter: function(els) {
-        gsap.to(els, {
-          opacity: 1,
-          y: 0,
-          duration: 0.9,
-          ease: "power3.out",
-          stagger: 0.08,
-          overwrite: true,
-          onStart: function() {
-            els.forEach(show);
-          }
-        });
-      },
-      onEnterBack: function(els) {
-        els.forEach(show);
-      }
-    });
-    setTimeout(function() {
-      doc.querySelectorAll(".reveal:not(.is-visible)").forEach(function(el) {
-        if (el.getBoundingClientRect().top < window.innerHeight) show(el);
-      });
-    }, 1600);
-    var sp = doc.querySelector(".sound-photo img");
-    if (sp) gsap.fromTo(sp, { yPercent: -6 }, {
-      yPercent: 6,
-      ease: "none",
-      scrollTrigger: { trigger: ".sound-photo", start: "top bottom", end: "bottom top", scrub: true }
-    });
-    var sbg = doc.querySelector(".showcase-bg");
-    if (sbg) gsap.fromTo(sbg, { yPercent: -6, scale: 1.12 }, {
-      yPercent: 6,
-      scale: 1.04,
-      ease: "none",
-      scrollTrigger: { trigger: ".showcase", start: "top bottom", end: "bottom top", scrub: true }
-    });
-    var cbg = doc.querySelector(".contact-bg");
-    if (cbg) gsap.fromTo(cbg, { yPercent: -12, scale: 1.08 }, {
-      yPercent: 8,
-      ease: "none",
-      scrollTrigger: { trigger: ".contact", start: "top bottom", end: "bottom top", scrub: true }
-    });
-    function collageFloat(sel, from, to) {
-      var el = doc.querySelector(sel);
-      if (el) gsap.fromTo(el, { yPercent: from }, {
-        yPercent: to,
-        ease: "none",
-        scrollTrigger: { trigger: ".neo-collage", start: "top bottom", end: "bottom top", scrub: true }
-      });
-    }
-    collageFloat(".neo-frame-tall", 10, -10);
-    collageFloat(".neo-frame-wide", -8, 9);
-    collageFloat(".neo-frame-detail", 6, -7);
-    var stImg = doc.querySelector(".neo-statement-image img");
-    if (stImg) gsap.fromTo(stImg, { yPercent: -10, scale: 1.08 }, {
-      yPercent: 4,
-      scale: 1.02,
-      ease: "none",
-      scrollTrigger: { trigger: ".neo-statement-image", start: "top bottom", end: "bottom top", scrub: true }
-    });
-    var track = doc.querySelector("[data-marquee-track]");
-    if (track) {
-      var half = track.scrollWidth / 2 || 1;
-      var mtl = gsap.timeline({ repeat: -1 }).fromTo(track, { x: 0 }, { x: -half, duration: 26, ease: "none" });
-      ST.create({
-        start: 0,
-        end: "max",
-        onUpdate: function(self) {
-          var boost = 1 + Math.min(6, Math.abs(self.getVelocity() / 260));
-          gsap.to(mtl, { timeScale: boost, duration: 0.3, overwrite: true });
-          clearTimeout(track._mqReset);
-          track._mqReset = setTimeout(function() {
-            gsap.to(mtl, { timeScale: 1, duration: 1.1, ease: "power2.out", overwrite: true });
-          }, 140);
-        }
-      });
-    }
-    ST.refresh();
-  }
-  if (doc.readyState === "complete") setTimeout(boot, 60);
-  else window.addEventListener("load", function() {
-    setTimeout(boot, 30);
-  });
-})();
-(function() {
-  var arc = document.querySelector("[data-hero-arc]");
-  if (!arc) return;
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduce) return;
-  var tx = 0, ty = 0, cx = 0, cy = 0, raf;
-  function loop() {
-    cx += (tx - cx) * 0.06;
-    cy += (ty - cy) * 0.06;
-    arc.style.transform = "rotateX(" + (5 + cy * 4) + "deg) rotateY(" + cx * 6 + "deg)";
-    raf = requestAnimationFrame(loop);
-  }
-  window.addEventListener("pointermove", function(e) {
-    tx = e.clientX / window.innerWidth - 0.5;
-    ty = e.clientY / window.innerHeight - 0.5;
-  }, { passive: true });
-  window.addEventListener("scroll", function() {
-    var y = window.scrollY || 0;
-    arc.style.opacity = Math.max(0.15, 1 - y / 700);
-  }, { passive: true });
-  loop();
-})();
-(function() {
-  if (!location.hash || location.hash.length < 2) return;
-  var moved = false;
-  function userScroll() {
-    moved = true;
-  }
-  window.addEventListener("wheel", userScroll, { passive: true, once: true });
-  window.addEventListener("touchstart", userScroll, { passive: true, once: true });
-  window.addEventListener("keydown", userScroll, { once: true });
-  function seat() {
-    if (moved) return;
-    var id = decodeURIComponent(location.hash.slice(1));
-    var el = document.getElementById(id);
-    if (!el) return;
-    var header = document.querySelector(".site-header");
-    var off = header && getComputedStyle(header).position === "fixed" ? header.getBoundingClientRect().height + 12 : 12;
-    var y = el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - off;
-    window.scrollTo(0, Math.max(0, y));
-  }
-  window.addEventListener("load", function() {
-    seat();
-    setTimeout(seat, 350);
-    setTimeout(seat, 1200);
-  });
-})();
-window.addEventListener("popstate", function() {
-  var c = document.querySelector('link[rel="canonical"]');
-  if (!c || !c.href) return;
-  var norm = function(p) {
-    p = p.replace(/\/index\.html$/, "/");
-    return p.length > 1 ? p.replace(/\/+$/, "") : p;
+  // Portrait placement, measured against each photo's real frame: the whole head stays in, the top of the hair sits 7% below the
+  // top edge, the face is centred left to right, and neck and shoulders show below. Runs again whenever the frame changes size.
+  const place = img => {
+    const [x0, y0, x1, y1] = img.dataset.face.split(',').map(Number), [nw, nh] = img.dataset.wh.split(',').map(Number);
+    const W = img.clientWidth, H = img.clientHeight; if (!W || !H) return;
+    const sc = Math.max(W / nw, H / nh), rw = nw * sc, rh = nh * sc, vx = W / rw, vy = H / rh;
+    let px = 0.5, py = 0.5;
+    if (vx < 1) { const left = Math.min(Math.max((x0 + x1) / 2 - vx / 2, 0), 1 - vx); px = left / (1 - vx); }
+    if (vy < 1) { let top = Math.max(0, y0 - 0.07 * vy); if (top + vy < y1 + 0.02) top = Math.max(0, y1 + 0.02 - vy); top = Math.min(top, 1 - vy); py = top / (1 - vy); }
+    img.style.objectPosition = `${(px * 100).toFixed(1)}% ${(py * 100).toFixed(1)}%`;
   };
-  try {
-    if (norm(new URL(c.href).pathname) !== norm(location.pathname)) location.replace(location.href);
-  } catch (e) {
+  const faces = [...document.querySelectorAll('img[data-face][data-wh]')];
+  faces.forEach(place);
+  if ('ResizeObserver' in window) { const ro = new ResizeObserver(es => es.forEach(e => place(e.target))); faces.forEach(i => ro.observe(i)); }
+  const btn = document.querySelector('.menu-btn'), sheet = document.getElementById('sheet');
+  if (btn && sheet) {
+    const set = open => { sheet.hidden = !open; btn.setAttribute('aria-expanded', String(open)); btn.textContent = open ? 'Close' : 'Menu'; document.body.style.overflow = open ? 'hidden' : ''; };
+    btn.addEventListener('click', () => set(sheet.hidden));
+    sheet.addEventListener('click', e => { if (e.target.closest('a')) set(false); });
+    addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) { set(false); btn.focus(); } });
   }
-});
+
+  // video players: the thumbnail turns into the YouTube player on click, so pages stay fast until someone presses play
+  document.querySelectorAll('.video[data-yt]').forEach(v => v.querySelector('.play').addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+    f.title = v.querySelector('.play').getAttribute('aria-label').replace(/^Play /, '');
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'; f.allowFullscreen = true;
+    v.innerHTML = ''; v.appendChild(f);
+  }));
+
+  // gear request list
+  const cartEl = document.querySelector('[data-cart]'), totalEl = document.querySelector('[data-total]');
+  const cart = new Map(); // image -> {name, rate, qty, max}
+  const gearIndex = {};
+  document.querySelectorAll('[data-add]').forEach(b => { gearIndex[b.dataset.add] = { name: b.dataset.name, rate: +b.dataset.rate, max: +b.dataset.max }; });
+  const money = n => '$' + n.toLocaleString('en-US');
+  const render = () => {
+    if (!cartEl) return;
+    if (!cart.size) { cartEl.innerHTML = '<p class="muted">Nothing added yet. Use Add on a package or a piece of gear.</p>'; totalEl.textContent = ''; return; }
+    cartEl.innerHTML = ''; let total = 0;
+    cart.forEach((v, k) => {
+      total += v.rate * v.qty;
+      const row = document.createElement('div'); row.className = 'line';
+      row.innerHTML = `<span>${v.name}</span><span class="n"><button type="button" aria-label="One fewer ${v.name}">−</button>${v.qty}<button type="button" aria-label="One more ${v.name}">+</button></span><span>${money(v.rate * v.qty)}</span>`;
+      const [minus, plus] = row.querySelectorAll('button');
+      minus.onclick = () => { v.qty--; if (v.qty < 1) cart.delete(k); render(); };
+      plus.onclick = () => { if (v.qty < v.max) { v.qty++; render(); } };
+      cartEl.appendChild(row);
+    });
+    totalEl.innerHTML = `${money(total)} <span>per night, before delivery beyond ${totalEl.dataset.radius} miles</span>`;
+  };
+  const add = (img, qty) => {
+    const g = gearIndex[img]; if (!g) return;
+    const cur = cart.get(img) || { ...g, qty: 0 }; cur.qty = Math.min(cur.qty + qty, g.max); cart.set(img, cur);
+  };
+  const flash = b => { const t = b.textContent; b.textContent = 'Added'; setTimeout(() => b.textContent = t, 1200); };
+  document.querySelectorAll('[data-add]').forEach(b => b.addEventListener('click', () => { add(b.dataset.add, 1); render(); flash(b); }));
+  document.querySelectorAll('[data-add-pkg]').forEach(b => b.addEventListener('click', () => { JSON.parse(b.dataset.addPkg).forEach(x => add(x.image, x.qty)); render(); flash(b); }));
+
+  // category tabs follow the scroll
+  const tabs = [...document.querySelectorAll('.tabs a')];
+  if (tabs.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) tabs.forEach(t => t.classList.toggle('on', t.getAttribute('href') === '#' + en.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
+    tabs.forEach(t => { const s = document.querySelector(t.getAttribute('href')); if (s) io.observe(s); });
+  }
+
+  // forms
+  document.querySelectorAll('form[data-web3]').forEach(form => {
+    const status = form.querySelector('.status'), submit = form.querySelector('[type=submit]');
+    form.addEventListener('submit', async ev => {
+      ev.preventDefault();
+      let bad = null;
+      form.querySelectorAll('[required]').forEach(f => { const ok = f.value.trim() && f.checkValidity(); f.setAttribute('aria-invalid', String(!ok)); if (!ok && !bad) bad = f; });
+      if (bad) { status.className = 'status err'; status.textContent = bad.type === 'email' ? 'Enter a valid email address.' : 'Fill in the highlighted fields.'; bad.focus(); return; }
+      if (form.hasAttribute('data-rentals')) {
+        if (!cart.size) { status.className = 'status err'; status.textContent = 'Add at least one package or piece of gear first.'; return; }
+        form.querySelector('[name=gear]').value = [...cart.values()].map(v => `${v.name} x${v.qty} (${money(v.rate * v.qty)})`).join('; ');
+      }
+      submit.disabled = true; status.className = 'status'; status.textContent = 'Sending…';
+      try {
+        const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.success === false) throw new Error(j.message || 'failed');
+        form.reset(); cart.clear(); render();
+        status.className = 'status ok'; status.textContent = form.dataset.ok;
+      } catch {
+        status.className = 'status err'; status.innerHTML = 'It didn’t send. Email <a href="mailto:oteo@djoteo.com">oteo@djoteo.com</a> instead.';
+      } finally { submit.disabled = false; }
+    });
+  });
+})();

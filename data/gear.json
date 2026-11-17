@@ -6,11 +6,11 @@
     "deposit": "50% to book",
     "rate_period": "per night",
     "lead_time": "48 hours notice",
-    "delivery_free_radius_miles": 30,
+    "delivery_free_radius_miles": 20,
     "delivery_beyond_radius": "quoted per trip",
     "security_hold": 500,
     "damage_waiver": false,
-    "minimum_order": 150
+    "agreement": "Every rental needs a signed rental agreement that covers liability"
   },
   "groups": [
     {
@@ -491,11 +491,11 @@
     },
     {
       "title": "Booking and deposit",
-      "body": "A 50% deposit confirms the date, arranged by email once Oteo confirms the gear and the night. No payment is taken online. If the date can&rsquo;t be covered, nothing is owed. The balance is due on delivery. Minimum 48 hours notice."
+      "body": "Every rental needs a signed rental agreement that covers liability. Once Oteo confirms the gear and the date, a 50% deposit by email secures it. No payment is taken online. If the date can&rsquo;t be covered, nothing is owed. The balance is due on delivery."
     },
     {
       "title": "Delivery",
-      "body": "Delivery, setup and collection are included within 30 miles of Orlando. Beyond 30 miles, delivery anywhere in Central Florida is quoted per trip. Minimum order $150. Someone over 18 must be present to receive and return the gear."
+      "body": "Delivery, setup and collection are included within 20 miles of Orlando. Beyond 20 miles, delivery anywhere in Central Florida is quoted per trip. Someone over 18 must be present to receive and return the gear."
     },
     {
       "title": "Security hold",
@@ -517,8 +517,23 @@
   "packages": [
     {
       "tag": "Club",
+      "name": "Club Booth",
+      "for": "For venues that already have a sound system.",
+      "items": [
+        {
+          "image": "cdj-3000x.jpg",
+          "qty": 2
+        },
+        {
+          "image": "djm-a9.jpg",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "tag": "Club",
       "name": "Club Standard",
-      "for": "The booth most clubs run.",
+      "for": "The club booth plus a pair of monitors.",
       "items": [
         {
           "image": "cdj-3000x.jpg",
@@ -537,7 +552,7 @@
     {
       "tag": "Vinyl / Battle",
       "name": "Turntablist",
-      "for": "Vinyl and battle setup for open-format and scratch sets.",
+      "for": "Vinyl, battle and scratch sets.",
       "items": [
         {
           "image": "plx-1000.jpg",
@@ -554,24 +569,32 @@
       ]
     },
     {
-      "tag": "Anywhere",
-      "name": "Portable Party",
-      "for": "Battery-powered and wireless, for rooftops, pools and beaches.",
+      "tag": "Private",
+      "name": "Private Party",
+      "for": "Decks, speakers, a sub and a mic for a house party or backyard event.",
       "items": [
         {
-          "image": "omnis-duo.jpg",
+          "image": "xdj-az.jpg",
           "qty": 1
         },
         {
-          "image": "wave-eight.jpg",
+          "image": "k12-2.jpg",
           "qty": 2
+        },
+        {
+          "image": "bose-f1-sub.jpg",
+          "qty": 1
+        },
+        {
+          "image": "sm58.jpg",
+          "qty": 1
         }
       ]
     },
     {
       "tag": "Events",
       "name": "Event PA",
-      "for": "Clean full-room sound for ceremonies and corporate events.",
+      "for": "Speeches, ceremonies and background music. No DJ gear.",
       "items": [
         {
           "image": "bose-f1-812.jpg",
