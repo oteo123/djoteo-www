@@ -471,3 +471,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 /* a card left alone on the last row of a small grid fills that row */
 @media (min-width:1081px){.rcs.small:not(.two-col)>.rc:last-child:nth-child(3n+1){grid-column:1/-1}}
 @media (min-width:701px) and (max-width:1080px){.rcs.small>.rc:last-child:nth-child(odd){grid-column:1/-1}}
+.gig-more{margin-top:32px}.gig-more>.rc:only-child{grid-column:1/-1}
