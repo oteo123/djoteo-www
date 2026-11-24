@@ -473,3 +473,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (min-width:701px) and (max-width:1080px){.rcs.small>.rc:last-child:nth-child(odd){grid-column:1/-1}}
 .gig-more{margin-top:32px}.gig-more>.rc:only-child{grid-column:1/-1}
 .vids{display:grid;grid-template-columns:1fr 1fr;gap:16px}.vids .vid{margin:0}.vids video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}.vids figcaption{margin-top:10px;font-size:15px}@media (max-width:760px){.vids{grid-template-columns:1fr}}
+.photos .wrap.three.keep{grid-template-columns:repeat(3,1fr)}.photos .wrap.three.keep .ph:last-child{display:block}.photos .wrap.three.keep img{width:100%;aspect-ratio:4/5;object-fit:cover}@media (max-width:760px){.photos .wrap.three.keep{grid-template-columns:1fr}}
