@@ -499,3 +499,6 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (max-width:700px){.hero:not(.room-hero) .ctas{flex-direction:column;align-items:center}.hero:not(.room-hero) .ctas .btn{width:min(320px,100%);text-align:center;justify-content:center}}
 .vids.tall{grid-template-columns:repeat(auto-fit,minmax(0,380px));justify-content:center}.vids.tall video{aspect-ratio:9/16}@media (max-width:760px){.vids.tall{grid-template-columns:minmax(0,380px)}}
 .watch{align-items:center}.watch .vids.tall{grid-template-columns:minmax(0,380px);justify-content:end}@media (max-width:760px){.watch .vids.tall{justify-content:center}}
+.watch .vids.tall:has(.vid + .vid){grid-template-columns:repeat(2,minmax(0,300px))}@media (max-width:760px){.watch .vids.tall:has(.vid + .vid){grid-template-columns:minmax(0,380px)}}
+@media (max-width:1080px){.watch .vids.tall{justify-content:start}}
+.watch .vids.tall{width:fit-content;max-width:100%;margin-left:auto}@media (max-width:1080px){.watch .vids.tall{margin-left:0}}@media (max-width:760px){.watch .vids.tall{width:100%}.watch .vids.tall:has(.vid + .vid),.watch .vids.tall{grid-template-columns:1fr}}
