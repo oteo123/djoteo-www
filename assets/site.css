@@ -476,3 +476,24 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .photos .wrap.three.keep{grid-template-columns:repeat(3,1fr)}.photos .wrap.three.keep .ph:last-child{display:block}.photos .wrap.three.keep img{width:100%;aspect-ratio:4/5;object-fit:cover}@media (max-width:760px){.photos .wrap.three.keep{grid-template-columns:1fr}}
 .photos .ph.span{grid-column:1/-1}.photos .ph.span img{width:100%;aspect-ratio:16/9;object-fit:cover}@media (max-width:760px){.photos .ph.span img{aspect-ratio:4/3}}
 .photos .wrap.three.keep .ph.span img,.photos .wrap.two .ph.span img{aspect-ratio:16/9}@media (max-width:760px){.photos .wrap.three.keep .ph.span img,.photos .wrap.two .ph.span img{aspect-ratio:4/3}}
+/* 2026-11-24 layout gate fixes: no card stranded on a part-filled row, equal gaps everywhere */
+.gear-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px 16px}.gear-grid>*{flex:0 0 calc((100% - 64px)/5);min-width:0}
+@media (max-width:1080px){.gear-grid>*{flex-basis:calc((100% - 32px)/3)}}
+@media (max-width:700px){.gear-grid{gap:32px 16px}.gear-grid>*{flex-basis:calc((100% - 16px)/2)}}
+@media (min-width:701px) and (max-width:1080px){.pkcards{grid-template-columns:repeat(6,1fr)}.pkcard{grid-column:span 2}.pkcard:nth-child(-n+2){grid-column:span 3}}
+.releases{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:860px){.releases{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+@media (max-width:640px){.releases{grid-template-columns:1fr}}
+@media (max-width:700px){.hls{grid-template-columns:repeat(2,minmax(0,1fr))}.hl h3{font-size:26px}}
+/* 2026-11-24 phone home header: sharp square video, logo and words centred on one line, even spacing */
+@media (max-width:700px){
+  .hero:not(.room-hero) .hero-ph{aspect-ratio:1/1}
+  .hero:not(.room-hero) .hero-grid{gap:20px}
+  .hero:not(.room-hero) .hero-copy{text-align:center}
+  .hero:not(.room-hero) .logo-h1{margin:0;display:flex;justify-content:center}
+  .hero:not(.room-hero) .logo-h1 .logo3d{width:76vw;margin:0 auto}
+  .hero:not(.room-hero) .logo-h1 .logo2d{margin:0 auto}
+  .hero:not(.room-hero) .lead,.hero:not(.room-hero) .hero-copy p{margin-left:auto;margin-right:auto}
+  .hero:not(.room-hero) .ctas{justify-content:center}
+}
+@media (max-width:700px){.hero:not(.room-hero) .ctas{flex-direction:column;align-items:center}.hero:not(.room-hero) .ctas .btn{width:min(320px,100%);text-align:center;justify-content:center}}
