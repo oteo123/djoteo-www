@@ -60,6 +60,11 @@
     let px = 0.5, py = 0.5;
     if (vx < 1) { const left = Math.min(Math.max((x0 + x1) / 2 - vx / 2, 0), 1 - vx); px = left / (1 - vx); }
     if (vy < 1) { let top = Math.max(0, y0 - 0.07 * vy); if (top + vy < y1 + 0.02) top = Math.max(0, y1 + 0.02 - vy); top = Math.min(top, 1 - vy); py = top / (1 - vy); }
+    if (img.dataset.keep) {  // a whole area must show (e.g. hands and decks): centre it; if it cannot all fit, its top and left edges win
+      const [k0, k1, k2, k3] = img.dataset.keep.split(',').map(Number);
+      if (vx < 1) { const left = Math.min(Math.max(k2 - k0 <= vx ? (k0 + k2) / 2 - vx / 2 : k0, 0), 1 - vx); px = left / (1 - vx); }
+      if (vy < 1) { const top = Math.min(Math.max(k3 - k1 <= vy ? (k1 + k3) / 2 - vy / 2 : k1, 0), 1 - vy); py = top / (1 - vy); }
+    }
     img.style.objectPosition = `${(px * 100).toFixed(1)}% ${(py * 100).toFixed(1)}%`;
   };
   const faces = [...document.querySelectorAll('img[data-face][data-wh]')];
