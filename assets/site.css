@@ -472,3 +472,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (min-width:1081px){.rcs.small:not(.two-col)>.rc:last-child:nth-child(3n+1){grid-column:1/-1}}
 @media (min-width:701px) and (max-width:1080px){.rcs.small>.rc:last-child:nth-child(odd){grid-column:1/-1}}
 .gig-more{margin-top:32px}.gig-more>.rc:only-child{grid-column:1/-1}
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:16px}.vids .vid{margin:0}.vids video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}.vids figcaption{margin-top:10px;font-size:15px}@media (max-width:760px){.vids{grid-template-columns:1fr}}
