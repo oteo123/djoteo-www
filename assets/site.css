@@ -482,3 +482,7 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .photos .one{grid-template-columns:1fr}.photos .one img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .strip.held .strip-track{animation-play-state:paused}
 .night-head .ph{margin-top:32px}.night-head .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.rc.has-page{position:relative;display:block}.rc.has-page .go{position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--accent)}.rc.has-page:hover h3{color:var(--accent)}
+.night-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.night-photos img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}.night-photos+.vids{margin-top:16px}
+.dates{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:20px}.dates li{border-bottom:1px solid var(--line);padding-bottom:12px}
+.night-photos:has(>.ph:only-child){grid-template-columns:minmax(0,1fr);max-width:480px;margin-left:auto}@media (max-width:1080px){.night-photos:has(>.ph:only-child){margin-left:0}}
