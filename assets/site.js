@@ -3,7 +3,7 @@
   // scroll reveal: each block eases in once; cards in the same row arrive one after another
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && 'IntersectionObserver' in window) {
-    const sel = '.head, .card, .rc, .hl, .gear, .pkcard, .setcard, .q, .svc article, .release, .list .li, .steps li, .faq details, .photos .ph, .nums div, .terms div, .facts div, .creds div, .cta h2, .cta p, .cta .ctas, .split > h2, .stack > p, .video, .vcap, .deck';
+    const sel = '.head, .card, .rc, .hl, .gear, .pkcard, .setcard, .q, .svc article, .release, .list .li, .steps li, .faq details, .photos .ph, .nums div, .terms div, .facts div, .cta h2, .cta p, .cta .ctas, .split > h2, .stack > p, .video, .vcap, .deck';
     const els = [...document.querySelectorAll(sel)].filter(el => !el.closest('.hero, .page-head, .label-hero'));
     const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
     els.forEach(el => {
@@ -22,7 +22,11 @@
   }
   // moving pictures: stop them for people who asked for less motion, and on data-saver connections
   const still = reduce || (navigator.connection && navigator.connection.saveData);
-  if (still) document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  // dropping the sources and reloading stops a download already under way; the poster frame stays on screen
+  if (still) document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); v.querySelectorAll('source').forEach(x => x.remove()); v.removeAttribute('src'); v.load(); });
+
+  // photo strip: a tap pauses or restarts the drift, so phone visitors can stop it like a mouse hover does
+  document.querySelectorAll('.strip').forEach(st => st.addEventListener('click', () => st.classList.toggle('held')));
 
   // residency cards: the room's clip loads on first use, plays on hover (computer) or while the card is in view (phone)
   const loops = [...document.querySelectorAll('video.loop')];
