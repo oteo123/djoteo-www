@@ -76,6 +76,7 @@
     btn.addEventListener('click', () => set(sheet.hidden));
     sheet.addEventListener('click', e => { if (e.target.closest('a')) set(false); });
     addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) { set(false); btn.focus(); } });
+    matchMedia('(min-width: 1081px)').addEventListener('change', m => { if (m.matches && !sheet.hidden) set(false); });  // the menu button is gone above 1080px: never leave the sheet open with scrolling locked
   }
 
   // video players: the thumbnail turns into the YouTube player on click, so pages stay fast until someone presses play
@@ -93,6 +94,7 @@
   const gearIndex = {};
   document.querySelectorAll('[data-add]').forEach(b => { gearIndex[b.dataset.add] = { name: b.dataset.name, rate: +b.dataset.rate, max: +b.dataset.max }; });
   const money = n => '$' + n.toLocaleString('en-US');
+  const esc = x => String(x).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const render = () => {
     if (!cartEl) return;
     if (!cart.size) { cartEl.innerHTML = '<p class="muted">Nothing added yet. Use Add on a package or a piece of gear.</p>'; totalEl.textContent = ''; return; }
@@ -100,9 +102,9 @@
     cart.forEach((v, k) => {
       total += v.rate * v.qty;
       const row = document.createElement('div'); row.className = 'line';
-      row.innerHTML = `<span>${v.name}</span><span class="n"><button type="button" aria-label="One fewer ${v.name}">−</button>${v.qty}<button type="button" aria-label="One more ${v.name}">+</button></span><span>${money(v.rate * v.qty)}</span>`;
+      row.innerHTML = `<span>${esc(v.name)}${v.capped ? ` <small class="muted">(all ${v.max} in stock)</small>` : ''}</span><span class="n"><button type="button" aria-label="One fewer ${esc(v.name)}">−</button>${v.qty}<button type="button" aria-label="One more ${esc(v.name)}">+</button></span><span>${money(v.rate * v.qty)}</span>`;
       const [minus, plus] = row.querySelectorAll('button');
-      minus.onclick = () => { v.qty--; if (v.qty < 1) cart.delete(k); render(); };
+      minus.onclick = () => { v.qty--; v.capped = false; if (v.qty < 1) cart.delete(k); render(); };
       plus.onclick = () => { if (v.qty < v.max) { v.qty++; render(); } };
       cartEl.appendChild(row);
     });
@@ -110,7 +112,8 @@
   };
   const add = (img, qty) => {
     const g = gearIndex[img]; if (!g) return;
-    const cur = cart.get(img) || { ...g, qty: 0 }; cur.qty = Math.min(cur.qty + qty, g.max); cart.set(img, cur);
+    const cur = cart.get(img) || { ...g, qty: 0 }; if (cur.qty + qty > g.max) cur.capped = true;  // say so when stock limits the request, never shrink it silently
+    cur.qty = Math.min(cur.qty + qty, g.max); cart.set(img, cur);
   };
   const flash = b => { const t = b.textContent; b.textContent = 'Added'; setTimeout(() => b.textContent = t, 1200); };
   document.querySelectorAll('[data-add]').forEach(b => b.addEventListener('click', () => { add(b.dataset.add, 1); render(); flash(b); }));

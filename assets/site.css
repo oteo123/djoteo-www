@@ -191,7 +191,7 @@ p{margin:0}
 .gear .row{margin-top:16px}
 .gear .price,.pkg .price{font:700 24px/1 var(--display)}
 .gear .price span,.pkg .price span{font:400 14px var(--body);color:var(--mute)}
-.gear .qty{font-size:13px;color:#7a7a7a;margin-top:10px}
+.gear .qty{font-size:13px;color:#8a8a8a;margin-top:10px}
 .pkgs{border-bottom:1px solid var(--line)}
 .pkg{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,4fr) 160px 80px;gap:24px;align-items:center;border-top:1px solid var(--line);padding:24px 0}
 .pkg p{color:var(--mute);font-size:15px;margin-top:6px}
@@ -507,3 +507,5 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd){flex-basis:100%;display:grid;grid-template-columns:calc((100% - 16px)/2) minmax(0,1fr);column-gap:16px;align-content:start}.gear-grid>.gear:last-child:nth-child(odd) .ph{grid-row:1/span 4;align-self:start}.gear-grid>.gear:last-child:nth-child(odd) h3{margin-top:0}}
 @media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd) .ph{align-self:stretch;display:flex;align-items:center}}
 @media (max-width:700px) and (prefers-reduced-motion:reduce){.hero:not(.room-hero) .logo-h1 .logo2d{width:56vw}}
+@media (min-width:1081px){.sheet{display:none!important}}
+.photos .one{grid-template-columns:1fr}.photos .one img{width:100%;aspect-ratio:16/9;object-fit:cover}
