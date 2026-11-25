@@ -502,3 +502,7 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .watch .vids.tall:has(.vid + .vid){grid-template-columns:repeat(2,minmax(0,300px))}@media (max-width:760px){.watch .vids.tall:has(.vid + .vid){grid-template-columns:minmax(0,380px)}}
 @media (max-width:1080px){.watch .vids.tall{justify-content:start}}
 .watch .vids.tall{width:fit-content;max-width:100%;margin-left:auto}@media (max-width:1080px){.watch .vids.tall{margin-left:0}}@media (max-width:760px){.watch .vids.tall{width:100%}.watch .vids.tall:has(.vid + .vid),.watch .vids.tall{grid-template-columns:1fr}}
+.cat + .cat{margin-top:72px}.cat-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:24px}.cat-head h3{margin:0}@media (max-width:760px){.cat + .cat{margin-top:56px}.cat-head{flex-direction:column;gap:6px}}
+@media (max-width:700px){.nums:has(>div:nth-child(4)){display:grid;grid-template-columns:repeat(2,max-content);gap:24px 56px}}
+@media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd){flex-basis:100%;display:grid;grid-template-columns:calc((100% - 16px)/2) minmax(0,1fr);column-gap:16px;align-content:start}.gear-grid>.gear:last-child:nth-child(odd) .ph{grid-row:1/span 4;align-self:start}.gear-grid>.gear:last-child:nth-child(odd) h3{margin-top:0}}
+@media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd) .ph{align-self:stretch;display:flex;align-items:center}}
