@@ -486,3 +486,8 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .night-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.night-photos img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}.night-photos+.vids{margin-top:16px}
 .dates{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:20px}.dates li{border-bottom:1px solid var(--line);padding-bottom:12px}
 .night-photos:has(>.ph:only-child){grid-template-columns:minmax(0,1fr);max-width:480px;margin-left:auto}@media (max-width:1080px){.night-photos:has(>.ph:only-child){margin-left:0}}
+.hl-vids{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.hl-vids video{width:100%;aspect-ratio:9/16;display:block;background:#000}@media (max-width:760px){.hl-vids{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.dates{grid-template-columns:repeat(auto-fill,minmax(190px,1fr));column-gap:24px}
+.hl-vids .vid,.night-photos .vid{margin:0}.night-photos .vid video{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#000}.night-photos .vid figcaption{display:none}
+@media (max-width:760px){.dates{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.dates{display:block;columns:3 180px;column-gap:28px}.dates li{break-inside:avoid;margin-bottom:12px}@media (max-width:760px){.dates{columns:2}}
