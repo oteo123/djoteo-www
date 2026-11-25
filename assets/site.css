@@ -485,13 +485,13 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (max-width:860px){.releases{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
 @media (max-width:640px){.releases{grid-template-columns:1fr}}
 @media (max-width:700px){.hls{grid-template-columns:repeat(2,minmax(0,1fr))}.hl h3{font-size:26px}}
-/* 2026-11-24 phone home header: sharp square video, logo and words centred on one line, even spacing */
+/* 2026-11-25 phone home header (Alec picked option 2): taller 4:5 video that follows Oteo so he stays centred, smaller logo */
 @media (max-width:700px){
-  .hero:not(.room-hero) .hero-ph{aspect-ratio:1/1}
-  .hero:not(.room-hero) .hero-grid{gap:20px}
+  .hero:not(.room-hero) .hero-ph{aspect-ratio:4/5;height:auto}
+  .hero:not(.room-hero) .hero-grid{gap:16px}
   .hero:not(.room-hero) .hero-copy{text-align:center}
   .hero:not(.room-hero) .logo-h1{margin:0;display:flex;justify-content:center}
-  .hero:not(.room-hero) .logo-h1 .logo3d{width:76vw;margin:0 auto}
+  .hero:not(.room-hero) .logo-h1 .logo3d{width:56vw;margin:0 auto}
   .hero:not(.room-hero) .logo-h1 .logo2d{margin:0 auto}
   .hero:not(.room-hero) .lead,.hero:not(.room-hero) .hero-copy p{margin-left:auto;margin-right:auto}
   .hero:not(.room-hero) .ctas{justify-content:center}
@@ -506,3 +506,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (max-width:700px){.nums:has(>div:nth-child(4)){display:grid;grid-template-columns:repeat(2,max-content);gap:24px 56px}}
 @media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd){flex-basis:100%;display:grid;grid-template-columns:calc((100% - 16px)/2) minmax(0,1fr);column-gap:16px;align-content:start}.gear-grid>.gear:last-child:nth-child(odd) .ph{grid-row:1/span 4;align-self:start}.gear-grid>.gear:last-child:nth-child(odd) h3{margin-top:0}}
 @media (max-width:700px){.gear-grid>.gear:last-child:nth-child(odd) .ph{align-self:stretch;display:flex;align-items:center}}
+@media (max-width:700px) and (prefers-reduced-motion:reduce){.hero:not(.room-hero) .logo-h1 .logo2d{width:56vw}}
