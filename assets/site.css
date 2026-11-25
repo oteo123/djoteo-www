@@ -481,3 +481,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 @media (min-width:1081px){.sheet{display:none!important}}
 .photos .one{grid-template-columns:1fr}.photos .one img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .strip.held .strip-track{animation-play-state:paused}
+.night-head .ph{margin-top:32px}.night-head .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
