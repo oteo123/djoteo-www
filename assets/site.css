@@ -493,3 +493,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .hl.has-page{position:relative;display:block}.hl.has-page .go{position:absolute;right:16px;bottom:14px;color:var(--accent)}.hl.has-page:hover h3{color:var(--accent)}
 .sets-here{display:grid;gap:24px}.set-here{margin:0}.set-here figcaption{margin-top:10px}
 .night-photos>*:first-child:nth-last-child(odd):not(:only-child){grid-column:1/-1}
+.night-photos .ph.whole img{aspect-ratio:auto;height:auto;object-fit:contain}.night-photos:has(>.ph.whole){max-width:none;grid-template-columns:minmax(0,1fr)}
