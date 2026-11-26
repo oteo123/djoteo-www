@@ -491,3 +491,4 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .night-film{margin:16px 0 0}.night-film video{width:100%;display:block;background:#000}.night-photos:has(>.ph:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:760px){.night-photos:has(>.ph:nth-child(3):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}.night-photos:has(>.ph:nth-child(3):last-child)>.ph:first-child{grid-column:1/-1}}
 .hl.has-page{position:relative;display:block}.hl.has-page .go{position:absolute;right:16px;bottom:14px;color:var(--accent)}.hl.has-page:hover h3{color:var(--accent)}
+.sets-here{display:grid;gap:24px}.set-here{margin:0}.set-here figcaption{margin-top:10px}
