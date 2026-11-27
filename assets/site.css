@@ -494,3 +494,5 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .sets-here{display:grid;gap:24px}.set-here{margin:0}.set-here figcaption{margin-top:10px}
 .night-photos>*:first-child:nth-last-child(odd):not(:only-child){grid-column:1/-1}
 .night-photos .ph.whole img{aspect-ratio:auto;height:auto;object-fit:contain}.night-photos:has(>.ph.whole){max-width:none;grid-template-columns:minmax(0,1fr)}
+
+.hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:760px){.hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}.hl-vids>.vid:first-child:nth-last-child(odd):not(:only-child){grid-column:1/-1}}  /* 5 highlights: 3+2 on desktop; odd count on a phone: the first plays full width, so none sits alone (2026-11-27) */
