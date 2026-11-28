@@ -497,3 +497,5 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 
 .hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:760px){.hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}.hl-vids>.vid:first-child:nth-last-child(odd):not(:only-child){grid-column:1/-1}}  /* 5 highlights: 3+2 on desktop; odd count on a phone: the first plays full width, so none sits alone (2026-11-27) */
 @media (min-width:761px){.watch .vids.tall:has(>.vid:nth-child(3):last-child),.watch .vids.tall:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(3,minmax(0,240px))}}  /* 3 or 5 night videos: 3 across, so none sits alone (2026-11-27) */
+
+.strip-track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:auto;animation:none!important;transform:none!important}.strip li{width:auto}.strip{padding:8px 0 0}@media (max-width:760px){.strip-track{grid-template-columns:repeat(2,minmax(0,1fr))}}  /* each strip photo once, no looping copy (2026-11-27) */
