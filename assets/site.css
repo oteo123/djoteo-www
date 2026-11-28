@@ -541,3 +541,9 @@ h1,h2,h3{text-wrap:balance}
 .vplay .pbtn{width:52px;height:52px;margin:-26px 0 0 -26px}
 .vplay .pbtn::after{left:21px;top:16px;border-width:10px 0 10px 16px}
 .vplay:hover .pbtn,.vplay:focus-visible .pbtn{transform:scale(1.06);background:var(--accent)}
+
+/* Design system (Alec picked option A, 2026-11-28): one page-title size everywhere, the booking band never bigger than a page title,
+   and every number strip styled alike (gold, capitals) */
+.page-head h1{font-size:clamp(52px,6.6vw,96px);line-height:.9}
+.cta h2{font-size:clamp(52px,6.6vw,96px);line-height:.9}
+.terms dt{color:var(--accent);text-transform:uppercase}
