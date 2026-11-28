@@ -188,7 +188,7 @@ p{margin:0}
 
 /* footer */
 .foot{border-top:1px solid var(--line);padding:64px 0 32px;font-size:15px;color:var(--mute)}
-.foot-top{display:grid;grid-template-columns:minmax(0,5fr) repeat(3,minmax(0,2fr));gap:40px}
+.foot-top{display:grid;grid-template-columns:minmax(0,4fr) repeat(4,minmax(0,2fr));gap:40px}
 .foot-top p{margin-top:16px;max-width:320px}
 .foot .brand{color:var(--fg)}
 .foot .reach{font-size:16px;flex-direction:column;gap:6px;color:var(--fg)}
@@ -392,7 +392,7 @@ html{overflow-x:clip}
 .sec+.sec,.strip+.sec{border-top:1px solid rgba(212,176,114,.18)}
 @media (max-width:700px){.strip li{width:200px}.logo-h1 .logo3d{width:78vw;margin-left:-8px}}
 @media (prefers-reduced-motion:no-preference){
-  .strip-track{animation:drift 315s linear infinite}
+  .strip-track{animation:drift 195s linear infinite}
   .strip:hover .strip-track{animation-play-state:paused}
 }
 @keyframes drift{to{transform:translateX(calc(-50% - 6px))}}
@@ -513,3 +513,23 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .sec.night{padding-block:36px}
 .sec.night h2{white-space:nowrap;font-size:clamp(20px,1.7vw,26px);line-height:1.15}
 @media (max-width:760px){.sec.night{padding-block:28px}}
+
+/* Residencies on Track Record: one equal card each (2026-11-28) */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 32px}
+.grid3 .card .ph img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.grid3 .card .ph.type{aspect-ratio:4/5;display:flex;align-items:flex-end;padding:24px;background:var(--raise)}
+.grid3 .card .ph.type span{font-family:var(--disp,inherit);text-transform:uppercase;font-size:28px;line-height:1;color:var(--mute)}
+.svc-links{margin-top:40px;font-size:17px;color:var(--mute)}
+
+@media (max-width:760px){.grid3{grid-template-columns:1fr;gap:40px}}
+
+/* Polish (2026-11-28): balanced headings, visible hover on text links, 44px touch targets on phones */
+h1,h2,h3{text-wrap:balance}
+.more:hover,.more:focus-visible{color:var(--fg)}
+.rot-dots button:hover{opacity:1}
+@media (max-width:760px){
+  .foot nav a,.foot .reach a{display:inline-flex;align-items:center;min-height:44px}
+  .more{display:inline-flex;align-items:center;min-height:44px}
+  .top .btn.sm,.menu-btn{min-height:44px}
+  .brand{display:inline-flex;align-items:center;min-height:44px}
+}
