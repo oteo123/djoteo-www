@@ -498,3 +498,18 @@ html.js .rot.on .rot-slide.cur{opacity:1;visibility:visible;transition:opacity .
 .hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:760px){.hl-vids:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}.hl-vids>.vid:first-child:nth-last-child(odd):not(:only-child){grid-column:1/-1}}  /* 5 highlights: 3+2 on desktop; odd count on a phone: the first plays full width, so none sits alone (2026-11-27) */
 @media (min-width:761px){.watch .vids.tall:has(>.vid:nth-child(3):last-child),.watch .vids.tall:has(>.vid:nth-child(5):last-child){grid-template-columns:repeat(3,minmax(0,240px))}}  /* 3 or 5 night videos: 3 across, so none sits alone (2026-11-27) */
 
+
+/* Night media standard (2026-11-27): identical tiles everywhere. 3 across beside the date on desktop, 2 across on tablet and phone. */
+.night-media{display:grid;gap:16px;align-content:start;min-width:0}
+.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.media-grid>*{margin:0;min-width:0}
+.photos-grid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.vids-grid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.vids-grid figcaption{margin-top:8px;font-size:14px}
+.night-media .night-film{margin:0}
+@media (max-width:1080px){.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Every night and the Highlights block share one rhythm: one-line dates at one size, and the same compact spacing (2026-11-27) */
+.sec.night{padding-block:36px}
+.sec.night h2{white-space:nowrap;font-size:clamp(20px,1.7vw,26px);line-height:1.15}
+@media (max-width:760px){.sec.night{padding-block:28px}}
