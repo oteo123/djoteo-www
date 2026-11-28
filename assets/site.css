@@ -547,3 +547,5 @@ h1,h2,h3{text-wrap:balance}
 .page-head h1{font-size:clamp(52px,6.6vw,96px);line-height:.9}
 .cta h2{font-size:clamp(52px,6.6vw,96px);line-height:.9}
 .terms dt{color:var(--accent);text-transform:uppercase}
+.room-h1{font-size:min(clamp(52px,6.6vw,96px),calc(100cqi / (var(--len) * .62)))}  /* same title scale as every other page; long names still shrink so no word breaks */
+@media (max-width:760px){.vplay{left:8px;bottom:8px;width:36px;height:36px}.vplay .pbtn{width:36px;height:36px;margin:-18px 0 0 -18px}.vplay .pbtn::after{left:14px;top:11px;border-width:7px 0 7px 11px}}
