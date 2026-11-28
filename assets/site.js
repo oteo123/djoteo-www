@@ -83,6 +83,13 @@
     matchMedia('(min-width: 1081px)').addEventListener('change', m => { if (m.matches && !sheet.hidden) set(false); });  // the menu button is gone above 1080px: never leave the sheet open with scrolling locked
   }
 
+  // page videos: one clean play button everywhere (2026-11-28); the browser's own controls appear once it plays
+  document.querySelectorAll('.vplay').forEach(btn => btn.addEventListener('click', () => {
+    const v = btn.previousElementSibling; if (!v) return;
+    v.controls = true; btn.closest('figure, .vid')?.classList.add('on'); btn.remove(); v.play().catch(() => {});
+  }));
+  document.querySelectorAll('.vid video').forEach(v => v.addEventListener('click', () => { const b = v.nextElementSibling; if (b && b.classList.contains('vplay')) b.click(); }));
+
   // video players: the thumbnail turns into the YouTube player on click, so pages stay fast until someone presses play
   document.querySelectorAll('.video[data-yt]').forEach(v => v.querySelector('.play').addEventListener('click', () => {
     const f = document.createElement('iframe');
