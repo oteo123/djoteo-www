@@ -131,6 +131,11 @@
   }
 
   // forms
+  // booking form: no past dates; a service page's Book button pre-selects its event type (?type=...)
+  const bd = document.getElementById('b-date');
+  if (bd) { const t = new Date(); bd.min = new Date(t.getTime() - t.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+  const bt = document.getElementById('b-type'), want = new URLSearchParams(location.search).get('type');
+  if (bt && want) [...bt.options].forEach(o => { if (o.text === want) bt.value = o.value || o.text; });
   document.querySelectorAll('form[data-web3]').forEach(form => {
     const status = form.querySelector('.status'), submit = form.querySelector('[type=submit]');
     form.addEventListener('submit', async ev => {
